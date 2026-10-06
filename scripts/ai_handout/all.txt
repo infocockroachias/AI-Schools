@@ -1,0 +1,2321 @@
+PRATIMAI
+A I U N D E R S TA N D I N G F O R E V E R Y C L A S S R O O M
+
+AI HANDOU TS · CLASS 6
+
+AI Around Me
+My detective notebook for spotting smart machines
+LEVEL 1 · NOTICE
+
+SPOT · SORT · ASK
+
+20 PAPER MISSIONS
+
+5 CHAPTERS · 5 STRANDS
+
+NO SCREEN NEEDED
+
+Is a machine ever really smart?
+That is the big question on this case. By the last page, you will have your own answer — with reasons.
+MY NAME
+
+MY CLASS & SECTION
+
+MY ROLL NUMBER
+
+MY SCHOOL
+
+U
+
+D
+
+L
+
+W
+
+R
+
+Understand
+
+Data
+
+Learn
+
+World
+
+Responsible
+
+AI AROUND ME · CLASS 6
+
+WELCOME
+
+How to use this handout
+
+?
+
+Read me first, Detective.
+
+Welcome, Detective! This book is your case file for the biggest mystery of our time: machines that seem smart.
+You will not need a computer, a phone or an app — your tools are paper, pencils, cards and your own sharp eyes.
+Every chapter hands you missions (we call them tasks), strange clues to examine, and empty spaces to fill with
+what you discover. Real detectives write everything down, so this book belongs to you: write, draw, tick, cross out
+and try again.
+1
+
+READ
+
+2
+
+Read the mission twice. Underline
+anything that puzzles you — puzzles are
+clues.
+
+DO
+
+Do the task with your partner, group,
+class or family, exactly as the chips say.
+
+3
+
+WRITE
+
+Write what you saw in the spaces, then
+shade your confidence circles honestly.
+
+The work-mode chips
+ALONE
+PAIR
+GROUP
+CLASS
+HOME
+
+your own case — you investigate by yourself
+two detectives — share one book, take turns reading codes aloud
+three to four detectives — decide roles before you start
+the whole class plays together, led by your teacher
+a mission for home — show a grown-up what you discovered
+
+HO W TO R EAD A MISSIO N
+
+T6-01
+
+PAIR
+
+10 MIN
+
+QUICK WIN
+
+Every mission has a code like T6-01 — T6 means this Class 6 handout, and 01 is the mission number, so your teacher can
+say “open Task T6-08”. The PAIR chip tells you who to work with, the 10 MIN chip is your time limit, and QUICK WIN
+marks an easy first success. Chapters 1 and 2 both start with a Quick Win to warm up your detective muscles — nobody
+fails in this book, because every attempt teaches a clue.
+
+TH E QUES T ION HA BI T — YOU R S U PE R PO W E R
+
+Three questions make you a sharper detective than any machine: “How do I know?” · “What is missing?” · “Who
+made this?” Use them in this book, on the internet, in the news, and when a machine gives you an answer that looks too
+perfect. Detectives are not people who know everything — they are people who keep asking.
+
+A note for grown-ups
+This handout builds AI understanding — how machines learn from data and how humans should judge them — through 20
+paper-and-pencil missions. It is fully unplugged: no task requires a device, an account, a photo, a voice recording or any
+personal information. The best help you can give is to ask the three Question-Habit questions, praise careful reasoning more
+than quick right answers, and treat the confidence circles as honest thinking, not scores. A separate teacher pack carries answer
+notes and rubrics; this book deliberately never prints solutions beside a task.
+
+PRATIMAI · AI understanding for every classroom
+
+2
+
+AI AROUND ME · CLASS 6
+
+M Y AI JOU RNEY MAP
+
+→ My AI journey map
+Five strands, five stops, one big question.
+T H E F I V E S T R A N D S YO U W I L L M E E T AT E V E R Y S T O P
+
+U Understand AI
+
+D Data
+
+L Learn
+
+W World
+
+R Responsibility
+
+What is AI — and what is
+it NOT?
+
+What do machines learn
+from?
+
+How do machines get
+better?
+
+Where is AI hiding near
+me?
+
+How do I stay safe and
+fair?
+
+THINKING-TOOLS THREAD runs through every stop: exact steps · patterns · if-then rules · how sure am I?
+
+T H E F I V E S T O P S O N YO U R C A S E
+
+1
+Machines That Seem
+Smart
+rule-followers vs learners
+
+2
+
+3
+
+Data: The Food of AI
+
+Patterns & Decisions
+
+numbers, words, pictures, sounds
+
+if-then trees · how sure am I?
+
+4
+
+5
+
+Be a Smart Digital
+Citizen
+
+My Neighbourhood AI
+Investigation
+
+privacy · passwords · fakes
+
+your own investigation
+
+BY THE END OF THIS BOOK, I CAN…
+
+say what AI is — and what it is not — using examples from my own day
+name two things people do better than machines and two things machines do better
+name the four kinds of data and sort them into a tidy table
+turn a simple picture into numbers on a grid, like a real camera does
+find a pattern, predict what comes next, and say how sure I am
+describe three ways machines learn: labelled examples, grouping, trial and reward
+point to AI at home, at school and in my neighbourhood, and name the data it uses
+use my five safety habits: keep private things private, strong passphrases, think before posting, be kind, check before
+believing
+explain why an AI answer can be wrong — and how I would check it
+break a task into exact steps that another person can follow
+
+PRATIMAI · AI understanding for every classroom
+
+3
+
+AI AROUND ME · CLASS 6
+
+1
+
+Machines That Seem Smart
+Guiding question: When is a machine actually learning — and when is it only following steps?
+
+I WILL L EAR N TO ·
+
+1
+
+M ACH INES THAT SE EM SMART
+
+6.U1
+
+6.U2
+
+6.L2
+
+6.W1
+
+6.T1
+
+S T RA N D S ·
+
+U
+
+W
+
+Links: Maths — patterns · English — exact instructions
+
+Smart machines are everywhere
+
+Every day, machines seem to do clever things. A video app picks the next clip you actually want to watch. A voice
+assistant answers when you ask about the weather. A map app finds a faster road when traffic jams up. It is easy
+to think: the machine is smart, like a person. But a good detective looks closer before deciding. Under every
+clever trick there are only two possible explanations: either somebody wrote exact steps for the machine to
+follow, or the machine learned a pattern from examples. On this case, you will learn to tell the two apart — and
+that one skill will change how you see every screen, speaker and gadget around you.
+T6-01
+
+Human Robot
+
+QUICK WIN
+
+PAIR
+
+10 MIN
+
+One of you is the Robot, the other is the Engineer. The Engineer writes exact steps for the Robot to make a
+paper plane, or to walk from the door to the chalkboard. Then swap. The Robot must follow the steps
+literally — if the step says “fold the paper”, fold it any way you like! When both of you have played both
+roles, write here:
+
+One step my Robot followed too literally:
+
+What this taught me about giving instructions to machines:
+
+Our funniest too-literal moment:
+
+PRATIMAI · AI understanding for every classroom
+
+4
+
+AI AROUND ME · CLASS 6
+
+M ACH INES THAT SE EM SMART
+
+WO R D P O W E R · 1
+
+algorithm
+An exact list of steps that tells a machine how to do a task, one step at a time.
+Say it three times today — it sticks!
+
+DE TEC TI V E'S NOT E
+
+The Human Robot game is why programmers and AI designers must be exact. A machine never guesses what you meant
+— it only knows what you said. When a machine does something surprising, ask: was the algorithm wrong, or was it the
+data?
+
+2
+
+Rule-followers: same steps, every time
+
+A washing machine washes exactly the same way today as it did last month. A lift goes up and down by fixed
+rules. A calculator will never get better at adding — it already follows its algorithm perfectly. Machines like these
+do automation: work done by fixed steps, repeated the same way every time. They are useful and fast, but notice
+something important: they never improve. Nobody has to teach them; nobody can. They are rule-followers, and
+rule-followers are not the same as learners.
+T6-02
+
+Rule or Learner?
+
+PAIR
+
+10 MIN
+
+Sort these eight machines. For each one, write R if you think it mostly follows fixed rules, L if you think it
+learns from examples, or ? if you are honestly not sure. Then write one clue that helped you decide.
+Machine
+
+R/L/?
+
+One clue that helped you
+
+“Washing machine”
+“Lift”
+“Video app that suggests
+clips”
+“Spam filter in email”
+“Calculator”
+“Traffic signal”
+“Voice assistant”
+“Map app that reroutes you”
+The machine I argued about most with my partner:
+
+WO R D P O W E R · 2
+
+automation
+Work done by a machine that repeats fixed steps in the same way every time.
+Say it three times today — it sticks!
+
+PRATIMAI · AI understanding for every classroom
+
+5
+
+AI AROUND ME · CLASS 6
+
+M ACH INES THAT SE EM SMART
+
+AT A G L A N CE · R U L E - F OL L O W E R VS L E A R NE R
+
+Ask yourself…
+
+Rule-follower
+
+Learner
+
+Where do its steps come
+from?
+
+A person wrote the algorithm.
+
+It found the pattern in training
+examples.
+
+What happens with a
+brand-new case?
+
+It does the same steps anyway.
+
+It makes a prediction from what it
+learned.
+
+Can it get better at its
+job?
+
+Never — until a person changes the
+steps.
+
+Yes — more examples can improve it.
+
+One example from my
+day
+
+M Y T H B U ST E R
+
+3
+
+MYTH
+
+“AI is a robot.”
+
+TRUTH
+
+AI is a program — a learner made of data and patterns. It can live inside a phone, a website, a car
+or a power plant, and it has no body at all. A robot is one place a program can be kept; plenty of
+robots run with no AI, and plenty of AI runs with no robot.
+
+Learners: machines that improve from examples
+
+So how does a video app get good at suggesting clips you like? Nobody wrote a rule for “show Aarav cricket
+clips”. Instead, the app learned from examples — millions of them. It noticed which clips people similar to you
+watched, and it found patterns in that. This is the big secret of this whole handout: a learning machine is not
+given the answer; it is given examples, and it works the pattern out by itself.
+Here is the strange part: the people who build AI do not write the final rules either. They choose the examples
+and the data, and the machine does the pattern-finding. That is why the examples matter so much — feed a
+learner one-sided examples, and it learns a one-sided view of the world, exactly like the alien in your next mission.
+T6-03
+
+Teach the Alien
+
+GROUP
+
+15 MIN
+
+In your group of four, one person is the Alien — smart, but knowing nothing about Earth. The other three
+must teach the Alien the idea of mango using ONLY examples: point at real objects, drawings or the cards
+your teacher gives you, and say “mango” or “not mango”. No describing words allowed — aliens don’t speak
+Human! When the Alien starts guessing correctly, play the twist round: show only green mangoes. Then
+answer:
+What wrong idea did our examples put in the Alien’s head?
+
+How could we choose better examples next time?
+
+PRATIMAI · AI understanding for every classroom
+
+6
+
+AI AROUND ME · CLASS 6
+
+M ACH INES THAT SE EM SMART
+
+WO R D P O W E R · 3
+
+artificial intelligence (AI)
+Technology that lets machines do tasks that seem to need human intelligence.
+Say it three times today — it sticks!
+
+WO R D P O W E R · 4
+
+training examples
+The examples we show a machine so that it can find patterns by itself.
+Say it three times today — it sticks!
+
+DE TEC TI V E'S NOT E
+
+Machines predict, match and estimate — those are the verbs of AI. People design the system, choose the data and are
+responsible for what it does. Keep those verbs straight and you will never be fooled by a “smart machine” story.
+
+4
+
+Humans vs machines — the fair contest
+
+So is a machine ever really smart? Try a fair contest. Machines are dazzling at some jobs: counting a million
+numbers without a mistake, noticing a pattern in a million examples, working all night without getting bored.
+People are dazzling at others: understanding a joke, knowing that your friend is sad from one look, deciding what
+is fair, asking a question nobody has asked before. The contest has no overall winner — and that is exactly why
+people and machines make a good team, as long as the people stay in charge of the judging.
+T6-04
+
+Better At / Worse At
+
+ALONE
+
+10 MIN
+
+Fill the table, then your class votes for the most surprising idea.
+Two things PEOPLE do better — and why
+
+Two things MACHINES do better — and why
+
+The class’s most surprising idea was…
+
+5
+
+Three ways machines learn — three little stories
+
+Machines learn in more than one way, and each way has a human story you already know. Watch for all three in
+this book.
+
+PRATIMAI · AI understanding for every classroom
+
+7
+
+AI AROUND ME · CLASS 6
+
+STORY 1
+
+Learning with labels
+
+Show it, tell it. Like learning fruit
+names with flashcards: your teacher
+shows a card and says “mango”. The
+machine gets examples with answers
+attached — “this photo is a cat”, “this
+one is not”. It learns to match new
+photos to the labels.
+
+M ACH INES THAT SE EM SMART
+
+STORY 2
+
+STORY 3
+
+Grouping without labels
+
+Sort it your way. Like tidying a mixed
+toy box with no instructions: you make
+your own piles — colours here, shapes
+there. The machine gets examples with
+no answers and must find its own
+groups, like sorting customers or
+animals it has never been told about.
+
+Trial and reward
+
+Try it, score it. Like learning to ride a
+bicycle: wobble, fall, adjust, try again —
+and a happy feeling keeps you going.
+The machine tries actions, gets points
+for good ones, and slowly learns the
+moves that earn the most reward.
+
+Real AI systems often mix all three. Class 7 will show you what each way is called — for now, the stories are enough.
+D ET E CT I V E D R I L L · WH I C H S TOR Y I S I T ?
+
+The learner…
+
+Story 1, 2 or 3?
+
+Leena learns dance by copying her teacher’s moves, with a clap for each correct step.
+Irfan tidies a mixed pencil box by making his own piles — sharp ones here, colours
+there.
+A baby learns “dog” because everyone points and says “dog!” at every dog.
+A cricketer improves by trying shots, missing, adjusting — and loving the boundary!
+
+Self-check
+
+shade one: first circle = not yet · middle = almost · last = got it
+
+I can point to a rule-follower and a learner in my own home, and say which is which
+I can explain “learning from examples” in my own words, without the book’s help
+I can name one thing people do better than machines — and say why
+I can retell the three learning stories and match a new example to the right story
+
+Think & Ink
+One machine I use seemed really smart. Now I think it is a … (rule-follower / learner), because …
+
+PRATIMAI · AI understanding for every classroom
+
+8
+
+AI AROUND ME · CLASS 6
+
+M ACH INES THAT SE EM SMART
+
+H O M E L IN K take this page home — no screen needed
+
+T6-05
+
+AI Detective at Home
+
+HOME
+
+15 MIN
+
+Walk through your morning routine like a detective. At each moment below, tick whether a machine
+with possible AI may hide there, and tick whether you think it learns from examples or just follows
+rules. Ask a grown-up if you are stuck — explaining your guess is part of the mission.
+Moment in the morning
+
+Possible AI?
+(✓)
+
+Learns or follows
+rules?
+
+What data might it use?
+
+“Waking me up (alarm /
+phone)”
+“Brushing (electric
+brush / tap)”
+“Breakfast (microwave /
+kettle)”
+“Checking the day
+(weather app)”
+“Journey to school (bus /
+car / map)”
+“Buying something
+(shop / UPI / ATM)”
+My biggest surprise on this case:
+
+C ASE NOT ES — WH AT CH AN G E D IN M Y T H I NK I N G ?
+
+Before this chapter I thought “smart machine” meant one thing. Now I know there are two kinds:
+
+M Y T H B U ST E R
+MYTH
+
+“AI is alive — it has feelings.”
+
+TRUTH
+
+A learner finds patterns in numbers; it does not feel anything. When a chatbot writes “I am happy
+to help!”, that sentence was predicted from patterns in text people wrote. The people who design,
+choose data and take responsibility have the feelings — and the responsibility.
+
+PRATIMAI · AI understanding for every classroom
+
+9
+
+AI AROUND ME · CLASS 6
+
+2
+
+Data: The Food of AI
+Guiding question: What do machines learn from — and what happens when the food is bad?
+
+I WILL L EAR N TO ·
+
+1
+
+DATA: THE FOOD OF AI
+
+6.D1
+
+6.D2
+
+6.R2
+
+ST R A ND S ·
+
+D
+
+Links: Maths — tables & bar graphs · Science — observation
+
+Every learner needs food
+
+You have learned that machines find patterns in examples. But what exactly do they look at? Data. Data is the
+collected facts of the world — the numbers, words, pictures and sounds that we gather up and hand to a learner.
+Data is to AI what food is to your body: no learner can think without it, and a learner that eats bad food grows up
+weak and confused. A detective who understands data can predict exactly where an AI will do well — and where it
+will fall flat.
+WO R D P O W E R · 5
+
+data
+Collected facts about the world: numbers, words, pictures and sounds.
+Say it three times today — it sticks!
+
+D ET E CT I V E D R I L L · WH I C H K I N D OF DATA ?
+
+The fact…
+
+N
+
+W
+
+P
+
+S
+
+the temperature at 9 o’clock this morning
+your school anthem, sung in assembly
+a map of India on the classroom wall
+the words of your favourite poem
+a voice message from your grandmother
+the number of students absent today
+N = numbers · W = words · P = pictures · S = sounds. One row may fit two kinds — both ticks earn respect when you can say why.
+
+PRATIMAI · AI understanding for every classroom
+
+10
+
+AI AROUND ME · CLASS 6
+
+T6-06
+
+DATA: THE FOOD OF AI
+
+Four Kinds of Data Hunt
+
+QUICK WIN
+
+PAIR
+
+10 MIN
+
+Hunt your classroom (and your own pockets) for one example of each kind of data. Write or draw it in the
+box. The first pair to finish all four wins the round — but every box needs a real finding!
+1 · NUMBERS
+
+2 · WORDS
+
+3 · PICTURES
+
+4 · SOUNDS
+
+One piece of data that could belong to TWO kinds at once:
+
+2
+
+Tables make data tidy
+
+Loose data is like a scattered card pile: hard to think about. The first tool of every data detective is the table —
+rows and columns that line facts up neatly. Once data sits in a table, you can tally it (count with ||| strokes), and
+once you have tallies you can draw a bar chart that makes the biggest and smallest jump out at your eyes.
+Machines do exactly the same trick, only much faster: tidy first, then look.
+
+PRATIMAI · AI understanding for every classroom
+
+11
+
+AI AROUND ME · CLASS 6
+
+T6-07
+
+DATA: THE FOOD OF AI
+
+Table to Chart
+
+GROUP
+
+15 MIN
+
+In your group, ask each member: “Which of these five do you like best?” Add your teacher’s vote too if
+you like. Tally the answers, write the count, then colour one bar for each sport on the chart. Remember: one
+full tally is four strokes plus a strike-through.
+Sport
+
+Tally
+
+Count
+
+Cricket
+Football
+Badminton
+Kabaddi
+
+10
+9
+8
+7
+
+N U M BE R O F VOTE S
+
+Other
+
+6
+5
+4
+3
+2
+1
+0
+
+Cricket
+
+Football
+
+Badminton
+
+Kabaddi
+
+Other
+
+The tallest bar is … because …
+
+One thing my chart proves, and one thing it cannot tell me:
+
+3
+
+A picture is a grid of numbers
+
+Here is a secret that surprises almost everyone: to a camera and to an AI, your photograph is not a picture at all —
+it is a huge grid of numbers. Each tiny square of the image (a pixel) is stored as a number saying how bright or
+which colour it is. When you draw by numbers below, you are doing exactly what a camera does: turning a
+picture into numbers. Machines that “see” are really machines that are very good at finding patterns in those
+numbers.
+
+PRATIMAI · AI understanding for every classroom
+
+12
+
+AI AROUND ME · CLASS 6
+
+0
+
+1
+
+1
+
+1
+
+1
+
+0
+
+0
+
+0
+
+1
+
+0
+
+0
+
+0
+
+0
+
+1
+
+1
+
+1
+
+T6-08
+
+DATA: THE FOOD OF AI
+
+A tiny 4 × 4 example. The zeros and ones store a letter — which one? Each row of the picture is one row
+of numbers. A real photo does this with millions of squares and numbers from 0 to 255 for brightness.
+You will speak “pixel language” in the next mission.
+
+Pixel Picture
+
+PAIR
+
+15 MIN
+
+How to play: Detective 1 keeps this page secret-ish and reads the code table aloud, row by row: “Row 1: 0 2 2
+0 0 2 2 0 …”. Detective 2 shades the left grid: 0 = leave white, 1 = shade light, 2 = shade dark. Then swap roles
+while Detective 1 shades the right grid. Finally reveal — do the two pictures match? That is data storage
+working!
+0
+
+2
+
+2
+
+0
+
+0
+
+2
+
+2
+
+0
+
+2
+
+1
+
+1
+
+2
+
+2
+
+1
+
+1
+
+2
+
+2
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+2
+
+2
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+2
+
+0
+
+2
+
+1
+
+1
+
+1
+
+1
+
+2
+
+0
+
+0
+
+0
+
+2
+
+1
+
+1
+
+2
+
+0
+
+0
+
+0
+
+0
+
+0
+
+2
+
+2
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+REVEALED!
+
+CODE CARD
+0 = white
+1 = light
+2 = dark
+
+What did the numbers turn into? A picture on a screen is really just
+stored in a grid.
+
+Our pictures matched?
+
+YES
+
+NO
+
+D ET E CT I V E D R I L L · R E AD T HI S C H AR T
+
+10
+9
+8
+7
+
+N UM B ER OF VOTE S
+
+The garden club asked 25 members: “Which plant should we grow more of?” Their data, tidied into a chart:
+
+6
+5
+4
+3
+2
+1
+0
+
+Rose
+
+Tulip
+
+Mango
+
+Chart question
+
+Neem
+
+Other
+
+My answer
+
+Which plant won the vote? How do you know?
+How many more votes did Mango get than Tulip?
+A friend says “Tulip is the club’s favourite plant.” Is the chart on
+their side?
+
+PRATIMAI · AI understanding for every classroom
+
+13
+
+AI AROUND ME · CLASS 6
+
+4
+
+DATA: THE FOOD OF AI
+
+Garbage in, garbage out
+
+Now you can spot the biggest danger in an AI’s kitchen. If the training examples are wrong, messy or one-sided,
+the machine cannot know it — it will happily learn a wrong pattern and then predict wrong answers forever, with
+total confidence. Detectives have a saying for this: garbage in, garbage out. It is the number one reason a smart
+machine says something silly — not because the machine is broken, but because its food was bad.
+M Y T H B U ST E R
+MYTH
+
+“AI = computers = coding.”
+
+TRUTH
+
+AI is an idea — learning patterns from data — and you can understand it fully with paper, as you
+just did. Not every computer runs AI (your calculator never learns), and AI is not the same as
+coding: coding writes fixed steps, while AI learns its own patterns from data.
+
+T6-09
+
+Garbage In, Garbage Out
+
+GROUP
+
+10 MIN
+
+Your group gets the eight training cards below (cut them out or copy them onto paper). One member is the
+Machine: cover the table, look only at the clues, and answer with the label that matches. The Machine
+announces its rule. Then the group tests the Machine with the three test cards at the bottom. Something will
+go wrong — good detectives find out why.
+TRAINING CARDS — WHAT THE MACHINE SEES
+
+Label on card
+
+Clues on card
+
+PET: CAT
+
+whiskers · purrs · chases mice
+
+PET: CAT
+
+whiskers · sleeps a lot · soft fur
+
+PET: DOG
+
+barks · wags tail · fetches sticks
+
+PET: CAT
+
+barks · wags tail · fetches sticks
+
+PET: COW
+
+moos · eats grass · gives milk
+
+PET: GOAT
+
+bleats · eats everything · climbs
+
+PET: HEN
+
+clucks · lays eggs · scratches soil
+
+PET: GOAT
+
+moos · eats grass · gives milk
+
+TEST CARDS — WHERE IT GETS EMBARRASSING
+
+TEST 1
+tiny puppy: barks · wags tail
+Machine said:
+
+TEST 2
+kitten: whiskers · purrs
+Machine said:
+
+TEST 3
+calf: moos · gives milk
+Machine said:
+
+The wrong rule our Machine learned:
+
+Which training cards poisoned the learning? Circle them above. Why was the Machine fooled?
+
+PRATIMAI · AI understanding for every classroom
+
+14
+
+AI AROUND ME · CLASS 6
+
+DATA: THE FOOD OF AI
+
+DE TEC TI V E'S NOT E
+
+When an AI gives a wrong or unfair answer, do not just ask “what is wrong with the machine?” Ask the detective
+question: “What is wrong with its data?” One bad example in a million can still bend the pattern — that is why people
+must always stay in charge of checking.
+
+C H A PT E R 2 CL U E S — S AY I T BAC K
+
+Data is the …
+
+Garbage in, garbage out means …
+
+A picture on a screen is really …
+
+Self-check
+
+shade one: first circle = not yet · middle = almost · last = got it
+
+I can name the four kinds of data and point to one example of each in this classroom
+I can tidy data into a table, tally it, and draw a bar chart that others can read
+I can explain how a picture becomes a grid of numbers — and show it with my own code
+I can explain “garbage in, garbage out” to someone who missed today’s class
+
+Think & Ink
+A machine I know eats data all day long. The data it probably eats is … and if that data is messy, it will …
+
+PRATIMAI · AI understanding for every classroom
+
+15
+
+AI AROUND ME · CLASS 6
+
+3
+
+Patterns & Decisions
+Guiding question: How does a machine decide what to do next?
+
+I WILL L EAR N TO ·
+
+1
+
+PAT TER NS & DEC ISIONS
+
+6.L1
+
+6.T1
+
+6.R2
+
+S TR AN D S ·
+
+L
+
+T
+
+Links: Maths — number patterns · English — clear questions
+
+Patterns are clues
+
+A detective’s sharpest tool is not a magnifying glass — it is noticing. A pattern is something that repeats in a way
+you can spot and use: day after night after day, 2-4-6-8, the same chorus after each verse. Machines live on
+patterns. A learning machine studies its training examples, and every pattern it finds becomes a rule it can use
+to make a prediction — a smart guess about what comes next. Notice the order: first the pattern, then the
+prediction, then a guess about how sure it is. You will do all three in the next mission, exactly like a machine, on
+paper.
+WO R D P O W E R · 6
+
+pattern
+Something that repeats in a way we can spot, describe and use.
+Say it three times today — it sticks!
+
+WO R D P O W E R · 7
+
+prediction
+A smart guess about what comes next, based on a pattern.
+Say it three times today — it sticks!
+
+PRATIMAI · AI understanding for every classroom
+
+16
+
+AI AROUND ME · CLASS 6
+
+T6-10
+
+PAT TER NS & DEC ISIONS
+
+Pattern Hunt
+
+ALONE
+
+10 MIN
+
+For each strip: write what comes next, then shade how sure you are (one circle = a wild guess, two = fairly
+sure, three = I could defend it in court).
+The clues
+
+My prediction
+
+How sure?
+
+2·4·6·8·?
+A·B·A·B·A·?
+●■●■●■?
+M · T · W · T · ? (days of the week!)
+1 · 2 · 4 · 8 · ? (beware — this one doubles!)
+J · F · M · A · ? (months!)
+Which pattern fooled the most detectives in your class? Why?
+
+A pattern from my own life (clap rhythm, bus timings, cricket over…):
+
+M Y T H B U ST E R
+
+2
+
+MYTH
+
+“AI knows everything — it is always right.”
+
+TRUTH
+
+A machine can only predict from patterns in the data it was given. If its data missed something, or
+was one-sided, it will make a wrong prediction — and still say it confidently. “Confident” and
+“correct” are two different words, and detectives never confuse them.
+
+Guess my rule
+
+Here is a party trick that is secretly machine learning. One player thinks of a secret rule — say, “only even
+numbers may pass”. The others test the rule by offering numbers, and the rule-keeper answers only YES or NO.
+Slowly, from these labelled examples, the players work out the hidden pattern. That is exactly how a learning
+machine trains: test, answer, adjust, test again. Play at least two rounds with different rule-keepers.
+
+PRATIMAI · AI understanding for every classroom
+
+17
+
+AI AROUND ME · CLASS 6
+
+T6-11
+
+PAT TER NS & DEC ISIONS
+
+Guess My Rule
+
+GROUP
+
+15 MIN
+
+One detective keeps a secret rule (examples your teacher may offer: only even numbers · numbers bigger
+than 20 · numbers with a 3 in them · the letter must be a vowel). Everyone else offers tests and records
+them below. When you think you know it, write the rule and let the rule-keeper grade you with a tick or
+cross.
+Example I offered
+
+YES (allowed) or NO (not
+allowed)
+
+Our final guess at the rule:
+
+How many tests did we need before we were sure? Did any test mislead us?
+
+DE TEC TI V E'S NOT E
+
+Did you notice? You never told the rule-keeper’s rule to the group — they learned it from labelled examples, just like a
+machine. And just like a machine, you might have learned a rule that is nearly right. More tests = more confidence.
+
+D ET E CT I V E D R I L L · T R AC E T HE M AC HI N E
+
+This little machine sorts numbers using an exact algorithm. Trace each test number through it, step by step, and write what the
+machine answers.
+THE MACHINE'S ALGORITHM
+1
+2
+3
+4
+
+Look at the number.
+If it is even, answer “E” and stop.
+If it is odd and bigger than 10, answer “OB”.
+Otherwise, answer “OS”.
+
+TEST IT WITH…
+
+Test number
+
+Machine's answer
+
+7
+12
+23
+48
+9
+
+Which question should the machine ask FIRST to finish fastest — even, or bigger-than-10? Why?
+
+3
+
+If-then: the question tree
+
+When a machine must decide, it often follows a chain of if-then questions: if the answer to Question 1 is yes, go
+left; if no, go right. You already use if-then thinking every day: if it is raining, take the umbrella; if the light is red,
+PRATIMAI · AI understanding for every classroom
+
+18
+
+AI AROUND ME · CLASS 6
+
+PAT TER NS & DEC ISIONS
+
+wait. People draw this chain as a question tree, and playing “20 Questions” is exactly this — each good question
+splits the possibilities in half. A question tree is also a kind of algorithm: exact steps that anyone — human or
+machine — can follow to the same answer. The better each question splits the suspects, the shorter the tree.
+Does it fly?
+
+YES
+
+NO
+
+Does it have feathers?
+YES
+
+CROW
+
+PRATIMAI · AI understanding for every classroom
+
+NO
+
+BUTTERFLY
+
+Does it live in water?
+YES
+
+FISH
+
+NO
+
+CAT
+
+19
+
+AI AROUND ME · CLASS 6
+
+T6-12
+
+PAT TER NS & DEC ISIONS
+
+20-Questions Tree
+
+PAIR
+
+15 MIN
+
+Your six suspects: cow · crow · fish · snake · cat · frog. Draw a yes/no question tree that tells all six apart.
+Start every branch from one top question. The pair whose tree needs the fewest questions on average wins
+the round.
+DRAW YOUR QUESTION TREE HERE
+
+Animal
+
+Questions needed
+
+Animal
+
+Cow
+
+Snake
+
+Crow
+
+Cat
+
+Fish
+
+Frog
+
+Questions needed
+
+Our best first question (it split the suspects most evenly):
+
+A question that turned out to be useless, and why:
+
+4
+
+How sure am I?
+
+Real AI systems never just answer — they answer with a confidence: “cat, 62% sure”. Sometimes a machine is very
+confident and very wrong; sometimes it is unsure and right. People fall for the same trap: we shout answers we
+are proud of, and whisper the ones we doubt. Detectives practise saying how sure they are, out loud, every
+single time. It is the thinking habit that keeps humans — not machines — in charge of the judging.
+
+PRATIMAI · AI understanding for every classroom
+
+20
+
+AI AROUND ME · CLASS 6
+
+T6-13
+
+PAT TER NS & DEC ISIONS
+
+Sure or Not Sure?
+
+CLASS
+
+10 MIN
+
+Your teacher reads six machine-style answers. For each one, mark its number on the confidence line where
+you think it belongs. Then the class debates the two that everyone placed differently.
+#
+
+The machine says…
+
+Its claimed confidence
+
+1
+
+“The next number in 2-4-6-8 is 10.”
+
+95%
+
+2
+
+“This photo has a cat in it.”
+
+62%
+
+3
+
+“Tomorrow’s highest temperature: 31°C.”
+
+78%
+
+4
+
+“Your name starts with the letter A.”
+
+40%
+
+5
+
+“This email is spam.”
+
+99%
+
+6
+
+“‘Recieve’ is the correct spelling.”
+
+97%
+
+7
+
+“Your class will have a test on Thursday.”
+
+55%
+
+8
+
+“The sun will rise tomorrow morning.”
+
+100%
+
+Write each statement number where its confidence belongs →
+
+0% — total guess
+
+50%
+
+100% — certain
+
+Statement 6 was 97% confident — and wrong! One reason a confident answer can still be wrong:
+
+CLASS DEBATE — THE T WO WE PLACED DIFFEREN TLY
+
+Statement numbers we argued about:
+
+and
+
+The argument was worth it because…
+
+Think & Ink
+When my first prediction today was wrong, the real reason was … Next time before I answer, I will check by …
+
+PRATIMAI · AI understanding for every classroom
+
+21
+
+AI AROUND ME · CLASS 6
+
+PAT TER NS & DEC ISIONS
+
+Chapter 3 wrap-up — my case summary
+MY PAT T E R N G AL L E R Y — PAT T E R NS I N OT I CE D THIS W EEK
+A PAT TERN FROM NATURE OR ART
+
+A PAT TERN FROM HOME OR SCHOOL
+
+A pattern I found and the prediction it let me make:
+
+Self-check
+
+shade one: first circle = not yet · middle = almost · last = got it
+
+I can find a pattern, predict what comes next, and say how sure I am
+I can test a hidden rule with examples until I am confident — like a machine trains
+I can draw a yes/no question tree that another pair can follow without my help
+I can explain why a confident answer is not always a correct answer
+
+C H A PT E R 3 CL U E S — S AY I T BAC K
+
+A pattern is …
+
+A prediction is …
+
+Before I answer any question, I will say how …
+
+PRATIMAI · AI understanding for every classroom
+
+22
+
+AI AROUND ME · CLASS 6
+
+4
+
+Be a Smart Digital Citizen
+Guiding question: How do I enjoy the online world — and stay safe, kind and honest?
+
+I WILL L EAR N TO ·
+
+1
+
+B E A SM ART DI GI TA L CI TIZ EN
+
+6.R1
+
+6.R2
+
+S TR AN D S ·
+
+R
+
+Links: Social Science — community life · English — checking facts
+
+Privacy: my information, my choice
+
+Every time you use a game, an app or a website, somebody is collecting data — and some of that data is about
+you. Your name, your school, your street, your photos, even your jokes: this is personal information, and you
+get to decide who may see it. Privacy means keeping personal things shared only on purpose, with people you
+trust. Machines that learn from data cannot judge what should stay private — that judgement is a human job, and
+from today it is yours.
+WO R D P O W E R · 8
+
+privacy
+Keeping personal information shared only on purpose, with people you trust.
+Say it three times today — it sticks!
+
+PRATIMAI · AI understanding for every classroom
+
+23
+
+AI AROUND ME · CLASS 6
+
+T6-14
+
+B E A SM ART DI GI TA L CI TIZ EN
+
+Privacy Traffic Light
+
+ALONE
+
+10 MIN
+
+Sort the ten items into three lights. GREEN = okay to share freely · YELLOW = ask a grown-up first · RED =
+never share with apps, strangers or websites. Write each item’s number in the right column.
+The ten items
+
+1 my favourite colour · 2 my full name and school · 3 a photo of my home street · 4 my favourite game · 5
+my phone number · 6 a drawing I made of a cat · 7 my home address · 8 my best friend’s secret · 9 my
+password · 10 my class timetable
+GREEN
+
+YELLOW
+
+RED
+
+share freely
+
+ask a grown-up first
+
+never share
+
+One item was hard to place, because…
+
+DE TEC TI V E'S NOT E
+
+Strangers online are exactly like strangers anywhere: mostly ordinary people, sometimes not. The rule does not change —
+personal information goes only to people your grown-ups trust, no matter how friendly a screen looks.
+
+2
+
+Passphrases: long and strange wins
+
+A short password like riya123 is cracked in seconds by a machine that simply tries every combination — that
+machine is doing automation, fixed steps, millions per minute. What defeats it is a passphrase: three or more
+unrelated words glued together, long enough that guessing would take centuries. The strange words do not need
+to make sense — they need to be long, unrelated to you, and known only by you.
+
+PRATIMAI · AI understanding for every classroom
+
+24
+
+AI AROUND ME · CLASS 6
+
+T6-15
+
+B E A SM ART DI GI TA L CI TIZ EN
+
+Password Recipe
+
+PAIR
+
+10 MIN
+
+Cook up a practice passphrase using the recipe: pick one word from each column, add your favourite twodigit number and a symbol. Example: “Rickshaw-Monsoon-Pencil-42!”. Write it, then rate it. Never write
+your real password anywhere — and never show this page’s passphrase to anyone outside your pair.
+Pick one from each
+column
+
+A
+
+B
+
+C
+
+Rickshaw
+
+Monsoon
+
+Pencil
+
+Cricket
+
+Thunder
+
+Mango
+
+Peacock
+
+Banyan
+
+Lantern
+
+Kite
+
+Pepper
+
+Compass
+
+Our practice passphrase:
+
+Two reasons it is strong:
+
+Too weak: names, birthdays, phone numbers, “123456”, your
+favourite team — machines guess these first.
+
+Strong: 12+ characters, unrelated words, mixed with numbers
+and symbols, changed if ever shared.
+
+DETECTI VE DRILL · RATE THESE T WO PRACTICE PASSPHRASES
+
+The practice passphrase
+
+Strong or weak?
+
+Why?
+
+riya123
+Rickshaw-Monsoon-Pencil-42!
+AJAY2015
+Green-Onion-Tiger-77?
+
+3
+
+Real or fake? Be the detector
+
+The online world is full of edited photos, forwarded rumours and — increasingly — pictures and text made by AI.
+None of this means the internet is bad; it means every good detective needs a checking routine. Professionals call
+it verification, and it needs only three questions: Where is it from? (source) · What is the evidence? · How
+does it try to make me feel? If a message makes your heart race — fear, anger, “forward this NOW!” — that
+rushing feeling is exactly when you should slow down and verify.
+WO R D P O W E R · 9
+
+verify
+To check carefully whether something is true, using evidence and trusted sources.
+Say it three times today — it sticks!
+
+PRATIMAI · AI understanding for every classroom
+
+25
+
+AI AROUND ME · CLASS 6
+
+B E A SM ART DI GI TA L CI TIZ EN
+
+DE TEC TI V E'S NOT E — AI A NS W E R S C AN BE W R O N G
+
+An AI answer can be wrong for a simple reason: the machine predicts from patterns in its training data, it does not know
+things the way people do. If its data was one-sided, messy or old, its answer will show it. One way to check any answer —
+human or machine: verify with a second source before you believe or forward it.
+
+T6-16
+
+Real or Fake Detective
+
+GROUP
+
+15 MIN
+
+Your teacher shows three printed cards (or use these three suspects). Apply the three checks to each: source ·
+evidence · emotion. Give a verdict: REAL, FAKE, or NOT SURE — and “not sure” is an honest detective’s
+answer when evidence is missing!
+CARD A
+A photo of a dog — but it has five legs
+and very odd fur. Forwarded with
+“Amazing new breed!”.
+
+Card
+
+CARD B
+“Forward this to 10 friends in 10
+minutes or your account will be closed
+tomorrow!!!”
+
+Our verdict (REAL / FAKE / NOT SURE)
+
+CARD C
+A poster claims “Scientists say our
+city’s air is the cleanest ever” — with no
+scientist’s name, no date, no source.
+
+Which check helped most?
+
+A
+B
+C
+One thing on this page that a machine might believe but a detective should doubt:
+
+DESIGN ONE MORE SUSPECT CARD — SWAP WITH ANOTHER PAIR AND DETECT THEIRS!
+
+4
+
+Your digital footprint
+
+Imagine walking on a beach of soft sand: every step leaves a mark, and some marks stay long after you have gone.
+Everything you post, like, share or search leaves a mark too — a digital footprint. Footprints are not
+automatically bad: your kind comments and your good work can travel far and make people smile. But a footprint
+is hard to erase — one screenshot, one forward, and a moment you meant for two friends can be standing in front
+of a whole school. Post like the whole world is watching, because one day it might be.
+WO R D P O W E R · 1 0
+
+digital footprint
+The trail of marks you leave behind when you post, like, share or search online.
+Say it three times today — it sticks!
+
+PRATIMAI · AI understanding for every classroom
+
+26
+
+AI AROUND ME · CLASS 6
+
+T6-17
+
+B E A SM ART DI GI TA L CI TIZ EN
+
+Footprint Walk
+
+ALONE
+
+10 MIN
+
+Follow one imaginary post — “You post a drawing for the school contest” — and watch it travel. For each hop,
+note who can see it now and whether you could still take it back.
+Hop
+
+Who can see my drawing now?
+
+Can I take it back? (YES /
+NO)
+
+1 · I post it for the contest
+2 · My class group forwards it
+3 · My teacher saves it for the
+website
+4 · The school website shows it
+5 · A cousin shares it to family
+far away
+6 · Unknown accounts copy it
+One habit that keeps a footprint kind and small:
+
+My footprint promise this month:
+
+D ET E CT I V E D R I L L · WR I T E T HE K I N D R E PLY
+
+A classmate posts one of these in the class group. What is a kind, helpful reply? Write one — it must pass the T.H.I.N.K. check!
+The post…
+
+My kind reply
+
+“I came last in the spelling test. I am
+so bad at everything.”
+“Look at this photo I took of our
+school garden!”
+“Nobody wants to be my science
+partner.”
+
+Before you post — run the T.H.I.N.K. check
+
+T
+Is it True?
+
+H
+Is it Helpful?
+
+IIs it Inspiring?
+
+N
+Is it Necessary?
+
+K
+Is it Kind?
+
+If any answer is NO — hold the post, detective. Screens can be big; kindness is bigger.
+
+PRATIMAI · AI understanding for every classroom
+
+27
+
+AI AROUND ME · CLASS 6
+
+B E A SM ART DI GI TA L CI TIZ EN
+
+MY FI V E S A F ET Y H A B I T S — S AY T HE M OU T L O UD
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Private info stays private
+
+Long, strange passphrases
+
+Think before posting
+
+Be kind — always
+
+Check before believing
+
+M Y T H B U ST E R
+MYTH
+
+“Bigger screen = smarter machine.”
+
+TRUTH
+
+Smartness comes from data and patterns, not screen size. A tiny speaker can run a powerful
+learner, and a giant TV can be completely ordinary. Judge a machine by what it learned from —
+never by how big it looks.
+
+Self-check
+
+shade one: first circle = not yet · middle = almost · last = got it
+
+I can sort personal information into share / ask-first / never-share, and explain why
+I can build a strong practice passphrase — and I know never to write my real one down
+I can run the three checks (source · evidence · emotion) on anything doubtful
+I can explain my digital footprint to a younger student in two sentences
+I use the T.H.I.N.K. check before I post — and I can prove it
+
+Think & Ink
+One habit I will start this week is … because last week I saw / did …
+
+PRATIMAI · AI understanding for every classroom
+
+28
+
+AI AROUND ME · CLASS 6
+
+5
+
+M Y NE IG HB OUR HOOD AI INV EST IGATION
+
+My Neighbourhood AI Investigation
+Guiding question: What can I discover about AI near me — using my own data?
+
+I WILL L EAR N TO ·
+
+6.U1
+
+6.D1
+
+6.W1
+
+6.R2
+
+ST R A N DS ·
+
+U
+
+D
+
+L
+
+W
+
+R
+
+Links: Social Science — community survey · Maths —
+data & charts
+
+YO UR BIG G EST CA SE YE T — R E AD T H IS F IR S T !
+
+Every skill from Chapters 1–4 comes together here. In groups, you will run a real survey with five grown-ups, organise
+the data you collect, draw it, and present findings — then design a helper machine of your own. It takes 2–3 class periods
+plus home time. Detectives work carefully: one sloppy column can spoil a whole investigation.
+
+GRO U P R O L E S — D E C I D E BE F O R E YOU GO
+
+Role
+
+Detective
+
+Asker — asks the questions
+politely
+Recorder — writes the
+answers down
+
+SU RVE Y M AN NE RS — RE A D BE F O RE YO U K N O C K
+
+Ask first: “Do you have two minutes to help our class
+project?” Listen without interrupting — a rush recorder misses
+data. Write initials only — never a neighbour’s full name.
+Say thank you, even when the answer is “no”. No photos, no
+recordings, no personal details — our survey is paper-only.
+
+Checker — re-reads each row
+for mistakes
+Presenter — shares the
+findings with the class
+
+PRATIMAI · AI understanding for every classroom
+
+29
+
+AI AROUND ME · CLASS 6
+
+T6-18
+
+M Y NE IG HB OUR HOOD AI INV EST IGATION
+
+AI in My Neighbourhood — the survey
+
+GROUP
+
+2–3 periods MIN
+
+Step 1 · Plan. As a group, agree whom you will ask: five adults — a family member, a neighbour, a
+shopkeeper, a teacher, anyone safe and willing. The question: “Where do you meet machines that seem
+smart in your daily life?” Write your plan before you collect:
+We will ask (roles, not names):
+
+We will collect our data on (day/place), so the survey is safe and polite because…
+
+Step 2 · Collect. Record one line per person. Ask the follow-up: “What does it probably learn from?” —
+that is its data.
+Who (initials
+only)
+
+The smart machine they named
+
+What data might it use?
+
+Rule-follower or
+learner?
+
+5
+
+Family
+
+Phone & video
+apps
+Voice assistants
+Shops, banks &
+payments
+Travel & traffic
+
+Tally
+4
+3
+
+N U M BE R O F VOTE S
+
+Step 3 · Organise. Tally your group’s five answers into the families below, then draw the bars.
+
+2
+1
+0
+
+Somewhere
+else
+
+Apps
+
+Voice
+
+Shops
+
+Travel
+
+Else
+
+Step 4 · Findings — finish the sentences like a real analyst:
+
+Starters: “The most common answer was …” · “The data most of these machines use is probably …” · “One thing that surprised our group …” · “If
+we asked five more adults, we might find …”
+
+PRATIMAI · AI understanding for every classroom
+
+30
+
+AI AROUND ME · CLASS 6
+
+T6-19
+
+M Y NE IG HB OUR HOOD AI INV EST IGATION
+
+My Helper Machine — the poster
+
+GROUP
+
+2 periods MIN
+
+Design (on paper!) one machine that would genuinely help people you know. Fill the case sheet, then make a
+poster your class can judge.
+MACHINE NAME
+
+THE PROBLEM IT SOLVES (who struggles, with what?)
+
+WHO WILL USE IT
+
+ONE HONEST LIMIT — “it cannot … because …”
+
+RULE-FOLLOWER — it runs an algorithm we
+write: exact if-then steps, same every time.
+LEARNER — it studies training examples and finds
+its own pattern.
+
+Tick one. Every helper machine is one of these two — choosing well is
+the designer’s first job.
+
+WHAT DATA DOES IT EAT? TICK ALL THAT
+APPLY
+Numbers — prices, times, counts
+Words — names, questions, messages
+Pictures — photos, drawings, maps
+Sounds — voice, music, alarms
+
+SKETCH YOUR HELPER MACHINE — LABEL THE DATA GOING IN AND THE HELP COMING OUT
+
+HO W YOUR POSTER WILL BE JUDGED — REASONING EARNS MORE THAN ART
+
+Level
+
+What it looks like
+
+Beginning
+
+A machine is named, but the problem, data or limit is missing.
+
+Growing
+
+The problem and data are clear, but the limit is missing — every real machine has one!
+
+Secure
+
+Problem, users, data and an honest limit all make sense together.
+
+Shining
+
+Everything in Secure, plus the group defended their choices with evidence from their survey —
+and said where the machine could fail.
+
+PRATIMAI · AI understanding for every classroom
+
+31
+
+AI AROUND ME · CLASS 6
+
+T6-20
+
+M Y NE IG HB OUR HOOD AI INV EST IGATION
+
+I used to think… Now I think…
+
+ALONE
+
+10 MIN
+
+The last mission of the case: look back at page 1′s big question and at everything your pencil went through.
+I USED TO THINK
+
+NOW I THINK
+
+Three questions I still have for my next case (Class 7):
+
+★ Detective badge earned: LEVEL 1 · NOTICE — you can now see where AI is, and tell it from
+ordinary machines.
+
+PRATIMAI · AI understanding for every classroom
+
+CASE CLOSED
+
+32
+
+AI AROUND ME · CLASS 6
+
+W
+
+M Y AI WORDS
+
+My AI words
+The ten words on this case — each one met through an experience, never before.
+
+1
+
+algorithm
+
+An exact list of steps that tells a machine how to do a task, one
+step at a time.
+USE IT IN MY OWN SENTENCE:
+
+3
+
+artificial intelligence
+
+Technology that lets machines do tasks that seem to need human
+intelligence.
+USE IT IN MY OWN SENTENCE:
+
+5
+
+data
+
+Collected facts about the world: numbers, words, pictures and
+sounds.
+
+2
+
+automation
+
+Work done by a machine that repeats fixed steps in the same
+way every time.
+USE IT IN MY OWN SENTENCE:
+
+4
+
+training examples
+
+The examples we show a machine so that it can find patterns by
+itself.
+USE IT IN MY OWN SENTENCE:
+
+6
+
+pattern
+
+Something that repeats in a way we can spot, describe and use.
+USE IT IN MY OWN SENTENCE:
+
+USE IT IN MY OWN SENTENCE:
+
+7
+
+prediction
+
+A smart guess about what comes next, based on a pattern.
+USE IT IN MY OWN SENTENCE:
+
+8
+
+privacy
+
+Keeping personal information shared only on purpose, with
+people you trust.
+USE IT IN MY OWN SENTENCE:
+
+9
+
+verify
+
+To check carefully whether something is true, using evidence
+and trusted sources.
+USE IT IN MY OWN SENTENCE:
+
+10
+
+digital footprint
+
+The trail of marks you leave behind when you post, like, share or
+search online.
+USE IT IN MY OWN SENTENCE:
+
+DE TEC TI V E'S OATH
+
+Machines predict, match, estimate — people design, choose data and stay responsible. When a machine speaks, I
+will ask my three questions: How do I know? What is missing? Who made this?
+
+PRATIMAI · AI understanding for every classroom
+
+33
+
+AI AROUND ME · CLASS 6
+
+★
+
+M Y PROGRESS
+
+My progress
+Shade honestly — detectives never fake evidence.
+
+MY OU TCO M E T R AC K E R — T I C K WH E N YO U TRU LY CAN DO I T
+
+6.U1 — say what AI is, and tell a learner from a fixed-rule
+machine
+
+6.L2 — describe the three ways of learning with human
+stories
+
+6.U2 — name two human strengths and two machine
+strengths, with reasons
+
+6.W1 — point to AI at home, school and neighbourhood,
+and name its data
+
+6.D1 — name the four kinds of data; sort a table; draw a bar
+chart
+
+6.R1 — use my five safety habits — every day, not just
+today
+
+6.D2 — show how a simple picture becomes numbers on a
+grid
+
+6.R2 — explain why an AI answer can be wrong, and how
+to check it
+
+6.L1 — find a pattern, predict the next step, say how sure I
+am
+
+6.T1 — break a task into exact steps another person can
+follow
+
+MY CA S E F IL E S — S H A DE A S TA R PE R C H AP T E R F INISH ED
+
+★
+
+★
+
+★
+
+1 Machines · 2 Data · 3 Patterns · 4 Digital Citizen · 5 Capstone
+
+★
+
+★
+
+P R AT I M A I · A I H A N D O U T S · C L A S S 6
+
+My AI Detective Certificate
+This certifies that detective
+
+DETECTIVE NAME
+
+has completed the case file “AI Around Me” — Level 1 · NOTICE — solved all twenty missions, and promised to keep
+asking: How do I know? · What is missing? · Who made this?
+
+DAT E
+
+D ETEC TI VE’ S SIG NAT URE
+
+GUI DE’ S SIG NAT URE
+
+Ready for the next case? Class 7 asks: “How can a machine learn without being told the rules?” — bring your badge.
+
+PRATIMAI · AI understanding for every classroom
+
+34
+
+
