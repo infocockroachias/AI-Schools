@@ -10,7 +10,7 @@
   Every skill from Chapters 1–4 comes together here. In groups, you will run a *real survey* with five grown-ups, organise the *data* you collect, draw it, and present findings — then design a helper machine of your own. It takes 2–3 class periods plus home time. Detectives work carefully: one sloppy column can spoil a whole investigation.]
 
 #grid(columns: (1fr, 1fr), column-gutter: 7pt,
-  box(fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 10pt, y: 8pt), {
+  box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
     text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[GROUP ROLES — DECIDE BEFORE YOU GO]
     v(3pt)
     dtable(("Role", "Detective"),
@@ -21,7 +21,7 @@
       widths: (1fr, 30mm),
     )
   }),
-  box(fill: cream, radius: (top-right: 6pt, bottom-right: 6pt), stroke: (left: 3pt + amber), inset: (left: 11pt, right: 11pt, y: 8pt), {
+  box(fill: cream, radius: 0pt, stroke: (left: 3pt + amber), inset: (left: 11pt, right: 11pt, y: 8pt), {
     text(size: 8.4pt, weight: 800, fill: amber-deep, tracking: 0.1em)[SURVEY MANNERS — READ BEFORE YOU KNOCK]
     v(3pt)
     text(size: 9pt)[
@@ -75,19 +75,19 @@
   Design (on paper!) one machine that would genuinely help people you know. Fill the case sheet, then make a poster your class can judge.
   #v(5pt)
   #grid(columns: (1fr, 1fr), column-gutter: 7pt, row-gutter: 6pt,
-    box(fill: teal-faint, radius: 5pt, inset: 7pt, stack(spacing: 2.5pt, text(weight: 800, size: 8.6pt, fill: teal, "MACHINE NAME"), writebox(11mm))),
-    box(fill: teal-faint, radius: 5pt, inset: 7pt, stack(spacing: 2.5pt, text(weight: 800, size: 8.6pt, fill: teal, "THE PROBLEM IT SOLVES (who struggles, with what?)"), writebox(11mm))),
-    box(fill: teal-faint, radius: 5pt, inset: 7pt, stack(spacing: 2.5pt, text(weight: 800, size: 8.6pt, fill: teal, "WHO WILL USE IT"), writebox(11mm))),
-    box(fill: teal-faint, radius: 5pt, inset: 7pt, stack(spacing: 2.5pt, text(weight: 800, size: 8.6pt, fill: teal, "ONE HONEST LIMIT — “it cannot … because …”"), writebox(11mm))),
+    box(fill: teal-faint, radius: 0pt, inset: 7pt, stack(spacing: 2.5pt, text(weight: 800, size: 8.6pt, fill: teal, "MACHINE NAME"), writebox(11mm))),
+    box(fill: teal-faint, radius: 0pt, inset: 7pt, stack(spacing: 2.5pt, text(weight: 800, size: 8.6pt, fill: teal, "THE PROBLEM IT SOLVES (who struggles, with what?)"), writebox(11mm))),
+    box(fill: teal-faint, radius: 0pt, inset: 7pt, stack(spacing: 2.5pt, text(weight: 800, size: 8.6pt, fill: teal, "WHO WILL USE IT"), writebox(11mm))),
+    box(fill: teal-faint, radius: 0pt, inset: 7pt, stack(spacing: 2.5pt, text(weight: 800, size: 8.6pt, fill: teal, "ONE HONEST LIMIT — “it cannot … because …”"), writebox(11mm))),
   )
   #v(5pt)
   #grid(columns: (1fr, 1fr), column-gutter: 7pt,
-    box(fill: white, stroke: 0.8pt + teal-mid, radius: 6pt, inset: 8pt, stack(spacing: 3pt,
+    box(fill: white, stroke: 0.8pt + teal-mid, radius: 0pt, inset: 8pt, stack(spacing: 3pt,
       grid(columns: (auto, 1fr), column-gutter: 5pt, align: (center, left), cbox, text(size: 9.2pt, weight: 800)[*RULE-FOLLOWER* — it runs an *algorithm* we write: exact if-then steps, same every time.]),
       grid(columns: (auto, 1fr), column-gutter: 5pt, align: (center, left), cbox, text(size: 9.2pt, weight: 800)[*LEARNER* — it studies *training examples* and finds its own *pattern*.]),
       text(size: 8.4pt, fill: ink-soft, style: "italic")[Tick one. Every helper machine is one of these two — choosing well is the designer's first job.],
     )),
-    box(fill: white, stroke: 0.8pt + teal-mid, radius: 6pt, inset: 8pt, stack(spacing: 3pt,
+    box(fill: white, stroke: 0.8pt + teal-mid, radius: 0pt, inset: 8pt, stack(spacing: 3pt,
       text(size: 8.6pt, weight: 800, fill: teal, tracking: 0.06em)[WHAT DATA DOES IT EAT? TICK ALL THAT APPLY],
       grid(columns: (auto, 1fr), column-gutter: 5pt, align: (center, left), cbox, text(size: 9pt)[Numbers — prices, times, counts]),
       grid(columns: (auto, 1fr), column-gutter: 5pt, align: (center, left), cbox, text(size: 9pt)[Words — names, questions, messages]),
@@ -112,8 +112,8 @@
   The last mission of the case: look back at page 1's big question and at everything your pencil went through.
   #v(3pt)
   #grid(columns: (1fr, 1fr), column-gutter: 7pt,
-    box(fill: amber-soft, radius: 6pt, inset: 8pt, stack(spacing: 2pt, text(weight: 800, size: 9.4pt, fill: amber-deep, "I USED TO THINK"), writebox(32mm))),
-    box(fill: teal-faint, radius: 6pt, inset: 8pt, stack(spacing: 2pt, text(weight: 800, size: 9.4pt, fill: teal, "NOW I THINK"), writebox(32mm))),
+    box(fill: amber-soft, radius: 0pt, inset: 8pt, stack(spacing: 2pt, text(weight: 800, size: 9.4pt, fill: amber-deep, "I USED TO THINK"), writebox(32mm))),
+    box(fill: teal-faint, radius: 0pt, inset: 8pt, stack(spacing: 2pt, text(weight: 800, size: 9.4pt, fill: teal, "NOW I THINK"), writebox(32mm))),
   )
   #v(3pt)
   *Three questions I still have for my next case (Class 7):*
@@ -122,6 +122,6 @@
   #grid(columns: (auto, 1fr, auto), align: (center, left, center), column-gutter: 6pt,
     star(12pt),
     text(size: 9.4pt, weight: 700)[Detective badge earned: LEVEL 1 · NOTICE — you can now see where AI is, and tell it from ordinary machines.],
-    box(fill: teal, radius: 4pt, inset: (x: 6pt, y: 3pt), text(fill: white, weight: 800, size: 8pt, tracking: 0.06em)[CASE CLOSED]),
+    text(font: f-display, fill: teal-deep, weight: 800, size: 8.6pt, tracking: 0.14em)[CASE CLOSED],
   )
 ]

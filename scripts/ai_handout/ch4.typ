@@ -25,7 +25,7 @@ Every time you use a game, an app or a website, somebody is collecting *data* �
       let cols = ((green, "GREEN", "share freely"), (rgb("#D9A400"), "YELLOW", "ask a grown-up first"), (red, "RED", "never share"))
       let items = (([4], [1], [6], [10]), ([2], [8]), ([3], [5], [7], [9]))
       // NOTE: students write here — boxes stay empty
-      box(fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 8pt, y: 7pt), stack(spacing: 3pt,
+      box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 8pt, y: 7pt), stack(spacing: 3pt,
         grid(columns: (auto, auto), column-gutter: 4pt, align: (center, left),
           circle(radius: 5.5pt, fill: cols.at(i).at(0)),
           { text(weight: 800, size: 10pt, fill: cols.at(i).at(0), cols.at(i).at(1)); v(0.5pt); text(size: 7.4pt, fill: ink-soft, cols.at(i).at(2)) },
@@ -58,11 +58,11 @@ A short password like `riya123` is cracked in seconds by a machine that simply t
   *Two reasons it is strong:* #ruled-lines(2, lead: 8mm)
   #v(2pt)
   #grid(columns: (1fr, 1fr), column-gutter: 7pt,
-    box(fill: amber-soft, radius: 5pt, inset: 7pt, text(size: 8.8pt)[*Too weak:* names, birthdays, phone numbers, “123456”, your favourite team — machines guess these first.]),
-    box(fill: teal-faint, radius: 5pt, inset: 7pt, text(size: 8.8pt)[*Strong:* 12+ characters, unrelated words, mixed with numbers and symbols, changed if ever shared.]),
+    box(fill: amber-soft, radius: 0pt, inset: 7pt, text(size: 8.8pt)[*Too weak:* names, birthdays, phone numbers, “123456”, your favourite team — machines guess these first.]),
+    box(fill: teal-faint, radius: 0pt, inset: 7pt, text(size: 8.8pt)[*Strong:* 12+ characters, unrelated words, mixed with numbers and symbols, changed if ever shared.]),
   )
   #v(5pt)
-  #block(width: 100%, box(width: 100%, fill: white, stroke: 0.7pt + line-soft, radius: 5pt, inset: (x: 8pt, y: 7pt), {
+  #block(width: 100%, box(width: 100%, fill: white, stroke: 0.7pt + line-soft, radius: 0pt, inset: (x: 8pt, y: 7pt), {
     text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.08em)[DETECTIVE DRILL · RATE THESE TWO PRACTICE PASSPHRASES]
     v(3pt)
     dtable(("The practice passphrase", "Strong or weak?", "Why?"),
@@ -94,8 +94,8 @@ The online world is full of edited photos, forwarded rumours and — increasingl
         ("CARD B", [“Forward this to 10 friends in 10 minutes or your account will be closed tomorrow!!!”], ),
         ("CARD C", [A poster claims “Scientists say our city's air is the cleanest ever” — with no scientist's name, no date, no source.], ),
       )
-      box(fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: 8pt, stack(spacing: 3pt,
-        box(fill: teal-soft, radius: 4pt, inset: (x: 6pt, y: 2.2pt), text(fill: teal, weight: 800, size: 8.6pt, tracking: 0.06em, cards.at(i).at(0))),
+      box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: 8pt, stack(spacing: 3pt,
+        text(font: f-display, fill: teal, weight: 800, size: 8.6pt, tracking: 0.1em, cards.at(i).at(0)),
         text(size: 8.9pt, cards.at(i).at(1)),
       ))
     })
@@ -137,7 +137,7 @@ Imagine walking on a beach of soft sand: every step leaves a mark, and some mark
 ]
 
 // kindness + habits
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 10pt, y: 8pt), {
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
   text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WRITE THE KIND REPLY]
   v(2pt)
   text(size: 9.2pt)[A classmate posts one of these in the class group. What is a kind, helpful reply? Write one — it must pass the T.H.I.N.K. check!]
@@ -149,14 +149,14 @@ Imagine walking on a beach of soft sand: every step leaves a mark, and some mark
     widths: (62mm, 1fr),
   )
 }))
-#block(width: 100%, box(width: 100%, fill: teal, radius: 8pt, clip: true, inset: (x: 11pt, y: 9pt), {
+#block(width: 100%, box(width: 100%, fill: teal, radius: 0pt, clip: true, inset: (x: 11pt, y: 9pt), {
   text(font: f-display, size: 12pt, weight: 800, fill: white)[Before you post — run the T.H.I.N.K. check]
   v(4pt)
   grid(columns: (1fr, 1fr, 1fr, 1fr, 1fr), column-gutter: 5pt,
     ..range(5).map(i => {
       let letters = ("T", "H", "I", "N", "K")
       let words = ("Is it True?", "Is it Helpful?", "Is it Inspiring?", "Is it Necessary?", "Is it Kind?")
-      box(fill: white.transparentize(88%), radius: 5pt, inset: (x: 5pt, y: 5pt), stack(spacing: 2pt,
+      box(fill: white.transparentize(88%), radius: 0pt, inset: (x: 5pt, y: 5pt), stack(spacing: 2pt,
         text(font: f-display, fill: amber, size: 15pt, weight: 800, letters.at(i)),
         text(size: 7.8pt, fill: white, words.at(i)),
       ))
@@ -166,14 +166,14 @@ Imagine walking on a beach of soft sand: every step leaves a mark, and some mark
   text(size: 8.4pt, fill: rgb("#CFE3E8"), style: "italic")[If any answer is NO — hold the post, detective. Screens can be big; kindness is bigger.]
 }))
 #v(4pt)
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[MY FIVE SAFETY HABITS — SAY THEM OUT LOUD]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 8.4pt, weight: 800, fill: teal-deep, tracking: 0.12em)[MY FIVE SAFETY HABITS — SAY THEM OUT LOUD]
   v(3pt)
   grid(columns: (1fr, 1fr, 1fr, 1fr, 1fr), column-gutter: 4pt,
     ..range(5).map(i => {
       let habits = ("Private info stays private", "Long, strange passphrases", "Think before posting", "Be kind — always", "Check before believing")
       stack(spacing: 2.5pt,
-        align(center, box(fill: teal-soft, radius: 999pt, width: 15pt, height: 15pt, align(center + horizon, text(fill: teal, weight: 800, size: 8.6pt, str(i + 1))))),
+        align(center, box(fill: teal-soft, radius: 0pt, width: 15pt, height: 15pt, align(center + horizon, text(fill: teal, weight: 800, size: 8.6pt, str(i + 1))))),
         align(center, text(size: 7.7pt, weight: 700, fill: ink, habits.at(i))),
       )
     })

@@ -55,24 +55,24 @@ Here is a party trick that is secretly machine learning. One player thinks of a 
 ]
 #note("Detective's note")[Did you notice? You never *told* the rule-keeper's rule to the group — they learned it from labelled examples, just like a machine. And just like a machine, you might have learned a rule that is *nearly* right. More tests = more confidence.]
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 10pt, y: 8pt), {
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
   text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · TRACE THE MACHINE]
   v(2pt)
   text(size: 9.2pt)[This little machine sorts numbers using an exact *algorithm*. Trace each test number through it, step by step, and write what the machine answers.]
   v(3pt)
   grid(columns: (1fr, 1fr), column-gutter: 7pt,
-    box(fill: teal-faint, radius: 5pt, inset: 8pt, stack(spacing: 3pt,
+    box(fill: teal-faint, radius: 0pt, inset: 8pt, stack(spacing: 3pt,
       text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.06em, "THE MACHINE'S ALGORITHM"),
       text(size: 9.2pt)[
         #grid(columns: (auto, 1fr), column-gutter: 5pt, align: (center, left),
-          box(fill: teal, radius: 3pt, inset: (x: 4.5pt, y: 1.4pt), text(fill: white, weight: 800, size: 7.6pt, "1")), [Look at the number.],
-          box(fill: teal, radius: 3pt, inset: (x: 4.5pt, y: 1.4pt), text(fill: white, weight: 800, size: 7.6pt, "2")), [*If* it is even, answer “E” and stop.],
-          box(fill: teal, radius: 3pt, inset: (x: 4.5pt, y: 1.4pt), text(fill: white, weight: 800, size: 7.6pt, "3")), [*If* it is odd *and* bigger than 10, answer “OB”.],
-          box(fill: teal, radius: 3pt, inset: (x: 4.5pt, y: 1.4pt), text(fill: white, weight: 800, size: 7.6pt, "4")), [Otherwise, answer “OS”.],
+          box(fill: teal, radius: 0pt, inset: (x: 4.5pt, y: 1.4pt), text(fill: white, weight: 800, size: 7.6pt, "1")), [Look at the number.],
+          box(fill: teal, radius: 0pt, inset: (x: 4.5pt, y: 1.4pt), text(fill: white, weight: 800, size: 7.6pt, "2")), [*If* it is even, answer “E” and stop.],
+          box(fill: teal, radius: 0pt, inset: (x: 4.5pt, y: 1.4pt), text(fill: white, weight: 800, size: 7.6pt, "3")), [*If* it is odd *and* bigger than 10, answer “OB”.],
+          box(fill: teal, radius: 0pt, inset: (x: 4.5pt, y: 1.4pt), text(fill: white, weight: 800, size: 7.6pt, "4")), [Otherwise, answer “OS”.],
         )
       ],
     )),
-    box(fill: white, stroke: 0.7pt + line-soft, radius: 5pt, inset: 8pt, stack(spacing: 3pt,
+    box(fill: white, stroke: 0.7pt + line-soft, radius: 0pt, inset: 8pt, stack(spacing: 3pt,
       text(size: 8.4pt, weight: 800, fill: amber-deep, tracking: 0.06em, "TEST IT WITH…"),
       dtable(("Test number", "Machine's answer"),
         ([7], [ ]), ([12], [ ]), ([23], [ ]), ([48], [ ]), ([9], [ ]),
@@ -104,13 +104,13 @@ When a machine must *decide*, it often follows a chain of if-then questions: *if
   place(top + left, dx: 111mm, dy: 42mm, text(size: 7.6pt, weight: 800, fill: green)[YES])
   place(top + left, dx: 144mm, dy: 42mm, text(size: 7.6pt, weight: 800, fill: red)[NO])
   // nodes
-  place(top + left, dx: 68mm, dy: 2mm, box(width: 40mm, fill: teal, radius: 6pt, inset: (y: 3.5pt), align(center, text(fill: white, size: 8.6pt, weight: 800)[Does it fly?])))
-  place(top + left, dx: 26mm, dy: 30mm, box(width: 40mm, fill: teal-mid, radius: 6pt, inset: (y: 3.5pt), align(center, text(fill: white, size: 8.6pt, weight: 800)[Does it have feathers?])))
-  place(top + left, dx: 110mm, dy: 30mm, box(width: 40mm, fill: teal-mid, radius: 6pt, inset: (y: 3.5pt), align(center, text(fill: white, size: 8.6pt, weight: 800)[Does it live in water?])))
-  place(top + left, dx: 9mm, dy: 52mm, box(width: 30mm, fill: amber-soft, radius: 6pt, stroke: 0.7pt + amber, inset: (y: 3.5pt), align(center, text(fill: amber-deep, size: 8.8pt, weight: 800)[CROW])))
-  place(top + left, dx: 53mm, dy: 52mm, box(width: 30mm, fill: amber-soft, radius: 6pt, stroke: 0.7pt + amber, inset: (y: 3.5pt), align(center, text(fill: amber-deep, size: 8.8pt, weight: 800)[BUTTERFLY])))
-  place(top + left, dx: 93mm, dy: 52mm, box(width: 30mm, fill: amber-soft, radius: 6pt, stroke: 0.7pt + amber, inset: (y: 3.5pt), align(center, text(fill: amber-deep, size: 8.8pt, weight: 800)[FISH])))
-  place(top + left, dx: 137mm, dy: 52mm, box(width: 30mm, fill: amber-soft, radius: 6pt, stroke: 0.7pt + amber, inset: (y: 3.5pt), align(center, text(fill: amber-deep, size: 8.8pt, weight: 800)[CAT])))
+  place(top + left, dx: 68mm, dy: 2mm, box(width: 40mm, fill: teal, radius: 0pt, inset: (y: 3.5pt), align(center, text(fill: white, size: 8.6pt, weight: 800)[Does it fly?])))
+  place(top + left, dx: 26mm, dy: 30mm, box(width: 40mm, fill: teal-mid, radius: 0pt, inset: (y: 3.5pt), align(center, text(fill: white, size: 8.6pt, weight: 800)[Does it have feathers?])))
+  place(top + left, dx: 110mm, dy: 30mm, box(width: 40mm, fill: teal-mid, radius: 0pt, inset: (y: 3.5pt), align(center, text(fill: white, size: 8.6pt, weight: 800)[Does it live in water?])))
+  place(top + left, dx: 9mm, dy: 52mm, box(width: 30mm, fill: amber-soft, radius: 0pt, stroke: 0.7pt + amber, inset: (y: 3.5pt), align(center, text(fill: amber-deep, size: 8.8pt, weight: 800)[CROW])))
+  place(top + left, dx: 53mm, dy: 52mm, box(width: 30mm, fill: amber-soft, radius: 0pt, stroke: 0.7pt + amber, inset: (y: 3.5pt), align(center, text(fill: amber-deep, size: 8.8pt, weight: 800)[BUTTERFLY])))
+  place(top + left, dx: 93mm, dy: 52mm, box(width: 30mm, fill: amber-soft, radius: 0pt, stroke: 0.7pt + amber, inset: (y: 3.5pt), align(center, text(fill: amber-deep, size: 8.8pt, weight: 800)[FISH])))
+  place(top + left, dx: 137mm, dy: 52mm, box(width: 30mm, fill: amber-soft, radius: 0pt, stroke: 0.7pt + amber, inset: (y: 3.5pt), align(center, text(fill: amber-deep, size: 8.8pt, weight: 800)[CAT])))
 })
 
 #task("T6-12", "20-Questions Tree", mode: "pair", mins: "15")[
@@ -163,7 +163,7 @@ Real AI systems never just answer — they answer with a *confidence*: “cat, 6
   #v(4pt)
   *Statement #6 was 97% confident — and wrong! One reason a confident answer can still be wrong:* #ruled-lines(1, lead: 8mm)
   #v(3pt)
-  #block(width: 100%, box(width: 100%, fill: white, stroke: 0.7pt + line-soft, radius: 5pt, inset: (x: 8pt, y: 7pt), {
+  #block(width: 100%, box(width: 100%, fill: white, stroke: 0.7pt + line-soft, radius: 0pt, inset: (x: 8pt, y: 7pt), {
     text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.08em)[CLASS DEBATE — THE TWO WE PLACED DIFFERENTLY]
     v(2.5pt)
     text(size: 9.2pt)[Statement numbers we argued about: #h(6pt) #box(width: 14mm, baseline: 40%, line(length: 100%, stroke: 0.55pt + line-soft)) #h(4pt) and #h(4pt) #box(width: 14mm, baseline: 40%, line(length: 100%, stroke: 0.55pt + line-soft)) #h(8pt) The argument was worth it because… #box(width: 62mm, baseline: 40%, line(length: 100%, stroke: 0.55pt + line-soft))]
@@ -175,7 +175,7 @@ Real AI systems never just answer — they answer with a *confidence*: “cat, 6
 #pagebreak()
 
 #sec("", "Chapter 3 wrap-up — my case summary")
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 10pt, y: 8pt), [
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), [
   #text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[MY PATTERN GALLERY — PATTERNS I NOTICED THIS WEEK]
   #v(4pt)
   #grid(columns: (1fr, 1fr), column-gutter: 7pt,
@@ -193,8 +193,8 @@ Real AI systems never just answer — they answer with a *confidence*: “cat, 6
   [I can explain why a confident answer is not always a correct answer],
 )
 
-#block(width: 100%, box(width: 100%, fill: teal-soft, radius: 6pt, inset: (x: 10pt, y: 8pt), [
-  #text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[CHAPTER 3 CLUES — SAY IT BACK]
+#block(width: 100%, box(width: 100%, fill: teal-faint, radius: 0pt, stroke: (left: 2.5pt + teal, top: 0.6pt + line-soft, right: 0.6pt + line-soft, bottom: 0.6pt + line-soft), inset: (left: 11pt, right: 11pt, y: 8pt), [
+  #text(font: f-display, size: 8.4pt, weight: 800, fill: teal-deep, tracking: 0.12em)[CHAPTER 3 CLUES — SAY IT BACK]
   #v(4pt)
   *A pattern* is … #ruled-lines(1, lead: 7.8mm)
   *A prediction* is … #ruled-lines(1, lead: 7.8mm)

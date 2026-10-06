@@ -8,14 +8,14 @@
 #pagebreak()
 
 #grid(columns: (auto, 1fr), column-gutter: 9pt, align: (center, left),
-  box(fill: teal, radius: 6pt, width: 11mm, height: 11mm, align(center + horizon, text(fill: white, size: 17pt, font: f-display, weight: 800)[W])),
+  box(fill: teal, radius: 0pt, width: 11mm, height: 11mm, align(center + horizon, text(fill: white, size: 17pt, font: f-display, weight: 800)[W])),
   { text(font: f-display, size: 21pt, weight: 800, fill: teal)[My AI words]; v(0.5pt); text(size: 9.6pt, fill: ink-soft, style: "italic")[The ten words on this case — each one met through an experience, never before.] },
 )
 #v(10pt)
 
-#let gloss(word, num, def) = box(fill: white, stroke: 0.7pt + line-soft, radius: 6pt, inset: (x: 8.5pt, y: 7pt), stack(spacing: 2.5pt,
+#let gloss(word, num, def) = box(fill: white, stroke: 0.7pt + line-soft, radius: 0pt, inset: (x: 8.5pt, y: 7pt), stack(spacing: 2.5pt,
   grid(columns: (auto, auto, 1fr), align: (center, center, left), column-gutter: 5pt,
-    box(fill: teal-soft, radius: 4pt, inset: (x: 5pt, y: 1.8pt), text(fill: teal, weight: 800, size: 7.6pt, str(num))),
+    box(fill: teal-soft, radius: 0pt, inset: (x: 5pt, y: 1.8pt), text(fill: teal, weight: 800, size: 7.6pt, str(num))),
     text(font: f-display, size: 11.5pt, weight: 800, fill: teal, word),
     [],
   ),
@@ -44,7 +44,7 @@
 #pagebreak()
 
 #grid(columns: (auto, 1fr), column-gutter: 9pt, align: (center, left),
-  box(fill: amber, radius: 6pt, width: 11mm, height: 11mm, align(center + horizon, star(13pt, fill: white))),
+  box(fill: amber, radius: 0pt, width: 11mm, height: 11mm, align(center + horizon, star(13pt, fill: white))),
   { text(font: f-display, size: 21pt, weight: 800, fill: teal)[My progress]; v(0.5pt); text(size: 9.6pt, fill: ink-soft, style: "italic")[Shade honestly — detectives never fake evidence.] },
 )
 #v(9pt)
@@ -75,13 +75,13 @@
 )
 #v(4pt)
 #grid(columns: (1fr, 1fr, 1fr, 1fr, 1fr), column-gutter: 6pt,
-  ..range(5).map(i => box(fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (y: 7pt), align(center + horizon, star(19pt, fill: teal-soft)) ))
+  ..range(5).map(i => box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (y: 7pt), align(center + horizon, star(19pt, fill: teal-soft)) ))
 )
 #v(10pt)
 
 // certificate panel
-#block(width: 100%, box(width: 100%, stroke: 1.6pt + teal, radius: 8pt, inset: (x: 14pt, y: 12pt), {
-  box(width: 100%, stroke: 0.5pt + teal-mid, radius: 5pt, inset: (x: 14pt, y: 14pt), {
+#block(width: 100%, box(width: 100%, stroke: 1.6pt + teal, radius: 0pt, inset: (x: 14pt, y: 12pt), {
+  box(width: 100%, stroke: 0.5pt + teal-mid, radius: 0pt, inset: (x: 14pt, y: 14pt), {
     align(center)[
       #text(size: 8.2pt, weight: 800, fill: amber-deep, tracking: 0.22em)[PRATIMAI · AI HANDOUTS · CLASS 6]
       #v(3pt)

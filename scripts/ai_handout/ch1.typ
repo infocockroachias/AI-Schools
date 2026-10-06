@@ -46,7 +46,7 @@ A washing machine washes exactly the same way today as it did last month. A lift
 ]
 #wordpower(2, "automation", [Work done by a machine that repeats fixed steps in the same way every time.])
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 10pt, y: 8pt), {
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
   text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[AT A GLANCE · RULE-FOLLOWER VS LEARNER]
   v(3pt)
   dtable(("Ask yourself…", "Rule-follower", "Learner"),
@@ -102,8 +102,8 @@ Machines learn in more than one way, and each way has a human story you already 
       [*Sort it your way.* Like tidying a mixed toy box with no instructions: you make your own piles — colours here, shapes there. The machine gets examples with *no* answers and must find its own groups, like sorting customers or animals it has never been told about.],
       [*Try it, score it.* Like learning to ride a bicycle: wobble, fall, adjust, try again — and a happy feeling keeps you going. The machine tries actions, gets points for good ones, and slowly learns the moves that earn the most reward.],
     )
-    box(fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 8.5pt, y: 8pt), stack(spacing: 3.5pt,
-      box(fill: teal-soft, radius: 4pt, inset: (x: 6pt, y: 2.2pt), text(fill: teal, weight: 800, size: 8.4pt, tracking: 0.06em, "STORY " + str(i + 1))),
+    box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 8.5pt, y: 8pt), stack(spacing: 3.5pt,
+      text(font: f-display, fill: teal, weight: 800, size: 8.6pt, tracking: 0.1em, "STORY " + str(i + 1)),
       text(weight: 800, size: 10.2pt, fill: teal, font: f-display, titles.at(i)),
       text(size: 9.2pt, stories.at(i)),
     ))
@@ -112,7 +112,7 @@ Machines learn in more than one way, and each way has a human story you already 
 #v(2pt)
 #text(size: 9pt, fill: ink-soft, style: "italic")[Real AI systems often mix all three. Class 7 will show you what each way is called — for now, the stories are enough.]
 #v(3pt)
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 10pt, y: 8pt), {
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
   text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH STORY IS IT?]
   v(3pt)
   dtable(("The learner…", "Story 1, 2 or 3?"),

@@ -12,7 +12,7 @@ You have learned that machines find patterns in examples. But what exactly do th
 
 #wordpower(5, "data", [Collected facts about the world: numbers, words, pictures and sounds.])
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 10pt, y: 8pt), {
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
   text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH KIND OF DATA?]
   v(3pt)
   dtable(("The fact…", "N", "W", "P", "S"),
@@ -32,10 +32,10 @@ You have learned that machines find patterns in examples. But what exactly do th
   Hunt your classroom (and your own pockets) for one example of each kind of data. Write or draw it in the box. The first pair to finish all four wins the round — but every box needs a real finding!
   #v(5pt)
   #grid(columns: (1fr, 1fr), column-gutter: 7pt, row-gutter: 7pt,
-    box(fill: teal-faint, stroke: 0.6pt + line-soft, radius: 5pt, inset: 8pt, stack(spacing: 2pt, text(weight: 800, size: 10.5pt, fill: teal, "1 · NUMBERS"), writebox(20mm))),
-    box(fill: teal-faint, stroke: 0.6pt + line-soft, radius: 5pt, inset: 8pt, stack(spacing: 2pt, text(weight: 800, size: 10.5pt, fill: teal, "2 · WORDS"), writebox(20mm))),
-    box(fill: teal-faint, stroke: 0.6pt + line-soft, radius: 5pt, inset: 8pt, stack(spacing: 2pt, text(weight: 800, size: 10.5pt, fill: teal, "3 · PICTURES"), writebox(20mm))),
-    box(fill: teal-faint, stroke: 0.6pt + line-soft, radius: 5pt, inset: 8pt, stack(spacing: 2pt, text(weight: 800, size: 10.5pt, fill: teal, "4 · SOUNDS"), writebox(20mm))),
+    box(fill: teal-faint, stroke: 0.6pt + line-soft, radius: 0pt, inset: 8pt, stack(spacing: 2pt, text(weight: 800, size: 10.5pt, fill: teal, "1 · NUMBERS"), writebox(20mm))),
+    box(fill: teal-faint, stroke: 0.6pt + line-soft, radius: 0pt, inset: 8pt, stack(spacing: 2pt, text(weight: 800, size: 10.5pt, fill: teal, "2 · WORDS"), writebox(20mm))),
+    box(fill: teal-faint, stroke: 0.6pt + line-soft, radius: 0pt, inset: 8pt, stack(spacing: 2pt, text(weight: 800, size: 10.5pt, fill: teal, "3 · PICTURES"), writebox(20mm))),
+    box(fill: teal-faint, stroke: 0.6pt + line-soft, radius: 0pt, inset: 8pt, stack(spacing: 2pt, text(weight: 800, size: 10.5pt, fill: teal, "4 · SOUNDS"), writebox(20mm))),
   )
   #v(4pt)
   *One piece of data that could belong to TWO kinds at once:* #ruled-lines(1, lead: 8mm)
@@ -87,11 +87,11 @@ Here is a secret that surprises almost everyone: to a camera and to an AI, your 
   #grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, left, center),
     text(size: 8pt, weight: 800, fill: teal, align(center, "REVEALED!")),
     text(size: 9.2pt)[What did the numbers turn into? #h(4pt) *A picture on a screen is really just* #box(width: 52mm, baseline: 40%, line(length: 100%, stroke: 0.6pt + ink-soft)) #h(2pt) stored in a grid.],
-    { text(size: 8.4pt, weight: 700)[Our pictures matched?]; h(4pt); box(width: 9.5pt, height: 9.5pt, radius: 2pt, stroke: 1pt + teal-mid, fill: white); text(size: 8.6pt, weight: 800)[ YES]; h(6pt); box(width: 9.5pt, height: 9.5pt, radius: 2pt, stroke: 1pt + teal-mid, fill: white); text(size: 8.6pt, weight: 800)[ NO] },
+    { text(size: 8.4pt, weight: 700)[Our pictures matched?]; h(4pt); box(width: 9.5pt, height: 9.5pt, radius: 0pt, stroke: 1pt + teal-mid, fill: white); text(size: 8.6pt, weight: 800)[ YES]; h(6pt); box(width: 9.5pt, height: 9.5pt, radius: 0pt, stroke: 1pt + teal-mid, fill: white); text(size: 8.6pt, weight: 800)[ NO] },
   )
 ]
 // ---------------- 2.3b ----------------
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 10pt, y: 8pt), {
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
   text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · READ THIS CHART]
   v(2pt)
   text(size: 9.2pt)[The garden club asked 25 members: *“Which plant should we grow more of?”* Their data, tidied into a chart:]
@@ -133,9 +133,9 @@ Now you can spot the biggest danger in an AI's kitchen. If the *training example
   #text(size: 8.6pt, weight: 800, fill: amber-deep, tracking: 0.06em)[TEST CARDS — WHERE IT GETS EMBARRASSING]
   #v(3pt)
   #grid(columns: (1fr, 1fr, 1fr), column-gutter: 6pt,
-    box(fill: white, stroke: 0.7pt + line-soft, radius: 5pt, inset: 7pt, stack(spacing: 2pt, text(weight: 800, size: 8.8pt, fill: teal, "TEST 1"), text(size: 8.8pt, [tiny puppy: barks · wags tail]), text(size: 8.2pt, fill: ink-soft, style: "italic", [Machine said: #box(width: 20mm, baseline: 40%, line(length: 100%, stroke: 0.55pt + line-soft))]))),
-    box(fill: white, stroke: 0.7pt + line-soft, radius: 5pt, inset: 7pt, stack(spacing: 2pt, text(weight: 800, size: 8.8pt, fill: teal, "TEST 2"), text(size: 8.8pt, [kitten: whiskers · purrs]), text(size: 8.2pt, fill: ink-soft, style: "italic", [Machine said: #box(width: 20mm, baseline: 40%, line(length: 100%, stroke: 0.55pt + line-soft))]))),
-    box(fill: white, stroke: 0.7pt + line-soft, radius: 5pt, inset: 7pt, stack(spacing: 2pt, text(weight: 800, size: 8.8pt, fill: teal, "TEST 3"), text(size: 8.8pt, [calf: moos · gives milk]), text(size: 8.2pt, fill: ink-soft, style: "italic", [Machine said: #box(width: 20mm, baseline: 40%, line(length: 100%, stroke: 0.55pt + line-soft))]))),
+    box(fill: white, stroke: 0.7pt + line-soft, radius: 0pt, inset: 7pt, stack(spacing: 2pt, text(weight: 800, size: 8.8pt, fill: teal, "TEST 1"), text(size: 8.8pt, [tiny puppy: barks · wags tail]), text(size: 8.2pt, fill: ink-soft, style: "italic", [Machine said: #box(width: 20mm, baseline: 40%, line(length: 100%, stroke: 0.55pt + line-soft))]))),
+    box(fill: white, stroke: 0.7pt + line-soft, radius: 0pt, inset: 7pt, stack(spacing: 2pt, text(weight: 800, size: 8.8pt, fill: teal, "TEST 2"), text(size: 8.8pt, [kitten: whiskers · purrs]), text(size: 8.2pt, fill: ink-soft, style: "italic", [Machine said: #box(width: 20mm, baseline: 40%, line(length: 100%, stroke: 0.55pt + line-soft))]))),
+    box(fill: white, stroke: 0.7pt + line-soft, radius: 0pt, inset: 7pt, stack(spacing: 2pt, text(weight: 800, size: 8.8pt, fill: teal, "TEST 3"), text(size: 8.8pt, [calf: moos · gives milk]), text(size: 8.2pt, fill: ink-soft, style: "italic", [Machine said: #box(width: 20mm, baseline: 40%, line(length: 100%, stroke: 0.55pt + line-soft))]))),
   )
   #v(5pt)
   *The wrong rule our Machine learned:* #ruled-lines(1, lead: 8mm)
@@ -143,8 +143,8 @@ Now you can spot the biggest danger in an AI's kitchen. If the *training example
 ]
 #note("Detective's note")[When an AI gives a wrong or unfair answer, do not just ask “what is wrong with the machine?” Ask the detective question: *“What is wrong with its data?”* One bad example in a million can still bend the pattern — that is why people must always stay in charge of checking.]
 
-#block(width: 100%, box(width: 100%, fill: teal-soft, radius: 6pt, inset: (x: 10pt, y: 8pt), [
-  #text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[CHAPTER 2 CLUES — SAY IT BACK]
+#block(width: 100%, box(width: 100%, fill: teal-faint, radius: 0pt, stroke: (left: 2.5pt + teal, top: 0.6pt + line-soft, right: 0.6pt + line-soft, bottom: 0.6pt + line-soft), inset: (left: 11pt, right: 11pt, y: 8pt), [
+  #text(font: f-display, size: 8.4pt, weight: 800, fill: teal-deep, tracking: 0.12em)[CHAPTER 2 CLUES — SAY IT BACK]
   #v(4pt)
   *Data* is the … #ruled-lines(1, lead: 7.8mm)
   *Garbage in, garbage out* means … #ruled-lines(1, lead: 7.8mm)

@@ -22,7 +22,7 @@
   #let cells = {
     let out = ()
     for r in range(8) { for c in range(8) {
-      out.push(if heart.at(r).at(c) == 1 { rect(width: 4.4mm, height: 4.4mm, fill: rgb("#3D6E7D"), radius: 1.2pt, stroke: none) } else { [] })
+      out.push(if heart.at(r).at(c) == 1 { rect(width: 4.4mm, height: 4.4mm, fill: rgb("#3D6E7D"), radius: 0pt, stroke: none) } else { [] })
     } }
     out
   }
@@ -32,27 +32,27 @@
   v(0.5pt)
   text(size: 8.6pt, fill: rgb("#9FC3CC"), weight: 700, tracking: 0.16em)[AI UNDERSTANDING FOR EVERY CLASSROOM]
 })
-  #place(top + left, dx: 15mm, dy: 52mm, chip([AI HANDOUTS · CLASS 6], fill: amber, ink: white))
+  #place(top + left, dx: 15mm, dy: 52mm, text(font: f-display, fill: amber, weight: 800, size: 9.5pt, tracking: 0.2em)[AI HANDOUTS · CLASS 6])
   #place(top + left, dx: 14mm, dy: 62mm, text(font: f-display, fill: white, size: 41pt, weight: 800)[AI Around Me])
   #place(top + left, dx: 15mm, dy: 87mm, text(size: 12.2pt, fill: rgb("#CFE3E8"), style: "italic")[My detective notebook for spotting smart machines])
   #place(top + left, dx: 15mm, dy: 99mm, {
-    box(fill: amber, radius: 7pt, inset: (x: 9pt, y: 4pt), text(fill: white, weight: 800, size: 10.5pt, tracking: 0.08em)[LEVEL 1 · NOTICE])
+    box(fill: amber, radius: 0pt, inset: (x: 9pt, y: 4pt), text(fill: white, weight: 800, size: 10.5pt, tracking: 0.08em)[LEVEL 1 · NOTICE])
     h(7pt)
-    box(stroke: 1pt + rgb("#7FAAB4"), radius: 7pt, inset: (x: 9pt, y: 4pt), text(fill: rgb("#CFE3E8"), weight: 800, size: 10.5pt, tracking: 0.08em)[SPOT · SORT · ASK])
+    box(stroke: 1pt + rgb("#7FAAB4"), radius: 0pt, inset: (x: 9pt, y: 4pt), text(fill: rgb("#CFE3E8"), weight: 800, size: 10.5pt, tracking: 0.08em)[SPOT · SORT · ASK])
   })
   #place(top + left, dx: 15mm, dy: 122mm, {
-    box(stroke: 0.8pt + rgb("#4E7E8C"), radius: 7pt, inset: (x: 9pt, y: 4pt), text(fill: rgb("#9FC3CC"), weight: 700, size: 9pt, tracking: 0.06em)[20 PAPER MISSIONS])
+    box(stroke: 0.8pt + rgb("#4E7E8C"), radius: 0pt, inset: (x: 9pt, y: 4pt), text(fill: rgb("#9FC3CC"), weight: 700, size: 9pt, tracking: 0.06em)[20 PAPER MISSIONS])
     h(6pt)
-    box(stroke: 0.8pt + rgb("#4E7E8C"), radius: 7pt, inset: (x: 9pt, y: 4pt), text(fill: rgb("#9FC3CC"), weight: 700, size: 9pt, tracking: 0.06em)[5 CHAPTERS · 5 STRANDS])
+    box(stroke: 0.8pt + rgb("#4E7E8C"), radius: 0pt, inset: (x: 9pt, y: 4pt), text(fill: rgb("#9FC3CC"), weight: 700, size: 9pt, tracking: 0.06em)[5 CHAPTERS · 5 STRANDS])
     h(6pt)
-    box(stroke: 0.8pt + rgb("#4E7E8C"), radius: 7pt, inset: (x: 9pt, y: 4pt), text(fill: rgb("#9FC3CC"), weight: 700, size: 9pt, tracking: 0.06em)[NO SCREEN NEEDED])
+    box(stroke: 0.8pt + rgb("#4E7E8C"), radius: 0pt, inset: (x: 9pt, y: 4pt), text(fill: rgb("#9FC3CC"), weight: 700, size: 9pt, tracking: 0.06em)[NO SCREEN NEEDED])
   })
 
   // paper panel
-  #place(bottom + left, box(width: 100%, height: 108mm, fill: paper, radius: (top-right: 30pt), {
+  #place(bottom + left, box(width: 100%, height: 108mm, fill: paper, radius: 0pt, {
     box(inset: (left: 15mm, right: 15mm, top: 9mm), {
       // pixel accent row
-      for (w, c) in ((7mm, amber), (5mm, teal), (3mm, amber), (2mm, teal-mid)) { box(width: w, height: 2.2mm, fill: c, radius: 1pt); h(2mm) }
+      for (w, c) in ((7mm, amber), (5mm, teal), (3mm, amber), (2mm, teal-mid)) { box(width: w, height: 2.2mm, fill: c, radius: 0pt); h(2mm) }
       v(3.5mm)
       text(font: f-display, size: 16.5pt, weight: 800, fill: teal)[Is a machine ever really smart?]
       v(1.4mm)
@@ -87,7 +87,7 @@
 #chap.update("How to use this handout")
 
 #grid(columns: (auto, 1fr), column-gutter: 9pt, align: (center, left),
-  box(fill: amber, radius: 6pt, width: 11mm, height: 11mm, align(center + horizon, text(fill: white, size: 19pt)[?])),
+  box(fill: amber, radius: 0pt, width: 11mm, height: 11mm, align(center + horizon, text(fill: white, size: 19pt)[?])),
   { text(font: f-display, size: 21pt, weight: 800, fill: teal)[How to use this handout]; v(0.5pt); text(size: 9.6pt, fill: ink-soft, style: "italic")[Read me first, Detective.] },
 )
 #v(9pt)
@@ -100,12 +100,12 @@
     let steps = ("READ", "DO", "WRITE")
     let texts = (
       [Read the mission twice. Underline anything that puzzles you — puzzles are clues.],
-      [Do the task with your partner, group, class or family, exactly as the chips say.],
+      [Do the task with your partner, group, class or family, exactly as the labels say.],
       [Write what you saw in the spaces, then shade your confidence circles honestly.],
     )
-    box(fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 8pt, y: 7pt), {
+    box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 8pt, y: 7pt), {
       grid(columns: (auto, 1fr), column-gutter: 6pt, align: (center, left),
-        box(fill: teal, radius: 4pt, inset: (x: 5.5pt, y: 1.8pt), text(fill: white, weight: 800, size: 9.5pt, str(i + 1))),
+        box(fill: teal, radius: 0pt, inset: (x: 5.5pt, y: 1.8pt), text(fill: white, weight: 800, size: 9.5pt, str(i + 1))),
         text(weight: 800, size: 9.6pt, fill: teal, tracking: 0.06em, steps.at(i)),
       )
       v(3pt)
@@ -115,7 +115,7 @@
 )
 #v(9pt)
 
-#text(font: f-display, size: 13.6pt, weight: 800, fill: teal)[The work-mode chips]
+#text(font: f-display, size: 13.6pt, weight: 800, fill: teal)[The work-mode labels]
 #v(4pt)
 #grid(columns: (auto, 1fr), column-gutter: 8pt, row-gutter: 3.6pt, align: (left, left),
   chip[ALONE],  text(size: 9.4pt)[your own case — you investigate by yourself],
@@ -127,14 +127,15 @@
 #v(9pt)
 
 #note("How to read a mission")[
-  #grid(columns: (auto, auto, auto, auto), column-gutter: 5pt, align: (center, center, center, center),
-    box(fill: amber, radius: 4pt, inset: (x: 6pt, y: 2.2pt), text(fill: white, weight: 800, size: 9pt, tracking: 0.05em)[T6-01]),
-    box(fill: teal-soft, radius: 4pt, inset: (x: 6pt, y: 2.4pt), text(fill: teal, weight: 800, size: 7.6pt, tracking: 0.08em)[PAIR]),
-    box(stroke: 0.8pt + teal-mid, radius: 4pt, inset: (x: 6pt, y: 2.4pt), text(fill: teal, weight: 800, size: 7.6pt, tracking: 0.05em)[10 MIN]),
-    box(fill: amber-soft, radius: 4pt, inset: (x: 6pt, y: 2.4pt), text(fill: amber-deep, weight: 800, size: 7.6pt, tracking: 0.08em)[QUICK WIN]),
+  #grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, horizon, right),
+    text(font: f-display, weight: 800, size: 11pt, fill: amber-deep)[T6-01],
+    text(font: f-display, weight: 800, size: 12.4pt, fill: teal)[Mission title],
+    text(font: f-display, fill: ink-soft, weight: 800, size: 7.4pt, tracking: 0.12em)[PAIR · 10 MIN],
   )
+  #v(3pt)
+  #box(width: 4.5pt, height: 4.5pt, fill: amber, baseline: 28%) #h(4pt) #text(font: f-display, fill: amber-deep, weight: 800, size: 7.4pt, tracking: 0.12em)[QUICK WIN] sits at the right edge of the easier missions.
   #v(4pt)
-  Every mission has a code like #text(weight: 800)[T6-01] — *T6* means this Class 6 handout, and *01* is the mission number, so your teacher can say “open Task T6-08”. The #text(fill: teal, weight: 800)[PAIR] chip tells you who to work with, the #text(fill: teal, weight: 800)[10 MIN] chip is your time limit, and #text(fill: amber-deep, weight: 800)[QUICK WIN] marks an easy first success. Chapters 1 and 2 both start with a Quick Win to warm up your detective muscles — nobody fails in this book, because every attempt teaches a clue.
+  Every mission has a code like #text(weight: 800)[T6-01] — *T6* means this Class 6 handout, and *01* is the mission number, so your teacher can say “open Task T6-08”. The #text(fill: teal, weight: 800)[PAIR] label tells you who to work with, #text(fill: teal, weight: 800)[10 MIN] is your time limit, and #text(fill: amber-deep, weight: 800)[QUICK WIN] marks an easy first success. Chapters 1 and 2 both start with a Quick Win to warm up your detective muscles — nobody fails in this book, because every attempt teaches a clue.
 ]
 #v(7pt)
 
@@ -144,7 +145,7 @@
 #v(7pt)
 
 // grown-ups panel
-#block(width: 100%, box(width: 100%, fill: cream, radius: (top-right: 6.5pt, bottom-right: 6.5pt), stroke: (left: 3pt + teal), inset: (left: 11pt, right: 11pt, y: 8pt), {
+#block(width: 100%, box(width: 100%, fill: cream, radius: 0pt, stroke: (left: 3pt + teal), inset: (left: 11pt, right: 11pt, y: 8pt), {
   text(font: f-display, size: 12pt, weight: 800, fill: teal)[A note for grown-ups]
   v(2.5pt)
   text(size: 9.3pt)[This handout builds *AI understanding* — how machines learn from data and how humans should judge them — through 20 paper-and-pencil missions. It is fully *unplugged*: no task requires a device, an account, a photo, a voice recording or any personal information. The best help you can give is to ask the three Question-Habit questions, praise careful *reasoning* more than quick right answers, and treat the confidence circles as honest thinking, not scores. A separate teacher pack carries answer notes and rubrics; this book deliberately never prints solutions beside a task.]
@@ -157,7 +158,7 @@
 #pagebreak()
 
 #grid(columns: (auto, 1fr), column-gutter: 9pt, align: (center, left),
-  box(fill: teal, radius: 6pt, width: 11mm, height: 11mm, align(center + horizon, text(fill: white, size: 19pt, font: f-display, weight: 800)[→])),
+  box(fill: teal, radius: 0pt, width: 11mm, height: 11mm, align(center + horizon, text(fill: white, size: 19pt, font: f-display, weight: 800)[→])),
   { text(font: f-display, size: 21pt, weight: 800, fill: teal)[My AI journey map]; v(0.5pt); text(size: 9.6pt, fill: ink-soft, style: "italic")[Five strands, five stops, one big question.] },
 )
 #v(10pt)
@@ -169,7 +170,7 @@
     let letters = ("U", "D", "L", "W", "R")
     let names = ("Understand AI", "Data", "Learn", "World", "Responsibility")
     let qs = ("What is AI — and what is it NOT?", "What do machines learn from?", "How do machines get better?", "Where is AI hiding near me?", "How do I stay safe and fair?")
-    box(fill: white, stroke: 0.8pt + line-soft, radius: 6pt, inset: (x: 6pt, y: 6.5pt), stack(spacing: 3.5pt,
+    box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 6pt, y: 6.5pt), stack(spacing: 3.5pt,
       grid(columns: (auto, 1fr), column-gutter: 4pt, align: (center, left),
         circle(radius: 7pt, fill: teal, align(center + horizon, text(fill: white, weight: 800, size: 8.6pt, letters.at(i)))),
         text(weight: 800, size: 9.2pt, fill: teal, names.at(i))),
@@ -178,8 +179,8 @@
   })
 )
 #v(6pt)
-#block(width: 100%, box(width: 100%, fill: amber-soft, radius: 6pt, inset: (x: 9pt, y: 6pt), {
-  text(size: 8.4pt, weight: 800, fill: amber-deep, tracking: 0.08em)[THINKING-TOOLS THREAD]
+#block(width: 100%, box(width: 100%, fill: amber-soft, radius: 0pt, inset: (x: 9pt, y: 6pt), {
+  text(font: f-display, size: 8.4pt, weight: 800, fill: amber-deep, tracking: 0.12em)[THINKING-TOOLS THREAD]
   h(6pt)
   text(size: 8.8pt)[runs through every stop: *exact steps* · *patterns* · *if-then rules* · *how sure am I?*]
 }))
