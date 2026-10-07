@@ -1,0 +1,485 @@
+# PRATIMAI — Common AI Curriculum, Classes 6–10
+**Version 1.0 · Research cut-off 6 October 2026 · Companion to `AI_Handouts_Creation.md`**
+**Purpose:** one coherent, board-neutral AI-*understanding* curriculum that sits underneath the handouts for Classes 6, 7, 8, 9 and 10 and maps to CBSE, NCERT/NCF-SE, ICSE (CISCE) and state-board expectations.
+
+> **Core stance.** AI here is a *way of understanding how machines learn from data and how humans should judge them* — not "computers" and not "coding". Every class works mainly with paper, people, patterns, data and arguments.
+
+---
+
+## 0. How reliable is each fact in this file? (read first)
+
+Education policy in India is moving fast (CBSE changed Classes 3–10 in April 2026). Every board statement below carries a confidence tag. **Before each school roll-out, a PRATIMAI educator must re-check the "V" and "U" items.**
+
+| Tag | Meaning |
+|---|---|
+| **[O]** | Read directly from an official board/government document (primary source) |
+| **[N]** | Reported by established news / government press release, primary PDF not read |
+| **[V]** | Reported by a vendor or publisher blog (may be accurate, may be marketing) |
+| **[U]** | Conflicting or unconfirmed — verify |
+
+---
+
+## 1. Research summary: what the boards actually require (as of Oct 2026)
+
+### 1.1 CBSE / NCERT (national backbone)
+
+| Item | Finding | Tag |
+|---|---|---|
+| Policy origin | Ministry of Education announced (29–30 Oct 2025) AI + Computational Thinking (CT) from Class 3 in 2026-27, aligned to NEP 2020 and NCF-SE 2023, framed as "AI for Public Good" and a *basic universal skill linked to The World Around Us*, not a specialist subject | [N] PIB / DD News |
+| Launch | Curriculum launched 1 Apr 2026 (Circular **Acad-15/2026**); expert committee chaired by IIT Madras faculty with Azim Premji University, IIT Gandhinagar and others | [N] |
+| Resources | Student + Teacher Handbooks Classes 3–8 released (Circular **Acad-18/2026**, 9 Apr 2026) on cbseacademic.nic.in/ct-ai.html | [N][V] |
+| Official framework document | `CTAI_Pri_2026-27.pdf` on cbseacademic.nic.in (definition: AI = technologies enabling machines to do tasks associated with human intelligence) | [O] (listing), details via [V] |
+| Time | Classes 3–5: **50 h/yr** CT inside Maths + The World Around Us. Classes 6–8: **100 h/yr = 40 h advanced CT + 20 h introductory AI + 40 h interdisciplinary projects**. Hours are *suggested*, not fixed | [N][V] |
+| AI literacy structure | 4 topics × 5 h per class (Classes 6, 7, 8) — see §1.2 | [V] consistent across 4 independent sources |
+| Teaching | CT by subject teachers; AI literacy by computer teacher; no new board exam; assessment is formative (worksheets, projects, journals, observation) | [V] |
+| Class 9 | Stand-alone AI courses that ran to 2025-26 are **discontinued for Class 9 from 2026-27**; NCERT to supply CT&AI modules for Classes 9–12 as internal-assessment modules | [N][V] — several sources agree |
+| Class 10 (2026-27) | Continues the 2025-26 scheme: **AI (Code 417)** optional skill subject, 50 marks theory + 50 practical | [O] |
+| Later roadmap | Reports say CT&AI becomes compulsory for Classes 9–10 from 2027-28 (internal), with board-exam inclusion by ~2029 | [U] — sources disagree on internal vs examined; do **not** promise this to schools |
+| NCERT textbooks | New Class 9 textbooks in 2026-27; Class 10 textbooks unchanged until 2027-28 | [V] |
+
+### 1.2 CBSE AI-literacy syllabus, Classes 6–8 (4 topics × 5 hours) [V — 4 sources agree]
+
+| | Class 6 | Class 7 | Class 8 |
+|---|---|---|---|
+| Topic 1 | Intro to AI & everyday examples: AI vs automation; human vs machine intelligence; supervised / unsupervised / reinforcement learning | AI domains: classification, regression, clustering; computer vision, NLP, data science; chatbots, image recognition, translation | AI project lifecycle: define problem → collect data → test AI tools → reflect & improve |
+| Topic 2 | Basic data concepts: types (numbers, text, images, sound); tables/charts | AI in industries: healthcare, education, transport, communication | Deeper applications: environment, healthcare, automation, education; **no-code AI tools** |
+| Topic 3 | Simple pattern recognition & decision making | Data visualisation & analysis (bar, line, pie) | Data and fairness: bias in datasets; strategies for fairness |
+| Topic 4 | Ethics & digital responsibility: safety, privacy, passwords, digital footprints | Ethics & AI bias awareness; digital citizenship | Ethics & responsible AI: privacy, misinformation, social impact |
+
+Curricular goals for 6–8 (CG-1 CT skills · CG-2 spatial/visual reasoning · CG-3 foundational AI knowledge · CG-4 ethics in AI · CG-5 computer proficiency) [V]. **Note:** the CBSE framework names **no** programming language, platform, or generative-AI tool for Classes 3–8.
+
+### 1.3 CBSE AI Code 417 — Class 9 (2025-26 official curriculum) [O]
+
+Part B units (hours): (1) AI Reflection, Project Cycle & Ethics 30 · (2) Data Literacy 22 · (3) Math for AI — Statistics & Probability 12 · (4) Introduction to Generative AI 8 · (5) Introduction to Python 1+9. Activities include the 4Ws problem canvas, system maps, stakeholder mapping, graph choice, ethics role-play, "Moral Machine", Balloon Debate, number-pattern and picture-analogy tasks, car-spotting data collection, "Real vs AI-generated image" game.
+
+### 1.4 CBSE AI Code 417 — Class 10 (2026-27 official curriculum) [O]
+
+Part B units: (1) Revisiting AI Project Cycle & **Ethical Frameworks** (incl. bioethics case study) · (2) **Advanced Modelling** — AI/ML/DL; rule-based vs learning-based; supervised, unsupervised, reinforcement; classification, regression, clustering, association; ANN & CNN; "How does AI make a decision?"; Human Neural Network game · (3) **Evaluating Models** — train-test split, accuracy, error, confusion matrix, precision, recall, F1, ethical concerns (bias, transparency) · (4) Statistical Data (no-code tools, assessed by practicals) · (5) **Computer Vision** — pixels, grayscale/RGB, convolution, CNN · (6) **NLP** — features of language, stages (lexicon, syntax, semantics), chatbots (script vs smart), text normalisation, bag-of-words, TF-IDF, sentiment analysis · (7) Advanced Python (practicals). Employability skills (50 h) are a separate Part A.
+
+### 1.5 ICSE / ISC (CISCE)
+
+| Item | Finding | Tag |
+|---|---|---|
+| Classes 9–10 | **Robotics and Artificial Intelligence** is a Group III elective for ICSE (introduced 2023; syllabus PDFs on cisce.org). Textbook structure — Part I Robotics; Part II AI: *Introduction to AI · Role of Data and Information · Evolution of Computing · Introduction to Data and Programming with Python · AI Concepts and Project Framework* (+ lab work) | [V] publisher descriptions; subject existence also on Wikipedia/aglasem |
+| Classes 11–12 | Robotics & AI offered for ISC from 2025-26 | [V] |
+| Classes 1–8 | CISCE circular reportedly asks schools to "integrate AI and coding" into computer studies, **with no syllabus, subject code or hour count** | [V] (June 2026 blog) — verify on cisce.org |
+| Classes 6–8 today | ICSE Computer Applications/Studies for Class 6 covers computer categories, languages, file management etc.; AI is not a defined unit | [V] |
+| **Implication** | ICSE schools have *freedom but no floor*. PRATIMAI handouts can serve as the structured AI layer. Map to the CBSE 6–8 topics for convenience | — |
+
+### 1.6 State boards (selected, verified from news/gov't sources)
+
+| State | Finding | Tag |
+|---|---|---|
+| **Kerala** | ICT mandatory Classes 1–10; AI introduced in **Class 7 ICT textbook (2024-25)**, then Classes 8, 9, 10 ICT textbooks; **robotics mandatory for Class 10** (KITE). Textbooks in Malayalam, English, Tamil, Kannada | [N] IndiaAI, TOI via Careers360 |
+| **Karnataka** | AI as an **NSQF vocational subject, Classes 9–10**, in selected government high schools from 2026-27 (Samagra Shikshana; ~1,642 schools); on 5 Oct 2026 the Deputy CM directed expansion of AI training **to Class 6** | [N] |
+| **Tamil Nadu** | **TN SPARK** (AI, Robotics, Online Tools) in ~5,000 govt schools; plan (Jul 2026) for an emerging-technologies curriculum for **all govt schools Classes 6–8** and new State-board textbooks for higher classes | [N] |
+| **Maharashtra** | Balbharati initiative **"Maha AI Olympiad 2026-27"** for **Classes 6–10**, bilingual (Marathi/English), 200 schools in Wardha & Nashik, designed to work offline | [V] official-looking programme site |
+| **Goa** | AI as a subject for Classes 9–12 from 2023-24 (NSQF-style, 40 theory + 60 practical) | [N] |
+| Others (UP, AP, Telangana, WB, Gujarat, Delhi…) | Many run AI/IT electives or pilots; **not verified in this research** | [U] |
+| **National** | MeitY *National Programme on AI* skilling framework (June 2023) suggested "what is AI" modules in Classes 6–8 and mini-projects in 9–10 | [N] |
+
+**Pattern across states:** (a) AI starts at Class 6–7 as *awareness*; (b) Classes 9–10 are mostly *vocational/skill* electives; (c) delivery is device- and teacher-limited → **paper-first, offline-capable material is a real advantage**; (d) regional-language need is strong.
+
+### 1.7 Global frameworks used to anchor the curriculum
+
+| Framework | Key idea we use |
+|---|---|
+| **UNESCO AI Competency Framework for Students (2024)** [O-listing] | 12 competencies × 4 dimensions (**Human-centred mindset · Ethics of AI · AI techniques & applications · AI system design**) × 3 progression levels (**Understand → Apply → Create**). Vision: students as *co-creators and responsible citizens* |
+| **AILit Framework (European Commission + OECD, 2025)** [N] | 4 domains of interaction: **Engaging with AI · Creating with AI · Managing AI · Designing AI**; 19 competences (knowledge, skills, attitudes). Basis of PISA 2029 Media & AI Literacy |
+| **AI4K12 "Five Big Ideas"** (AAAI/CSTA) | **Perception · Representation & Reasoning · Learning · Natural Interaction · Societal Impact** — the standard K-12 conceptual spine (also referenced in CBSE AI-for-All material) |
+| **Computational Thinking** (CBSE: decomposition, pattern recognition, abstraction, algorithm design, + data analysis, troubleshooting) | The thinking skills beneath AI; kept as a cross-cutting thread |
+
+### 1.8 Gap analysis → what PRATIMAI adds
+
+| Gap in current boards | Our response |
+|---|---|
+| Classes 9–10 syllabi are tool- and Python-heavy; "why does it work?" is thin | Paper-based *mechanism* tasks (nearest-neighbour by hand, human neural network, convolution by hand, confusion matrix) |
+| Classes 6–8 official syllabus names **no generative-AI content**, yet students use chatbots daily | Conceptual GenAI literacy: Class 6 "confident but wrong", Class 8 "next-word guessing", Class 9 full unit — **no tool required** |
+| "Ethics" is often a lecture | Role-plays, audits, debates, decision journals — ethics as *practice* |
+| Uncertainty/probability is absent until Class 9 | "How sure am I?" confidence habit from Class 6 |
+| Heavy anthropomorphism in popular AI media ("AI thinks") | Language rules: models *predict, match, estimate*; **people** design, choose data and are responsible |
+| Large classes, few devices | ≥ 80–100 % of tasks doable with paper, pencil, cards and classmates |
+
+### 1.9 Deliberately excluded
+Programming (Python/Scratch) lessons · tool tutorials or brand promotion · maths beyond the class's NCERT level · model-architecture detail beyond Class 10 CBSE scope · speculative "AI will take over" content · any task requiring students to upload photos/voice or create accounts.
+
+---
+
+## 2. The common framework: Five Strands × Five Levels
+
+### 2.1 The five strands (identical in every class)
+
+| Code | Strand | Core question | AI4K12 | UNESCO dimension |
+|---|---|---|---|---|
+| **U** | **Understand AI** | What is AI, and what is it *not*? | Representation & Reasoning | AI techniques & applications |
+| **D** | **Data** | What is data, where does it come from, can I trust it? | Perception | AI techniques / Ethics |
+| **L** | **Learn (how machines learn)** | How can a machine improve from examples? How do we know it works? | Learning | AI techniques & applications; System design |
+| **W** | **World (AI in use)** | Where does AI act, and how does it see, read, speak, recommend, generate? | Natural Interaction | AI techniques & applications |
+| **R** | **Responsibility** | Who decides, who is affected, who is accountable? | Societal Impact | Human-centred mindset; Ethics of AI |
+
+Cross-cutting thread **T — Thinking tools**: decomposition, pattern recognition, abstraction, algorithms, troubleshooting (CBSE CT) + the **Question Habit** ("How do I know? What is missing? Who made this?").
+
+### 2.2 The five-level spiral (one level per class)
+
+| Class | Level name | Learner verb | UNESCO level | One-sentence aim |
+|---|---|---|---|---|
+| **6** | **Notice** | spot, sort, ask | Understand | "I can see where AI is and tell it from ordinary machines." |
+| **7** | **Sort & Predict** | classify, estimate, compare | Understand → Apply | "I can explain how a machine learns from examples — and how it gets fooled." |
+| **8** | **Build the Cycle** | plan, test, improve | Apply | "I can plan an AI solution on paper and check it for fairness." |
+| **9** | **Reason** | calculate, justify, critique | Apply → Create | "I can use data and maths to explain why AI works and where it fails." |
+| **10** | **Evaluate & Design** | measure, decide, defend | Create | "I can judge an AI system with evidence and design a responsible one." |
+
+### 2.3 Concept spiral (how each idea deepens)
+
+| Idea | Class 6 | Class 7 | Class 8 | Class 9 | Class 10 |
+|---|---|---|---|---|---|
+| **What AI is** | Rules vs learning; human vs machine | 3 learning jobs (classify / predict / group) | AI vs ML; project cycle | AI ⊃ ML ⊃ DL; rule-based vs learning-based | Formal model families; neural nets |
+| **Data** | 4 kinds; tables, charts; pixels as numbers | Surveys; chart reading; structured data | Representation, sampling, consent | Data literacy, quality, privacy vs security | Statistical data; train/test split |
+| **Learning** | Learn from examples; garbage in/out | Training vs testing; too few examples | Nearest-example classifier by hand | k-nearest neighbours; line of best fit | Neural net by hand; convolution; bag-of-words |
+| **Uncertainty** | "How sure am I?" | Prediction can be wrong | Accuracy as % correct | Probability; average vs spread | Precision, recall, F1; base-rate trap |
+| **Seeing/Reading** | Picture = grid of numbers | Camera/word-counter ideas | Image classifier as tool | Features & similarity | Convolution; text normalisation; TF-IDF |
+| **Generative AI** | "Confident but wrong" | Fake/edited media checks | Next-word guessing; hallucination | Unit: how it works, limits, ethics | Responsible use; evaluation of claims |
+| **Responsibility** | Privacy habits; verify | Bias from examples; who is responsible | Fairness checklist; responsible-use cases | Stakeholders; ethics reasoning; access & divide | Ethical frameworks; audit; rights; careers |
+| **Thinking tools** | Step-by-step instructions | If-then; elimination | Decompose; optimise | Flowchart / pseudocode trace | Design a full pipeline |
+
+### 2.4 Vocabulary budget (max *new technical terms* per handout)
+Class 6: **10** · Class 7: **14** · Class 8: **16** · Class 9: **20** · Class 10: **24**. Each term is introduced *after* an experience, defined in ≤ 15 words, and reused ≥ 3 times.
+
+### 2.5 Length & time (hard rules)
+| Class | Target pages | **Hard cap** | CBSE-aligned sessions (≈40–45 min) |
+|---|---|---|---|
+| 6 | 36 | 48 | 20 AI sessions + project sessions |
+| 7 | 40 | 48 | 20 + project |
+| 8 | 42 | 48 | 20 + project |
+| 9 | 44 | 48 | 24–30 |
+| 10 | 46 | 48 | 30–40 |
+*(The brief says "< 50 pages"; the hard cap of 48 leaves a safety margin for printing/inserts.)*
+
+---
+
+## 3. Class-by-class curriculum
+
+Each class section has: learner snapshot → big question → chapters (with page budget and board mapping) → learning outcomes (coded) → task bank → misconceptions to fix → assessment.
+Outcome code format: `Class.Strand.Number` (e.g., `6.U1`). Task code: `T6-01`. All tasks are **unplugged** (paper, pencil, cards, classmates) unless marked 🖥 *(optional teacher-led extension)*.
+
+---
+
+### CLASS 6 — "AI Around Me"  ·  Level: NOTICE  ·  ages 11–12
+
+**Big question:** *Is a machine ever really smart?*  **Handout length:** target 36 pp (cap 48).
+
+**Chapters, pages and mapping**
+
+| # | Chapter (working title) | Pages | CBSE Class 6 topic | UNESCO / AILit | Strand |
+|---|---|---|---|---|---|
+| 0 | Front matter: cover, "How to use this handout", journey map | 3 | — | — | — |
+| 1 | **Machines That Seem Smart** — rule-following vs learning; humans vs machines; the three ways of learning (as stories) | 7 | T1 Intro to AI & everyday examples | Engage with AI; human-centred mindset | U, W |
+| 2 | **Data: The Food of AI** — numbers, words, pictures, sound; tables, charts; a picture as a grid of numbers; garbage in, garbage out | 7 | T2 Basic data concepts | Understand data | D |
+| 3 | **Patterns & Decisions** — finding and using patterns; if-then; yes/no question trees; "how sure am I?" | 7 | T3 Simple pattern recognition & decision making | AI techniques | L, T |
+| 4 | **Be a Smart Digital Citizen** — privacy, passwords, footprints, kindness, real vs fake | 6 | T4 Ethics & digital responsibility | Ethics of AI; Manage AI | R |
+| 5 | **Capstone: My Neighbourhood AI Investigation** + reflection | 4 | Interdisciplinary project hours | Create | all |
+| 6 | Back matter: glossary (≤10 terms), my progress, certificate/page | 2 | — | — | — |
+| | **Total** | **36** | | | |
+
+**Learning outcomes**
+- **6.U1** Explain in own words that AI learns patterns from examples, and tell it apart from a fixed-rule machine using 3 daily examples.
+- **6.U2** Name two things humans do better than machines and two things machines do better, with reasons.
+- **6.D1** Name four kinds of data (numbers, words, pictures, sounds); sort data into a table; draw a bar chart.
+- **6.D2** Show how a simple picture can be written as numbers on a grid.
+- **6.L1** Find a pattern, predict what comes next, and say how sure they are.
+- **6.L2** Describe three ways of learning — from labelled examples, by grouping without labels, by trial and reward — using human analogies.
+- **6.W1** Point to AI at home, school and in the neighbourhood and say what data it uses.
+- **6.R1** Use five safe habits: private info stays private, strong passphrase, think before posting, be kind, check before believing.
+- **6.R2** Give one reason an AI answer can be wrong and one way to check it.
+- **6.T1** Break a task into exact steps another person can follow.
+
+**Task bank (20 tasks; Ch1–2 first tasks must be "success-first")**
+
+| Code | Task | Mode · min | What it teaches |
+|---|---|---|---|
+| T6-01 | **Human Robot** — one gives exact steps, one follows *literally* | pair · 10 | Rule-following machines; precision (6.T1, 6.U1) |
+| T6-02 | **Rule or Learner?** sort 8 machines (washing machine, lift, video app, spam filter…) | pair · 10 | AI vs automation (6.U1) |
+| T6-03 | **Teach the Alien** — teach a classmate "mango" using only examples and non-examples; then use only green mangoes | group · 15 | Learning from examples; bias seed (6.U1, 6.L2) |
+| T6-04 | **Better At / Worse At** — humans vs machines table, then class vote | alone→class · 10 | Human vs machine intelligence (6.U2) |
+| T6-05 | **AI Detective at Home** — tick where AI may hide in a morning routine; find which ones *learn* | home · 15 | Everyday AI (6.W1) |
+| T6-06 | **Four Kinds of Data Hunt** in the classroom | pair · 10 | Data types (6.D1) |
+| T6-07 | **Table to Chart** — class favourite sport tally → bar chart | group · 15 | Organising data (6.D1) |
+| T6-08 | **Pixel Picture** — colour a 8×8 grid from number codes; swap codes, partner redraws | pair · 15 | A picture is numbers (6.D2) |
+| T6-09 | **Garbage In, Garbage Out** — mislabel some cards on purpose; watch the learned rule go wrong | group · 10 | Data quality (6.R2) |
+| T6-10 | **Pattern Hunt** — number/shape/letter patterns, predict next, rate confidence | alone · 10 | Patterns (6.L1) |
+| T6-11 | **Guess My Rule** — secret rule, test with examples, discover it | group · 15 | Learning from examples (6.L1, 6.L2) |
+| T6-12 | **20-Questions Tree** — draw a yes/no tree to identify 6 animals; fewer questions wins | pair · 15 | Decisions; if-then (6.T1) |
+| T6-13 | **Sure or Not Sure?** — confidence cards for AI-style answers | class · 10 | Uncertainty (6.R2) |
+| T6-14 | **Privacy Traffic Light** — share / ask first / never share (using shapes ● ▲ ■ plus colour) | alone · 10 | Privacy (6.R1) |
+| T6-15 | **Password Recipe** — build a passphrase on paper (never a real one) | pair · 10 | Safety (6.R1) |
+| T6-16 | **Real or Fake Detective** — 3 checks on printed examples | group · 15 | Verification (6.R2) |
+| T6-17 | **Footprint Walk** — trace where one imaginary post travels | alone · 10 | Digital footprint (6.R1) |
+| T6-18 | **AI in My Neighbourhood** — survey 5 adults: where do you meet "smart" machines? | group project · 2–3 periods | Data collection, summary (6.D1, 6.W1) |
+| T6-19 | **My Helper Machine Poster** — design a rule-based or learning helper; list its data and limits | group · 2 periods | Synthesis (6.U1–6.R2) |
+| T6-20 | **I used to think… Now I think…** | alone · 10 | Reflection |
+
+**Misconceptions to address:** "AI is a robot" · "AI knows everything / is always right" · "AI is alive / has feelings" · "AI = computers = coding" · "Bigger screen = smarter".
+**Subject links:** Maths (patterns, tables, bar graphs), Science (observation & classification), Social Science (community survey), English (instructions).
+**Assessment:** formative only — self-check ticks, one-line explanations, Task 18/19 rubric (4 levels: Beginning · Growing · Secure · Shining), teacher observation.
+
+---
+
+### CLASS 7 — "How Machines Learn"  ·  Level: SORT & PREDICT  ·  ages 12–13
+
+**Big question:** *How can a machine learn without being told the rules?*  **Target 40 pp (cap 48).**
+
+| # | Chapter | Pages | CBSE Class 7 topic | UNESCO / AILit | Strand |
+|---|---|---|---|---|---|
+| 0 | Front matter | 3 | — | — | — |
+| 1 | **The Learning Machine** — classify, predict a number, find groups; training vs testing; too few examples | 8 | T1 AI domains (classification, regression, clustering) | AI techniques; Engage | U, L |
+| 2 | **Machines That See, Read and Recommend** — vision (pixels→features), language (words→counts), recommenders (people like you), translation | 8 | T1 (CV, NLP, data science; chatbots, image recognition, translation) | AI techniques | W |
+| 3 | **AI at Work in India** + **reading data** — healthcare, education, transport, agriculture, communication; bar/line/pie charts; misleading charts | 7 | T2 AI in industries; T3 Data visualisation & analysis | Engage; Manage | W, D |
+| 4 | **When AI Gets It Wrong** — bias from examples, fairness, fake content, who is responsible | 7 | T4 Ethics & AI bias awareness | Ethics of AI | R |
+| 5 | **Capstone: Class Survey Machine** + reflection | 5 | Interdisciplinary project | Create | all |
+| 6 | Back matter (glossary ≤14, progress, answers hints) | 2 | — | — | — |
+| | **Total** | **40** | | | |
+
+**Learning outcomes**
+- **7.U1** Tell classification, regression and clustering apart using classroom examples.
+- **7.L1** Explain training vs testing as "practice questions vs the real test".
+- **7.L2** Explain why few or one-sided examples fool a learner, and how more varied examples help.
+- **7.D1** Collect structured data with a survey; draw and read bar, line and pie charts; spot a misleading chart.
+- **7.W1** Explain at idea level how a machine "sees" (pixels → features), "reads" (word counts) and recommends (similar people/items).
+- **7.W2** Describe AI uses in healthcare, education, transport, agriculture, communication — each with one benefit and one limit.
+- **7.R1** Explain how biased examples cause unfair results; propose one fix.
+- **7.R2** Apply three checks (source, evidence, emotion) to spot fake or edited content.
+- **7.T1** Compare solving a task with fixed if-then rules vs learning from examples.
+
+**Task bank (17)**
+
+| Code | Task | Mode · min | Teaches |
+|---|---|---|---|
+| T7-01 | **Sorting Machine** — classify 12 object cards, invent labels | group · 15 | Classification (7.U1) |
+| T7-02 | **Price Predictor** — fare vs distance dots, draw the best line, predict | pair · 15 | Regression idea (7.U1) |
+| T7-03 | **Find the Groups** — cluster unlabelled cards; compare groupings | group · 15 | Clustering; no single right answer (7.U1) |
+| T7-04 | **Practice vs Exam** — learn from practice set, test on hidden set | alone · 10 | Training vs testing (7.L1) |
+| T7-05 | **Too Few Examples** — rule from 3 vs from 12 | pair · 10 | Sample size (7.L2) |
+| T7-06 | **Be the Camera** — describe a grid image to a partner using numbers only | pair · 15 | Vision (7.W1) |
+| T7-07 | **Word Counter** — tally words to label messages "spam / not spam" | group · 15 | Language as counts (7.W1) |
+| T7-08 | **People Like You** — recommend a film from shared likes | group · 15 | Recommenders (7.W1) |
+| T7-09 | **Translate the Tricky** — why word-by-word translation fails (use Indian-language idioms) | pair · 10 | Context & patterns (7.W1) |
+| T7-10 | **One Problem, Many Data** — what data would a crop-disease helper need? | group · 15 | Data needs (7.W2) |
+| T7-11 | **Chart Detective** — read 3 charts; find the misleading one | alone · 15 | Data viz (7.D1) |
+| T7-12 | **Benefit–Limit Cards** for 5 sectors | pair · 10 | Applications (7.W2) |
+| T7-13 | **The Unfair Machine** — a "uniform suggester" trained on one group; find the harm; fix | group · 20 | Bias (7.R1) |
+| T7-14 | **Fake Check 3** — source · evidence · emotion | pair · 10 | Misinformation (7.R2) |
+| T7-15 | **Who Is Responsible?** — roles: maker, user, school, company | class · 15 | Accountability (7.R1) |
+| T7-16 | **Class Survey Machine** — collect → chart → pattern → predict → check bias | project · 3 periods | Synthesis |
+| T7-17 | **Reflection Passport** | alone · 10 | Metacognition |
+
+**Misconceptions:** "AI is told every rule" · "more data always fixes it" · "AI is neutral/objective" · "the computer understands pictures like we do" · "if the chart is colourful it is true".
+**Subject links:** Maths (integers, ratio, data handling, graphs), Science (classification of living things), Social Science (sectors of the economy), Languages (translation, idiom).
+
+---
+
+### CLASS 8 — "Build the AI Cycle"  ·  Level: BUILD THE CYCLE  ·  ages 13–14
+
+**Big question:** *What does it take to build an AI that people can trust?*  **Target 42 pp (cap 48).**
+
+| # | Chapter | Pages | CBSE Class 8 topic | UNESCO / AILit | Strand |
+|---|---|---|---|---|---|
+| 0 | Front matter | 3 | — | — | — |
+| 1 | **The AI Project Cycle** — problem → data → model & test → reflect & improve; writing a sharp problem statement | 8 | T1 AI project lifecycle | Design AI | L, T |
+| 2 | **Data & Fairness** — representation, sampling, missing groups, consent, fixing bias | 8 | T3 Data and fairness | Ethics; Manage | D, R |
+| 3 | **How Models Learn & What No-Code Tools Do** — nearest-example classifier by hand; accuracy; chatbot/classifier/predictor tool types and their limits | 8 | T2 Applications & no-code AI tools | Create (guided) | L, W |
+| 4 | **Ethics & Responsible AI** — privacy, misinformation, social impact; *how text generators work (next-word guessing) and why they invent*; responsible-use decisions | 8 | T4 Ethics & responsible AI | Ethics; Manage | R, W |
+| 5 | **Capstone: AI Project Proposal** + peer review | 5 | Interdisciplinary project | Design | all |
+| 6 | Back matter (glossary ≤16) | 2 | — | — | — |
+| | **Total** | **42** | | | |
+
+**Learning outcomes**
+- **8.U1** Define AI and machine learning in own words; place chatbots, image classifiers, recommenders on a "who-learns-what" map.
+- **8.L1** Walk through the AI project cycle on paper for a local problem.
+- **8.L2** Hand-run a nearest-example classifier, compute accuracy on a test set, and suggest an improvement.
+- **8.D1** Audit a small dataset for missing groups; compute simple percentages per group.
+- **8.D2** Explain why collecting data needs consent and privacy care.
+- **8.W1** Match no-code tool types (image classifier, chatbot, data predictor) to problems; state inputs, outputs and limits.
+- **8.W2** Explain that a text generator predicts likely next words from patterns in huge text, so it can sound right yet be wrong; verify claims.
+- **8.R1** Apply a fairness checklist and propose strategies for fairness and inclusion.
+- **8.R2** Make and defend a responsible-use decision in a scenario (privacy, misinformation, social impact).
+- **8.T1** Break a multi-variable problem into parts; find a minimum/maximum.
+
+**Task bank (17)**
+
+| Code | Task | Mode · min | Teaches |
+|---|---|---|---|
+| T8-01 | **Problem Statement Sharpener** — vague → precise using Who/What/Where/Why | pair · 15 | Problem scoping (8.L1) |
+| T8-02 | **Cycle Cards** — sequence the stages and justify | group · 15 | Project cycle (8.L1) |
+| T8-03 | **Plant Doctor Walk-through** — a fully described fictional case with a data table; find where it fails | group · 25 | End-to-end cycle (8.L1) |
+| T8-04 | **Data Detective** — audit a table; % per group | group · 20 | Representation (8.D1) |
+| T8-05 | **Sampling Game** — sample 8 students vs whole class | class · 15 | Sampling (8.D1) |
+| T8-06 | **Fairness Fix-It** — three fixes for a biased dataset | group · 20 | Fairness (8.R1) |
+| T8-07 | **Consent Check** — what may be collected, from whom, how to ask | pair · 10 | Consent (8.D2) |
+| T8-08 | **Nearest Neighbour by Hand** — classify new points; accuracy on test cards | pair · 20 | Learning mechanism (8.L2) |
+| T8-09 | **Tool Match** — problem → tool type → inputs/outputs/limits | pair · 10 | No-code tools (8.W1) |
+| T8-10 | **Paper Classifier Lab** — two leaf types, feature table, train, test, fail, improve | group · 25 | Build–test–improve (8.L2) |
+| T8-11 | **Next-Word Game** — predict the next word from patterns | class · 15 | Text generators (8.W2) |
+| T8-12 | **Hallucination Hunt** — verify claims in a supplied AI-written paragraph | group · 15 | Verification (8.W2) |
+| T8-13 | **Responsible-Use Court** — scenario judging | class · 25 | Ethics (8.R2) |
+| T8-14 | **My AI-Use Pledge** | alone · 10 | Responsibility |
+| T8-15 | **AI Project Proposal** — design on paper | group · 3 periods | Synthesis |
+| T8-16 | **Peer Review Gallery** | class · 20 | Feedback |
+| T8-17 | **Optimise It** — cheapest/fastest choice with 3 variables | alone · 10 | CT (8.T1) |
+
+**Misconceptions:** "AI = ChatGPT" · "if it is trained it is true" · "fairness = same treatment for everyone" · "no-code means no thinking" · "the model knows why".
+**Subject links:** Maths (data handling, percentages, probability intro, ratio), Science (environment case, plant biology), Social Science (inclusion), English (argument).
+
+---
+
+### CLASS 9 — "The Logic Under the Magic"  ·  Level: REASON  ·  ages 14–15
+
+**Big question:** *Why does AI work — and when does it fail?*  **Target 44 pp (cap 48).**
+**Status note:** CBSE stand-alone Class 9 AI course is discontinued from 2026-27 [N]; NCERT CT&AI modules for 9–12 are internal-assessment modules [N]. ICSE R&AI continues [V]; Karnataka/Goa/others run Class 9 AI [N]. This handout is therefore built on the **last official CBSE 417 Class IX (2025-26) structure [O]** + ICSE Part II AI units [V] + NCERT's CT direction, and keeps Python **out** of the handout.
+
+| # | Chapter | Pages | CBSE 417 IX (2025-26) | ICSE R&AI IX | Strand |
+|---|---|---|---|---|---|
+| 0 | Front matter | 3 | — | — | — |
+| 1 | **Reflect, Scope, Plan** — AI domains revisited; project cycle; 4Ws canvas; stakeholders; system map; rule-based vs learning-based | 8 | Unit 1 (AI Reflection, Project Cycle, Ethics) | Intro to AI; AI Concepts & Project Framework | U, L |
+| 2 | **Data Literacy** — types, sources, quality, bias, reading and critiquing graphs, privacy vs security | 8 | Unit 2 | Role of Data and Information | D, R |
+| 3 | **The Maths Behind AI (on paper)** — mean/median/mode/spread, probability, line of best fit, similarity & nearest neighbours, patterns | 11 | Unit 3 (Math for AI) | — | L |
+| 4 | **Generative AI & Ethics** — what it is, how it works (idea level), limits, deepfakes, copyright & integrity; AI bias & access; ethical reasoning | 8 | Unit 4 + ethics sub-units | Evolution of Computing (AI history context) | W, R |
+| 5 | **Capstone: SDG-linked AI Brief** + flowchart trace + reflection | 4 | Project work / portfolio | Lab/assignments | all |
+| 6 | Back matter (glossary ≤20) | 2 | — | — | — |
+| | **Total** | **44** | | | |
+
+**Learning outcomes**
+- **9.U1** Distinguish AI, ML, DL and rule-based vs learning-based systems; classify real products.
+- **9.L1** Run the project cycle with problem scoping (4Ws), stakeholders and a system map; name data features.
+- **9.D1** Classify data (qualitative/quantitative; structured/unstructured), judge quality and sources, differentiate privacy and security.
+- **9.D2** Read and critique graphs (truncated axes, sampling, cherry-picking).
+- **9.M1** Compute and interpret mean, median, mode, range; explain when an average misleads.
+- **9.M2** Compute simple and compound probabilities; relate to "confidence".
+- **9.M3** Fit a line by eye, predict, and explain correlation ≠ causation.
+- **9.M4** Classify a new point by distance to labelled examples (nearest neighbours).
+- **9.W1** Explain generative AI conceptually, list benefits and limits (hallucination, bias, copyright), and apply a verification routine.
+- **9.R1** Analyse a case from several stakeholders' views with an ethics checklist; discuss bias and unequal access.
+- **9.R2** Link an AI idea to an SDG with a data plan and an ethics note.
+- **9.T1** Express a decision procedure as a flowchart/pseudocode and trace it by hand.
+
+**Task bank (21)**
+
+| Code | Task | Mode · min | Teaches |
+|---|---|---|---|
+| T9-01 | **4Ws Problem Canvas** | group · 20 | Scoping (9.L1) |
+| T9-02 | **Stakeholder Map** | pair · 15 | Stakeholders (9.R1) |
+| T9-03 | **System Map of Data Features** | group · 20 | Features (9.L1) |
+| T9-04 | **Rule vs Learn Showdown** — solve one task by writing rules, then by examples | pair · 15 | Rule vs learning (9.U1) |
+| T9-05 | **Data Type Sort** | alone · 10 | Types (9.D1) |
+| T9-06 | **Source Quality Audit** | pair · 15 | Quality (9.D1) |
+| T9-07 | **Misleading Graph Gallery** | group · 20 | Graph critique (9.D2) |
+| T9-08 | **Privacy vs Security Scenarios** | pair · 15 | Privacy/security (9.D1) |
+| T9-09 | **Paper Dashboard** — 3 charts that tell one story | group · 25 | Communication (9.D2) |
+| T9-10 | **Average Lies** — mean vs median with an outlier | alone · 15 | Statistics (9.M1) |
+| T9-11 | **Likelihood Lab** — predict, then test with dice/coins | pair · 20 | Probability (9.M2) |
+| T9-12 | **Line of Best Fit by Eye** | group · 20 | Regression idea (9.M3) |
+| T9-13 | **Neighbour Vote** — kNN by hand with distances | pair · 25 | Classification (9.M4) |
+| T9-14 | **Pattern to Rule** | alone · 15 | Patterns (9.M1) |
+| T9-15 | **Real or AI?** — evidence checklist on supplied examples | class · 15 | GenAI literacy (9.W1) |
+| T9-16 | **How a Text Generator Guesses** — build a next-word table from a short text and generate | pair · 20 | GenAI mechanism (9.W1) |
+| T9-17 | **Balloon Debate** — pro/against AI in a theme | group · 25 | Ethics (9.R1) |
+| T9-18 | **Verify-It Routine** | alone · 15 | Verification (9.W1) |
+| T9-19 | **SDG–AI Project Brief** | group · 3–4 periods | Synthesis (9.R2) |
+| T9-20 | **Ethics Review Panel** | class · 25 | Ethics (9.R1) |
+| T9-21 | **Flowchart Trace** | alone · 15 | Algorithms (9.T1) |
+
+**Misconceptions:** "average = typical" · "correlation proves cause" · "more features is always better" · "generative AI looks things up" · "privacy = security".
+**Subject links:** Maths (statistics, probability, coordinate geometry — NCERT Class 9), Science (data from experiments), Social Science (SDGs, economics of access), English (argument writing).
+
+---
+
+### CLASS 10 — "Decide, Evaluate, Design"  ·  Level: EVALUATE & DESIGN  ·  ages 15–16
+
+**Big question:** *How do we judge, design and govern AI that affects real people?*  **Target 46 pp (cap 48).**
+**Context:** Board-year pressure. The handout is **not** a 417/ICSE exam-prep book; it makes the *reasoning* behind those syllabi clear, with a one-page "Where this connects" bridge in the teacher pack.
+
+| # | Chapter | Pages | CBSE 417 X (2026-27) [O] | ICSE R&AI X [V] | Strand |
+|---|---|---|---|---|---|
+| 0 | Front matter | 3 | — | — | — |
+| 1 | **Models Explained** — rule-based vs learning-based; supervised / unsupervised / reinforcement; classification, regression, clustering, association; neural network as layered weighted votes | 9 | Unit 2 (Advanced Modelling) | AI unit | U, L |
+| 2 | **Machines That See and Read** — pixels, grayscale/RGB; 3×3 convolution by hand; text normalisation, bag-of-words, TF-IDF; script bot vs smart bot | 10 | Units 5, 6 | AI unit | W |
+| 3 | **Judging a Model** — train/test split, accuracy, error, confusion matrix, precision, recall, F1; choosing a metric; base-rate trap | 9 | Unit 3 (Evaluating Models) | — | L |
+| 4 | **Ethics, Governance & Society** — ethical frameworks; bioethics principles on AI cases; bias, transparency, accountability; privacy rights; GenAI integrity; careers | 9 | Unit 1 (Ethical Frameworks); ethical concerns in Unit 3 | Project Framework | R |
+| 5 | **Capstone: Responsible AI Design Brief** + career/subject map | 4 | Project work / portfolio; Unit 4 (statistical data) mindset | Lab/assignments | all |
+| 6 | Back matter (glossary ≤24) | 2 | — | — | — |
+| | **Total** | **46** | | | |
+
+**Learning outcomes**
+- **10.U1** Compare rule-based, machine-learning (supervised, unsupervised, reinforcement) and deep-learning approaches; name subtypes with examples.
+- **10.L1** Explain a neural network as layers of weighted votes and run a tiny one by hand.
+- **10.E1** Split data into train and test sets; compute accuracy and error; build a confusion matrix; compute precision, recall and F1; choose the right metric for a context; explain the base-rate trap.
+- **10.V1** Explain image representation (pixels, grayscale, RGB) and apply a 3×3 kernel by hand; explain what CNN layers do at idea level.
+- **10.N1** Describe NLP stages (lexicon, syntax, semantics); normalise text and build a bag-of-words by hand; tell script bots from smart bots.
+- **10.S1** Explore a small statistical dataset (summary values, patterns, a prediction) and state its limits.
+- **10.R1** Apply ethical frameworks and the four bioethics principles (autonomy, beneficence, non-maleficence, justice) to an AI case; judge bias, transparency, accountability.
+- **10.R2** Explain data-privacy rights and responsibilities in plain language (India's data-protection law as an example — *verify current rules before printing*) and use generative AI with integrity.
+- **10.D1** Design an AI project end-to-end on paper: scoping → data → model → evaluation → deployment → ethics review → pitch.
+- **10.C1** Map own interests to AI-related study paths and careers realistically.
+
+**Task bank (21)**
+
+| Code | Task | Mode · min | Teaches |
+|---|---|---|---|
+| T10-01 | **Model Map** — place 10 products on a model-family map | pair · 15 | Families (10.U1) |
+| T10-02 | **Human Neural Network** — students as weighted neurons; vote; adjust | class · 30 | NN mechanism (10.L1) |
+| T10-03 | **Supervised / Unsupervised / RL Scenario Sort** | group · 15 | Learning types (10.U1) |
+| T10-04 | **Market-Basket (Kirana Store) Associations** | pair · 15 | Association (10.U1) |
+| T10-05 | **Pixel Edge Hunt** — 3×3 kernel on a 6×6 grid | pair · 25 | Convolution (10.V1) |
+| T10-06 | **Feature-Map Sketch** | alone · 15 | CNN idea (10.V1) |
+| T10-07 | **Text Cleaner** — lowercase, stop-words, stemming by hand | pair · 15 | Normalisation (10.N1) |
+| T10-08 | **Bag-of-Words & TF-IDF by hand** on 4 sentences | pair · 25 | NLP (10.N1) |
+| T10-09 | **Script Bot vs Smart Bot** — flow diagrams | group · 20 | Chatbots (10.N1) |
+| T10-10 | **Split the Deck** — train/test split and leakage | pair · 15 | Evaluation (10.E1) |
+| T10-11 | **Confusion Matrix from 100 Cases** | pair · 20 | Metrics (10.E1) |
+| T10-12 | **Precision vs Recall: Which Matters?** — screening, spam, cheating detector | group · 20 | Metric choice (10.E1) |
+| T10-13 | **"99% Accurate"? The Base-Rate Trap** | alone · 15 | Critical thinking (10.E1) |
+| T10-14 | **Threshold Slider on Paper** | pair · 15 | Trade-offs (10.E1) |
+| T10-15 | **Four Principles Case** — medical triage tool | group · 25 | Ethics frameworks (10.R1) |
+| T10-16 | **Algorithm Audit Report** | group · 30 | Bias, transparency (10.R1) |
+| T10-17 | **Privacy Rights Scenarios** | pair · 15 | Privacy (10.R2) |
+| T10-18 | **Future Jobs & Skills** | alone · 15 | Careers (10.C1) |
+| T10-19 | **Responsible AI Design Brief** | group · 3–4 periods | Synthesis (10.D1) |
+| T10-20 | **Board of Judges Pitch** | class · 25 | Communication |
+| T10-21 | **Where Next? Subject & Career Map** | alone · 15 | Guidance (10.C1) |
+
+**Misconceptions:** "accuracy is enough" · "neural networks work like the brain" · "more layers = smarter" · "legal = ethical" · "bots understand language".
+**Subject links:** Maths (statistics, probability — NCERT Class 10), Science (medical screening), Social Science (governance, SDGs), English (reasoned writing).
+
+---
+
+## 4. Cross-board alignment at a glance
+
+| Class | CBSE | NCERT / NCF-SE | ICSE (CISCE) | State examples | Global frame |
+|---|---|---|---|---|---|
+| 6 | CT&AI: 20 h AI literacy (Topics 1–4) [V] | CT + AI literacy; AI for Public Good [N] | No defined AI unit; "integrate AI" [V] | Karnataka expanding to Class 6 [N]; TN emerging-tech Classes 6–8 [N]; Maha AI Olympiad [V] | UNESCO *Understand*; AILit *Engage* |
+| 7 | CT&AI Topics 1–4 [V] | same | same | Kerala AI in Class 7 ICT [N]; TN [N]; Maharashtra [V] | *Understand → Apply* |
+| 8 | CT&AI Topics 1–4 incl. project lifecycle, no-code [V] | same | same | Kerala ICT 8 [N]; TN [N] | *Apply* |
+| 9 | 417 IX (to 2025-26) [O]; stand-alone course discontinued 2026-27 [N]; NCERT modules [N] | New NCERT Class 9 books; CT emphasis [V] | R&AI Group III [V] | Kerala ICT 9 [N]; Karnataka NSQF [N]; Goa [N] | *Apply → Create* |
+| 10 | 417 X 2026-27 [O] | Class 10 books unchanged till 2027-28 [V] | R&AI Group III [V] | Kerala ICT 10 + robotics [N]; Karnataka [N] | *Create* |
+
+---
+
+## 5. Assessment philosophy (all classes)
+1. **Progress, not marks.** Four mastery levels: **Beginning · Growing · Secure · Shining** (Classes 6–8); **Emerging · Developing · Proficient · Advanced** (9–10).
+2. **Three evidence types per chapter:** a *self-check* (confidence), a *performance task* (shows reasoning), a *reflection* ("what changed in my thinking?").
+3. **Rubrics reward reasoning** — a correct answer with no explanation scores *Growing*; a flawed answer with sound, honest reasoning can score *Secure*.
+4. **No public ranking** of students on AI tasks. Group work gets individual reflection.
+5. Teacher pack includes answer key + common-error notes; student handout never shows full solutions on the same page as tasks.
+
+---
+
+## 6. Source list
+
+**Official / primary [O]** — CBSE Curriculum 417 AI **Class X 2026-27**: https://cbseacademic.nic.in/web_material/Curriculum27/Sec/417-AI-X.pdf · CBSE 417 AI **Class IX 2025-26**: https://www.cbseacademic.nic.in/web_material/Curriculum26/sec/417-AI-IX.pdf · CBSE CT&AI framework (Classes 3–8): https://cbseacademic.nic.in/web_material/CurriculumMain27/CTAI_Pri_2026-27.pdf · CBSE CT&AI hub: https://cbseacademic.nic.in/ct-ai.html · PIB release 29 Oct 2025: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2184211 · CBSE training notification TRG-02 (9 Apr 2026): https://www.cbse.gov.in/cbsenew/documents/CT_AI_DLD_Guidelines_2026_27_09042026.pdf · UNESCO AI Competency Framework for Students (2024), ISBN 978-92-3-100709-5.
+
+**News [N]** — Business Standard (1 Apr 2026 launch) · Careers360 (30 Oct 2025; 1 Apr 2026; Kerala robotics; Goa; NPAI framework) · DD News (30 Oct 2025) · IndiaAI (Kerala Class 7 AI) · Sakshi Education (Karnataka NSQF AI) · Whalesbook (Karnataka Class 6 expansion, 5 Oct 2026) · The Hans India (Tamil Nadu, 22 Jul 2026) · AglaSem News (Acad-18/2026 handbooks; Class 9 change).
+
+**Vendor / publisher [V]** (cross-checked against each other; treat as secondary) — Chitti Blog, Thinking Juggernaut, Alea Learning, Modern Age Coders, Scaleopal Labs (ICSE Classes 1–8 note), Meritbox/publisher descriptions (ICSE R&AI units), Maha AI Olympiad site.
+
+**Frameworks** — AILit Framework (European Commission & OECD, 18 Jun 2025) · AI4K12 Five Big Ideas (AAAI/CSTA) · CBSE Computational Thinking definition (decomposition, pattern recognition, abstraction, algorithm design).
+
+*End of curriculum file.*
