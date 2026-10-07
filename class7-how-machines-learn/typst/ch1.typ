@@ -3,7 +3,15 @@
 //  CHAPTER 1 — THE LEARNING MACHINE   (8 pp · tasks 01–05)
 // ============================================================
 #chapter-opener(1, "The Learning Machine", "How can a machine learn without being told the rules?",
-  outcomes: ("7.U1", "7.L1", "7.L2", "7.T1"), strands: ("U", "L"))
+  outcomes: ("7.U1", "7.L1", "7.L2", "7.T1"), strands: ("U", "L"),
+  summary: [Welcome to the workshop. Last year you learned to *spot* learning machines; this year you operate one. In five missions you will run all three learning jobs with your own hands — sorting objects into named groups (classification), drawing a best-fit line to predict a fare (regression), inventing groups nobody gave you (clustering) — and then sit the same hidden exam a machine sits, to learn how training and testing really work.],
+  missions: "T7-01 – T7-05",
+  link: "Links: Maths — graphs & averages · English — precise definitions",
+  extras: opener-extras(
+    words: ("classification", "regression", "clustering", "training set", "test set"),
+    warmup: [A video app always seems to know what you want to watch next. Write your best guess: WHERE did that knowledge come from? You will check this guess at the end of the book.],
+    need: ("pencil", "ruler", "12 small objects to sort", "a fair judge"),
+  ))
 
 // ---------------- 1.1 ----------------
 #sec(1, "Three jobs that learning machines do")
@@ -88,6 +96,21 @@ The third job is the strangest. In classification, the groups already have names
 #sec(4, "Practice questions and the real exam")
 How does a machine actually *learn* the pattern? Here is the secret, and you already know it from your own life: it *practises, then it is tested*. First the machine studies a *training set* — examples with the answers attached, like practice questions with the solutions in the back. It adjusts itself until it matches them well. Then comes the moment of truth: the *test set* — new examples it has never seen, with the answers hidden. If it only memorised the practice questions, the exam will expose it. A learner that scores well on practice *and* on the hidden test has truly found the pattern.
 
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · SPOT THE MEMORISER]
+  v(2.5pt)
+  text(size: 10.1pt)[Two students prepared for a spelling test. One learned the *rule* for adding -ing; one memorised the exact twenty words on last year's paper. Who passes THIS year's test — with new words? Mark each story M (memoriser) or P (pattern-finder):]
+  v(3pt)
+  dtable(("The story", "M or P?", "What gave it away"),
+    ([Scores 20/20 on last year's paper, 6/20 on this year's.], [ ], [ ]),
+    ([Scores 17/20 on last year's paper, 16/20 on this year's.], [ ], [ ]),
+    ([Can explain WHY “run” becomes “running” but “open” stays “opening”.], [ ], [ ]),
+    widths: (1fr, 18mm, 42mm),
+  )
+  v(2.5pt)
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[A machine can be a memoriser too — that is exactly why honest AI builders keep a *hidden test set*. If the machine only rehearsed, the hidden exam is where it gets caught.]
+}))
+
 #task("T7-04", "Practice vs Exam", mode: "alone", mins: "10")[
   You are the machine. Study the *practice set*: cards labelled IN or OUT.
   #v(4pt)
@@ -113,6 +136,19 @@ How does a machine actually *learn* the pattern? Here is the secret, and you alr
 ]
 #wordpower(4, "training set", [The practice examples a machine learns from before it meets new ones.])
 #wordpower(5, "test set", [The hidden examples used to check whether the learning really worked.])
+
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · TRAIN AND TEST IN MY OWN WEEK]
+  v(2.5pt)
+  text(size: 10.1pt)[Machines are not the only learners. Name one *training moment* and one *testing moment* from your own week — moments where you practised with answers available, then faced something brand-new:]
+  v(3pt)
+  dtable(("My training moment (with answers available)", "My testing moment (no answers given)"),
+    ([#ruled-lines(2, lead: 8.4mm)], [#ruled-lines(2, lead: 8.4mm)]),
+    widths: (1fr, 1fr),
+  )
+  v(2.5pt)
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[If your practice moment and your test moment were the *same questions*, you did not test — you rehearsed. Machines make this exact mistake, and so do people.]
+}))
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
   text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[AT A GLANCE · IF-THEN MACHINE VS LEARNING MACHINE]
@@ -181,6 +217,17 @@ Here is the trap that catches learners — machine and human alike. Show a learn
   [I can draw a best-fit line on dots, predict with it, and say how sure I am],
 )
 #thinkink([A machine I use guesses things about me — a suggestion, a price, a filter. Now I know its job is … (classification / regression / clustering), because …], lines: 2)
+
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[MY THREE MACHINES — NAME THEM, JOB THEM, LIMIT THEM]
+  v(3pt)
+  dtable(("A machine from my day", "Its learning job (C / N / G)", "One thing it got wrong or missed"),
+    ([#box(width: 44mm, line(length: 100%, stroke: 0.55pt + line-soft))], [ ], [ ]),
+    ([#box(width: 44mm, line(length: 100%, stroke: 0.55pt + line-soft))], [ ], [ ]),
+    ([#box(width: 44mm, line(length: 100%, stroke: 0.55pt + line-soft))], [ ], [ ]),
+    widths: (48mm, 34mm, 1fr),
+  )
+}))
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
   text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · PATTERN TO RULE]

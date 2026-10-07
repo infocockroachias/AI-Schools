@@ -22,6 +22,12 @@ Requires Typst ≥ 0.13 (tested with 0.15). Fonts (Nunito, Baloo 2) ship in
 each `typst/fonts/` directory; the Machiatto + Suboutline packages are pulled
 automatically from the Typst package registry on first compile.
 
+## Rules
+
+See **[INSTRUCTIONS.md](INSTRUCTIONS.md)** — the standing rulebook: template + fonts, the mandatory
+per-page whitespace audit ("no page below ~70% fill"), QA gates, git discipline and content
+invariants for every handout in this repo.
+
 ## Design
 
 Both handouts follow the MoKa Reads publication specification that the

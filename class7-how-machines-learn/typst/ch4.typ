@@ -3,7 +3,15 @@
 //  CHAPTER 4 — WHEN AI GETS IT WRONG   (7 pp · tasks 13–15)
 // ============================================================
 #chapter-opener(4, "When AI Gets It Wrong", "Who taught the machine — and who answers for its mistakes?",
-  outcomes: ("7.R1", "7.R2"), strands: ("R",))
+  outcomes: ("7.R1", "7.R2"), strands: ("R",),
+  summary: [Every machine in this book can fail — and this chapter is about *how* and *who answers*. You will train a deliberately one-sided suggestion machine and watch unfairness walk in with the data. You will run the three checks on content that was faked or edited, and hunt what is missing. Then you will take on the hardest question of all: when a machine causes harm, who is responsible? Spoiler: responsibility follows control — and machines control nothing.],
+  missions: "T7-13 – T7-15",
+  link: "Links: Social Science — fairness & rules · English — checking evidence",
+  extras: opener-extras(
+    words: ("bias", "misinformation", "verify", "fairness", "accountability"),
+    warmup: [A school team photo shows only the winning team. Would that photo be fair evidence of “our school loves cricket”? Write what is missing.],
+    need: ("pencil", "a calm head", "courage to disagree politely"),
+  ))
 
 // ---------------- 4.1 ----------------
 #sec(1, "One-sided examples, unfair machines")
@@ -201,3 +209,32 @@ You now own three fixes, and they work on any machine, not just the ones in this
   #v(2.5pt)
   #text(size: 10.1pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7.7mm)]
 ]
+
+#block(width: 100%, breakable: false, radius: 5pt, fill: cream, inset: (x: 11pt, y: 7.5pt), {
+  text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[BEFORE THE CHECKPOINT — FLIP BACK TO]
+  v(2pt)
+  text(size: 9.7pt)[the Uniform Suggester cards (for clue 1) · the faked-video card (for clue 2) · the Talent Finder case (for clue 3). Each checkpoint answer should name a page, a card or a person — vague memories score zero in real investigations too.]
+})
+
+#chapter-checkpoint(4,
+  [A uniform suggestion machine was trained only on monsoon photos. What will it suggest in May — and why is that unfair?],
+  [A video says “share before it is deleted!!!” Which of the three checks does it attack first?],
+  [Why can a machine never be the *final* answer to “who is responsible?”],
+)
+#case-journal(lines: 2, label: "MY CASE JOURNAL — today's sharpest clue about fairness and responsibility")
+
+#block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, stroke: 1pt + ink, inset: (x: 11pt, y: 9pt), {
+  text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[MY FAIRNESS PLEDGE — SIGN IT LIKE A PROFESSIONAL]
+  v(4pt)
+  text(size: 10.4pt)[
+    As an investigator of learning machines, I promise to: ask *who chose the examples* before I trust a result ·
+    run the *three checks* before I forward anything · look for *who is missing* from every sample · and remember that
+    *responsibility follows control* — so I will name the people, never "the machine", when something goes wrong.
+  ]
+  v(6pt)
+  grid(columns: (1fr, 1fr, 1fr), column-gutter: 10pt,
+    { line(length: 85%, stroke: 0.7pt + ink-soft); v(1.5pt); text(size: 8.3pt, fill: ink-soft, weight: 700, tracking: 0.1em)[INVESTIGATOR'S NAME] },
+    { line(length: 85%, stroke: 0.7pt + ink-soft); v(1.5pt); text(size: 8.3pt, fill: ink-soft, weight: 700, tracking: 0.1em)[DATE] },
+    { line(length: 85%, stroke: 0.7pt + ink-soft); v(1.5pt); text(size: 8.3pt, fill: ink-soft, weight: 700, tracking: 0.1em)[WITNESS (A CLASSMATE)] },
+  )
+})

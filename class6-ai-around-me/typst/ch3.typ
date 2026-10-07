@@ -6,7 +6,12 @@
   summary: [Patterns are the clues learners chase: find one, predict what comes next, and then say *how sure* you are. You will hunt number and letter patterns, play Guess My Rule with a hidden rule-keeper, trace an if-then decision machine, and debate answers whose confidence is higher than their accuracy.],
   missions: "T6-10 – T6-13",
   outcomes: ("6.L1", "6.T1", "6.R2"), strands: ("L", "T"),
-  link: "Links: Maths — number patterns · English — clear questions")
+  link: "Links: Maths — number patterns · English — clear questions",
+  extras: opener-extras(
+    words: ("pattern", "prediction", "confidence", "if-then", "question tree"),
+    warmup: [Clap a secret rhythm three times, then stop. Can your partner continue it? That is a pattern doing its job — write the rhythm you clapped, using letters like L-S-L-S.],
+    need: ("pencil", "scrap paper for secret rules", "a partner who can keep a secret"),
+  ))
 
 // ---------------- 3.1 ----------------
 #sec(1, "Patterns are clues")
@@ -14,6 +19,22 @@ A detective's sharpest tool is not a magnifying glass — it is *noticing*. A pa
 
 #wordpower(6, "pattern", [Something that repeats in a way we can spot, describe and use.])
 #wordpower(7, "prediction", [A smart guess about what comes next, based on a pattern.])
+
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · PATTERN OR COINCIDENCE?]
+  v(2.5pt)
+  text(size: 10.1pt)[Not every repetition is a pattern worth predicting with. A *pattern* keeps working on new cases; a *coincidence* happens once or twice and then betrays you. Mark each one P (pattern) or C (coincidence) — and be ready to defend your choice:]
+  v(3pt)
+  dtable(("The clue", "P or C?", "My defence in one line"),
+    ([The sun has risen every morning in recorded history.], [ ], [ ]),
+    ([My bus was late on Monday and on Tuesday.], [ ], [ ]),
+    ([Water always boils sooner on a mountain than at the seaside.], [ ], [ ]),
+    ([I got two greens in a row on the first throws of a dice.], [ ], [ ]),
+    widths: (64mm, 18mm, 1fr),
+  )
+  v(3pt)
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[Machines make this exact mistake — they trust a repetition that was really a coincidence, because they cannot *wonder* whether it will keep working. Detectives can.]
+}))
 
 #task("T6-10", "Pattern Hunt", mode: "alone", mins: "10")[
   For each strip: write what comes next, then shade how sure you are (one circle = a wild guess, two = fairly sure, three = I could defend it in court).
@@ -54,6 +75,16 @@ Here is a party trick that is secretly machine learning. One player thinks of a 
   #v(5pt)
   *Our final guess at the rule:* #ruled-lines(1, lead: 8.8mm)
   *How many tests did we need before we were sure? Did any test mislead us?* #ruled-lines(2, lead: 8.8mm)
+  #v(4pt)
+  #text(size: 9.5pt, weight: 800, fill: teal, tracking: 0.06em)[ROUND TWO — A HARDER RULE]
+  #dtable(("Example I offered", "YES or NO", "Example I offered", "YES or NO"),
+    ([#box(width: 44mm, line(length: 100%, stroke: 0.55pt + line-soft))], [ ], [#box(width: 44mm, line(length: 100%, stroke: 0.55pt + line-soft))], [ ]),
+    ([#box(width: 44mm, line(length: 100%, stroke: 0.55pt + line-soft))], [ ], [#box(width: 44mm, line(length: 100%, stroke: 0.55pt + line-soft))], [ ]),
+    ([#box(width: 44mm, line(length: 100%, stroke: 0.55pt + line-soft))], [ ], [#box(width: 44mm, line(length: 100%, stroke: 0.55pt + line-soft))], [ ]),
+    widths: (1fr, 20mm, 1fr, 20mm),
+  )
+  #v(3pt)
+  *Round-two rule, in one if-then sentence:* #ruled-lines(1, lead: 8.8mm)
 ]
 #note("Detective's note")[Did you notice? You never *told* the rule-keeper's rule to the group — they learned it from labelled examples, just like a machine. And just like a machine, you might have learned a rule that is *nearly* right. More tests = more confidence.]
 
@@ -202,4 +233,11 @@ Real AI systems never just answer — they answer with a *confidence*: “cat, 6
   #v(2pt)
   *Before I answer any question,* I will say how … #ruled-lines(1, lead: 10.5mm)
 ]))
+
+#chapter-checkpoint(3,
+  [Find the next item and name the pattern: 81 · 68 · 55 · 42 · ?],
+  [Draw or describe a two-question tree that separates *dog / bird / fish*.],
+  [A weather app says “rain, 55% sure.” What should you do — and what should you *not* believe?],
+)
+#case-journal(lines: 3, label: "MY CASE JOURNAL — three lines about patterns, predictions and honesty")
 

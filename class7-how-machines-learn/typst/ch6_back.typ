@@ -43,6 +43,33 @@
   *T7-02:* the best line is close to ₹25 plus ₹14–15 per km; a 6.5 km trip lands near ₹115–125; the 12 km guess is riskier because it stretches beyond every dot you saw. · *T7-04 exam set:* IN = 27, 36, 45; OUT = 14, 19. · *T7-07:* the counting rule flags messages 1, 3 and 5. · *T7-11:* Chart A is honest; Chart B's axis starts at 88 instead of 0; Chart C's shares add up to 110%. · *Ch 1 drill, in order:* C, N, G, C, N, G. · *Ch 2 drill:* reader, recommender, camera, recommender, camera, reader. · *Ch 3 drill:* hottest is May; rising from Jan to May, dipping in Jun.
 ]
 
+#v(4pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: white, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[MORE HINTS — FOR THE STICKY MISSIONS]
+  v(3pt)
+  text(size: 9.9pt)[
+    *T7-03:* a group of fliers, a group of swimmers and a group of walkers are all honest groupings — remember, clustering has no single right answer. · *T7-06:* watch-words for the camera: corners, edges, brightness patches. · *T7-08:* “people like you” usually means the two or three rows with the most matches in the LIKE column, not your best friend. · *T7-10:* every helper is *data in → prediction out → human decides* — if your report card misses the human, it is not finished. · *T7-13:* look at what the Uniform Suggester was shown, never at what you wish it had been shown. · *T7-16 Step 6:* the honest answer is almost never “no bias” — name *which* class or street is missing.
+  ]
+})
+#v(4pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: (paint: teal-mid, thickness: 0.9pt, dash: "dashed"), inset: (x: 11pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-mid, weight: 800, tracking: 0.13em)[MY HINT LOG — WHICH MISSIONS NEEDED A PEEK?]
+  v(2.5pt)
+  text(size: 9.7pt, fill: ink-soft)[Hints are training data for you. Tick the mission code each time a hint unstuck you — a mission that needed three hints deserves one more retry next week, not three more hints:]
+  v(1pt)
+  grid(columns: (1fr, 1fr), column-gutter: 8pt, row-gutter: 5.5pt,
+    ..("T7-__  needed a hint", "T7-__  needed a hint", "T7-__  needed a hint", "T7-__  needed a hint").map(s => box(stroke: 0.6pt + line-soft, radius: 4pt, inset: (x: 7pt, y: 4pt), fill: white, text(size: 9.6pt, s)))
+  )
+})
+#v(5pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: white, stroke: 1pt + ink, inset: (x: 11pt, y: 9pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[A POSTCARD TO THE CLASS 8 INVESTIGATOR — WHO WILL BE YOU]
+  v(3pt)
+  text(size: 10.1pt)[The next case asks: *“What does it take to build an AI that people can trust?”* Leave three clues for your future self — the machine that impressed you most, the mistake that taught you most, and one question you dare Class 8 to answer:]
+  v(2pt)
+  ruled-lines(3, lead: 8.4mm)
+})
+
 // ---------------- PROGRESS + CERTIFICATE ----------------
 #heading(level: 1, numbering: none)[My progress]
 #align(center, text(size: 10.3pt, fill: ink-soft, style: "italic")[Shade honestly — investigators never fake evidence.])

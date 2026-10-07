@@ -6,7 +6,12 @@
   summary: [Smart detectives stay safe, kind and honest — online as everywhere. You will sort personal information with a privacy traffic light, cook unguessable practice passphrases, run the three-check Real-or-Fake detector on suspect cards, and follow one drawing's digital footprint as it travels the internet.],
   missions: "T6-14 – T6-17",
   outcomes: ("6.R1", "6.R2"), strands: ("R",),
-  link: "Links: Social Science — community life · English — checking facts")
+  link: "Links: Social Science — community life · English — checking facts",
+  extras: opener-extras(
+    words: ("privacy", "personal information", "passphrase", "verify", "digital footprint"),
+    warmup: [A message pops up: “You have WON a free phone! Click here in the next 10 minutes!” How does it try to make you feel — and what would a detective do first?],
+    need: ("pencil", "colours for the traffic light", "a younger student to teach (later)"),
+  ))
 
 // ---------------- 4.1 ----------------
 #sec(1, "Privacy: my information, my choice")
@@ -45,6 +50,33 @@ Every time you use a game, an app or a website, somebody is collecting *data* �
 #sec(2, "Passphrases: long and strange wins")
 A short password like `riya123` is cracked in seconds by a machine that simply tries every combination — that machine is doing *automation*, fixed steps, millions per minute. What defeats it is a *passphrase*: three or more *unrelated* words glued together, long enough that guessing would take centuries. The strange words do not need to make sense — they need to be *long, unrelated to you, and known only by you*.
 
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · HOW LONG WOULD A CRACKING MACHINE NEED?]
+  v(2.5pt)
+  text(size: 10.1pt)[A cracking machine tries millions of guesses per minute. Security experts estimate the *crack time* — how long a machine would need to try every combination. Read the estimates, then rank the four passwords from weakest to strongest (1 = weakest):]
+  v(3pt)
+  dtable(("The password", "Estimated time to crack", "My rank 1–4"),
+    ([riya123], [less than a second], [ ]),
+    ([Riya\@2015], [about 2 months], [ ]),
+    ([Green-Onion-Tiger-77?], [about 200 years], [ ]),
+    ([Rickshaw-Monsoon-Pencil-42!], [centuries], [ ]),
+    widths: (56mm, 1fr, 24mm),
+  )
+  v(3pt)
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[What made the difference? *Length* first, *unrelated words* second, *numbers and symbols* third. Notice that Riya\@2015 has a symbol and numbers too — but it is built from a real name and a year, so a machine guesses it early.]
+}))
+
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · THE STRANGE-WORD GENERATOR]
+  v(2.5pt)
+  text(size: 10.1pt)[Strong passphrases start with *unrelated* words. Practise mixing: take the last letter of your name, the first fruit you saw today, and the name of a street you have walked — glue them with a number and a symbol. Do it twice below; the stranger it looks, the better it works:]
+  v(3pt)
+  grid(columns: (auto, 1fr, auto, 1fr), column-gutter: 6pt, align: (left, bottom, left, bottom),
+    text(size: 10.1pt, weight: 700)[Mix 1:], box(stroke: (bottom: 0.55pt + line-soft))[#h(0pt)],
+    text(size: 10.1pt, weight: 700)[Mix 2:], box(stroke: (bottom: 0.55pt + line-soft))[#h(0pt)],
+  )
+}))
+
 #task("T6-15", "Password Recipe", mode: "pair", mins: "10")[
   Cook up a *practice* passphrase using the recipe: pick one word from each column, add your favourite two-digit number and a symbol. Example: “Rickshaw-Monsoon-Pencil-42!”. Write it, then rate it. *Never write your real password anywhere — and never show this page's passphrase to anyone outside your pair.*
   #v(5pt)
@@ -77,11 +109,41 @@ A short password like `riya123` is cracked in seconds by a machine that simply t
   }))
 ]
 
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · PASSPHRASE GYM — BUILD THREE, RATE EACH]
+  v(2.5pt)
+  text(size: 10.1pt)[Cook three *practice* passphrases with the recipe (one word from each column + two digits + a symbol). Make one easy to remember but still long, one completely strange, one for a make-believe account. Rate each honestly:]
+  v(3pt)
+  dtable(("Practice passphrase", "Length (count!)", "Rate it /5", "One thing that makes it strong"),
+    ([#box(width: 48mm, line(length: 100%, stroke: 0.55pt + line-soft))], [ ], [ ], [ ]),
+    ([#box(width: 48mm, line(length: 100%, stroke: 0.55pt + line-soft))], [ ], [ ], [ ]),
+    ([#box(width: 48mm, line(length: 100%, stroke: 0.55pt + line-soft))], [ ], [ ], [ ]),
+    widths: (52mm, 20mm, 18mm, 1fr),
+  )
+  v(3pt)
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[Remember the recipe: *long* beats *clever*. “Rickshaw-Monsoon-Pencil-42!” takes a cracking machine centuries; “Riya\@123” takes it seconds. Length is the superpower.]
+}))
+
 // ---------------- 4.3 ----------------
 #sec(3, "Real or fake? Be the detector")
 The online world is full of edited photos, forwarded rumours and — increasingly — pictures and text made by AI. None of this means the internet is bad; it means every good detective needs a checking routine. Professionals call it *verification*, and it needs only three questions: *Where is it from? (source) · What is the evidence? · How does it try to make me feel?* If a message makes your heart race — fear, anger, “forward this NOW!” — that rushing feeling is exactly when you should slow down and verify.
 
 #wordpower(9, "verify", [To check carefully whether something is true, using evidence and trusted sources.])
+
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · SPOT THE EMOTION WORDS]
+  v(2.5pt)
+  text(size: 10.1pt)[Strong feeling is the costume that fake messages wear. Underline the emotion words in each suspect message, then write what feeling it aims at — and what a detective does first:]
+  v(3pt)
+  dtable(("The suspect message", "Feeling it aims at", "What a detective does first"),
+    ([“SHOCKING!!! Doctors HATE this one strange trick…”], [ ], [ ]),
+    ([“Forward NOW or your family will regret it!”], [ ], [ ]),
+    ([“A calm report: the new library opens on Tuesday.”], [ ], [ ]),
+    widths: (1fr, 30mm, 1fr),
+  )
+  v(3pt)
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[Notice the last row: true information usually *whispers*. If a message shouts, slow down — that is exactly the moment to verify.]
+}))
 
 #note("Detective's note — AI answers can be wrong")[
   An AI answer can be wrong for a simple reason: the machine *predicts* from patterns in its training data, it does not *know* things the way people do. If its data was one-sided, messy or old, its answer will show it. One way to check any answer — human or machine: *verify with a second source* before you believe or forward it.] 
@@ -131,6 +193,7 @@ Imagine walking on a beach of soft sand: every step leaves a mark, and some mark
     ([4 · The school website shows it], [ ], [ ]),
     ([5 · A cousin shares it to family far away], [ ], [ ]),
     ([6 · Unknown accounts copy it], [ ], [ ]),
+    ([7 · A search engine indexes it], [ ], [ ]),
     widths: (58mm, 1fr, 44mm),
   )
   #v(4pt)
@@ -191,4 +254,11 @@ Imagine walking on a beach of soft sand: every step leaves a mark, and some mark
   [I can explain my digital footprint to a younger student in two sentences],
   [I use the T.H.I.N.K. check before I post — and I can prove it],
 )
-#thinkink([One habit I will start this week is … because last week I saw / did …], lines: 3)
+#thinkink([One habit I will start this week is … because last week I saw / did …], lines: 2)
+
+#chapter-checkpoint(4,
+  [Which of these is okay to type into a website that asks: your full name and school, or your favourite colour? Why?],
+  [Turn “mango”, “monsoon”, “7” and “!” into a strong passphrase — and say what makes it strong.],
+  [A forwarded message shouts “SHARE IMMEDIATELY!!!” What are the THREE checks you run before deciding?],
+)
+#case-journal(lines: 1, label: "MY CASE JOURNAL — the safety habit I will never skip")

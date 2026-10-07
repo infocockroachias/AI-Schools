@@ -6,7 +6,12 @@
   summary: [Every detective starts by learning to tell two suspects apart. In this chapter you will meet *rule-followers* — machines that run exact steps — and *learners* — machines that improve from examples. By the last mission you will have played a human robot, taught an alien using only flashcards, and judged a fair humans-vs-machines contest.],
   missions: "T6-01 – T6-05",
   outcomes: ("6.U1", "6.U2", "6.L2", "6.W1", "6.T1"), strands: ("U", "W"),
-  link: "Links: Maths — patterns · English — exact instructions")
+  link: "Links: Maths — patterns · English — exact instructions",
+  extras: opener-extras(
+    words: ("algorithm", "automation", "artificial intelligence", "training examples", "predict"),
+    warmup: [Write the name of one machine you believe is smart — and the one thing it did that impressed you. You will re-read this line after Chapter 5, at the end of the case, and see if your idea changed.],
+    need: ("pencil", "eraser", "10 blank cards", "a partner's sharp eyes"),
+  ))
 
 // ---------------- 1.1 ----------------
 #sec(1, "Smart machines are everywhere")
@@ -61,6 +66,11 @@ A washing machine washes exactly the same way today as it did last month. A lift
 }))
 #myth("AI is a robot.")[
   AI is a *program* — a learner made of data and patterns. It can live inside a phone, a website, a car or a power plant, and it has no body at all. A robot is one place a program can be kept; plenty of robots run with no AI, and plenty of AI runs with no robot.]
+#note("60-second hunt — do it before you read on")[
+  Look up from this page. Point at one *rule-follower* and one *learner* within three metres of you — then defend your choices to your partner in one sentence each. Disagreeing is allowed: arguing from evidence is exactly the skill this chapter teaches. Write your two choices:
+  #v(1pt)
+  *Rule-follower:* #ruled-lines(1, lead: 7.8mm) *Learner:* #ruled-lines(1, lead: 7.8mm)
+]
 // ---------------- 1.3 ----------------
 #sec(3, "Learners: machines that improve from examples")
 So how does a video app get good at suggesting clips you like? Nobody wrote a rule for “show Aarav cricket clips”. Instead, the app *learned from examples* — millions of them. It noticed which clips people similar to you watched, and it found *patterns* in that. This is the big secret of this whole handout: a learning machine is not given the answer; it is given *examples*, and it works the pattern out by itself.

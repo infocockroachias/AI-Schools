@@ -3,7 +3,15 @@
 //  CHAPTER 3 — AI AT WORK IN INDIA   (7 pp · tasks 10–12)
 // ============================================================
 #chapter-opener(3, "AI at Work in India", "Where is AI already working — and how do I read its report card?",
-  outcomes: ("7.W2", "7.D1"), strands: ("W", "D"))
+  outcomes: ("7.W2", "7.D1"), strands: ("W", "D"),
+  summary: [Learning machines are already your neighbours' colleagues. In this chapter you will tour five sectors — healthcare, education, transport, agriculture, communication — and give each helper a report card with a benefit AND a limit. Then you will learn their favourite language: charts. You will collect structured data, draw bar, line and pie charts, and then face the chart detective's hardest truth: some charts are drawn to mislead you.],
+  missions: "T7-10 – T7-12",
+  link: "Links: Maths — data handling & percentages · Social Science — community work",
+  extras: opener-extras(
+    words: ("structured data", "trend", "sample", "benefit", "limit"),
+    warmup: [Name one machine you have seen helping an adult do their job — at a shop, a clinic, a bus stand, a farm or a bank. What did it seem to be doing?],
+    need: ("pencil", "ruler", "colours for charts", "your sharpest suspicion"),
+  ))
 
 // ---------------- 3.1 ----------------
 #sec(1, "Five sectors, five helpers")
@@ -123,6 +131,20 @@ How do we know whether an AI helper — or any claim — is doing well? Its *dat
 #sec(4, "When a chart lies")
 Charts look like evidence — but a chart is a *drawing made by a person*, and a person can make choices that mislead you: an axis that starts high instead of zero, percentages that add up to more than 100, or numbers quietly left out. The colour and the confidence stay; the truth goes missing. In the next mission, one of the three charts is honest and two are tricksters. Read every number before you believe any picture.
 
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[THE HONEST-CHART PROMISE — WHAT A FAIR DRAWER ALWAYS DOES]
+  v(3pt)
+  dtable(("An honest chart…", "Tick when you check it"),
+    ([starts its number axis at zero — or says clearly where it starts], [ ]),
+    ([makes percentages add up to exactly 100], [ ]),
+    ([says where the data came from (the sample) and when it was collected], [ ]),
+    ([matches the question: bars to compare, a line for time, a pie for one whole], [ ]),
+    widths: (1fr, 30mm),
+  )
+  v(3pt)
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[Cut this promise out (or copy it) and keep it in your notebook. Any chart that breaks a promise is not lying to your eyes — it is lying to your *reason*. Detectives read numbers first and colours second.]
+}))
+
 #task("T7-11", "Chart Detective", mode: "alone", mins: "15")[
   Three posters went up on the school noticeboard. One is honest. Two are playing tricks.
   #v(4pt)
@@ -179,3 +201,10 @@ Charts look like evidence — but a chart is a *drawing made by a person*, and a
   #v(2.5pt)
   #text(size: 10.1pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7.7mm)]
 ]
+
+#chapter-checkpoint(3,
+  [Name one AI helper from this chapter, its benefit — and one limit nobody should forget.],
+  [A pie chart shows three school clubs at 60%, 30% and 40%. What is wrong — and what might the honest numbers be?],
+  [Your class surveys only the cricket team about favourite sports. What is the problem with that *sample*?],
+)
+#case-journal(lines: 2, label: "MY CASE JOURNAL — today's sharpest clue about charts and helpers")
