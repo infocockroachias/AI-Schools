@@ -3,7 +3,15 @@
 //  CHAPTER 1 — THE LEARNING MACHINE   (8 pp · tasks 01–05)
 // ============================================================
 #chapter-opener(1, "The Learning Machine", "How can a machine learn without being told the rules?",
-  outcomes: ("7.U1", "7.L1", "7.L2", "7.T1"), strands: ("U", "L"))
+  outcomes: ("7.U1", "7.L1", "7.L2", "7.T1"), strands: ("U", "L"),
+  summary: [Welcome to the workshop. Last year you learned to *spot* learning machines; this year you operate one. In five missions you will run all three learning jobs with your own hands — sorting objects into named groups (classification), drawing a best-fit line to predict a fare (regression), inventing groups nobody gave you (clustering) — and then sit the same hidden exam a machine sits, to learn how training and testing really work.],
+  missions: "T7-01 – T7-05",
+  link: "Links: Maths — graphs & averages · English — precise definitions",
+  extras: opener-extras(
+    words: ("classification", "regression", "clustering", "training set", "test set"),
+    warmup: [A video app always seems to know what you want to watch next. Write your best guess: WHERE did that knowledge come from? You will check this guess at the end of the book.],
+    need: ("pencil", "ruler", "12 small objects to sort", "a fair judge"),
+  ))
 
 // ---------------- 1.1 ----------------
 #sec(1, "Three jobs that learning machines do")
@@ -113,6 +121,19 @@ How does a machine actually *learn* the pattern? Here is the secret, and you alr
 ]
 #wordpower(4, "training set", [The practice examples a machine learns from before it meets new ones.])
 #wordpower(5, "test set", [The hidden examples used to check whether the learning really worked.])
+
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · TRAIN AND TEST IN MY OWN WEEK]
+  v(2.5pt)
+  text(size: 10.1pt)[Machines are not the only learners. Name one *training moment* and one *testing moment* from your own week — moments where you practised with answers available, then faced something brand-new:
+  v(3pt)
+  dtable(("My training moment (with answers available)", "My testing moment (no answers given)"),
+    ([#ruled-lines(2, lead: 8.4mm)], [#ruled-lines(2, lead: 8.4mm)]),
+    widths: (1fr, 1fr),
+  )
+  v(2.5pt)
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[If your practice moment and your test moment were the *same questions*, you did not test — you rehearsed. Machines make this exact mistake, and so do people.]
+}))
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
   text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[AT A GLANCE · IF-THEN MACHINE VS LEARNING MACHINE]

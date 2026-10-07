@@ -6,7 +6,12 @@
   summary: [Machines cannot learn on empty stomachs — their food is *data*. You will hunt the four kinds of data around your classroom, tidy them into tables, turn a table into a chart, and then discover what happens when a learner is fed bad examples. Garbage in, garbage out — and only a detective can spot why.],
   missions: "T6-06 – T6-09",
   outcomes: ("6.D1", "6.D2", "6.R2"), strands: ("D",),
-  link: "Links: Maths — tables & bar graphs · Science — observation")
+  link: "Links: Maths — tables & bar graphs · Science — observation",
+  extras: opener-extras(
+    words: ("data", "pixel", "tally", "garbage in, garbage out", "bar chart"),
+    warmup: [Every machine that learns has to be *fed*. What do you think your family's phone “eats” all day? Write your best guess — you will check it at the end of this chapter.],
+    need: ("pencil", "ruler", "colour pencils", "8 small things to sort"),
+  ))
 
 // ---------------- 2.1 ----------------
 #sec(1, "Every learner needs food")
@@ -30,6 +35,10 @@ You have learned that machines find patterns in examples. But what exactly do th
   text(size: 9.5pt, fill: ink-soft, style: "italic")[N = numbers · W = words · P = pictures · S = sounds. One row may fit two kinds — both ticks earn respect when you can say why.]
 }))
 
+#note("Two kinds at once — the tricky cases")[
+  Real data rarely asks permission. A music video is *sounds* *and* *pictures* at the same time. A WhatsApp voice note with a transcript underneath is *sounds* turned into *words*. A traffic camera stores *numbers* that another program turns back into *pictures*. When you meet data that fits two boxes, do not panic — write both letters and say why. Machines that work with mixed data (a video app, a smart speaker, a self-driving cart) need detectives who can spot *every* kind hiding inside.
+]
+
 #task("T6-06", "Four Kinds of Data Hunt", mode: "pair", mins: "10", win: true)[
   Hunt your classroom (and your own pockets) for one example of each kind of data. Write or draw it in the box. The first pair to finish all four wins the round — but every box needs a real finding!
   #v(5pt)
@@ -46,6 +55,16 @@ You have learned that machines find patterns in examples. But what exactly do th
 // ---------------- 2.2 ----------------
 #sec(2, "Tables make data tidy")
 Loose data is like a scattered card pile: hard to think about. The first tool of every data detective is the *table* — rows and columns that line facts up neatly. Once data sits in a table, you can *tally* it (count with ||| strokes), and once you have tallies you can *draw a bar chart* that makes the biggest and smallest jump out at your eyes. Machines do exactly the same trick, only much faster: tidy first, then look.
+
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · READ THE TALLY]
+  v(2.5pt)
+  text(size: 10.1pt)[Tally strokes travel in groups of five: #box(baseline: 30%, stroke: 0.6pt + ink-soft, inset: (x: 6pt, y: 2pt), text(font: "DejaVu Sans", size: 10.5pt, "|||| ")) with a strike-through. Write the number each tally stands for:]
+  v(1.5pt)
+  grid(columns: (1fr, 1fr, 1fr, 1fr), column-gutter: 6pt, row-gutter: 4pt,
+    ..("|||| ", "||", "|||| |||| |", "|||| ||").map(t => box(stroke: 0.6pt + line-soft, radius: 4pt, inset: (x: 6pt, y: 3.5pt), fill: teal-faint, text(font: "DejaVu Sans", size: 10.5pt, t + " =  ______")))
+  )
+}))
 
 #task("T6-07", "Table to Chart", mode: "group", mins: "15")[
   In your group, ask each member: *“Which of these five do you like best?”* Add your teacher's vote too if you like. Tally the answers, write the count, then colour one bar for each sport on the chart. Remember: one full tally is four strokes plus a strike-through.
@@ -91,6 +110,12 @@ Here is a secret that surprises almost everyone: to a camera and to an AI, your 
     text(size: 10.1pt)[What did the numbers turn into? #h(4pt) *A picture on a screen is really just* #box(width: 52mm, baseline: 40%, line(length: 100%, stroke: 0.6pt + ink-soft)) #h(2pt) stored in a grid.],
     { text(size: 9.2pt, weight: 700)[Our pictures matched?]; h(4pt); box(width: 9.5pt, height: 9.5pt, radius: 5pt, stroke: 1pt + teal-mid, fill: white); text(size: 9.5pt, weight: 800)[ YES]; h(6pt); box(width: 9.5pt, height: 9.5pt, radius: 5pt, stroke: 1pt + teal-mid, fill: white); text(size: 9.5pt, weight: 800)[ NO] },
   )
+]
+#note("Bonus round — invent a secret picture")[
+  On scrap paper, design your own 8 × 8 secret picture and write its code card (rows of 0s, 1s and 2s). Swap code cards only — never the pictures — with another pair. If their shading matches your drawing, you have just proved the whole idea of this chapter: *the numbers are the picture.* A camera does this trick sixty times every second for every pixel it owns.
+]
+#note("Camera-speak — three words detectives should know")[
+  *Pixel* — one tiny square of the grid; the smallest piece of a picture a machine can see. *Resolution* — how many pixels the grid holds; more pixels = more numbers = more detail. *Brightness* — the number stored in each pixel, from 0 (pure black) to 255 (pure white). Next time a photo looks blurry on a screen, you will know what to blame: not enough pixels in the grid!
 ]
 // ---------------- 2.3b ----------------
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
@@ -160,3 +185,4 @@ Now you can spot the biggest danger in an AI's kitchen. If the *training example
   [I can explain “garbage in, garbage out” to someone who missed today's class],
 )
 #thinkink([A machine I know eats data all day long. The data it probably eats is … and if that data is messy, it will …], lines: 2)
+#case-journal(lines: 2, label: "MY CASE JOURNAL — the clue I will never forget from this chapter")

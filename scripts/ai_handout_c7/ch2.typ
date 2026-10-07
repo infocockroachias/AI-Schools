@@ -3,7 +3,15 @@
 //  CHAPTER 2 — MACHINES THAT SEE, READ AND RECOMMEND  (8 pp · tasks 06–09)
 // ============================================================
 #chapter-opener(2, "Machines That See, Read and Recommend", "What does a machine actually see when it looks at a picture, a message or you?",
-  outcomes: ("7.W1", "7.T1"), strands: ("W",))
+  outcomes: ("7.W1", "7.T1"), strands: ("W",),
+  summary: [Three machines walk into your day. One *sees*: it turns pixels into features and predicts what they show. One *reads*: it counts words and frequencies — fast, powerful, and not the same as understanding. One *recommends*: it finds people whose pattern of likes matches yours and borrows their taste. In four missions you will be all three machines — with your own eyes, your own tallies, your own table of likes — and discover exactly where each one is brilliant, and where it falls flat.],
+  missions: "T7-06 – T7-09",
+  link: "Links: Maths — tally & frequency · Languages — idioms and meaning",
+  extras: opener-extras(
+    words: ("feature", "frequency", "recommendation", "context", "idiom"),
+    warmup: [Look up from this page for five seconds, then look back. Write three clues (features!) that told you this page is a page and not a photo of a page.],
+    need: ("pencil", "a page of any book", "a magnifying glass if you have one"),
+  ))
 
 // ---------------- 2.1 ----------------
 #sec(1, "How a machine sees")
@@ -119,6 +127,21 @@ Translation looks easy: swap each word for its counterpart. But you speak a lang
 ]
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · THE IDIOM RESCUE KIT]
+  v(2.5pt)
+  text(size: 10.1pt)[Idioms are word-tricks: the meaning lives in the *context around* the words, not inside them. A counting machine has no context — you do. Decode these the way a human would, then say what a machine would need to know:]
+  v(3pt)
+  dtable(("The sentence", "What it really means", "What a machine would need to know"),
+    ([“Hold on a second!”], [ ], [ ]),
+    ([“This bag weighs a tonne!”], [ ], [ ]),
+    ([“Class, eyes here!”], [ ], [ ]),
+    widths: (44mm, 1fr, 1fr),
+  )
+  v(2.5pt)
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[The missing ingredient has a name: *context* — who is speaking, to whom, about what. Some translation machines learn context from millions of examples. None of them can ask you what you *meant*. That is still your job.]
+}))
+
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
   text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH NUMBERS DID THE MACHINE USE?]
   v(3pt)
   dtable(("The machine is…", "Camera, reader or recommender?"),
@@ -200,3 +223,10 @@ Translation looks easy: swap each word for its counterpart. But you speak a lang
   #v(2.5pt)
   #text(size: 10.1pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7.7mm)]
 ]
+
+#chapter-checkpoint(2,
+  [A machine reads “I could KILL for a glass of water!” and flags the message as violent. What is missing from its reading?],
+  [Your video app recommends cricket clips all week. Whose pattern of likes is it actually borrowing?],
+  [Name one job where counting words is enough — and one job where counting is not enough.],
+)
+#case-journal(lines: 2, label: "MY CASE JOURNAL — today's sharpest clue about seeing, reading and recommending")

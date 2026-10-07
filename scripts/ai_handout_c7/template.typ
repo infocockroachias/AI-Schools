@@ -105,7 +105,7 @@
   }
 }
 
-#let moka-doc(cover-series: "", cover-title: "", cover-subtitle: "", cover-meta: (), author: "", license: none, ack: none, preface: none, toc: true, body) = {
+#let moka-doc(cover-series: "", cover-title: "", cover-subtitle: "", cover-meta: (), author: "", license: none, ack: none, preface: none, toc: true, toc-extras: none, cover-questions: "", ack-meta: "", body) = {
   set document(
     title: cover-title + " — PRATIMAI AI Handouts",
     author: author,
@@ -133,8 +133,12 @@
     align(center, text(size: 10.4pt, weight: 700, tracking: 0.1em, fill: ink-soft, cover-meta.at(1)))
     v(14pt)
     align(center, text(size: 12.6pt, weight: 800, fill: ink, author))
+    v(12pt)
+    line(length: 46%, stroke: 0.6pt + line-soft)
+    v(7pt)
+    align(center, text(size: 10.2pt, style: "italic", fill: ink-soft, cover-questions))
   }))
-  v(18pt)
+  v(20pt)
   align(center, {
     text(size: 8.6pt, weight: 800, tracking: 0.2em, fill: ink-soft)[THIS CASE FILE BELONGS TO]
     v(7pt)
@@ -142,13 +146,40 @@
     v(2.5pt)
     text(size: 8.1pt, fill: ink-soft)[name · class · roll number]
   })
+  v(16pt)
+  align(center, box(radius: 5pt, stroke: 1.1pt + ink, fill: white, inset: (x: 15pt, y: 9pt), {
+    set text(size: 9.6pt)
+    grid(columns: (auto, 32mm, 8mm, auto, 32mm), column-gutter: 5pt, align: (left, bottom, center, left, bottom),
+      text(font: f-display, size: 8.4pt, weight: 800, tracking: 0.14em, fill: ink-soft, "CASE OPENED ON"),
+      box(stroke: (bottom: 0.7pt + ink-soft))[#h(0pt)],
+      text(fill: amber-deep, weight: 800)[★],
+      text(font: f-display, size: 8.4pt, weight: 800, tracking: 0.14em, fill: ink-soft, "CASE CLOSED ON"),
+      box(stroke: (bottom: 0.7pt + ink-soft))[#h(0pt)],
+    )
+  }))
   pagebreak()
 
   // ---------- license (machiatto spec page) ----------
   if license != none { license; pagebreak() }
 
   // ---------- acknowledgements (machiatto cream box) ----------
-  { set text(font: f-display); acknowledgement(ack) }
+  {
+    align(center, {
+      v(10pt)
+      pixel-heart(2.4mm)
+      v(8pt)
+      text(font: f-display, size: 9pt, weight: 800, tracking: 0.24em, fill: amber-deep, upper(cover-series))
+      v(14pt)
+    })
+    set text(font: f-display)
+    acknowledgement(ack)
+    if ack-meta != "" {
+      v(16pt)
+      align(center, box(radius: 5pt, stroke: 0.9pt + ink-soft, fill: white, inset: (x: 13pt, y: 8pt), {
+        text(font: f-display, size: 8.6pt, weight: 800, tracking: 0.16em, fill: teal-deep, ack-meta)
+      }))
+    }
+  }
   pagebreak()
 
   // ---------- preface ----------
@@ -157,6 +188,7 @@
   // ---------- table of contents ----------
   if toc {
     outline(title: text(font: f-display, size: 20pt, weight: 800, fill: teal)[Contents], depth: 2)
+    if toc-extras != none { toc-extras }
     pagebreak()
   }
 
@@ -238,8 +270,6 @@
 // star character
 #let star(size, fill: amber) = text(font: "DejaVu Sans", fill: fill, size: size, "★")
 
-// extra chart builders for Class 7 (scatter, line, pie)
-
 #let strand-badges(strands) = {
   for s in strands { strand-badge(s, active: true); h(2.5pt) }
 }
@@ -248,7 +278,7 @@
 //  CHAPTER OPENING — MoKa spec: heading · summary · minitoc,
 //  first section follows on the next page
 // ============================================================
-#let chapter-opener(num, title, question, summary: none, outcomes: (), strands: (), link: none, missions: none) = {
+#let chapter-opener(num, title, question, summary: none, outcomes: (), strands: (), link: none, missions: none, extras: none) = {
   heading(level: 1)[#title]
   // guiding question — machiatto info-box anatomy
   block(width: 100%, breakable: false, radius: 5pt, stroke: 1pt + ink, fill: teal-faint, inset: (x: 11pt, y: 8pt), {
@@ -282,6 +312,7 @@
   text(font: f-display, size: 11pt, weight: 800, fill: teal)[In this chapter]
   v(1pt)
   minitoc()
+  if extras != none { v(9pt); extras }
   pagebreak(weak: true)
 }
 
@@ -449,8 +480,7 @@
   })
 })
 
-// example bar chart with filled bars (chart-reading drills; ymin > 0 truncates the axis on purpose
-// to teach the "misleading chart" trap)
+// example bar chart with filled bars (for chart-reading drills)
 #let barchart-example(labels, values, ymax: 10, ymin: 0, ystep: 1, pw: 120mm, ph: 44mm, barfill: amber, ylabel: "NUMBER OF VOTES", labsize: 8.8pt) = box(width: 100%, {
   box(width: pw + 13mm, height: ph + 9mm, {
     for i in range(ymin, ymax + 1, step: ystep) {
@@ -607,4 +637,100 @@
     grid(columns: (auto, 1fr), column-gutter: 6.5pt, align: (top, left), cbox, text(size: 10.7pt, it))
     v(3.5pt)
   }
+}
+
+// "I can" checklist (journey map / progress)
+#let ican(items) = {
+  let arr = if type(items) == arguments { items.pos() } else { items }
+  for it in arr {
+    grid(columns: (auto, 1fr), column-gutter: 6.5pt, align: (top, left), cbox, text(size: 10.7pt, it))
+    v(3.5pt)
+  }
+}
+
+// ============================================================
+//  PAGE-BALANCE KIT — components that give every page a full,
+//  purposeful look (no half-empty pages): opener extras,
+//  chapter checkpoints, journal strips, box legend.
+// ============================================================
+
+// opener extras: vocabulary chips + warm-up write-in + toolkit strip
+#let opener-extras(words: (), warmup: none, need: ()) = {
+  block(width: 100%, breakable: false, radius: 5pt, stroke: 0.9pt + ink-soft, fill: white, inset: (x: 11pt, y: 8pt), {
+    text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[WORDS YOU'LL MEET HERE]
+    v(5pt)
+    for w in words {
+      box(fill: teal-soft, radius: 4pt, inset: (x: 7.5pt, y: 3.5pt), text(font: f-display, size: 9.8pt, weight: 800, fill: teal-deep, w))
+      h(4.5pt)
+    }
+  })
+  v(6pt)
+  block(width: 100%, breakable: false, radius: 5pt, stroke: 1pt + ink, fill: amber-soft, inset: (x: 11pt, y: 8pt), {
+    grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, horizon, right),
+      text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[WARM-UP · BEFORE YOU READ],
+      [],
+      text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.12em)[ALONE · 2 MIN],
+    )
+    v(3.5pt)
+    text(size: 10.7pt, warmup)
+    v(1pt)
+    ruled-lines(2, lead: 8.2mm)
+  })
+  v(6pt)
+  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, inset: (x: 11pt, y: 7.5pt), {
+    text(size: 9.7pt)[#text(font: f-display, size: 8.4pt, fill: teal-deep, weight: 800, tracking: 0.13em)[DETECTIVE'S TOOLKIT — YOU WILL NEED:] #h(4pt) #text(weight: 700, need.join("  ·  "))]
+  })
+}
+
+// chapter checkpoint: three quick recall questions, write-in
+#let chapter-checkpoint(num, ..qa) = {
+  v(5pt)
+  block(width: 100%, breakable: false, radius: 5pt, stroke: 1pt + ink, fill: white, inset: (x: 11pt, y: 9pt), {
+    grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, horizon, right),
+      text(font: f-display, size: 12.7pt, weight: 800, fill: teal, "Chapter " + str(num) + " Checkpoint"),
+      text(size: 8.3pt, fill: ink-soft, weight: 700)[one line each — no peeking back!],
+      text(font: f-display, size: 8.1pt, fill: amber-deep, weight: 800, tracking: 0.12em, [ALONE · 3 MIN]),
+    )
+    v(6.5pt)
+    for (i, q) in qa.pos().enumerate() {
+      text(size: 10.7pt)[#strong[#str(i + 1).] #q]
+      ruled-lines(1, lead: 8.2mm)
+      v(4.5pt)
+    }
+  })
+  v(2pt)
+}
+
+// journal strip: dashed write-in band for the chapter's last page
+#let case-journal(lines: 2, label: "MY CASE JOURNAL — today's sharpest clue") = {
+  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint,
+    stroke: (paint: teal-mid, thickness: 0.9pt, dash: "dashed"), inset: (x: 11pt, y: 8pt), {
+      text(font: f-display, size: 9.2pt, fill: teal-mid, weight: 800, tracking: 0.13em, upper(label))
+      v(1pt)
+      ruled-lines(lines, lead: 8.2mm)
+  })
+  v(2pt)
+}
+
+// TOC-page legend: what each recurring box wants from the reader
+#let legend-card(name, fill, stroke, body) = block(width: 100%, breakable: false, radius: 5pt, fill: fill, stroke: stroke, inset: (x: 9pt, y: 7pt), {
+  text(font: f-display, size: 9pt, weight: 800, fill: teal-deep, tracking: 0.12em, name)
+  v(2.5pt)
+  text(size: 9.4pt, body)
+})
+
+#let box-legend = {
+  v(11pt)
+  text(font: f-display, size: 15pt, weight: 800, fill: teal)[The boxes in this book]
+  v(1.5pt)
+  text(size: 9.7pt, fill: ink-soft)[You will meet these boxes on every case. Each one wants something different from you — collect them all.]
+  v(7pt)
+  grid(columns: (1fr, 1fr), column-gutter: 6pt, row-gutter: 5.5pt,
+    legend-card("MISSION", white, 1pt + ink, [A paper mission with a code like *T6-01*. The label tells you who you work with and how many minutes you get. Do it — then write. Writing *is* the mission.]),
+    legend-card("WORD POWER", cream, 0.9pt + ink-soft, [A word worth keeping in your detective kit. Say it three times today — words are the tools of thinking.]),
+    legend-card("SELF-CHECK", teal-faint, 1pt + ink, [Skills to grade yourself on. Shade a confidence circle honestly — honest circles make you learn faster.]),
+    legend-card("THINK & INK", amber-soft, 1pt + ink, [A question with lines. There is no single right answer here — your *reasons* are the answer.]),
+  )
+  v(5pt)
+  text(size: 9.3pt, fill: ink-soft)[Also on patrol: #strong[MYTH BUSTER] busts a wrong idea many people believe · #strong[DETECTIVE'S NOTE] hands you a professional's secret · #strong[HOME LINK] (dashed) is a mission to take home and teach a grown-up.]
 }

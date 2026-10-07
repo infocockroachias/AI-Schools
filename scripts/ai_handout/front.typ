@@ -22,7 +22,19 @@
     Every activity in this book is *unplugged*: no task requires a device, an account, a photo, a voice
     recording or any personal information. All examples use invented people and places.
   ]
-  v(14pt)
+  v(9pt)
+  block(width: 100%, radius: 5pt, stroke: 0.9pt + ink-soft, fill: white, inset: (x: 11pt, y: 8pt), {
+    text(font: f-display, size: 9.2pt, weight: 800, fill: teal-deep, tracking: 0.12em)[THE LICENCE IN PLAIN WORDS]
+    v(4pt)
+    dtable(("You MAY", "You may NOT"),
+      ([ photocopy pages for your class or study group ], [ sell this book or any copy of it ]),
+      ([ adapt missions for your learners and share them ], [ remove the credit lines or the licence ]),
+      ([ translate the book and keep the same licence ], [ use it to advertise any product or service ]),
+      ([ point other schools to the free source files ], [ claim the activities are your own invention ]),
+      widths: (1fr, 1fr),
+    )
+  })
+  v(9pt)
   table(stroke: none, columns: 2, inset: (y: 3.2pt),
     [*Series:*], [PRATIMAI · AI Handouts],
     [*Title:*], [AI Around Me — Class 6 · Level 1 · NOTICE],
@@ -31,13 +43,16 @@
     [*Published by:*], [PRATIMAI | AI-Schools],
     [*Edition:*], [Machiatto Edition 1.0],
   )
-  v(16pt)
+  v(10pt)
   block(width: 100%, radius: 5pt, stroke: 0.7pt + ink-soft, fill: white, inset: (x: 11pt, y: 8pt), {
     text(size: 9.4pt, fill: ink-soft)[
       Set in *Nunito* and *Baloo 2* on warm paper stock, typeset with Typst using the
       *Machiatto* template — which implements the MoKa Reads publication specification:
       title page, license, acknowledgements, preface, contents, then chapters opening
-      with a summary and a mini table of contents.
+      with a summary and a mini table of contents. Both typefaces are used under the
+      SIL Open Font Licence; the template ships under the MIT licence. Generated charts,
+      grids and the pixel heart are drawn in pure Typst code — no images were imported,
+      so every page prints crisply at any size.
     ]
   })
 }
@@ -47,10 +62,22 @@
 // ------------------------------------------------------------
 #let ack-text = [
   To the teachers and their Classes 6 and 7 who piloted every mission with pencils, paper
-  and great patience — your classroom notes shaped this book. To the curriculum reviewers
-  who guarded the "unplugged" promise on every page, thank you. And to the grown-ups at
-  home who will be asked "is a machine ever really smart?" at the dinner table: this book
-  is for those conversations, too.
+  and great patience — your classroom notes shaped this book. You told us which tasks made
+  the room go quiet with thinking, which ones made it erupt in argument, and where the
+  instructions needed one more example. Every one of those notes made a page here better.
+
+  To the curriculum reviewers who guarded the "unplugged" promise on every page, thank you.
+  You caught the three places where a task quietly expected a phone, and you were right:
+  a detective's tools are paper, pencils, patience and other people. And to the grown-ups at
+  home who will be asked "is a machine ever really smart?" at the dinner table — this book
+  is for those conversations, too. The best missions end with a child teaching an adult.
+
+  Thanks as well to the open-source community behind Typst and the Machiatto template
+  that gives this book its typesetting, and to the type designers of Nunito and Baloo 2,
+  whose friendly letterforms keep 200 pages of hard thinking feeling light. Finally, to
+  the detective holding this book: the reviewers never got to meet you, but every
+  confidence circle, empty line and doodle box in here was left blank on purpose —
+  because the last author of this case file is you.
 ]
 
 // ------------------------------------------------------------
@@ -124,6 +151,38 @@
       treat the confidence circles as honest thinking, not scores. A separate teacher pack carries answer
       notes and rubrics; this book deliberately never prints solutions beside a task.
     ]
+  })
+  v(9pt)
+  text(font: f-display, size: 13pt, weight: 800, fill: teal)[Four ways to help — without giving answers]
+  v(4.5pt)
+  grid(columns: (1fr, 1fr), column-gutter: 7pt, row-gutter: 6pt,
+    ..range(4).map(i => {
+      let titles = ("Ask, don't tell", "Praise the reasoning", "Let it be wrong", "Connect to real life")
+      let bodies = (
+        [When your detective is stuck, ask: *“What have you tried? What does the machine know — and how would it know that?”* A good question unblocks; a quick answer un-trains.],
+        [Swap “correct!” for *“I like how you checked that”* or *“you changed your mind when the evidence changed — that is real detective work.”*],
+        [A confident wrong answer is useful material. Ask *“how sure are you — and what would change your mind?”* Changing a belief is the skill this book teaches.],
+        [Point at the machines around you — the washing machine, the map app, the shop's barcode — and ask which ones *follow steps* and which ones *learned from examples*.],
+      )
+      block(width: 100%, breakable: false, radius: 5pt, stroke: 0.9pt + ink-soft, fill: white, inset: (x: 9pt, y: 8pt), {
+        grid(columns: (auto, 1fr), column-gutter: 6.5pt, align: (center, left),
+          box(fill: teal, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, weight: 800, size: 10.5pt, str(i + 1))),
+          text(weight: 800, size: 10.4pt, fill: teal, titles.at(i)),
+        )
+        v(3pt)
+        text(size: 9.7pt, bodies.at(i))
+      })
+    })
+  )
+  v(9pt)
+  note("If your child asks…")[
+    #text(size: 10.1pt)[*“Is the machine actually thinking?”* — Say: it is finding patterns in examples, the way you learned what a mango is. It does the pattern part fast; *you* do the judging part better. #h(8pt) *“Can it be wrong?”* — Say: always possibly. That is why every mission here ends with *how sure am I?* — the same question scientists, judges and pilots use. #h(8pt) *“Is AI dangerous?”* — Say: tools take after their makers. That is why this book keeps asking *who made this, and who is responsible?* — the question that keeps people in charge.]
+  ]
+  v(9pt)
+  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 1pt + ink, inset: (x: 11pt, y: 8pt), {
+    text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[SIGNS OF DETECTIVE GROWTH WORTH PRAISING]
+    v(3pt)
+    text(size: 9.8pt)[Watch for these quiet changes — they matter more than any correct answer: your child *asks how sure* they are before answering · they *check a second source* without being told · they *change their mind* when the evidence changes — and say why · they explain a machine's *limit*, not just its magic · they teach the three questions to a younger sibling. When you spot one, name it: “That is exactly what detectives do.”]
   })
   pagebreak()
 

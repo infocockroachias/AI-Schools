@@ -13,8 +13,11 @@
   author: "PRATIMAI Curriculum Team",
   license: license-page,
   ack: ack-text,
+  ack-meta: "17 PAPER MISSIONS · 14 WORDS TO KEEP · 5 CHAPTERS · 1 BADGE EARNED",
   preface: preface-pages,
   toc: true,
+  toc-extras: box-legend,
+  cover-questions: "How do I know?  ·  What is missing?  ·  What is the trick here?",
 )
 
 // ---------- chapters ----------

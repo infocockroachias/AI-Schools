@@ -6,7 +6,12 @@
   summary: [Your biggest case yet: a *real survey* of five grown-ups about the smart machines around them. You will plan and run the survey, organise and chart the data you collect, design a helper machine of your own — and then close the case by answering the big question from page one, with evidence.],
   missions: "T6-18 – T6-20",
   outcomes: ("6.U1", "6.D1", "6.W1", "6.R2"), strands: ("U", "D", "L", "W", "R"),
-  link: "Links: Social Science — community survey · Maths — data & charts")
+  link: "Links: Social Science — community survey · Maths — data & charts",
+  extras: opener-extras(
+    words: ("survey", "tally", "bar chart", "limit", "evidence"),
+    warmup: [Practise the survey question out loud once: “Where do you meet machines that seem smart in your daily life?” Now write one answer you might expect to hear — you will check it against your real data soon.],
+    need: ("pencil", "the survey page", "five kind grown-ups", "your best listening ears"),
+  ))
 
 #note("Your biggest case yet — read this first!")[
   Every skill from Chapters 1–4 comes together here. In groups, you will run a *real survey* with five grown-ups, organise the *data* you collect, draw it, and present findings — then design a helper machine of your own. It takes 2–3 class periods plus home time. Detectives work carefully: one sloppy column can spoil a whole investigation.]
@@ -35,6 +40,31 @@
       *No photos, no recordings, no personal details* — our survey is paper-only.]
   }),
 )
+
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · PREDICT, THEN GO AND CHECK]
+  v(2.5pt)
+  text(size: 10.1pt)[Before real detectives collect data, they write a *prediction* — then the data gets a vote. What do you predict your five adults will name most often? Circle one, then race to see if your pattern-holding skills from Chapter 3 were right:]
+  v(2.5pt)
+  grid(columns: (1fr, 1fr, 1fr, 1fr, 1fr), column-gutter: 5pt,
+    ..(("Phone & video apps", "Voice assistants", "Shops & payments", "Travel & traffic", "Somewhere else")).map(p => box(fill: teal-faint, radius: 4pt, stroke: 0.6pt + line-soft, inset: (x: 5pt, y: 5.5pt), align(center, stack(spacing: 3pt, box(width: 8.5pt, height: 8.5pt, radius: 5pt, stroke: 1pt + teal-mid, fill: white, baseline: 35%), text(size: 8.3pt, weight: 700, p)))))
+  )
+  v(2.5pt)
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[A prediction that survives contact with real data earns a detective's smile. One that fails teaches you something the easy way.]
+}))
+
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[GROUP LOGISTICS · RECRUIT YOUR FIVE]
+  v(2.5pt)
+  text(size: 10.1pt)[Plan like professionals: agree *who* your group will ask (roles, never full names in print) and *when*. A plan made today saves a wasted trip tomorrow:]
+  v(3pt)
+  dtable(("Investigator to ask (role)", "Where we will meet them", "Best day and time"),
+    ([#box(width: 38mm, line(length: 100%, stroke: 0.55pt + line-soft))], [#box(width: 40mm, line(length: 100%, stroke: 0.55pt + line-soft))], [#box(width: 30mm, line(length: 100%, stroke: 0.55pt + line-soft))]),
+    ([#box(width: 38mm, line(length: 100%, stroke: 0.55pt + line-soft))], [#box(width: 40mm, line(length: 100%, stroke: 0.55pt + line-soft))], [#box(width: 30mm, line(length: 100%, stroke: 0.55pt + line-soft))]),
+    ([#box(width: 38mm, line(length: 100%, stroke: 0.55pt + line-soft))], [#box(width: 40mm, line(length: 100%, stroke: 0.55pt + line-soft))], [#box(width: 30mm, line(length: 100%, stroke: 0.55pt + line-soft))]),
+    widths: (1fr, 1fr, 44mm),
+  )
+}))
 
 #task("T6-18", "AI in My Neighbourhood — the survey", mode: "group", mins: "2–3 periods", win: false)[
   *Step 1 · Plan.* As a group, agree whom you will ask: five adults — a family member, a neighbour, a shopkeeper, a teacher, anyone safe and willing. The question: *“Where do you meet machines that seem smart in your daily life?”* Write your plan before you collect:
@@ -132,3 +162,11 @@
     text(font: f-display, fill: teal-deep, weight: 800, size: 9.5pt, tracking: 0.14em)[CASE CLOSED],
   )
 ]
+
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), [
+  #text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[A LETTER TO THE CLASS 7 DETECTIVE — WHO WILL BE YOU]
+  #v(3pt)
+  #text(size: 10.1pt)[Next year a new case opens: *“How can a machine learn without being told the rules?”* Leave three clues here for your future self — one thing you want to remember, one thing you want to understand better, and one question you dare Class 7 to answer:]
+  #v(2pt)
+  #ruled-lines(3, lead: 8.8mm)
+]))
