@@ -13,7 +13,7 @@ In Class 6 you proved that a picture is really a grid of numbers. But seeing is 
   Detective A looks at the *number grid* below — it is a photo, exactly as a machine stores it. Detective B looks only at the *empty grid*. A must describe the photo using *numbers only* — no shapes, no words like “heart” or “line”. For example: “Row 1: 0 0 0 0 0 1.” B shades the cells that A's numbers say are 1. Then place the grids side by side.
   #v(4pt)
   #grid(columns: (auto, auto, 1fr), column-gutter: 10mm, align: (center, center, top),
-    { text(size: 8.2pt, weight: 800, fill: teal, tracking: 0.1em)[PHOTO AS NUMBERS (A)]; v(2.5pt); pixel-grid(size: 6, cell: 8.2mm, numbers: (
+    { text(size: 9pt, weight: 800, fill: teal, tracking: 0.1em)[PHOTO AS NUMBERS (A)]; v(2.5pt); pixel-grid(size: 6, cell: 8.2mm, numbers: (
         (0,1,0,0,1,0),
         (1,1,1,1,1,1),
         (1,1,1,1,1,1),
@@ -21,31 +21,31 @@ In Class 6 you proved that a picture is really a grid of numbers. But seeing is 
         (0,0,1,1,0,0),
         (0,0,0,0,0,0),
       )) },
-    { text(size: 8.2pt, weight: 800, fill: teal, tracking: 0.1em)[B'S DRAWING — SHADE THE 1s]; v(2.5pt); pixel-grid(size: 6, cell: 8.2mm) },
+    { text(size: 9pt, weight: 800, fill: teal, tracking: 0.1em)[B'S DRAWING — SHADE THE 1s]; v(2.5pt); pixel-grid(size: 6, cell: 8.2mm) },
     {
       v(14mm)
-      [*Compare after the first try:* #ruled-lines(1, lead: 7.6mm)]
-      [*The numbers that helped B most were…* #ruled-lines(1, lead: 7.6mm)]
-      [*Second round — describe using only two features instead of every cell:* #ruled-lines(1, lead: 7.6mm)]
+      [*Compare after the first try:* #ruled-lines(1, lead: 8.4mm)]
+      [*The numbers that helped B most were…* #ruled-lines(1, lead: 8.4mm)]
+      [*Second round — describe using only two features instead of every cell:* #ruled-lines(1, lead: 8.4mm)]
     },
   )
   #v(4pt)
-  *While playing A, did you ever know what the picture “was”? What does that tell you about a machine that only ever sees numbers?* #ruled-lines(2, lead: 8mm)
+  *While playing A, did you ever know what the picture “was”? What does that tell you about a machine that only ever sees numbers?* #ruled-lines(2, lead: 8.8mm)
 ]
 #wordpower(6, "feature", [A useful clue, stored as a number, that helps a machine decide.])
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[T7-06 · ROUND 2 — SWITCH ROLES]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[T7-06 · ROUND 2 — SWITCH ROLES]
   v(3pt)
-  text(size: 9.4pt)[Now B invents a pattern, shades it in the first grid, and describes it with numbers only. A draws what B says. Fewer numbers should be enough this time — features, not every cell.]
+  text(size: 10.3pt)[Now B invents a pattern, shades it in the first grid, and describes it with numbers only. A draws what B says. Fewer numbers should be enough this time — features, not every cell.]
   v(4pt)
   grid(columns: (auto, auto, 1fr), column-gutter: 10mm, align: (center, center, top),
-    { text(size: 8.2pt, weight: 800, fill: teal, tracking: 0.1em)[B INVENTS ONE]; v(2.5pt); pixel-grid(size: 6, cell: 8.2mm) },
-    { text(size: 8.2pt, weight: 800, fill: teal, tracking: 0.1em)[A DRAWS WHAT B SAYS]; v(2.5pt); pixel-grid(size: 6, cell: 8.2mm) },
+    { text(size: 9pt, weight: 800, fill: teal, tracking: 0.1em)[B INVENTS ONE]; v(2.5pt); pixel-grid(size: 6, cell: 8.2mm) },
+    { text(size: 9pt, weight: 800, fill: teal, tracking: 0.1em)[A DRAWS WHAT B SAYS]; v(2.5pt); pixel-grid(size: 6, cell: 8.2mm) },
     {
       v(10mm)
-      [*B's features this time — as few numbers as possible:* #ruled-lines(1, lead: 7.6mm)]
-      [*Did the picture survive two round trips? What got lost on the way?* #ruled-lines(2, lead: 7.6mm)]
+      [*B's features this time — as few numbers as possible:* #ruled-lines(1, lead: 8.4mm)]
+      [*Did the picture survive two round trips? What got lost on the way?* #ruled-lines(2, lead: 8.4mm)]
     },
   )
 }))
@@ -70,8 +70,8 @@ Reading works the same trick — but with words. A machine cannot *understand* a
     widths: (1fr, 11mm, 13mm, 11mm, 13mm, 20mm, 1fr),
   )
   #v(5pt)
-  *Our filter rule, written with numbers:* #ruled-lines(1, lead: 8mm)
-  *Write one clean message that would fool our rule into saying SPAM. What does that teach you about counting machines?* #ruled-lines(2, lead: 8mm)
+  *Our filter rule, written with numbers:* #ruled-lines(1, lead: 8.8mm)
+  *Write one clean message that would fool our rule into saying SPAM. What does that teach you about counting machines?* #ruled-lines(2, lead: 8.8mm)
 ]
 #wordpower(7, "frequency", [How many times a word appears — the number a counting machine reads.])
 
@@ -91,10 +91,10 @@ A video app suggests your next clip, a shop suggests your next book — how? Not
     widths: (30mm, 1fr, 1fr, 1fr, 1fr),
   )
   #v(5pt)
-  *The viewer(s) most like Priya:* #box(width: 30mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft)) · *How did you compare?* #box(width: 34mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft))
-  *Our app recommends:* #box(width: 40mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft)) — *because the people most like Priya enjoyed it.*
+  *The viewer(s) most like Priya:* #box(width: 30mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) · *How did you compare?* #box(width: 34mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft))
+  *Our app recommends:* #box(width: 40mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) — *because the people most like Priya enjoyed it.*
   #v(4pt)
-  *The app cannot ask Priya WHY she loved Jungle Trek. Name one thing about her taste that this trick can never see.* #ruled-lines(1, lead: 8mm)
+  *The app cannot ask Priya WHY she loved Jungle Trek. Name one thing about her taste that this trick can never see.* #ruled-lines(1, lead: 8.8mm)
 ]
 #wordpower(8, "recommendation", [A suggestion made by finding people whose pattern of likes matches yours.])
 
@@ -113,13 +113,13 @@ Translation looks easy: swap each word for its counterpart. But you speak a lang
   )
   #v(5pt)
   *Now your turn — an idiom from your own language:* #v(3pt)
-  *The idiom (write it in English letters):* #ruled-lines(1, lead: 7.8mm)
-  *The machine's word-by-word version:* #ruled-lines(1, lead: 7.8mm)
-  *What it really means:* #ruled-lines(1, lead: 7.8mm)
+  *The idiom (write it in English letters):* #ruled-lines(1, lead: 8.6mm)
+  *The machine's word-by-word version:* #ruled-lines(1, lead: 8.6mm)
+  *What it really means:* #ruled-lines(1, lead: 8.6mm)
 ]
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH NUMBERS DID THE MACHINE USE?]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH NUMBERS DID THE MACHINE USE?]
   v(3pt)
   dtable(("The machine is…", "Camera, reader or recommender?"),
     ([counting how often the word FREE appears], [ ]),
@@ -132,28 +132,28 @@ Translation looks easy: swap each word for its counterpart. But you speak a lang
   )
 }))
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[AT A GLANCE · WHAT THE MACHINE ACTUALLY SEES]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[AT A GLANCE · WHAT THE MACHINE ACTUALLY SEES]
   v(4pt)
   grid(columns: (1fr, 1fr, 1fr), column-gutter: 8pt,
-    box(fill: teal-faint, radius: 0pt, inset: (x: 7pt, y: 6pt), {
-      text(size: 8pt, weight: 800, fill: teal, tracking: 0.08em)[THE CAMERA]
+    box(fill: teal-faint, radius: 5pt, inset: (x: 7pt, y: 6pt), {
+      text(size: 8.8pt, weight: 800, fill: teal, tracking: 0.08em)[THE CAMERA]
       v(2.5pt)
-      text(size: 8.6pt)[photo → grid of numbers → *features* (edges, corners, colour patches) → prediction]
+      text(size: 9.5pt)[photo → grid of numbers → *features* (edges, corners, colour patches) → prediction]
     }),
-    box(fill: teal-faint, radius: 0pt, inset: (x: 7pt, y: 6pt), {
-      text(size: 8pt, weight: 800, fill: teal, tracking: 0.08em)[THE READER]
+    box(fill: teal-faint, radius: 5pt, inset: (x: 7pt, y: 6pt), {
+      text(size: 8.8pt, weight: 800, fill: teal, tracking: 0.08em)[THE READER]
       v(2.5pt)
-      text(size: 8.6pt)[message → words → *counts* of watch-words → spam or not-spam]
+      text(size: 9.5pt)[message → words → *counts* of watch-words → spam or not-spam]
     }),
-    box(fill: teal-faint, radius: 0pt, inset: (x: 7pt, y: 6pt), {
-      text(size: 8pt, weight: 800, fill: teal, tracking: 0.08em)[THE RECOMMENDER]
+    box(fill: teal-faint, radius: 5pt, inset: (x: 7pt, y: 6pt), {
+      text(size: 8.8pt, weight: 800, fill: teal, tracking: 0.08em)[THE RECOMMENDER]
       v(2.5pt)
-      text(size: 8.6pt)[your likes → find *people like you* → collect what they enjoyed]
+      text(size: 9.5pt)[your likes → find *people like you* → collect what they enjoyed]
     }),
   )
   v(4pt)
-  text(size: 8.6pt, fill: ink-soft, style: "italic")[Three different machines — the same secret. Between the machine and the world there are only *numbers*, and the numbers only matter because somebody chose which ones to count.]
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[Three different machines — the same secret. Between the machine and the world there are only *numbers*, and the numbers only matter because somebody chose which ones to count.]
 }))
 
 #selfcheck(
@@ -167,36 +167,36 @@ Translation looks easy: swap each word for its counterpart. But you speak a lang
 #homelink[
   #task("AT HOME", "Spam Hunt", mode: "home", mins: "15")[
     With a grown-up, look at the last five messages a family group-chat received (do not open links, do not tap anything). Tally: how many carry a watch-word like FREE, WINNER, URGENT or CLICK? How many try to make you *feel* something before you *think*? #v(3pt)
-    *Watch-words found:* #ruled-lines(1, lead: 7.4mm)
-    *Messages that pushed an emotion first:* #ruled-lines(1, lead: 7.4mm)
-    *One message our family should stop forwarding, and why:* #ruled-lines(2, lead: 7.4mm)
+    *Watch-words found:* #ruled-lines(1, lead: 8.1mm)
+    *Messages that pushed an emotion first:* #ruled-lines(1, lead: 8.1mm)
+    *One message our family should stop forwarding, and why:* #ruled-lines(2, lead: 8.1mm)
   ]
 ]
 
 #note("Case notes — what changed in my thinking?")[
-  Before this chapter I believed machines that talk, see and suggest must understand us. Now I know they are really doing three things with numbers: #ruled-lines(2, lead: 7.6mm)
+  Before this chapter I believed machines that talk, see and suggest must understand us. Now I know they are really doing three things with numbers: #ruled-lines(2, lead: 8.4mm)
 ]
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DESIGN DRILL · INVENT A NEW FILTER]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DESIGN DRILL · INVENT A NEW FILTER]
   v(3pt)
-  text(size: 9.4pt)[Every counting filter has a job. Invent one for your classroom — a *homework-excuse detector*, a *kindness filter* for the class wall, or your own idea. Then break it.]
+  text(size: 10.3pt)[Every counting filter has a job. Invent one for your classroom — a *homework-excuse detector*, a *kindness filter* for the class wall, or your own idea. Then break it.]
   v(4pt)
   dtable(("My filter's name and job", "My watch-words", "My counting rule", "One honest way it fails"),
     ([ ], [ ], [ ], [ ]),
     widths: (1fr, 1fr, 1fr, 1fr),
   )
   v(3pt)
-  text(size: 8pt, fill: ink-soft, style: "italic")[Every filter fails somewhere — knowing *where* is what makes you the responsible designer.]
+  text(size: 8.8pt, fill: ink-soft, style: "italic")[Every filter fails somewhere — knowing *where* is what makes you the responsible designer.]
 }))
 
 #note("Chapter 2 clues — pocket these")[
   #grid(columns: (auto, 1fr), column-gutter: 6pt, row-gutter: 3.2pt, align: (left, left),
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[A camera sees *numbers and features* — it never sees a picture the way you do.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[A reader *counts words* — counting is powerful, but it is not understanding.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[A recommender finds *people like you* and borrows their taste — it cannot ask you why.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[Translation fails on *idioms and context* — the meaning lives around the words, not inside them.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[A camera sees *numbers and features* — it never sees a picture the way you do.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[A reader *counts words* — counting is powerful, but it is not understanding.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[A recommender finds *people like you* and borrows their taste — it cannot ask you why.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[Translation fails on *idioms and context* — the meaning lives around the words, not inside them.],
   )
   #v(2.5pt)
-  text(size: 9.2pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7mm)]
+  #text(size: 10.1pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7.7mm)]
 ]

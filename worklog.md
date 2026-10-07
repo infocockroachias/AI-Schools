@@ -67,3 +67,25 @@ Stage Summary:
 - Class 7 handout: /home/z/my-project/download/PRATIMAI_AI_Handout_Class7_How_Machines_Learn.pdf (40pp, QA 11/11) + editable source zip. Class 6 deliverables untouched.
 - Web app: Next.js 16 file library at / — preview + download for 5 files (2 PDFs, 2 Typst zips, curriculum spec); source in /home/z/my-project/src.
 - Key lessons: Typst 0.15 curve API semantics; breakable:false tasks taller than a page must be split manually; code-block content expressions concatenate inline (use v() or bracket blocks); agent-browser golden-path verification caught a missing import before delivery.
+---
+Task ID: 4
+Agent: Super Z (main agent)
+Task: Re-typeset BOTH handouts (Class 6 + Class 7) on the machiatto template (typst init @preview/machiatto:0.2.0), +10% font size for Classes 6-7 readers, push all project files to github.com/infocockroachias/AI-Schools with the provided token; from now on every update is committed and pushed.
+
+Work Log:
+- Initialized machiatto 0.2.0 (pulls suboutline 0.3.0); studied its MoKa Reads spec: title page -> license -> acknowledgements -> preface -> TOC -> chapters (summary + minitoc), mirrored chapter/page footer, 1pt-stroke radius-5pt components, def()/note()/info-box().
+- Rewrote template.typ (both projects) as a machiatto edition: moka-doc() implements the spec with PRATIMAI palette/fonts; moka-nums() gives "1." chapters and "1.1" sections (no trailing dots); level-1 headings centered per MoKa spec; chapter-opener() now emits a real level-1 heading + GUIDING QUESTION box + summary + missions/outcomes/strands meta + minitoc() + pagebreak; sec() is now a real level-2 heading (auto-numbered) so TOC/minitoc work; Word Power cards literally use machiatto's def(); acknowledgement() used for the ack page; all task/myth/selfcheck/thinkink/note/homelink boxes restyled to machiatto anatomy; ALL sizes x1.1 (base 10.4 -> 11.5pt), ruled-line leads x1.1.
+- convert_machiatto.py: scaled sizes/leads, machiatto-ized content box borders (line-soft 0.7/0.8pt + radius 0 -> ink-soft 0.9pt + radius 5), converted back-matter chap.update display headings to unnumbered level-1 headings.
+- New front.typ per class: license page (CC BY-NC-SA 4.0 + machiatto-style info table + typesetting credit), acknowledgements (machiatto cream box), preface (how-to-use + mission anatomy + question habit + grown-ups note + journey map with strands/stepper/ican).
+- Chapter openers enriched with new summary paragraphs + mission ranges (5 per book).
+- Class 6: 47pp; Class 7: 56pp (extended budget OK per user). Fixed during visual QA: orphaned myth/thinkink (ch1 reorder, removed stale pagebreak in ch3), journey-map thread strip wrap, ican orphan, glossary card spacing, ch5 c6 missing 5.1 heading (anchor), c7 pie-drill squeezed column (explicit 44mm column), wordpower def() splitting across pages (now unbreakable), 5 pre-existing literal "text(size:...)" leaks in chapter-clues boxes (now #text), Class 8 teaser orphan on p57 (back-matter tightened to 56pp).
+- Typst lessons: heading fields are it.numbering (pattern) not it.numbers - use counter(heading).at(it.location()); params with defaults are keyword-only; datetime.display("[year]"); top-level name resolution is lexical (define before use even in function bodies).
+- QA: new qa_machiatto.py (parameterized c6/c7): metadata, A4, fonts embedded, no blank pages, no margin overflow, no literal leaks (extended patterns), all task codes (T6-01..20 / T7-01..17), all vocabulary terms, minitoc on all 5 chapters, component presence. Both books 16/16 PASS. Full visual pass via 6-up contact sheets.
+- Repo: ai-schools-repo/ (README, class6-ai-around-me/, class7-how-machines-learn/, curriculum/, webapp/) — git init, snapshot commit (Scholar Teal state), machiatto commit, webapp metadata commit; pushed to https://github.com/infocockroachias/AI-Schools.git main with token auth (token only in local .git/config). STANDING RULE: every future update gets committed and pushed.
+- Deliverables refreshed in download/ + webapp public/files/: Class6 47pp PDF (678KB), Class7 56pp PDF (734KB), both typst source zips (now with front.typ, no ch0_front); download/README.md rewritten; webapp library cards updated (page counts + "Machiatto edition"); verified dev server serves new PDFs (200, correct sizes) and home page shows updated metadata.
+
+Stage Summary:
+- Both handouts are now machiatto-edition books: c6 = 47pp (16/16 QA), c7 = 56pp (16/16 QA), +10% type, MoKa Reads front matter, minitoc per chapter, mirrored footers.
+- GitHub: infocockroachias/AI-Schools main @ 43222cf (3 commits: snapshot, machiatto edition, webapp metadata).
+- Web app live with updated cards + files. Source of truth: scripts/ai_handout (c6), scripts/ai_handout_c7 (c7); rebuild: typst compile --font-path fonts main.typ main.pdf.
+- Standing rule recorded: all future updates are committed + pushed to the AI-Schools repo.

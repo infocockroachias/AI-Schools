@@ -1,24 +1,28 @@
 // ============================================================
 //  PRATIMAI · AI Handouts — Class 6 · "AI Around Me"  (MAIN)
+//  Machiatto edition — MoKa Reads publication specification
 // ============================================================
 #import "template.typ": *
-#init-doc
+#import "front.typ": license-page, ack-text, preface-pages
 
-// ---------- Front matter (has its own cover page settings) ----------
-#include "ch0_front.typ"
+#show: moka-doc.with(
+  cover-series: "PRATIMAI · AI HANDOUTS",
+  cover-title: "AI Around Me",
+  cover-subtitle: "My detective notebook for spotting smart machines",
+  cover-meta: ("CLASS 6 · LEVEL 1 — NOTICE", "20 PAPER MISSIONS · 5 CHAPTERS · NO SCREEN NEEDED"),
+  author: "PRATIMAI Curriculum Team",
+  license: license-page,
+  ack: ack-text,
+  preface: preface-pages,
+  toc: true,
+)
 
-// ---------- Page settings re-asserted per module ----------
-#set page(paper: "a4", margin: base-margins, fill: paper, header: page-header, footer: page-footer)
-
-// ---------- Chapters (content files) ----------
+// ---------- chapters ----------
 #include "ch1.typ"
-#set page(paper: "a4", margin: base-margins, fill: paper, header: page-header, footer: page-footer)
 #include "ch2.typ"
-#set page(paper: "a4", margin: base-margins, fill: paper, header: page-header, footer: page-footer)
 #include "ch3.typ"
-#set page(paper: "a4", margin: base-margins, fill: paper, header: page-header, footer: page-footer)
 #include "ch4.typ"
-#set page(paper: "a4", margin: base-margins, fill: paper, header: page-header, footer: page-footer)
 #include "ch5.typ"
-#set page(paper: "a4", margin: base-margins, fill: paper, header: page-header, footer: page-footer)
+
+// ---------- back matter ----------
 #include "ch6_back.typ"

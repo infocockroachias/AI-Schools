@@ -4,24 +4,19 @@
 // ============================================================
 
 // ---------------- GLOSSARY + HINTS ----------------
-#chap.update("My AI words")
-#pagebreak()
+#heading(level: 1, numbering: none)[My AI words]
+#align(center, text(size: 10.3pt, fill: ink-soft, style: "italic")[The fourteen words on this case — each one met through an experience, never before.])
+#v(10pt)
 
-#grid(columns: (auto, 1fr), column-gutter: 9pt, align: (center, left),
-  box(fill: teal, radius: 0pt, width: 11mm, height: 11mm, align(center + horizon, text(fill: white, size: 17pt, font: f-display, weight: 800)[W])),
-  { text(font: f-display, size: 21pt, weight: 800, fill: teal)[My AI words]; v(0.5pt); text(size: 9.6pt, fill: ink-soft, style: "italic")[The fourteen words on this case — each one met through an experience, never before.] },
-)
-#v(9pt)
-
-#let gloss(word, num, def) = box(fill: white, stroke: 0.7pt + line-soft, radius: 0pt, inset: (x: 8.5pt, y: 6.5pt), stack(spacing: 2.5pt,
+#let gloss(word, num, def) = box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 8.5pt, y: 6.5pt), stack(spacing: 2.5pt,
   grid(columns: (auto, auto, 1fr), align: (center, center, left), column-gutter: 5pt,
-    box(fill: teal-soft, radius: 0pt, inset: (x: 5pt, y: 1.8pt), text(fill: teal, weight: 800, size: 7.6pt, str(num))),
-    text(font: f-display, size: 11pt, weight: 800, fill: teal, word),
+    box(fill: teal-soft, radius: 5pt, inset: (x: 5pt, y: 1.8pt), text(fill: teal, weight: 800, size: 8.4pt, str(num))),
+    text(font: f-display, size: 12.1pt, weight: 800, fill: teal, word),
     [],
   ),
-  text(size: 8.7pt, def),
-  v(1.5pt),
-  text(size: 7.4pt, fill: ink-soft, weight: 700, tracking: 0.05em)[USE IT IN MY OWN SENTENCE: #box(width: 72%, baseline: 30%, line(length: 100%, stroke: 0.55pt + line-soft))],
+  text(size: 9.6pt, def),
+  v(3pt),
+  text(size: 8.1pt, fill: ink-soft, weight: 700, tracking: 0.05em)[USE IT IN MY OWN SENTENCE: #box(width: 72%, baseline: 30%, line(length: 100%, stroke: 0.55pt + line-soft))],
 ))
 
 #grid(columns: (1fr, 1fr), column-gutter: 7pt, row-gutter: 5.5pt,
@@ -49,16 +44,11 @@
 ]
 
 // ---------------- PROGRESS + CERTIFICATE ----------------
-#chap.update("My progress")
-#pagebreak()
+#heading(level: 1, numbering: none)[My progress]
+#align(center, text(size: 10.3pt, fill: ink-soft, style: "italic")[Shade honestly — investigators never fake evidence.])
+#v(10pt)
 
-#grid(columns: (auto, 1fr), column-gutter: 9pt, align: (center, left),
-  box(fill: amber, radius: 0pt, width: 11mm, height: 11mm, align(center + horizon, star(13pt, fill: white))),
-  { text(font: f-display, size: 21pt, weight: 800, fill: teal)[My progress]; v(0.5pt); text(size: 9.6pt, fill: ink-soft, style: "italic")[Shade honestly — investigators never fake evidence.] },
-)
-#v(9pt)
-
-#text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[MY OUTCOME TRACKER — TICK WHEN YOU TRULY CAN DO IT]
+#text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[MY OUTCOME TRACKER — TICK WHEN YOU TRULY CAN DO IT]
 #v(5pt)
 #grid(columns: (1fr, 1fr), column-gutter: 12pt,
   ican((
@@ -75,43 +65,43 @@
     [7.T1 — compare solving a task with fixed if-then rules vs learning from examples],
   )),
 )
-#v(8pt)
+#v(4pt)
 
 #grid(columns: (1fr, auto), align: (left, right),
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[MY CASE FILES — SHADE A STAR PER CHAPTER FINISHED],
-  text(size: 7.6pt, fill: ink-soft, style: "italic")[1 Learning Machine · 2 See & Read · 3 AI at Work · 4 Gets It Wrong · 5 Survey Machine],
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[MY CASE FILES — SHADE A STAR PER CHAPTER FINISHED],
+  text(size: 8.4pt, fill: ink-soft, style: "italic")[1 Learning Machine · 2 See & Read · 3 AI at Work · 4 Gets It Wrong · 5 Survey Machine],
 )
-#v(4pt)
+#v(3pt)
 #grid(columns: (1fr, 1fr, 1fr, 1fr, 1fr), column-gutter: 6pt,
-  ..range(5).map(i => box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (y: 7pt), align(center + horizon, star(19pt, fill: teal-soft)) ))
+  ..range(5).map(i => box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (y: 5pt), align(center + horizon, star(19pt, fill: teal-soft)) ))
 )
-#v(10pt)
+#v(7pt)
 
 // certificate panel
-#block(width: 100%, box(width: 100%, stroke: 1.6pt + teal, radius: 0pt, inset: (x: 14pt, y: 12pt), {
-  box(width: 100%, stroke: 0.5pt + teal-mid, radius: 0pt, inset: (x: 14pt, y: 14pt), {
+#block(width: 100%, box(width: 100%, stroke: 1.6pt + teal, radius: 5pt, inset: (x: 14pt, y: 8pt), {
+  box(width: 100%, stroke: 0.5pt + teal-mid, radius: 5pt, inset: (x: 14pt, y: 11pt), {
     align(center)[
-      #text(size: 8.2pt, weight: 800, fill: amber-deep, tracking: 0.22em)[PRATIMAI · AI HANDOUTS · CLASS 7]
+      #text(size: 9pt, weight: 800, fill: amber-deep, tracking: 0.22em)[PRATIMAI · AI HANDOUTS · CLASS 7]
       #v(3pt)
-      #text(font: f-display, size: 19pt, weight: 800, fill: teal)[My Machine-Trainer Certificate]
+      #text(font: f-display, size: 20.9pt, weight: 800, fill: teal)[My Machine-Trainer Certificate]
       #v(5pt)
-      #text(size: 9.4pt, style: "italic")[This certifies that investigator]
-      #v(6pt)
+      #text(size: 10.3pt, style: "italic")[This certifies that investigator]
+      #v(5pt)
       #line(length: 62%, stroke: 0.8pt + ink-soft)
       #v(2pt)
-      #text(size: 7.8pt, fill: ink-soft, weight: 700, tracking: 0.12em)[INVESTIGATOR NAME]
-      #v(6pt)
-      #text(size: 9.2pt)[has completed the case file *“How Machines Learn”* — Level 2 · SORT & PREDICT —
+      #text(size: 8.6pt, fill: ink-soft, weight: 700, tracking: 0.12em)[INVESTIGATOR NAME]
+      #v(5pt)
+      #text(size: 10.1pt)[has completed the case file *“How Machines Learn”* — Level 2 · SORT & PREDICT —
         solved all seventeen missions, and promised to keep asking:
         *How do I know? · What is missing? · Who made this? · What is the trick here?*]
-      #v(9pt)
+      #v(6pt)
       #grid(columns: (1fr, 1fr, 1fr), column-gutter: 10pt,
-        { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 7.6pt, fill: ink-soft, weight: 700, tracking: 0.1em)[DATE] },
-        { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 7.6pt, fill: ink-soft, weight: 700, tracking: 0.1em)[INVESTIGATOR'S SIGNATURE] },
-        { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 7.6pt, fill: ink-soft, weight: 700, tracking: 0.1em)[GUIDE'S SIGNATURE] },
+        { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 8.4pt, fill: ink-soft, weight: 700, tracking: 0.1em)[DATE] },
+        { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 8.4pt, fill: ink-soft, weight: 700, tracking: 0.1em)[INVESTIGATOR'S SIGNATURE] },
+        { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 8.4pt, fill: ink-soft, weight: 700, tracking: 0.1em)[GUIDE'S SIGNATURE] },
       )
     ]
   })
 }))
-#v(6pt)
-#align(center, text(size: 8pt, fill: ink-soft)[Ready for the next case? Class 8 asks: *“What does it take to build an AI that people can trust?”* — bring your badge.])
+#v(2pt)
+#align(center, text(size: 8.8pt, fill: ink-soft)[Ready for the next case? Class 8 asks: *“What does it take to build an AI that people can trust?”* — bring your badge.])
