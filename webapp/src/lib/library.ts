@@ -16,9 +16,9 @@ export const LIBRARY: LibraryFile[] = [
     title: "AI Around Me",
     subtitle: "Class 6 · Level 1 — NOTICE · Student Handout (PDF)",
     description:
-      "The complete 34-page Class 6 case file: rule-followers vs learners, the four kinds of data, patterns and if-then trees, digital-citizen habits and the Neighbourhood AI Investigation — 20 paper missions, word-power cards, myth busters and a detective certificate.",
+      "The complete 47-page Class 6 case file — Machiatto edition: title page, license, acknowledgements, preface, contents and chapters that open with a summary and mini contents. Inside: rule-followers vs learners, the four kinds of data, patterns and if-then trees, digital-citizen habits and the Neighbourhood AI Investigation — 20 paper missions and a detective certificate.",
     kind: "pdf",
-    meta: ["34 pages · A4", "20 missions", "Fully unplugged", "Print-ready"],
+    meta: ["47 pages · A4", "20 missions", "Machiatto edition", "Print-ready"],
     accent: "teal",
   },
   {
@@ -27,9 +27,9 @@ export const LIBRARY: LibraryFile[] = [
     title: "How Machines Learn",
     subtitle: "Class 7 · Level 2 — SORT & PREDICT · Student Handout (PDF)",
     description:
-      "The complete 40-page Class 7 case file: the three learning jobs (classification, regression, clustering), training vs testing, how machines see, read and recommend, charts and how they lie, bias and responsibility — 17 paper missions ending in the Class Survey Machine capstone.",
+      "The complete 56-page Class 7 case file — Machiatto edition: title page, license, acknowledgements, preface, contents and chapters that open with a summary and mini contents. Inside: the three learning jobs (classification, regression, clustering), training vs testing, how machines see, read and recommend, charts and how they lie, bias and responsibility — 17 missions ending in the Class Survey Machine capstone.",
     kind: "pdf",
-    meta: ["40 pages · A4", "17 missions", "Fully unplugged", "Print-ready"],
+    meta: ["56 pages · A4", "17 missions", "Machiatto edition", "Print-ready"],
     accent: "amber",
   },
   {
@@ -38,7 +38,7 @@ export const LIBRARY: LibraryFile[] = [
     title: "AI Around Me — Source",
     subtitle: "Class 6 · Editable Typst source + fonts (ZIP)",
     description:
-      "Everything needed to rebuild or adapt the Class 6 handout: the Scholar Teal design system (template.typ), all seven content modules and the embedded fonts. Rebuild with one command: typst compile --font-path fonts main.typ main.pdf.",
+      "Everything needed to rebuild or adapt the Class 6 handout: the Machiatto-edition design system (template.typ + front.typ), all content modules and the embedded fonts. Rebuild with one command: typst compile --font-path fonts main.typ main.pdf (Machiatto package downloads automatically).",
     kind: "zip",
     meta: ["Typst 0.15", "8 .typ files", "Fonts included"],
     accent: "teal",
@@ -49,7 +49,7 @@ export const LIBRARY: LibraryFile[] = [
     title: "How Machines Learn — Source",
     subtitle: "Class 7 · Editable Typst source + fonts (ZIP)",
     description:
-      "Everything needed to rebuild or adapt the Class 7 handout: the Scholar Teal design system extended with scatter, line-graph and pie-chart primitives, all seven content modules and the embedded fonts. Rebuild with one command: typst compile --font-path fonts main.typ main.pdf.",
+      "Everything needed to rebuild or adapt the Class 7 handout: the Machiatto-edition design system extended with scatter, line-graph and pie-chart primitives, all content modules and the embedded fonts. Rebuild with one command: typst compile --font-path fonts main.typ main.pdf.",
     kind: "zip",
     meta: ["Typst 0.15", "8 .typ files", "Charts included", "Fonts included"],
     accent: "amber",
