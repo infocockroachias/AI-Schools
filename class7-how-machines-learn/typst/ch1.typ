@@ -20,8 +20,8 @@ Last year you met two kinds of machines: rule-followers, which repeat steps some
     widths: (44mm, 1fr, 46mm),
   )
   #v(5pt)
-  *Compare with another team:* Did they invent the same groups? Where did you disagree? #ruled-lines(1, lead: 8mm)
-  *Our cleverest group name — and why it works:* #ruled-lines(1, lead: 8mm)
+  *Compare with another team:* Did they invent the same groups? Where did you disagree? #ruled-lines(1, lead: 8.8mm)
+  *Our cleverest group name — and why it works:* #ruled-lines(1, lead: 8.8mm)
 ]
 #wordpower(1, "classification", [Putting things into groups that already have names, like fruit or vehicles.])
 
@@ -40,11 +40,11 @@ Now the second job. An auto's fare grows with distance, but not perfectly — tr
   )
   #v(2pt)
   *Step 1.* With a ruler, draw the one straight line that passes as close as possible to *all* the dots.
-  *Step 2.* Use your line to predict: the fare for a *6.5 km* trip is about ₹ #box(width: 14mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft))
-  *Step 3.* Now a braver guess: the fare for a *12 km* trip is about ₹ #box(width: 14mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft))
+  *Step 2.* Use your line to predict: the fare for a *6.5 km* trip is about ₹ #box(width: 14mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft))
+  *Step 3.* Now a braver guess: the fare for a *12 km* trip is about ₹ #box(width: 14mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft))
   #v(4pt)
-  *Why is the 12 km guess riskier than the 6.5 km guess?* #ruled-lines(1, lead: 8mm)
-  *Another pair drew a slightly different line. Why is that allowed — and why does the machine need one answer anyway?* #ruled-lines(2, lead: 8mm)
+  *Why is the 12 km guess riskier than the 6.5 km guess?* #ruled-lines(1, lead: 8.8mm)
+  *Another pair drew a slightly different line. Why is that allowed — and why does the machine need one answer anyway?* #ruled-lines(2, lead: 8.8mm)
 ]
 #wordpower(2, "regression", [Using a pattern to predict a number, like a price or a temperature.])
 
@@ -63,13 +63,13 @@ The third job is the strangest. In classification, the groups already have names
     widths: (40mm, 1fr, 1fr),
   )
   #v(5pt)
-  *A group the other team made that we never thought of:* #ruled-lines(1, lead: 8mm)
-  *So is one of the two groupings “wrong”? What would you say to a machine that insists its clustering is the only truth?* #ruled-lines(2, lead: 8mm)
+  *A group the other team made that we never thought of:* #ruled-lines(1, lead: 8.8mm)
+  *So is one of the two groupings “wrong”? What would you say to a machine that insists its clustering is the only truth?* #ruled-lines(2, lead: 8.8mm)
 ]
 #wordpower(3, "clustering", [Finding groups in examples that have no labels — the machine invents the groups.])
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH JOB IS IT?]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH JOB IS IT?]
   v(3pt)
   dtable(("The learning machine…", "C, N or G?"),
     ([sorts email into “spam” and “not spam”], [ ]),
@@ -81,7 +81,7 @@ The third job is the strangest. In classification, the groups already have names
     widths: (1fr, 30mm),
   )
   v(3pt)
-  text(size: 8pt, fill: ink-soft, style: "italic")[C = classification · N = predicts a number · G = clustering]
+  text(size: 8.8pt, fill: ink-soft, style: "italic")[C = classification · N = predicts a number · G = clustering]
 }))
 
 // ---------------- 1.4 ----------------
@@ -92,42 +92,42 @@ How does a machine actually *learn* the pattern? Here is the secret, and you alr
   You are the machine. Study the *practice set*: cards labelled IN or OUT.
   #v(4pt)
   #grid(columns: (1fr, 1fr), column-gutter: 8pt,
-    box(fill: teal-faint, radius: 0pt, stroke: 0.6pt + line-soft, inset: (x: 9pt, y: 7pt), {
-      text(size: 8.2pt, weight: 800, fill: teal, tracking: 0.1em)[PRACTICE SET — WITH ANSWERS]
+    box(fill: teal-faint, radius: 5pt, stroke: 0.6pt + line-soft, inset: (x: 9pt, y: 7pt), {
+      text(size: 9pt, weight: 800, fill: teal, tracking: 0.1em)[PRACTICE SET — WITH ANSWERS]
       v(4pt)
       dtable(("Card", "IN or OUT?"), ([12 · 15 · 21 · 9 · 33], [IN]), ([10 · 16 · 22 · 8], [OUT]), widths: (1fr, 26mm))
       v(3pt)
-      text(size: 9.6pt)[*The pattern I learned:* “A number is IN when …” #ruled-lines(1, lead: 7.8mm)]
+      text(size: 10.6pt)[*The pattern I learned:* “A number is IN when …” #ruled-lines(1, lead: 8.6mm)]
     }),
-    box(fill: white, radius: 0pt, stroke: 0.6pt + line-soft, inset: (x: 9pt, y: 7pt), {
-      text(size: 8.2pt, weight: 800, fill: teal, tracking: 0.1em)[EXAM SET — ANSWERS HIDDEN]
+    box(fill: white, radius: 5pt, stroke: 0.6pt + line-soft, inset: (x: 9pt, y: 7pt), {
+      text(size: 9pt, weight: 800, fill: teal, tracking: 0.1em)[EXAM SET — ANSWERS HIDDEN]
       v(4pt)
       dtable(("Card", "My prediction"), ([27], [ ]), ([14], [ ]), ([36], [ ]), ([19], [ ]), ([45], [ ]), widths: (1fr, 26mm))
       v(3pt)
-      text(size: 8.4pt, fill: ink-soft, style: "italic")[Your teacher holds the answers. Check after everyone has committed — no peeking, that would be cheating the test!]
+      text(size: 9.2pt, fill: ink-soft, style: "italic")[Your teacher holds the answers. Check after everyone has committed — no peeking, that would be cheating the test!]
     }),
   )
   #v(6pt)
-  *My score on the exam set:* #box(width: 16mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft)) out of 5
-  *If a machine scored the same, would you say it “found the pattern” or “got lucky”? Why?* #ruled-lines(1, lead: 8mm)
+  *My score on the exam set:* #box(width: 16mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) out of 5
+  *If a machine scored the same, would you say it “found the pattern” or “got lucky”? Why?* #ruled-lines(1, lead: 8.8mm)
 ]
 #wordpower(4, "training set", [The practice examples a machine learns from before it meets new ones.])
 #wordpower(5, "test set", [The hidden examples used to check whether the learning really worked.])
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[AT A GLANCE · IF-THEN MACHINE VS LEARNING MACHINE]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[AT A GLANCE · IF-THEN MACHINE VS LEARNING MACHINE]
   v(3pt)
   dtable(("Ask yourself…", "If-then machine", "Learning machine"),
     ([Where do its rules come from?], [A person wrote every if-then by hand.], [It found the pattern inside training examples.]),
     ([What happens with a brand-new case?], [It runs the same if-thens anyway.], [It predicts from the pattern — right or wrong.]),
     ([Can it get better at its job?], [Only if a person rewrites the rules.], [Yes — more varied examples can improve it.]),
-    ([One machine from my own day that fits], [#ruled-lines(1, lead: 6.8mm)], [#ruled-lines(1, lead: 6.8mm)]),
+    ([One machine from my own day that fits], [#ruled-lines(1, lead: 7.5mm)], [#ruled-lines(1, lead: 7.5mm)]),
     widths: (46mm, 1fr, 1fr),
   )
 }))
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · TRAIN OR TEST?]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · TRAIN OR TEST?]
   v(3pt)
   dtable(("What is happening…", "Training or testing?"),
     ([A cricket coach feeds 200 labelled photos of bowling actions to a machine.], [ ]),
@@ -139,7 +139,7 @@ How does a machine actually *learn* the pattern? Here is the secret, and you alr
     widths: (1fr, 34mm),
   )
   v(3pt)
-  text(size: 8pt, fill: ink-soft, style: "italic")[Why do you think the scientist hides those examples? Discuss with your partner — there is a clue in Task T7-04.]
+  text(size: 8.8pt, fill: ink-soft, style: "italic")[Why do you think the scientist hides those examples? Discuss with your partner — there is a clue in Task T7-04.]
 }))
 
 // ---------------- 1.5 ----------------
@@ -150,25 +150,25 @@ Here is the trap that catches learners — machine and human alike. Show a learn
   Two leaf-spotting machines were trained differently. Read their training cards, then judge them.
   #v(4pt)
   #grid(columns: (1fr, 1fr), column-gutter: 8pt,
-    box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 9pt, y: 7pt), {
-      text(size: 8.2pt, weight: 800, fill: teal, tracking: 0.1em)[MACHINE A — TRAINED ON 3 CARDS]
+    box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 9pt, y: 7pt), {
+      text(size: 9pt, weight: 800, fill: teal, tracking: 0.1em)[MACHINE A — TRAINED ON 3 CARDS]
       v(4pt)
       dtable(("Training card", "Label"), ([smooth edges · 12 cm], [MANGO]), ([smooth edges · 11 cm], [MANGO]), ([smooth edges · 13 cm], [MANGO]), widths: (1fr, 24mm))
       v(4pt)
-      text(size: 9.6pt)[*Rule A learned:* “smooth edges means mango.”]
+      text(size: 10.6pt)[*Rule A learned:* “smooth edges means mango.”]
     }),
-    box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 9pt, y: 7pt), {
-      text(size: 8.2pt, weight: 800, fill: teal, tracking: 0.1em)[MACHINE B — TRAINED ON 12 CARDS]
+    box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 9pt, y: 7pt), {
+      text(size: 9pt, weight: 800, fill: teal, tracking: 0.1em)[MACHINE B — TRAINED ON 12 CARDS]
       v(4pt)
       dtable(("Training card", "Label"), ([6 mango leaves: smooth · 10–15 cm], [MANGO]), ([3 jasmine leaves: smooth · 4 cm], [OTHER]), ([3 hibiscus leaves: toothed · 9 cm], [OTHER]), widths: (1fr, 24mm))
       v(4pt)
-      text(size: 9.6pt)[*Rule B learned:* “mango means smooth *and long*.”]
+      text(size: 10.6pt)[*Rule B learned:* “mango means smooth *and long*.”]
     }),
   )
   #v(6pt)
   *A new leaf arrives: smooth edges, only 4 cm long.* Machine A says: MANGO. Machine B says: OTHER. #v(2pt)
-  *Who is right — and what exactly fooled Machine A?* #ruled-lines(2, lead: 8mm)
-  *Machine A could be fixed without any new machine. How?* #ruled-lines(1, lead: 8mm)
+  *Who is right — and what exactly fooled Machine A?* #ruled-lines(2, lead: 8.8mm)
+  *Machine A could be fixed without any new machine. How?* #ruled-lines(1, lead: 8.8mm)
 ]
 
 #myth("AI is told every rule.")[
@@ -182,10 +182,10 @@ Here is the trap that catches learners — machine and human alike. Show a learn
 )
 #thinkink([A machine I use guesses things about me — a suggestion, a price, a filter. Now I know its job is … (classification / regression / clustering), because …], lines: 2)
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · PATTERN TO RULE]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · PATTERN TO RULE]
   v(3pt)
-  text(size: 9.4pt)[A fruit-sorting machine was trained on four labelled cards. You be the rule-writer: study the table, then write the if-then rule *you* would put inside an ordinary rule-following machine.]
+  text(size: 10.3pt)[A fruit-sorting machine was trained on four labelled cards. You be the rule-writer: study the table, then write the if-then rule *you* would put inside an ordinary rule-following machine.]
   v(4pt)
   dtable(("Training card", "Label"),
     ([heavy · smooth · yellow skin], [MANGO]),
@@ -195,22 +195,22 @@ Here is the trap that catches learners — machine and human alike. Show a learn
     widths: (1fr, 34mm),
   )
   v(4pt)
-  [*My if-then rule:* #ruled-lines(2, lead: 7.8mm)]
-  [*New card arrives: heavy · smooth · yellow skin.* My rule says: #box(width: 30mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft))]
-  [*New card arrives: heavy · rough · yellow-green skin.* My rule says: #box(width: 30mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft)) — *and a learning machine might disagree! Why?* #ruled-lines(1, lead: 7.6mm)]
+  [*My if-then rule:* #ruled-lines(2, lead: 8.6mm)]
+  [*New card arrives: heavy · smooth · yellow skin.* My rule says: #box(width: 30mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft))]
+  [*New card arrives: heavy · rough · yellow-green skin.* My rule says: #box(width: 30mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) — *and a learning machine might disagree! Why?* #ruled-lines(1, lead: 8.4mm)]
 }))
 
 #note("Case notes — what changed in my thinking?")[
-  Before this chapter I believed machines are told every rule by their makers. Now I know the difference between a rule-follower and a learner is … #ruled-lines(2, lead: 7.6mm)
+  Before this chapter I believed machines are told every rule by their makers. Now I know the difference between a rule-follower and a learner is … #ruled-lines(2, lead: 8.4mm)
 ]
 
 #note("Chapter 1 clues — pocket these")[
   #grid(columns: (auto, 1fr), column-gutter: 6pt, row-gutter: 3.2pt, align: (left, left),
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[Learning machines do three jobs: *classify*, *predict a number*, *find groups*.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[*Training* is practice with answers; *testing* is the hidden exam that proves the learning.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[A few one-sided examples fool any learner; *many varied examples* protect it.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[A rule-writer writes if-thens; a learner finds the rule in the data — and nobody wrote it down.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[Learning machines do three jobs: *classify*, *predict a number*, *find groups*.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[*Training* is practice with answers; *testing* is the hidden exam that proves the learning.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[A few one-sided examples fool any learner; *many varied examples* protect it.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[A rule-writer writes if-thens; a learner finds the rule in the data — and nobody wrote it down.],
   )
   #v(2.5pt)
-  text(size: 9.2pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7mm)]
+  #text(size: 10.1pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7.7mm)]
 ]

@@ -20,8 +20,8 @@ Learning machines are already at work across India — not as magic, but as help
     widths: (1fr, 1fr, 32mm, 1fr),
   )
   #v(5pt)
-  *Suppose 90 of the 100 leaf photos come from one district. What problem is already growing inside this data?* #ruled-lines(2, lead: 8mm)
-  *The photos show farmers' fields. Should the team ask permission first? Why?* #ruled-lines(1, lead: 8mm)
+  *Suppose 90 of the 100 leaf photos come from one district. What problem is already growing inside this data?* #ruled-lines(2, lead: 8.8mm)
+  *The photos show farmers' fields. Should the team ask permission first? Why?* #ruled-lines(1, lead: 8.8mm)
 ]
 #wordpower(9, "structured data", [Facts arranged in rows and columns, so patterns can be found.])
 
@@ -43,7 +43,7 @@ No helper is magic, and honest reporting means saying both halves out loud: what
     widths: (30mm, 1fr, 1fr),
   )
   #v(5pt)
-  *Which limit worries you most — and what would you tell the people who built it?* #ruled-lines(2, lead: 8mm)
+  *Which limit worries you most — and what would you tell the people who built it?* #ruled-lines(2, lead: 8.8mm)
 ]
 
 // ---------------- 3.3 ----------------
@@ -51,41 +51,41 @@ No helper is magic, and honest reporting means saying both halves out loud: what
 How do we know whether an AI helper — or any claim — is doing well? Its *data* is the report card, and the report card speaks through charts. You own the bar chart already: it *compares groups*. The *line graph* adds time: its slope tells the *trend*, the general direction — rising, falling, holding steady. The *pie chart* shows one whole split into parts. Each chart answers a different question, and a chart detective knows which is which: *“How many in each group?”* — bars. *“How is it changing?”* — line. *“What are the parts of one whole?”* — pie.
 
 #grid(columns: (1fr, 1fr), column-gutter: 9pt,
-  box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 9pt, y: 7pt), {
-    text(size: 8.2pt, weight: 800, fill: teal, tracking: 0.1em)[LINE GRAPH · BOOKS BORROWED, JUNE–NOVEMBER]
+  box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 9pt, y: 7pt), {
+    text(size: 9pt, weight: 800, fill: teal, tracking: 0.1em)[LINE GRAPH · BOOKS BORROWED, JUNE–NOVEMBER]
     v(5pt)
     linechart-example(("Jun", "Jul", "Aug", "Sep", "Oct", "Nov"), (42, 48, 55, 61, 58, 66), ymax: 70, ystep: 10, pw: 64mm, ph: 40mm, ylabel: "BOOKS")
     v(2pt)
-    text(size: 8.8pt)[The *trend* is clearly #box(width: 22mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft)) — except a dip in #box(width: 14mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft)) .]
+    text(size: 9.7pt)[The *trend* is clearly #box(width: 22mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) — except a dip in #box(width: 14mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) .]
   }),
-  box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 9pt, y: 7pt), {
-    text(size: 8.2pt, weight: 800, fill: teal, tracking: 0.1em)[PIE CHART · HOW CLASS 7B TRAVELS TO SCHOOL]
+  box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 9pt, y: 7pt), {
+    text(size: 9pt, weight: 800, fill: teal, tracking: 0.1em)[PIE CHART · HOW CLASS 7B TRAVELS TO SCHOOL]
     v(5pt)
     align(center, piechart-example((40, 30, 20, 10), ("Walk", "Bus", "Cycle", "Car"), (teal, amber, teal-mid, line-soft), pw: 40mm))
     v(4pt)
     pie-legend((40, 30, 20, 10), ("Walk", "Bus", "Cycle", "Car"), (teal, amber, teal-mid, line-soft))
     v(2pt)
-    text(size: 8.8pt)[The whole circle is one class. Which answer can a pie chart *not* give you — the biggest group, or the exact number of children?]
+    text(size: 9.7pt)[The whole circle is one class. Which answer can a pie chart *not* give you — the biggest group, or the exact number of children?]
   }),
 )
 #v(4pt)
 #wordpower(10, "trend", [The general direction a line graph shows: rising, falling or steady.])
 #wordpower(11, "sample", [The group you actually collected data from — always smaller than everyone.])
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · DRAW THE TREND YOURSELF]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · DRAW THE TREND YOURSELF]
   v(3pt)
-  text(size: 9.4pt)[A weather station logged the maximum temperature (°C) on the first of six months:]
+  text(size: 10.3pt)[A weather station logged the maximum temperature (°C) on the first of six months:]
   v(4pt)
   dtable(("Month", "Jan", "Feb", "Mar", "Apr", "May", "Jun"), (["Temperature (°C)"], ["18"], ["22"], ["28"], ["36"], ["40"], ["38"]), widths: (34mm, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr))
   v(5pt)
   linechart-blank(("Jan", "Feb", "Mar", "Apr", "May", "Jun"), ymax: 45, ystep: 5, ylabel: "°C")
   v(2pt)
-  text(size: 9.4pt)[*Hottest first-of-month:* #box(width: 16mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft)) · *Describe the trend from Jan to May, then what changed in Jun:* #box(width: 62mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft))]
+  text(size: 10.3pt)[*Hottest first-of-month:* #box(width: 16mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) · *Describe the trend from Jan to May, then what changed in Jun:* #box(width: 62mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft))]
 }))
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH CHART WOULD YOU CHOOSE?]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH CHART WOULD YOU CHOOSE?]
   v(3pt)
   dtable(("The question…", "Bar, line or pie?"),
     ([Which of five house teams collected the most bottle caps this month?], [ ]),
@@ -97,22 +97,22 @@ How do we know whether an AI helper — or any claim — is doing well? Its *dat
     widths: (1fr, 34mm),
   )
   v(3pt)
-  text(size: 8pt, fill: ink-soft, style: "italic")[Bars compare groups · lines follow change over time · pies split one whole into parts.]
+  text(size: 8.8pt, fill: ink-soft, style: "italic")[Bars compare groups · lines follow change over time · pies split one whole into parts.]
 }))
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · READ THE PIE YOURSELF]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · READ THE PIE YOURSELF]
   v(4pt)
-  grid(columns: (auto, 1fr), column-gutter: 10pt, align: (center, top),
+  grid(columns: (44mm, 1fr), column-gutter: 10pt, align: (center, top),
     piechart-example((50, 25, 15, 10), ("Folk tales", "Adventure", "Poetry", "Science"), (teal, amber, teal-mid, line-soft), pw: 38mm),
     {
-      text(size: 8.6pt)[Library week audit — 80 books borrowed.]
+      text(size: 9.5pt)[Library week audit — 80 books borrowed.]
       v(3pt)
-      text(size: 9.2pt)[*Roughly how many of the 80 were folk tales?* #box(width: 16mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft))]
+      text(size: 10.1pt)[*Roughly how many of the 80 were folk tales?* #box(width: 16mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft))]
       v(3pt)
-      text(size: 9.2pt)[*Which two kinds together take about one quarter of the circle?* #box(width: 30mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft))]
+      text(size: 10.1pt)[*Which two kinds together take about one quarter of the circle?* #box(width: 30mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft))]
       v(3pt)
-      text(size: 9.2pt)[*Can the pie tell us whether science books went UP this term? Why not?* #ruled-lines(1, lead: 7.2mm)]
+      text(size: 10.1pt)[*Can the pie tell us whether science books went UP this term? Why not?* #ruled-lines(1, lead: 7.9mm)]
     },
   )
 }))
@@ -127,18 +127,18 @@ Charts look like evidence — but a chart is a *drawing made by a person*, and a
   Three posters went up on the school noticeboard. One is honest. Two are playing tricks.
   #v(4pt)
   #grid(columns: (1fr, 1fr, 1fr), column-gutter: 8pt,
-    box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 7pt, y: 7pt), {
-      text(size: 8pt, weight: 800, fill: teal, tracking: 0.08em)[CHART A · FAVOURITE FRUIT, 7C]
+    box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 7pt, y: 7pt), {
+      text(size: 8.8pt, weight: 800, fill: teal, tracking: 0.08em)[CHART A · FAVOURITE FRUIT, 7C]
       v(4pt)
-      barchart-example(("Mango", "Banana", "Guava", "Apple"), (9, 6, 4, 7), ymax: 10, pw: 42mm, ph: 36mm, labsize: 6.6pt)
+      barchart-example(("Mango", "Banana", "Guava", "Apple"), (9, 6, 4, 7), ymax: 10, pw: 42mm, ph: 36mm, labsize: 7.3pt)
     }),
-    box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 7pt, y: 7pt), {
-      text(size: 8pt, weight: 800, fill: teal, tracking: 0.08em)[CHART B · ATTENDANCE %, 7A–7D]
+    box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 7pt, y: 7pt), {
+      text(size: 8.8pt, weight: 800, fill: teal, tracking: 0.08em)[CHART B · ATTENDANCE %, 7A–7D]
       v(4pt)
-      barchart-example(("7A", "7B", "7C", "7D"), (94, 97, 89, 99), ymax: 100, ymin: 88, ystep: 2, pw: 42mm, ph: 36mm, ylabel: "%", labsize: 7.5pt)
+      barchart-example(("7A", "7B", "7C", "7D"), (94, 97, 89, 99), ymax: 100, ymin: 88, ystep: 2, pw: 42mm, ph: 36mm, ylabel: "%", labsize: 8.2pt)
     }),
-    box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 7pt, y: 7pt), {
-      text(size: 8pt, weight: 800, fill: teal, tracking: 0.08em)[CHART C · WHERE SCHOOL MONEY GOES]
+    box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 7pt, y: 7pt), {
+      text(size: 8.8pt, weight: 800, fill: teal, tracking: 0.08em)[CHART C · WHERE SCHOOL MONEY GOES]
       v(4pt)
       align(center, piechart-example((45, 30, 20, 15), ("Rooms", "Library", "Sports", "Computers"), (teal, amber, teal-mid, line-soft), pw: 36mm))
       v(4pt)
@@ -146,10 +146,10 @@ Charts look like evidence — but a chart is a *drawing made by a person*, and a
     }),
   )
   #v(6pt)
-  *The honest chart is:* #box(width: 16mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft)) — because… #ruled-lines(1, lead: 7.6mm)
-  *Chart B's trick:* #ruled-lines(1, lead: 7.6mm)
-  *Chart C's trick (check the numbers like a detective):* #ruled-lines(1, lead: 7.6mm)
-  *Redraw plan — one change that would make each trickster honest:* #ruled-lines(2, lead: 7.6mm)
+  *The honest chart is:* #box(width: 16mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) — because… #ruled-lines(1, lead: 8.4mm)
+  *Chart B's trick:* #ruled-lines(1, lead: 8.4mm)
+  *Chart C's trick (check the numbers like a detective):* #ruled-lines(1, lead: 8.4mm)
+  *Redraw plan — one change that would make each trickster honest:* #ruled-lines(2, lead: 8.4mm)
 ]
 
 #myth("If the chart is colourful, it is true.")[
@@ -157,7 +157,7 @@ Charts look like evidence — but a chart is a *drawing made by a person*, and a
 
 #homelink[
   #task("AT HOME", "Chart Hunt", mode: "home", mins: "15")[
-    Find one chart this week — in a newspaper, a textbook, a shop poster or a government notice. Bring it (or copy it) and interrogate it: *What does it claim?* #ruled-lines(1, lead: 7.4mm) *Where does the axis start — and what is the sample?* #ruled-lines(1, lead: 7.4mm) *One thing that is missing:* #ruled-lines(1, lead: 7.4mm)
+    Find one chart this week — in a newspaper, a textbook, a shop poster or a government notice. Bring it (or copy it) and interrogate it: *What does it claim?* #ruled-lines(1, lead: 8.1mm) *Where does the axis start — and what is the sample?* #ruled-lines(1, lead: 8.1mm) *One thing that is missing:* #ruled-lines(1, lead: 8.1mm)
   ]
 ]
 
@@ -171,11 +171,11 @@ Charts look like evidence — but a chart is a *drawing made by a person*, and a
 
 #note("Chapter 3 clues — pocket these")[
   #grid(columns: (auto, 1fr), column-gutter: 6pt, row-gutter: 3.2pt, align: (left, left),
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[Every AI helper is *data in, prediction out — then a human decides*. Its benefit and limit come as a pair.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[*Bars compare groups · lines follow time · pies split one whole.* Pick the chart that matches the question.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[Read a chart's *numbers first*, colours second — check where the axis starts and what adds up.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[Every chart has a *sample* — and someone is always missing from it.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[Every AI helper is *data in, prediction out — then a human decides*. Its benefit and limit come as a pair.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[*Bars compare groups · lines follow time · pies split one whole.* Pick the chart that matches the question.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[Read a chart's *numbers first*, colours second — check where the axis starts and what adds up.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[Every chart has a *sample* — and someone is always missing from it.],
   )
   #v(2.5pt)
-  text(size: 9.2pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7mm)]
+  #text(size: 10.1pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7.7mm)]
 ]

@@ -21,15 +21,15 @@ In Class 6 you taught an alien the idea of *mango* using only green mangoes — 
     widths: (62mm, 1fr),
   )
   #v(5pt)
-  *Connect the cases: what does the Uniform Suggester share with the alien's green mangoes and Machine A's three leaves?* #ruled-lines(2, lead: 8mm)
-  *Write one honest sentence the company could send to Riverdale School:* #ruled-lines(2, lead: 8mm)
+  *Connect the cases: what does the Uniform Suggester share with the alien's green mangoes and Machine A's three leaves?* #ruled-lines(2, lead: 8.8mm)
+  *Write one honest sentence the company could send to Riverdale School:* #ruled-lines(2, lead: 8.8mm)
 ]
 #wordpower(12, "bias", [When examples are one-sided, so the machine's results treat some people unfairly.])
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[ONE MORE CASE · THE TALENT FINDER]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ONE MORE CASE · THE TALENT FINDER]
   v(3pt)
-  text(size: 9.4pt)[A sports academy built a *Talent Finder*: feed it a video of a child playing, and it predicts who should be invited for trials. Its training data: 3,000 video clips of children playing tennis-ball street cricket — collected from one big city, all of them boys. Then two children sent videos: *Meera*, who plays handball, and *Joseph*, who plays hockey on a village field.]
+  text(size: 10.3pt)[A sports academy built a *Talent Finder*: feed it a video of a child playing, and it predicts who should be invited for trials. Its training data: 3,000 video clips of children playing tennis-ball street cricket — collected from one big city, all of them boys. Then two children sent videos: *Meera*, who plays handball, and *Joseph*, who plays hockey on a village field.]
   v(4pt)
   dtable(("Child", "What the machine predicted", "Why did it fail?", "One fix"),
     ([Meera], [“no talent found”], [ ], [ ]),
@@ -37,11 +37,11 @@ In Class 6 you taught an alien the idea of *mango* using only green mangoes — 
     widths: (20mm, 40mm, 1fr, 1fr),
   )
   v(4pt)
-  text(size: 9.2pt)[*Who is missing from this training set? List every group you can find:* #ruled-lines(2, lead: 7.6mm)]
+  text(size: 10.1pt)[*Who is missing from this training set? List every group you can find:* #ruled-lines(2, lead: 8.4mm)]
 }))
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · SPOT THE MISSING]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · SPOT THE MISSING]
   v(3pt)
   dtable(("The system was trained on…", "Who is missing — and what could go wrong for them?"),
     ([A voice assistant trained only on adult voices], [ ]),
@@ -69,14 +69,14 @@ Class 6 gave you two checks for suspicious content: *who made this?* and *what i
     widths: (1fr, 24mm, 24mm, 24mm, 22mm),
   )
   #v(5pt)
-  *Which check caught the most?* #box(width: 24mm, baseline: 30%, line(length: 100%, stroke: 0.7pt + line-soft)) · *Write the rule in your own words:* #ruled-lines(1, lead: 7.6mm)
+  *Which check caught the most?* #box(width: 24mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) · *Write the rule in your own words:* #ruled-lines(1, lead: 8.4mm)
 ]
 #wordpower(13, "misinformation", [False or edited content that spreads — sometimes by mistake, sometimes on purpose.])
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[THE THREE CHECKS, APPLIED — A WORKED EXAMPLE]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[THE THREE CHECKS, APPLIED — A WORKED EXAMPLE]
   v(3pt)
-  text(size: 9.3pt, style: "italic")[“Parents: the district is cancelling next Friday's exam! I know someone in the education office. Share with every class group NOW!”]
+  text(size: 10.2pt, style: "italic")[“Parents: the district is cancelling next Friday's exam! I know someone in the education office. Share with every class group NOW!”]
   v(3pt)
   dtable(("Check", "What the detective found"),
     ([SOURCE], [No name, no office, no notice number — “I know someone” is not a source.]),
@@ -87,8 +87,8 @@ Class 6 gave you two checks for suspicious content: *who made this?* and *what i
   )
 }))
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH BUTTON IS IT PUSHING?]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH BUTTON IS IT PUSHING?]
   v(3pt)
   dtable(("The message shouts…", "Fear, greed, anger — or none?"),
     ([“Your account will be CLOSED in 24 hours!”], [ ]),
@@ -98,7 +98,7 @@ Class 6 gave you two checks for suspicious content: *who made this?* and *what i
     widths: (1fr, 40mm),
   )
   v(3pt)
-  text(size: 8pt, fill: ink-soft, style: "italic")[Strong emotion is not proof of a lie — but it is the costume most lies prefer. When a message pushes a button, press pause instead.]
+  text(size: 8.8pt, fill: ink-soft, style: "italic")[Strong emotion is not proof of a lie — but it is the costume most lies prefer. When a message pushes a button, press pause instead.]
 }))
 
 // ---------------- 4.3 ----------------
@@ -116,7 +116,7 @@ A homework-help app gives a wrong answer. A student copies it. A teacher marks i
     widths: (24mm, 1fr, 42mm, 1fr),
   )
   #v(5pt)
-  *After the vote: could any role say “the machine did it, not me”? What did the class decide, and why?* #ruled-lines(2, lead: 8mm)
+  *After the vote: could any role say “the machine did it, not me”? What did the class decide, and why?* #ruled-lines(2, lead: 8.8mm)
 ]
 #wordpower(14, "accountability", [Being answerable for what a system does — only people can hold it.])
 
@@ -129,14 +129,14 @@ A homework-help app gives a wrong answer. A student copies it. A teacher marks i
       [sets the rules for what may be used for homework and how],
       [sells it, advertises it, profits from it, must answer for harm],
     )
-    box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 8pt, y: 7pt), stack(spacing: 3pt,
-      text(font: f-display, fill: teal, weight: 800, size: 8.4pt, tracking: 0.08em, roles.at(i)),
-      text(size: 8.8pt, lines.at(i)),
+    box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 8pt, y: 7pt), stack(spacing: 3pt,
+      text(font: f-display, fill: teal, weight: 800, size: 9.2pt, tracking: 0.08em, roles.at(i)),
+      text(size: 9.7pt, lines.at(i)),
     ))
   })
 )
 #v(2pt)
-#text(size: 8.6pt, fill: ink-soft, style: "italic")[Responsibility follows control: the more a role controls, the more it must answer for. And the machine controls nothing — it only predicts.]
+#text(size: 9.5pt, fill: ink-soft, style: "italic")[Responsibility follows control: the more a role controls, the more it must answer for. And the machine controls nothing — it only predicts.]
 
 #myth("AI is neutral and objective.")[
   A machine does not take sides the way people argue — but “neutral” is a costume too. Its training data was chosen by people; those choices carry the streets, schools and faces somebody thought to include — and the ones they forgot. A neutral machine over one-sided data is just bias with better manners. The fix is not magic; it is what you proposed in T7-13: wider examples, honest checks, and people who stay answerable.]
@@ -153,29 +153,29 @@ You now own three fixes, and they work on any machine, not just the ones in this
       [*Test on the missing groups.* The true test set includes the people the training set forgot.],
       [*Name the human.* Every AI system needs a person who must answer when it goes wrong.],
     )
-    box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 8pt, y: 7pt), stack(spacing: 3pt,
-      text(font: f-display, fill: teal, weight: 800, size: 8.4pt, tracking: 0.08em, titles.at(i)),
-      text(size: 8.9pt, lines.at(i)),
+    box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 8pt, y: 7pt), stack(spacing: 3pt,
+      text(font: f-display, fill: teal, weight: 800, size: 9.2pt, tracking: 0.08em, titles.at(i)),
+      text(size: 9.8pt, lines.at(i)),
     ))
   })
 )
 #v(4pt)
-#block(width: 100%, box(width: 100%, fill: teal-faint, radius: 0pt, stroke: 0.6pt + line-soft, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal-deep, tracking: 0.1em)[MY FAIRNESS PLAN]
+#block(width: 100%, box(width: 100%, fill: teal-faint, radius: 5pt, stroke: 0.6pt + line-soft, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal-deep, tracking: 0.1em)[MY FAIRNESS PLAN]
   v(3pt)
-  text(size: 9.6pt)[*One machine I use could be unfair to:* #ruled-lines(1, lead: 7.6mm)]
-  text(size: 9.6pt)[*The group missing from its training data might be:* #ruled-lines(1, lead: 7.6mm)]
-  text(size: 9.6pt)[*My fix, using the toolkit:* #ruled-lines(2, lead: 7.6mm)]
+  text(size: 10.6pt)[*One machine I use could be unfair to:* #ruled-lines(1, lead: 8.4mm)]
+  text(size: 10.6pt)[*The group missing from its training data might be:* #ruled-lines(1, lead: 8.4mm)]
+  text(size: 10.6pt)[*My fix, using the toolkit:* #ruled-lines(2, lead: 8.4mm)]
 }))
 
 #homelink[
   #task("AT HOME", "Three Checks at the Shop", mode: "home", mins: "10")[
     Find one *claim on a packet, poster or advertisement* at home — something that promises a result (“whiter in 3 days!”, “9 out of 10 doctors…”, “extra power!”). Run the three checks with a grown-up:
     v(3pt)
-    [*The claim:* #ruled-lines(1, lead: 7.4mm)]
-    [*Source — who says so, and do they profit?* #ruled-lines(1, lead: 7.4mm)]
-    [*Evidence — what proof is printed?* #ruled-lines(1, lead: 7.4mm)]
-    [*Emotion — what is it promising or frightening?* #ruled-lines(1, lead: 7.4mm)]
+    [*The claim:* #ruled-lines(1, lead: 8.1mm)]
+    [*Source — who says so, and do they profit?* #ruled-lines(1, lead: 8.1mm)]
+    [*Evidence — what proof is printed?* #ruled-lines(1, lead: 8.1mm)]
+    [*Emotion — what is it promising or frightening?* #ruled-lines(1, lead: 8.1mm)]
   ]
 ]
 
@@ -188,16 +188,16 @@ You now own three fixes, and they work on any machine, not just the ones in this
 #thinkink([If a machine treated someone unfairly, I used to think the fix was… Now I think the fix begins with …], lines: 2)
 
 #note("Case notes — what changed in my thinking?")[
-  Before this chapter, if a machine was unfair I would have blamed … Now I would first look at … #ruled-lines(2, lead: 7.6mm)
+  Before this chapter, if a machine was unfair I would have blamed … Now I would first look at … #ruled-lines(2, lead: 8.4mm)
 ]
 
 #note("Chapter 4 clues — pocket these")[
   #grid(columns: (auto, 1fr), column-gutter: 6pt, row-gutter: 3.2pt, align: (left, left),
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[*One-sided training data* builds unfair machines — nobody programmed the unfairness, it walked in with the data.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[Three checks before forwarding: *source · evidence · emotion*. Strong feeling is a costume, not proof.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[*Responsibility follows control* — and the machine controls nothing, so it can never be the final answer.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 9.2pt)[The fairness toolkit: *wider examples · honest checks · a named human who answers*.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[*One-sided training data* builds unfair machines — nobody programmed the unfairness, it walked in with the data.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[Three checks before forwarding: *source · evidence · emotion*. Strong feeling is a costume, not proof.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[*Responsibility follows control* — and the machine controls nothing, so it can never be the final answer.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[The fairness toolkit: *wider examples · honest checks · a named human who answers*.],
   )
   #v(2.5pt)
-  text(size: 9.2pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7mm)]
+  #text(size: 10.1pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7.7mm)]
 ]

@@ -3,6 +3,8 @@
 //  CHAPTER 1 — MACHINES THAT SEEM SMART   (7 pp · tasks 01–05)
 // ============================================================
 #chapter-opener(1, "Machines That Seem Smart", "When is a machine actually learning — and when is it only following steps?",
+  summary: [Every detective starts by learning to tell two suspects apart. In this chapter you will meet *rule-followers* — machines that run exact steps — and *learners* — machines that improve from examples. By the last mission you will have played a human robot, taught an alien using only flashcards, and judged a fair humans-vs-machines contest.],
+  missions: "T6-01 – T6-05",
   outcomes: ("6.U1", "6.U2", "6.L2", "6.W1", "6.T1"), strands: ("U", "W"),
   link: "Links: Maths — patterns · English — exact instructions")
 
@@ -13,11 +15,11 @@ Every day, machines seem to do clever things. A video app picks the next clip yo
 #task("T6-01", "Human Robot", mode: "pair", mins: "10", win: true)[
   One of you is the *Robot*, the other is the *Engineer*. The Engineer writes exact steps for the Robot to make a paper plane, or to walk from the door to the chalkboard. Then swap. The Robot must follow the steps *literally* — if the step says “fold the paper”, fold it any way you like! When both of you have played both roles, write here:
   #v(2pt)
-  #ruled-lines(2, lead: 8.2mm)
+  #ruled-lines(2, lead: 9mm)
   #v(4pt)
-  *One step my Robot followed too literally:* #ruled-lines(1, lead: 8.2mm)
-  *What this taught me about giving instructions to machines:* #ruled-lines(1, lead: 8.2mm)
-  *Our funniest too-literal moment:* #ruled-lines(2, lead: 8.2mm)
+  *One step my Robot followed too literally:* #ruled-lines(1, lead: 9mm)
+  *What this taught me about giving instructions to machines:* #ruled-lines(1, lead: 9mm)
+  *Our funniest too-literal moment:* #ruled-lines(2, lead: 9mm)
 ]
 #wordpower(1, "algorithm", [An exact list of steps that tells a machine how to do a task, one step at a time.])
 
@@ -42,18 +44,18 @@ A washing machine washes exactly the same way today as it did last month. A lift
     widths: (52mm, 22mm, 1fr),
   )
   #v(5pt)
-  *The machine I argued about most with my partner:* #ruled-lines(1, lead: 8mm)
+  *The machine I argued about most with my partner:* #ruled-lines(1, lead: 8.8mm)
 ]
 #wordpower(2, "automation", [Work done by a machine that repeats fixed steps in the same way every time.])
 
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[AT A GLANCE · RULE-FOLLOWER VS LEARNER]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[AT A GLANCE · RULE-FOLLOWER VS LEARNER]
   v(3pt)
   dtable(("Ask yourself…", "Rule-follower", "Learner"),
     ([Where do its steps come from?], [A person wrote the algorithm.], [It found the pattern in training examples.]),
     ([What happens with a brand-new case?], [It does the same steps anyway.], [It makes a prediction from what it learned.]),
     ([Can it get better at its job?], [Never — until a person changes the steps.], [Yes — more examples can improve it.]),
-    ([One example from my day], [#ruled-lines(1, lead: 6.8mm)], [#ruled-lines(1, lead: 6.8mm)]),
+    ([One example from my day], [#ruled-lines(1, lead: 7.5mm)], [#ruled-lines(1, lead: 7.5mm)]),
     widths: (44mm, 1fr, 1fr),
   )
 }))
@@ -68,8 +70,8 @@ Here is the strange part: the people who build AI do not write the final rules e
 #task("T6-03", "Teach the Alien", mode: "group", mins: "15")[
   In your group of four, one person is the *Alien* — smart, but knowing nothing about Earth. The other three must teach the Alien the idea of *mango* using ONLY examples: point at real objects, drawings or the cards your teacher gives you, and say “mango” or “not mango”. No describing words allowed — aliens don't speak Human! When the Alien starts guessing correctly, play the twist round: show *only green mangoes*. Then answer:
   #v(2pt)
-  *What wrong idea did our examples put in the Alien's head?* #ruled-lines(2, lead: 8mm)
-  *How could we choose better examples next time?* #ruled-lines(1, lead: 8mm)
+  *What wrong idea did our examples put in the Alien's head?* #ruled-lines(2, lead: 8.8mm)
+  *How could we choose better examples next time?* #ruled-lines(1, lead: 8.8mm)
 ]
 #wordpower(3, "artificial intelligence (AI)", [Technology that lets machines do tasks that seem to need human intelligence.])
 #wordpower(4, "training examples", [The examples we show a machine so that it can find patterns by itself.])
@@ -83,11 +85,11 @@ So is a machine ever really smart? Try a fair contest. Machines are dazzling at 
   Fill the table, then your class votes for the most surprising idea.
   #v(4pt)
   #dtable(("Two things PEOPLE do better — and why", "Two things MACHINES do better — and why"),
-    ([#ruled-lines(3, lead: 8.2mm)], [#ruled-lines(3, lead: 8.2mm)]),
+    ([#ruled-lines(3, lead: 9mm)], [#ruled-lines(3, lead: 9mm)]),
     widths: (1fr, 1fr),
   )
   #v(5pt)
-  *The class's most surprising idea was…* #ruled-lines(1, lead: 8mm)
+  *The class's most surprising idea was…* #ruled-lines(1, lead: 8.8mm)
 ]
 
 // ---------------- 1.5 ----------------
@@ -102,18 +104,18 @@ Machines learn in more than one way, and each way has a human story you already 
       [*Sort it your way.* Like tidying a mixed toy box with no instructions: you make your own piles — colours here, shapes there. The machine gets examples with *no* answers and must find its own groups, like sorting customers or animals it has never been told about.],
       [*Try it, score it.* Like learning to ride a bicycle: wobble, fall, adjust, try again — and a happy feeling keeps you going. The machine tries actions, gets points for good ones, and slowly learns the moves that earn the most reward.],
     )
-    box(fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 8.5pt, y: 8pt), stack(spacing: 3.5pt,
-      text(font: f-display, fill: teal, weight: 800, size: 8.6pt, tracking: 0.1em, "STORY " + str(i + 1)),
-      text(weight: 800, size: 10.2pt, fill: teal, font: f-display, titles.at(i)),
-      text(size: 9.2pt, stories.at(i)),
+    box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 8.5pt, y: 8pt), stack(spacing: 3.5pt,
+      text(font: f-display, fill: teal, weight: 800, size: 9.5pt, tracking: 0.1em, "STORY " + str(i + 1)),
+      text(weight: 800, size: 11.2pt, fill: teal, font: f-display, titles.at(i)),
+      text(size: 10.1pt, stories.at(i)),
     ))
   })
 )
 #v(2pt)
-#text(size: 9pt, fill: ink-soft, style: "italic")[Real AI systems often mix all three. Class 7 will show you what each way is called — for now, the stories are enough.]
+#text(size: 9.9pt, fill: ink-soft, style: "italic")[Real AI systems often mix all three. Class 7 will show you what each way is called — for now, the stories are enough.]
 #v(3pt)
-#block(width: 100%, box(width: 100%, fill: white, stroke: 0.8pt + line-soft, radius: 0pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 8.4pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH STORY IS IT?]
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH STORY IS IT?]
   v(3pt)
   dtable(("The learner…", "Story 1, 2 or 3?"),
     ([Leena learns dance by copying her teacher's moves, with a clap for each correct step.], [ ]),
@@ -132,6 +134,13 @@ Machines learn in more than one way, and each way has a human story you already 
 )
 #thinkink([One machine I use seemed really smart. Now I think it is a … (rule-follower / learner), because …], lines: 2)
 
+// ---------------- chapter recap ----------------
+#note("Case notes — what changed in my thinking?")[
+  Before this chapter I thought “smart machine” meant one thing. Now I know there are *two kinds*: #ruled-lines(1, lead: 8.4mm) #ruled-lines(1, lead: 8.4mm)
+]
+#myth("AI is alive — it has feelings.")[
+  A learner finds patterns in numbers; it does not *feel* anything. When a chatbot writes “I am happy to help!”, that sentence was predicted from patterns in text people wrote. The *people* who design, choose data and take responsibility have the feelings — and the responsibility.]
+
 // ---------------- home link ----------------
 #homelink[
   #task("T6-05", "AI Detective at Home", mode: "home", mins: "15")[
@@ -147,13 +156,7 @@ Machines learn in more than one way, and each way has a human story you already 
       widths: (44mm, 24mm, 40mm, 1fr),
     )
     #v(5pt)
-    *My biggest surprise on this case:* #ruled-lines(2, lead: 8mm)
+    *My biggest surprise on this case:* #ruled-lines(2, lead: 8.8mm)
   ]
 ]
 
-// ---------------- chapter recap ----------------
-#note("Case notes — what changed in my thinking?")[
-  Before this chapter I thought “smart machine” meant one thing. Now I know there are *two kinds*: #ruled-lines(1, lead: 7.6mm) #ruled-lines(1, lead: 7.6mm)
-]
-#myth("AI is alive — it has feelings.")[
-  A learner finds patterns in numbers; it does not *feel* anything. When a chatbot writes “I am happy to help!”, that sentence was predicted from patterns in text people wrote. The *people* who design, choose data and take responsibility have the feelings — and the responsibility.]
