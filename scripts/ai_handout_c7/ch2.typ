@@ -117,6 +117,7 @@ Translation looks easy: swap each word for its counterpart. But you speak a lang
     ([“It's raining cats and dogs.”], [“Water is falling. Cats and dogs are falling from the sky.”], [ ]),
     ([“Aankhon ka taara” (Hindi)], [“star of the eyes”], [ ]),
     ([“When pigs fly!”], [“at the time when pigs fly in the sky”], [ ]),
+    ([“That test was a piece of cake!”], [“the test was made of cake”], [ ]),
     widths: (38mm, 1fr, 1fr),
   )
   #v(5pt)
@@ -125,6 +126,7 @@ Translation looks easy: swap each word for its counterpart. But you speak a lang
   *The machine's word-by-word version:* #ruled-lines(1, lead: 8.6mm)
   *What it really means:* #ruled-lines(1, lead: 8.6mm)
 ]
+#note("Translator's tip")[A good translation machine does not translate *words* — it translates *meaning*. It reads the whole sentence (and often the ones before it) to find the context, then rebuilds the idea in the new language. Word-by-word is how a machine fails; context is how a human wins.]
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
   text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · THE IDIOM RESCUE KIT]
@@ -187,6 +189,19 @@ Translation looks easy: swap each word for its counterpart. But you speak a lang
 )
 #thinkink([One recommendation I received this week (a video, a song, a product) was… I now know it appeared because …], lines: 2)
 
+#block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[MY WEEK OF MACHINES — SPOT ALL THREE JOBS]
+  v(3pt)
+  dtable(("When", "The machine I met", "Its job: SEE / READ / RECOMMEND", "One limit I noticed"),
+    ([this morning], [ ], [ ], [ ]),
+    ([this evening], [ ], [ ], [ ]),
+    ([tonight], [ ], [ ], [ ]),
+    widths: (22mm, 1fr, 44mm, 1fr),
+  )
+  v(3pt)
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[Bonus detective move: for any READ machine above, write the one *watch-word* it probably counts — then imagine a message that fools it.]
+}))
+
 #homelink[
   #task("AT HOME", "Spam Hunt", mode: "home", mins: "15")[
     With a grown-up, look at the last five messages a family group-chat received (do not open links, do not tap anything). Tally: how many carry a watch-word like FREE, WINNER, URGENT or CLICK? How many try to make you *feel* something before you *think*? #v(3pt)
@@ -229,4 +244,4 @@ Translation looks easy: swap each word for its counterpart. But you speak a lang
   [Your video app recommends cricket clips all week. Whose pattern of likes is it actually borrowing?],
   [Name one job where counting words is enough — and one job where counting is not enough.],
 )
-#case-journal(lines: 2, label: "MY CASE JOURNAL — today's sharpest clue about seeing, reading and recommending")
+#case-journal(lines: 3, label: "MY CASE JOURNAL — today's sharpest clue about seeing, reading and recommending")

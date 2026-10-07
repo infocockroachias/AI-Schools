@@ -89,3 +89,25 @@ Stage Summary:
 - GitHub: infocockroachias/AI-Schools main @ 43222cf (3 commits: snapshot, machiatto edition, webapp metadata).
 - Web app live with updated cards + files. Source of truth: scripts/ai_handout (c6), scripts/ai_handout_c7 (c7); rebuild: typst compile --font-path fonts main.typ main.pdf.
 - Standing rule recorded: all future updates are committed + pushed to the AI-Schools repo.
+---
+Task ID: 5
+Agent: Super Z (main agent)
+Task: Inspect and visual-audit EVERY page of both handouts (Class 6 + Class 7), fill all large white/empty space with meaningful content, add the whitespace rule to the instructions md file, commit and push everything to GitHub.
+
+Work Log:
+- Built whitespace_audit.py + whitespace_audit2.py (render pages via pdftoppm, compute per-page fill ratio excluding footer band, internal mid-gaps) and run_audit.py; first pass flagged 22 under-filled pages in c6 (<70% fill) and 21 in c7.
+- Visual audit via labelled 6-up contact sheets mapped every flagged page to its role (chapter openers ~45%, chapter-end pages 25-45%, front matter, TOC, answer-key tails).
+- Template page-balance kit added to BOTH projects: opener-extras (Words-you'll-meet chips + warm-up write-in + toolkit strip), chapter-checkpoint (3-question no-peek quiz), case-journal (dashed journal strip), legend-card/box-legend (TOC legend), moka-doc extended with toc-extras / cover-questions / ack-meta params, cover enriched (question-habit line + CASE OPENED/CLOSED stamp strip), acknowledgements decorated (pixel-heart + series + book-in-numbers strip).
+- Front matter enriched both books: licence-in-plain-words MAY/MAY NOT table + extended typesetting credits; 3-paragraph acknowledgements; grown-ups page extended with "Four ways to help" cards, "If your child asks" FAQ, "Signs of growth worth praising" strip.
+- Class 6 (47 -> 49pp): per-chapter fillers — 60-second hunt, two-kinds-of-data note, tally drill, camera-speak note, bonus secret-picture round, pattern-or-coincidence drill, Guess-My-Rule round 2, data-sort drills, passphrase crack-time table + passphrase gym + strange-word generator, emotion-words drill, 7th footprint hop, survey predict-drill + recruit-your-five strip, letter to Class 7, chapter checkpoints 3+4, journals, glossary tightened + NEW "My detective's dictionary" page (10 blank cards + word-hunt + dictionary habit).
+- Class 7 (56 -> 59pp): chapter summaries + opener extras added to all 5 openers; train/test drills (spot-the-memoriser, train-and-test-in-my-week), three-machines table, translator's tip + idiom rescue kit + 4th idiom, week-of-machines table, honest-chart promise, six machine parts + choose-the-question + roles strip, regression-near-home drill, passport stamping rubric, machine maintenance log, fairness pledge (signed), flip-back strip, checkpoints 1-5 + journals, hints expanded + hint log + postcard to Class 8; fixed pre-existing "(eavy" typo in T7-16 training card.
+- Typst bug class handled throughout: unclosed markup brackets in text(...)[... ending with ':'] inside code blocks (fix pattern recorded), `#` invalid in code mode, missing commas between content args, @-references (Riya@123/@2015) needing escaping, strong() needing content not int.
+- QA: whitespace re-audit converged (c6 worst page 69%, c7 worst 65%, all others >= 70%); qa_machiatto.py 16/16 PASS for c6 (49pp) and c7 (59pp); final visual sweep of covers, front matter, openers, checkpoints, dictionary, hints pages.
+- INSTRUCTIONS.md created at repo root (linked from README): machiatto + fonts + 10% scale, MANDATORY per-page whitespace audit rule (<70% fill must be filled with purposeful content), rebuild commands, git discipline, content invariants; copies placed in both typst source folders.
+- Deliverables refreshed: download/ PDFs (c6 49pp 800KB, c7 59pp 887KB) + source zips; webapp public/files synced; webapp library.ts metadata updated to 49pp/59pp; download/README.md + repo README-downloads.md page counts fixed.
+- GitHub: committed and pushed to infocockroachias/AI-Schools main (38ec0dd "Page-balance audit..." + 48d7d21 "Update download README page counts").
+
+Stage Summary:
+- Both handouts are now whitespace-balanced: c6 = 49pp, c7 = 59pp, QA 16/16 each, every page visually inspected and either >= 70% filled or a justified chapter-tail page.
+- Standing whitespace rule recorded in ai-schools-repo/INSTRUCTIONS.md and enforced via scripts/run_audit.py + qa_machiatto.py.
+- GitHub main @ 48d7d21; all future updates keep being committed + pushed per standing rule.

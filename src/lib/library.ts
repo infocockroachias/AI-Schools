@@ -16,9 +16,9 @@ export const LIBRARY: LibraryFile[] = [
     title: "AI Around Me",
     subtitle: "Class 6 · Level 1 — NOTICE · Student Handout (PDF)",
     description:
-      "The complete 47-page Class 6 case file — Machiatto edition: title page, license, acknowledgements, preface, contents and chapters that open with a summary and mini contents. Inside: rule-followers vs learners, the four kinds of data, patterns and if-then trees, digital-citizen habits and the Neighbourhood AI Investigation — 20 paper missions and a detective certificate.",
+      "The complete 49-page Class 6 case file — Machiatto edition: title page, license, acknowledgements, preface, contents and chapters that open with a summary and mini contents. Inside: rule-followers vs learners, the four kinds of data, patterns and if-then trees, digital-citizen habits and the Neighbourhood AI Investigation — 20 paper missions and a detective certificate.",
     kind: "pdf",
-    meta: ["47 pages · A4", "20 missions", "Machiatto edition", "Print-ready"],
+    meta: ["49 pages · A4", "20 missions", "Machiatto edition", "Print-ready"],
     accent: "teal",
   },
   {
@@ -27,9 +27,9 @@ export const LIBRARY: LibraryFile[] = [
     title: "How Machines Learn",
     subtitle: "Class 7 · Level 2 — SORT & PREDICT · Student Handout (PDF)",
     description:
-      "The complete 56-page Class 7 case file — Machiatto edition: title page, license, acknowledgements, preface, contents and chapters that open with a summary and mini contents. Inside: the three learning jobs (classification, regression, clustering), training vs testing, how machines see, read and recommend, charts and how they lie, bias and responsibility — 17 missions ending in the Class Survey Machine capstone.",
+      "The complete 59-page Class 7 case file — Machiatto edition: title page, license, acknowledgements, preface, contents and chapters that open with a summary and mini contents. Inside: the three learning jobs (classification, regression, clustering), training vs testing, how machines see, read and recommend, charts and how they lie, bias and responsibility — 17 missions ending in the Class Survey Machine capstone.",
     kind: "pdf",
-    meta: ["56 pages · A4", "17 missions", "Machiatto edition", "Print-ready"],
+    meta: ["59 pages · A4", "17 missions", "Machiatto edition", "Print-ready"],
     accent: "amber",
   },
   {

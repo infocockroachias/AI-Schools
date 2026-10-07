@@ -6,8 +6,8 @@ All files are also available in the web app (`/` route) with online preview and 
 
 | File | Class | Level | Pages |
 |---|---|---|---|
-| `PRATIMAI_AI_Handout_Class6_AI_Around_Me.pdf` | 6 — "AI Around Me" | Level 1 · NOTICE | 47 |
-| `PRATIMAI_AI_Handout_Class7_How_Machines_Learn.pdf` | 7 — "How Machines Learn" | Level 2 · SORT & PREDICT | 56 |
+| `PRATIMAI_AI_Handout_Class6_AI_Around_Me.pdf` | 6 — "AI Around Me" | Level 1 · NOTICE | 49 |
+| `PRATIMAI_AI_Handout_Class7_How_Machines_Learn.pdf` | 7 — "How Machines Learn" | Level 2 · SORT Level 2 · SORT & PREDICT | 56 | PREDICT | 59 |
 
 **Machiatto edition** — both books are typeset with the Machiatto template
 (MoKa Reads publication specification): title page, license, acknowledgements,
