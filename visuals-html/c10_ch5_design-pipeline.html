@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face { font-family:'Baloo 2'; src:url('fonts/Baloo2.ttf'); font-weight:400 800; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito.ttf'); font-weight:200 900; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito-Italic.ttf'); font-style:italic; font-weight:200 900; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; color:#22333B; background:#FDFBF7; -webkit-font-smoothing:antialiased; }
+#root { width:1080px; background:#FDFBF7; padding:24px 30px; }
+.viz-title { font-family:'Baloo 2',sans-serif; font-size:21px; font-weight:800; color:#0F4C5C; }
+.viz-sub { font-size:12.5px; color:#5F6E75; margin:2px 0 14px; }
+.pipe { display:flex; align-items:stretch; gap:6px; }
+.stage { flex:1; border-radius:9px; border-top:4px solid; padding:9px 10px 10px; background:#FFFFFF; border-left:1px solid #C9D8DC; border-right:1px solid #C9D8DC; border-bottom:1px solid #C9D8DC; }
+.s1 { border-top-color:#6E939F; } .s2 { border-top-color:#56808F; } .s3 { border-top-color:#3D6D7F; }
+.s4 { border-top-color:#0F4C5C; } .s5 { border-top-color:#2E7286; } .s6 { border-top-color:#B94F0B; } .s7 { border-top-color:#3A7D44; }
+.stage .no { font-size:10px; font-weight:800; letter-spacing:.1em; color:#8A999F; }
+.stage h4 { font-family:'Baloo 2',sans-serif; font-size:14.5px; font-weight:800; color:#0A3A47; margin:1px 0 4px; }
+.s6 h4 { color:#7A3A08; } .s7 h4 { color:#2A5A31; }
+.stage p { font-size:11px; line-height:1.45; color:#47555C; }
+.stage .out { margin-top:6px; font-size:10.5px; font-weight:800; color:#0F4C5C; background:#EFF6F7; border-radius:6px; padding:2.5px 7px; display:inline-block; }
+.s6 .out { background:#FBE8DB; color:#7A3A08; } .s7 .out { background:#EDF5EE; color:#2A5A31; }
+.gate { margin-top:13px; display:flex; gap:10px; }
+.gate .g { flex:1; border-radius:8px; padding:8px 12px; font-size:12px; line-height:1.5; }
+.g1 { background:#F1F5F6; border-left:4px solid #0F4C5C; }
+.g2 { background:#FBE8DB; border-left:4px solid #B94F0B; }
+.gate b { font-family:'Baloo 2',sans-serif; }
+.g1 b { color:#0A3A47; } .g2 b { color:#7A3A08; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="viz-title">The Responsible AI Design Brief — seven stages, two gates</div>
+  <div class="viz-sub">T10-19 walks your capstone through the full pipeline. The two gates are where most real projects should die — and where the honest ones admit it early.</div>
+  <div class="pipe">
+    <div class="stage s1"><div class="no">STAGE 1</div><h4>Scope</h4><p>Sharp problem statement: who, what, where, why now.</p><span class="out">PROBLEM SHEET</span></div>
+    <div class="stage s2"><div class="no">STAGE 2</div><h4>Data</h4><p>Sources, consent, guest-list audit, missing groups named.</p><span class="out">DATA PLAN</span></div>
+    <div class="stage s3"><div class="no">STAGE 3</div><h4>Model</h4><p>Family choice from the map; features; honest training plan.</p><span class="out">MODEL CHOICE</span></div>
+    <div class="stage s4"><div class="no">STAGE 4</div><h4>Evaluate</h4><p>Train/test split, confusion matrix, metric chosen for the stakes.</p><span class="out">EVIDENCE TABLE</span></div>
+    <div class="stage s5"><div class="no">STAGE 5</div><h4>Deploy</h4><p>Who uses it, where it fails, what humans stay in the loop.</p><span class="out">USE POLICY</span></div>
+    <div class="stage s6"><div class="no">STAGE 6</div><h4>Ethics review</h4><p>Four principles per group; transparency and accountability named.</p><span class="out">ETHICS NOTE</span></div>
+    <div class="stage s7"><div class="no">STAGE 7</div><h4>Pitch</h4><p>Board of judges: claim, evidence, limits, and your own doubts.</p><span class="out">PITCH CARD</span></div>
+  </div>
+  <div class="gate">
+    <div class="g g1"><b>GATE A &mdash; after Stage 2:</b> "Would the people in this data consent to this use — and is any group missing?" If the answer is no, Stage 3 must not start. Redesign the data, not the pitch.</div>
+    <div class="g g2"><b>GATE B &mdash; after Stage 6:</b> "Would we be proud to explain every failure to the people it affects?" If any principle fails, the brief returns to Stage 2 — with the reason written down.</div>
+  </div>
+</div>
+</body>
+</html>

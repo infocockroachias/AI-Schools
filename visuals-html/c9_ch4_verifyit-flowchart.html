@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face { font-family:'Baloo 2'; src:url('fonts/Baloo2.ttf'); font-weight:400 800; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito.ttf'); font-weight:200 900; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito-Italic.ttf'); font-style:italic; font-weight:200 900; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; color:#22333B; background:#FDFBF7; -webkit-font-smoothing:antialiased; }
+#root { width:1000px; background:#FDFBF7; padding:26px 30px; }
+.viz-title { font-family:'Baloo 2',sans-serif; font-size:22px; font-weight:800; color:#0F4C5C; }
+.viz-sub { font-size:13px; color:#5F6E75; margin:2px 0 14px; }
+.phase { border-radius:10px; padding:13px 18px 11px; margin-top:0; }
+.ph1 { background:#F1F5F6; border-left:5px solid #6E939F; }
+.ph2 { background:#E6EEF0; border-left:5px solid #0F4C5C; }
+.ph3 { background:#FBE8DB; border-left:5px solid #B94F0B; }
+.phase-title { display:flex; align-items:baseline; gap:10px; font-family:'Baloo 2',sans-serif; font-size:16px; font-weight:800; color:#0A3A47; }
+.phase-title .tag { font-size:11px; font-weight:800; letter-spacing:.12em; color:#2E7286; }
+.ph3 .phase-title .tag { color:#B94F0B; }
+.steps { display:flex; gap:9px; margin-top:9px; }
+.step { flex:1; background:#FFFFFF; border:1px solid #C9D8DC; border-radius:7px; padding:8px 12px; font-size:12.5px; line-height:1.45; }
+.step b { display:block; font-family:'Baloo 2',sans-serif; color:#0F4C5C; font-size:13.5px; margin-bottom:1px; }
+.arrow { text-align:center; color:#2E7286; font-size:20px; line-height:1.15; margin:5px 0; }
+.verdict { display:flex; gap:9px; margin-top:9px; }
+.verdict .v { flex:1; border-radius:7px; padding:8px 12px; font-size:12.5px; line-height:1.45; }
+.v-yes { background:#FFFFFF; border:1.5px solid #3A7D44; }
+.v-no  { background:#FFFFFF; border:1.5px solid #B3402E; }
+.verdict b { font-family:'Baloo 2',sans-serif; display:block; font-size:13.5px; }
+.v-yes b { color:#2A5A31; } .v-no b { color:#7A2A1F; }
+.foot { margin-top:12px; font-size:12.5px; color:#47555C; background:#F1F5F6; border-left:4px solid #2E7286; border-radius:6px; padding:8px 13px; }
+.foot b { color:#0A3A47; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="viz-title">The Verify-It routine — how analysts meet a machine-made claim</div>
+  <div class="viz-sub">Generative AI produces fluent text, images and voices. Fluency is not evidence. This three-phase routine decides what earns your trust — and what earns a slow, careful "no".</div>
+
+  <div class="phase ph1">
+    <div class="phase-title"><span class="tag">PHASE 1</span> MEET THE CLAIM <span style="margin-left:auto;font-size:11.5px;color:#5F6E75;">slow down — confidence is not proof</span></div>
+    <div class="steps">
+      <div class="step"><b>Say it precisely</b>What exactly is being claimed? Write it as one checkable sentence.</div>
+      <div class="step"><b>Name the source</b>Who or what produced it — a person, a model, a forwarded bundle of both?</div>
+      <div class="step"><b>Spot the stakes</b>What happens if you repeat it and it is false?</div>
+    </div>
+  </div>
+  <div class="arrow">&#8595;</div>
+
+  <div class="phase ph2">
+    <div class="phase-title"><span class="tag">PHASE 2</span> RUN THE THREE CHECKS</div>
+    <div class="steps">
+      <div class="step"><b>1 · Source check</b>Can the origin be found? Anonymous = heavy penalty.</div>
+      <div class="step"><b>2 · Evidence check</b>Is there a date, a place, a number, a document — or only confident adjectives?</div>
+      <div class="step"><b>3 · Agreement check</b>Do two independent, reliable sources agree?</div>
+    </div>
+  </div>
+  <div class="arrow">&#8595;</div>
+
+  <div class="phase ph3">
+    <div class="phase-title"><span class="tag">PHASE 3</span> VERDICT</div>
+    <div class="verdict">
+      <div class="v v-yes"><b>SHARE — with the source attached</b>All three checks pass. You pass the claim on <i>with</i> its evidence, never naked.</div>
+      <div class="v v-no"><b>DOUBT — and say why</b>Any check fails. You reply "unverified", keep the receipt, and help the next person doubt faster.</div>
+    </div>
+  </div>
+
+  <div class="foot"><b>ANALYST'S NOTE:</b> a text generator predicts likely words — it never checks truth. The routine above is not extra homework; it is the difference between <i>reading</i> AI output and <i>relying</i> on it.</div>
+</div>
+</body>
+</html>

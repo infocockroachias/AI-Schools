@@ -10,6 +10,9 @@ built with [Typst](https://typst.app) on the
 | `class7-how-machines-learn/` | Class 7 · "How Machines Learn" — Level 2 · SORT & PREDICT (PDF + Typst source) |
 | `class8-build-the-ai-cycle/` | Class 8 · "Build the AI Cycle" — Level 3 · BUILD THE CYCLE (PDF + Typst source) |
 | `class9-the-logic-under-the-magic/` | Class 9 · "The Logic Under the Magic" — Level 4 · REASON (PDF + Typst source) |
+| `class10-decide-evaluate-design/` | Class 10 · "Decide, Evaluate, Design" — Level 5 · EVALUATE & DESIGN (PDF + Typst source) |
+| `visuals-html/` | HTML sources + PNG renders of every book diagram (flowcharts, mind maps, infographics) |
+| `visualgeneration.md` | Visual registry: per-class/chapter/page captions, file names, aspect ratios and detailed AI-regeneration prompts |
 | `curriculum/` | PRATIMAI curriculum specification (Classes 6–10) |
 | `webapp/` | Next.js file library with in-browser PDF preview + download buttons |
 

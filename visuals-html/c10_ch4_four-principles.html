@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face { font-family:'Baloo 2'; src:url('fonts/Baloo2.ttf'); font-weight:400 800; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito.ttf'); font-weight:200 900; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito-Italic.ttf'); font-style:italic; font-weight:200 900; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; color:#22333B; background:#FDFBF7; -webkit-font-smoothing:antialiased; }
+#root { width:1010px; background:#FDFBF7; padding:26px 30px; position:relative; }
+.viz-title { font-family:'Baloo 2',sans-serif; font-size:22px; font-weight:800; color:#0F4C5C; }
+.viz-sub { font-size:13px; color:#5F6E75; margin:2px 0 14px; }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.q { border-radius:10px; border:1.5px solid; background:#FFFFFF; padding:11px 15px 11px; position:relative; }
+.q .head { display:flex; align-items:baseline; gap:8px; }
+.q .no { font-family:'Baloo 2',sans-serif; font-size:15px; font-weight:800; padding:1px 9px; border-radius:7px; color:#fff; }
+.q h4 { font-family:'Baloo 2',sans-serif; font-size:16px; font-weight:800; }
+.q .ask { font-size:12.5px; font-weight:700; color:#0F4C5C; margin-top:5px; line-height:1.4; }
+.q p { font-size:12px; color:#47555C; line-height:1.5; margin-top:4px; }
+.q p b { color:#22333B; }
+.q1 { border-color:#2E7286; } .q1 .no { background:#2E7286; } .q1 h4 { color:#0A3A47; }
+.q2 { border-color:#3A7D44; } .q2 .no { background:#3A7D44; } .q2 h4 { color:#2A5A31; }
+.q3 { border-color:#B3402E; } .q3 .no { background:#B3402E; } .q3 h4 { color:#7A2A1F; }
+.q4 { border-color:#B94F0B; } .q4 .no { background:#B94F0B; } .q4 h4 { color:#7A3A08; }
+.badge { position:absolute; top:-11px; right:14px; background:#F7F1E3; border:1px solid #C9C2AC; color:#4A4433; font-size:10px; font-weight:800; letter-spacing:.09em; border-radius:9px; padding:2px 9px; }
+.center { margin-top:12px; background:#E6EEF0; border:1.5px solid #0F4C5C; border-radius:9px; padding:9px 15px; display:flex; align-items:center; gap:12px; }
+.center .k { font-family:'Baloo 2',sans-serif; font-size:14px; font-weight:800; color:#0A3A47; white-space:nowrap; }
+.center p { font-size:12.5px; color:#22333B; line-height:1.5; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="viz-title">Four principles, one AI case — the ethics review frame</div>
+  <div class="viz-sub">T10-15 runs a medical-triage tool through all four. Each principle is a question with teeth — a design can pass two and fail the others.</div>
+  <div class="grid">
+    <div class="q q1"><span class="badge">RESPECT FOR PERSONS</span>
+      <div class="head"><span class="no">1</span><h4>Autonomy</h4></div>
+      <div class="ask">Do affected people know and choose — or is the system deciding over their heads?</div>
+      <p><b>In the triage case:</b> patients and doctors must be able to see, question and overrule the model's ranking. A hidden score a doctor cannot contest fails autonomy even if it is accurate.</p>
+    </div>
+    <div class="q q2"><span class="badge">DO GOOD</span>
+      <div class="head"><span class="no">2</span><h4>Beneficence</h4></div>
+      <div class="ask">Does it actually make the outcome better — measured, not promised?</div>
+      <p><b>In the triage case:</b> compare real results with and without the tool: shorter waits, fewer missed cases? "The hospital uses AI" is not a benefit; evidence is.</p>
+    </div>
+    <div class="q q3"><span class="badge">DO NO HARM</span>
+      <div class="head"><span class="no">3</span><h4>Non-maleficence</h4></div>
+      <div class="ask">Who absorbs the errors — and could they be the people with least power already?</div>
+      <p><b>In the triage case:</b> a false negative sends a sick patient home. Check the confusion matrix <i>per group</i>: a tool that misses illness mostly in one community is causing harm, not just error.</p>
+    </div>
+    <div class="q q4"><span class="badge">FAIR SHARES</span>
+      <div class="head"><span class="no">4</span><h4>Justice</h4></div>
+      <div class="ask">Are benefits and burdens distributed fairly across groups?</div>
+      <p><b>In the triage case:</b> if the training data came mostly from city hospitals, rural patients may be ranked lower purely by unfamiliarity. Justice asks for equal quality of service — not equal treatment by a biased machine.</p>
+    </div>
+  </div>
+  <div class="center"><span class="k">THE ANALYST'S HABIT:</span><p>Legal is not the same as ethical. A triage tool can obey every rule in the book and still fail all four principles — which is exactly why audits, transparency and accountability exist. Run the four questions before the deployment, not after the harm.</p></div>
+</div>
+</body>
+</html>

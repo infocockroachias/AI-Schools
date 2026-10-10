@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face { font-family:'Baloo 2'; src:url('fonts/Baloo2.ttf'); font-weight:400 800; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito.ttf'); font-weight:200 900; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito-Italic.ttf'); font-style:italic; font-weight:200 900; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; color:#22333B; background:#FDFBF7; -webkit-font-smoothing:antialiased; }
+#root { width:1030px; background:#FDFBF7; padding:26px 30px; }
+.viz-title { font-family:'Baloo 2',sans-serif; font-size:22px; font-weight:800; color:#0F4C5C; }
+.viz-sub { font-size:13px; color:#5F6E75; margin:2px 0 14px; }
+.trunk { display:flex; gap:16px; }
+.family { flex:1; border-radius:10px; border:1.5px solid; overflow:hidden; }
+.f-rule { border-color:#8A7B54; background:#FFFFFF; }
+.f-learn { border-color:#0F4C5C; background:#FFFFFF; }
+.fam-head { padding:9px 15px 7px; border-bottom:1.5px solid; font-family:'Baloo 2',sans-serif; }
+.f-rule .fam-head { background:#F7F1E3; border-color:#C9C2AC; color:#4A4433; }
+.f-learn .fam-head { background:#E6EEF0; border-color:#2E7286; color:#0A3A47; }
+.fam-head .name { font-size:16.5px; font-weight:800; }
+.fam-head .sub { font-family:'Nunito',sans-serif; font-size:11.5px; font-weight:700; color:#5F6E75; margin-top:1px; }
+.fam-body { padding:10px 13px 12px; }
+.fam-body .def { font-size:12.5px; line-height:1.5; margin-bottom:8px; }
+.kinds { display:flex; flex-direction:column; gap:7px; }
+.kind { border:1px solid #C9D8DC; border-radius:7px; padding:7px 11px; background:#FDFBF7; }
+.kind b { font-family:'Baloo 2',sans-serif; font-size:13px; color:#0A3A47; display:block; }
+.kind .how { font-size:11.5px; color:#47555C; line-height:1.45; margin-top:1px; }
+.kind .tasks { margin-top:4px; display:flex; flex-wrap:wrap; gap:4px; }
+.kchip { font-size:10px; font-weight:800; letter-spacing:.06em; background:#EFF6F7; border:1px solid #C9D8DC; color:#0F4C5C; border-radius:8px; padding:1.5px 8px; }
+.f-rule .kchip { background:#F7F1E3; color:#4A4433; border-color:#C9C2AC; }
+.f-ex { font-size:11px; font-weight:700; color:#8A999F; margin-top:3px; }
+.foot { margin-top:13px; font-size:12.5px; color:#47555C; background:#F1F5F6; border-left:4px solid #0F4C5C; border-radius:6px; padding:8px 13px; }
+.foot b { color:#0A3A47; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="viz-title">The model family map — every AI system lives on one branch</div>
+  <div class="viz-sub">T10-01 puts ten real products on this map. Two trunks first, then the learning trunk splits three ways, and each split owns its own kind of task.</div>
+  <div class="trunk">
+    <div class="family f-rule" style="max-width:270px;">
+      <div class="fam-head"><div class="name">Rule-based</div><div class="sub">A PERSON WROTE EVERY RULE</div></div>
+      <div class="fam-body">
+        <div class="def">Behaviour is typed by hand: IF this THEN that. It does exactly what it is told — and never gets better on its own.</div>
+        <div class="kinds">
+          <div class="kind"><b>Fixed logic</b><div class="how">Every rule visible, testable, and frozen until a human rewrites it.</div>
+            <div class="tasks"><span class="kchip">LIFT CONTROLLER</span><span class="kchip">SCRIPT BOT</span><span class="kchip">TAX SLAB CALCULATOR</span></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="family f-learn">
+      <div class="fam-head"><div class="name">Learning-based (machine learning)</div><div class="sub">THE SYSTEM FINDS THE PATTERN IN EXAMPLES</div></div>
+      <div class="fam-body">
+        <div class="def">Given many examples, it tunes itself — improving with data, and inheriting the data's flaws.</div>
+        <div class="kinds">
+          <div class="kind"><b>Supervised <span class="f-ex">— examples come with correct answers (labels)</span></b>
+            <div class="how">Learn the link from input to known answer.</div>
+            <div class="tasks"><span class="kchip">CLASSIFICATION</span><span class="kchip">REGRESSION</span><span class="kchip">SPAM FILTER · MARK PREDICTOR</span></div></div>
+          <div class="kind"><b>Unsupervised <span class="f-ex">— no labels, just structure</span></b>
+            <div class="how">Find natural groups or co-occurring pairs nobody labelled.</div>
+            <div class="tasks"><span class="kchip">CLUSTERING</span><span class="kchip">ASSOCIATION</span><span class="kchip">VIEWER GROUPS · KIRANA BASKETS</span></div></div>
+          <div class="kind"><b>Reinforcement <span class="f-ex">— learns by acting and being scored</span></b>
+            <div class="how">Try &rarr; reward or penalty &rarr; adjust. Game-like feedback loops.</div>
+            <div class="tasks"><span class="kchip">GAME AGENTS</span><span class="kchip">ROUTE OPTIMISERS</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><b>HOW TO PLACE ANY PRODUCT:</b> ask three questions in order — 1) Does it improve from examples? (No &rarr; rule-based.) 2) Were the training examples labelled? (Yes &rarr; supervised; the answer type tells you classification vs regression.) 3) Did anyone label, or is it finding structure / chasing rewards? &rarr; unsupervised or reinforcement. Deep learning is not a fourth trunk: it is a <i>technique</i> for building the learning trunk with many layers.</div>
+</div>
+</body>
+</html>

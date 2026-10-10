@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face { font-family:'Baloo 2'; src:url('fonts/Baloo2.ttf'); font-weight:400 800; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito.ttf'); font-weight:200 900; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito-Italic.ttf'); font-style:italic; font-weight:200 900; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; color:#22333B; background:#FDFBF7; -webkit-font-smoothing:antialiased; }
+#root { width:1010px; background:#FDFBF7; padding:26px 30px; display:flex; gap:22px; align-items:stretch; }
+.left { width:520px; flex-shrink:0; }
+.viz-title { font-family:'Baloo 2',sans-serif; font-size:21px; font-weight:800; color:#0F4C5C; margin-bottom:2px; }
+.viz-sub { font-size:12.5px; color:#5F6E75; margin-bottom:12px; }
+.nest { position:relative; border-radius:12px; padding:14px 16px 12px; }
+.nest .tag { font-family:'Baloo 2',sans-serif; font-weight:800; display:inline-block; }
+.nest .sub { font-size:11.5px; color:#47555C; line-height:1.4; }
+.nest .ex { display:inline-block; font-size:10.5px; font-weight:700; background:#FFFFFF; border:1px solid #C9D8DC; border-radius:9px; padding:1px 8px; margin:3px 3px 0 0; color:#47555C; }
+.n-ai   { background:#E6EEF0; border:2px solid #0F4C5C; }
+.n-ai .tag { color:#0A3A47; font-size:16.5px; }
+.n-ml   { background:#EFF6F7; border:2px solid #2E7286; margin-top:9px; }
+.n-ml .tag { color:#0A3A47; font-size:14.5px; }
+.n-dl   { background:#FFFFFF; border:2px solid #9FB9C2; margin-top:8px; }
+.n-dl .tag { color:#2E7286; font-size:13px; }
+.right { flex:1; display:flex; flex-direction:column; }
+.divide { flex:1; border:1.5px dashed #8A7B54; background:#F7F1E3; border-radius:10px; padding:12px 15px; }
+.divide h4 { font-family:'Baloo 2',sans-serif; font-size:14.5px; color:#4A4433; letter-spacing:.04em; margin-bottom:7px; }
+.divide .row { display:flex; gap:8px; margin-bottom:8px; }
+.divide .box { flex:1; border-radius:7px; padding:7px 10px; font-size:11.5px; line-height:1.45; background:#FFFFFF; border:1px solid #C9C2AC; }
+.divide .box b { display:block; font-family:'Baloo 2',sans-serif; font-size:12.5px; margin-bottom:1px; }
+.divide .rule { border-left:4px solid #8A7B54; } .divide .rule b { color:#4A4433; }
+.divide .learn { border-left:4px solid #B94F0B; } .divide .learn b { color:#7A3A08; }
+.divide p { font-size:11.5px; color:#4A4433; line-height:1.5; }
+.divline { text-align:center; font-size:11px; font-weight:800; letter-spacing:.14em; color:#8A999F; margin:12px 0 10px; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="left">
+    <div class="viz-title">Three nested boxes — and where the great divide cuts</div>
+    <div class="viz-sub">Every deep-learning system is machine learning; every machine-learning system is AI. But plenty of AI is neither.</div>
+    <div class="nest n-ai">
+      <span class="tag">ARTIFICIAL INTELLIGENCE</span>
+      <div class="sub">Any machine doing things we used to need human judgement for — including old-fashioned rule-followers.</div>
+      <span class="ex">a lift with floor buttons</span><span class="ex">a thermostat</span><span class="ex">a scripted helpdesk</span>
+      <div class="nest n-ml">
+        <span class="tag">MACHINE LEARNING</span>
+        <div class="sub">Systems that improve from examples instead of hand-written rules.</div>
+        <span class="ex">spam filter</span><span class="ex">price predictor</span>
+        <div class="nest n-dl">
+          <span class="tag">DEEP LEARNING</span>
+          <div class="sub">Many layered learning pieces — powerful on raw pixels, speech, text; hungry for enormous data.</div>
+          <span class="ex">voice assistant</span><span class="ex">essay-writing chatbot</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="divline">THE GREAT DIVIDE — ASK IT OF EVERY MACHINE</div>
+    <div class="divide">
+      <h4>Which side is it on?</h4>
+      <div class="row">
+        <div class="box rule"><b>Rule-based</b>A person wrote every step. It never improves until a human rewrites it.</div>
+        <div class="box learn"><b>Learning-based</b>The system found the pattern in examples. It changes as data changes.</div>
+      </div>
+      <p><b>The honest test:</b> "If this machine keeps meeting new cases, will it ever get better on its own?" <i>No</i> &rarr; rule-based. <i>Yes</i> &rarr; learning-based. The lift is AI by the widest definition — it will never learn anything.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

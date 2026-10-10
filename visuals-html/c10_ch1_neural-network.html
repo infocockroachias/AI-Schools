@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face { font-family:'Baloo 2'; src:url('fonts/Baloo2.ttf'); font-weight:400 800; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito.ttf'); font-weight:200 900; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito-Italic.ttf'); font-style:italic; font-weight:200 900; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; color:#22333B; background:#FDFBF7; -webkit-font-smoothing:antialiased; }
+#root { width:1000px; background:#FDFBF7; padding:26px 30px; }
+.viz-title { font-family:'Baloo 2',sans-serif; font-size:22px; font-weight:800; color:#0F4C5C; }
+.viz-sub { font-size:13px; color:#5F6E75; margin:2px 0 6px; }
+.net-wrap { display:flex; gap:18px; }
+.net { flex-shrink:0; }
+.net svg { display:block; }
+.side { flex:1; display:flex; flex-direction:column; gap:9px; padding-top:8px; }
+.legend { border:1px solid #C9D8DC; border-radius:8px; background:#FFFFFF; padding:8px 12px; font-size:12px; line-height:1.5; }
+.legend b { font-family:'Baloo 2',sans-serif; color:#0A3A47; }
+.legend .amber { color:#B94F0B; font-weight:800; }
+.mythstrip { border:1.5px dashed #B3402E; background:#F9ECEA; border-radius:8px; padding:8px 12px; font-size:12px; line-height:1.5; color:#7A2A1F; }
+.mythstrip b { font-family:'Baloo 2',sans-serif; letter-spacing:.05em; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="viz-title">A neural network is layers of weighted votes</div>
+  <div class="viz-sub">T10-02 makes you the neurons. In the drawing, every line is a weight, every circle is one vote — intelligence from arithmetic, not magic.</div>
+  <div class="net-wrap">
+    <div class="net">
+      <svg width="560" height="348" viewBox="0 0 560 348">
+        <!-- connections layer1 -> layer2 -->
+        <g stroke="#9FB3BC" stroke-width="1.1">
+          <line x1="95" y1="80"  x2="285" y2="55"/><line x1="95" y1="80"  x2="285" y2="130"/><line x1="95" y1="80"  x2="285" y2="205"/><line x1="95" y1="80"  x2="285" y2="280"/>
+          <line x1="95" y1="165" x2="285" y2="55"/><line x1="95" y1="165" x2="285" y2="130"/><line x1="95" y1="165" x2="285" y2="205"/><line x1="95" y1="165" x2="285" y2="280"/>
+          <line x1="95" y1="250" x2="285" y2="55"/><line x1="95" y1="250" x2="285" y2="130"/><line x1="95" y1="250" x2="285" y2="205"/><line x1="95" y1="250" x2="285" y2="280"/>
+        </g>
+        <!-- connections layer2 -> layer3 (highlight two) -->
+        <g stroke="#9FB3BC" stroke-width="1.1">
+          <line x1="285" y1="55"  x2="470" y2="122"/><line x1="285" y1="130" x2="470" y2="122"/><line x1="285" y1="205" x2="470" y2="122"/><line x1="285" y1="280" x2="470" y2="122"/>
+          <line x1="285" y1="55"  x2="470" y2="208"/><line x1="285" y1="130" x2="470" y2="208"/><line x1="285" y1="205" x2="470" y2="208"/><line x1="285" y1="280" x2="470" y2="208"/>
+        </g>
+        <g stroke="#B94F0B" stroke-width="2.4">
+          <line x1="285" y1="130" x2="470" y2="122"/>
+          <line x1="285" y1="205" x2="470" y2="208"/>
+        </g>
+        <text x="368" y="112" font-family="Nunito" font-size="12" font-weight="800" fill="#B94F0B">weight 0.8</text>
+        <text x="368" y="238" font-family="Nunito" font-size="12" font-weight="800" fill="#B94F0B">weight 0.5</text>
+        <!-- neurons -->
+        <g>
+          <circle cx="95" cy="80"  r="26" fill="#EFF6F7" stroke="#2E7286" stroke-width="2.2"/>
+          <circle cx="95" cy="165" r="26" fill="#EFF6F7" stroke="#2E7286" stroke-width="2.2"/>
+          <circle cx="95" cy="250" r="26" fill="#EFF6F7" stroke="#2E7286" stroke-width="2.2"/>
+          <circle cx="285" cy="55"  r="26" fill="#FFFFFF" stroke="#0F4C5C" stroke-width="2.2"/>
+          <circle cx="285" cy="130" r="26" fill="#FFFFFF" stroke="#0F4C5C" stroke-width="2.2"/>
+          <circle cx="285" cy="205" r="26" fill="#FFFFFF" stroke="#0F4C5C" stroke-width="2.2"/>
+          <circle cx="285" cy="280" r="26" fill="#FFFFFF" stroke="#0F4C5C" stroke-width="2.2"/>
+          <circle cx="470" cy="122" r="26" fill="#FBE8DB" stroke="#B94F0B" stroke-width="2.6"/>
+          <circle cx="470" cy="208" r="26" fill="#FBE8DB" stroke="#B94F0B" stroke-width="2.6"/>
+        </g>
+        <g font-family="Nunito" font-size="12.5" font-weight="800" fill="#22333B" text-anchor="middle">
+          <text x="95" y="84">x1</text><text x="95" y="169">x2</text><text x="95" y="254">x3</text>
+          <text x="285" y="59">h1</text><text x="285" y="134">h2</text><text x="285" y="209">h3</text><text x="285" y="284">h4</text>
+          <text x="470" y="126">y1</text><text x="470" y="212">y2</text>
+        </g>
+        <g font-family="Nunito" font-size="12" font-weight="700" fill="#5F6E75">
+          <text x="95" y="326" text-anchor="middle">INPUT</text>
+          <text x="285" y="326" text-anchor="middle" fill="#0F4C5C">HIDDEN LAYER</text>
+          <text x="470" y="326" text-anchor="middle" fill="#B94F0B">OUTPUT</text>
+        </g>
+      </svg>
+    </div>
+    <div class="side">
+      <div class="legend"><b>One neuron's whole job:</b> multiply each incoming value by its weight, add them up, and pass the total through a simple squashing rule. <span class="amber">Bold lines = strong weights</span> — training is just the slow search for better numbers in those lines.</div>
+      <div class="legend"><b>Layers build meaning step by step:</b> early layers answer tiny questions (edges, sounds, word pairs); deeper layers combine those into bigger ones. Each layer only ever votes with the layer before it.</div>
+      <div class="mythstrip"><b>MYTH CHECK &nbsp;</b>"Neural networks work like the brain." They are <i>inspired</i> by neurons the way a paper plane is inspired by a bird — the real brain has no training phase, no weights table and no output layer. Say "layers of weighted votes", not "it thinks".</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
