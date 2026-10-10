@@ -8,6 +8,8 @@ built with [Typst](https://typst.app) on the
 |---|---|
 | `class6-ai-around-me/` | Class 6 · "AI Around Me" — Level 1 · NOTICE (PDF + Typst source) |
 | `class7-how-machines-learn/` | Class 7 · "How Machines Learn" — Level 2 · SORT & PREDICT (PDF + Typst source) |
+| `class8-build-the-ai-cycle/` | Class 8 · "Build the AI Cycle" — Level 3 · BUILD THE CYCLE (PDF + Typst source) |
+| `class9-the-logic-under-the-magic/` | Class 9 · "The Logic Under the Magic" — Level 4 · REASON (PDF + Typst source) |
 | `curriculum/` | PRATIMAI curriculum specification (Classes 6–10) |
 | `webapp/` | Next.js file library with in-browser PDF preview + download buttons |
 
@@ -30,13 +32,13 @@ invariants for every handout in this repo.
 
 ## Design
 
-Both handouts follow the MoKa Reads publication specification that the
+All handouts follow the MoKa Reads publication specification that the
 Machiatto template implements: title page → license → acknowledgements →
 preface → table of contents → chapters (each opening with a summary and a
 mini table of contents) → back matter, with mirrored running footers.
 
 Typefaces: **Baloo 2** for display, **Nunito** for text — sized 10 % larger
-than the base design for Classes 6–7 readers. Ink accents: deep teal
+than the base design for student readers. Ink accents: deep teal
 `#0F4C5C` + amber `#E36414` on warm paper `#FDFBF7`.
 
 ## Web app
@@ -47,7 +49,7 @@ bun install
 bun run dev
 ```
 
-Serves both PDFs, the editable Typst source bundles and the curriculum spec at
+Serves all four PDFs, the editable Typst source bundles and the curriculum spec at
 `/` with an online preview dialog and one-click "save locally" buttons.
 
 ## License

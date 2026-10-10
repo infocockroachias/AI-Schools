@@ -55,6 +55,50 @@ export const LIBRARY: LibraryFile[] = [
     accent: "amber",
   },
   {
+    id: "c8-pdf",
+    file: "PRATIMAI_AI_Handout_Class8_Build_the_AI_Cycle.pdf",
+    title: "Build the AI Cycle",
+    subtitle: "Class 8 · Level 3 — BUILD THE CYCLE · Student Handout (PDF)",
+    description:
+      "The complete 63-page Class 8 case file — Machiatto edition. Inside: the AI project cycle with 4Ws problem statements, the Plant Doctor walk-through, data guest lists and sampling, the fairness fix-it kit, a nearest-neighbour classifier run with a ruler, accuracy arithmetic, how text generators guess and hallucinate, the Responsible-Use Court — and a full AI Project Proposal capstone with peer review. 17 paper missions and a Builder's Certificate.",
+    kind: "pdf",
+    meta: ["63 pages · A4", "17 missions", "Machiatto edition", "Print-ready"],
+    accent: "teal",
+  },
+  {
+    id: "c9-pdf",
+    file: "PRATIMAI_AI_Handout_Class9_The_Logic_Under_the_Magic.pdf",
+    title: "The Logic Under the Magic",
+    subtitle: "Class 9 · Level 4 — REASON · Student Handout (PDF)",
+    description:
+      "The complete 65-page Class 9 case file — Machiatto edition. Inside: the 4Ws canvas, stakeholder maps and system maps; data literacy with the misleading-graph gallery; the mathematics under the machine — mean/median/mode, probability dice labs, a line of best fit drawn by hand, k-nearest-neighbour votes with a ruler, pattern-to-rule algorithms; a next-word generator built on paper; deepfakes and the Verify-It routine — all closing on an SDG-linked AI brief with an ethics review panel and a flowchart trace. 21 paper missions and an Analyst's Certificate.",
+    kind: "pdf",
+    meta: ["65 pages · A4", "21 missions", "Machiatto edition", "Print-ready"],
+    accent: "amber",
+  },
+  {
+    id: "c8-src",
+    file: "PRATIMAI_AI_Handout_Class8_typst_source.zip",
+    title: "Build the AI Cycle — Source",
+    subtitle: "Class 8 · Editable Typst source + fonts (ZIP)",
+    description:
+      "Everything needed to rebuild or adapt the Class 8 handout: the Machiatto-edition design system with the Class 8 extras (nearest-neighbour plot, project-cycle diagram), all content modules, the whitespace-audit rulebook and the embedded fonts. Rebuild with one command: typst compile --font-path fonts main.typ main.pdf.",
+    kind: "zip",
+    meta: ["Typst 0.15", "8 .typ files", "kNN plot included", "Fonts included"],
+    accent: "teal",
+  },
+  {
+    id: "c9-src",
+    file: "PRATIMAI_AI_Handout_Class9_typst_source.zip",
+    title: "The Logic Under the Magic — Source",
+    subtitle: "Class 9 · Editable Typst source + fonts (ZIP)",
+    description:
+      "Everything needed to rebuild or adapt the Class 9 handout: the Machiatto-edition design system with the Class 9 extras (nearest-neighbour plot, decision flowchart), all content modules, the whitespace-audit rulebook and the embedded fonts. Rebuild with one command: typst compile --font-path fonts main.typ main.pdf.",
+    kind: "zip",
+    meta: ["Typst 0.15", "8 .typ files", "Flowchart included", "Fonts included"],
+    accent: "amber",
+  },
+  {
     id: "spec",
     file: "PRATIMAI_Curriculum_Spec_Classes_6-10.txt",
     title: "Curriculum Spec",
