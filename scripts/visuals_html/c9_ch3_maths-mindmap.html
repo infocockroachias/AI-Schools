@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face { font-family:'Baloo 2'; src:url('fonts/Baloo2.ttf'); font-weight:400 800; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito.ttf'); font-weight:200 900; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito-Italic.ttf'); font-style:italic; font-weight:200 900; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; color:#22333B; background:#FDFBF7; -webkit-font-smoothing:antialiased; }
+#mindmap { padding:34px 30px; display:inline-block; position:relative; background:#FDFBF7; }
+#mindmap > svg.lines { position:absolute; top:0; left:0; pointer-events:none; z-index:0; }
+.viz-title { font-family:'Baloo 2',sans-serif; font-size:22px; font-weight:800; color:#0F4C5C; margin-bottom:2px; }
+.viz-sub { font-size:13px; color:#5F6E75; margin-bottom:14px; }
+.tree { display:flex; align-items:center; }
+.root-node { background:linear-gradient(135deg,#0A3A47,#0F4C5C); color:#fff; font-family:'Baloo 2',sans-serif;
+  font-size:19px; font-weight:800; padding:20px 24px; border-radius:12px; text-align:center; line-height:1.3; flex-shrink:0; }
+.root-node .small { display:block; font-family:'Nunito',sans-serif; font-size:11px; font-weight:700; color:#D9E8EB; margin-top:4px; }
+.branches { display:flex; flex-direction:column; gap:14px; margin-left:60px; }
+.branch { display:flex; align-items:center; }
+.branch-node { font-family:'Baloo 2',sans-serif; font-size:14px; font-weight:800; padding:7px 15px; border-radius:8px; white-space:nowrap; flex-shrink:0; border:2px solid; }
+.children { display:flex; flex-direction:column; gap:5px; margin-left:42px; align-items:flex-start; padding-left:16px; }
+.leaf { font-size:12px; font-weight:600; color:#47555C; padding:2.5px 10px; background:#FFFFFF;
+  border-radius:10px; border:1px solid #C9D8DC; white-space:nowrap; line-height:1.45; }
+.leaf-desc { font-size:10.5px; color:#8A999F; font-weight:600; margin-left:5px; }
+.leaf-desc::before { content:'— '; color:#9FB3BC; }
+.c-teal  { background:#EFF6F7; border-color:#2E7286; color:#0A3A47; }
+.c-amber { background:#FBE8DB; border-color:#B94F0B; color:#7A3A08; }
+.c-green { background:#EDF5EE; border-color:#3A7D44; color:#2A5A31; }
+.c-cream { background:#F7F1E3; border-color:#8A7B54; color:#4A4433; }
+.c-slate { background:#EEF1F2; border-color:#5F6E75; color:#22333B; }
+.c-red   { background:#F9ECEA; border-color:#B3402E; color:#7A2A1F; }
+</style>
+</head>
+<body>
+<div id="mindmap">
+<div class="viz-title">The maths under the magic — one map for Chapter 3</div>
+<div class="viz-sub">Every "intelligent" behaviour you met in Class 8 rests on six plain mathematical ideas. None needs a computer — only pencil, paper and honesty.</div>
+<div class="tree">
+  <div class="root-node">MATHS UNDER<br>THE MAGIC<span class="small">Chapter 3 field guide</span></div>
+  <div class="branches">
+
+    <div class="branch">
+      <div class="branch-node c-teal">Averages</div>
+      <div class="children">
+        <div class="leaf">Mean &middot; median &middot; mode <span class="leaf-desc">three answers to "what is typical?"</span></div>
+        <div class="leaf">One outlier can drag the mean &mdash; ask which average, and why</div>
+      </div>
+    </div>
+
+    <div class="branch">
+      <div class="branch-node c-slate">Spread</div>
+      <div class="children">
+        <div class="leaf">Range <span class="leaf-desc">how wide is the story?</span></div>
+        <div class="leaf">Two classes, same mean &mdash; completely different reality</div>
+      </div>
+    </div>
+
+    <div class="branch">
+      <div class="branch-node c-amber">Probability</div>
+      <div class="children">
+        <div class="leaf">Dice, coins, cards &rarr; a number between 0 and 1</div>
+        <div class="leaf">"How sure am I?" becomes measurable confidence</div>
+      </div>
+    </div>
+
+    <div class="branch">
+      <div class="branch-node c-green">Best-fit line</div>
+      <div class="children">
+        <div class="leaf">Draw by eye &middot; predict &middot; check</div>
+        <div class="leaf">Correlation is not causation &mdash; ice cream &ne; crime</div>
+      </div>
+    </div>
+
+    <div class="branch">
+      <div class="branch-node c-cream">Nearest neighbours</div>
+      <div class="children">
+        <div class="leaf">Distance to labelled examples &rarr; majority vote (k = 3)</div>
+        <div class="leaf">Similarity is the whole trick behind "smart" classification</div>
+      </div>
+    </div>
+
+    <div class="branch">
+      <div class="branch-node c-red">Patterns &rarr; rules</div>
+      <div class="children">
+        <div class="leaf">Spot it &middot; say it &middot; test it &middot; break it</div>
+        <div class="leaf">A rule that survives honest attempts to break it earns trust</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<script>
+function drawAllLines() {
+  const map = document.getElementById('mindmap');
+  if (!map) return;
+  const cRect = map.getBoundingClientRect();
+  const old = map.querySelector('svg.lines');
+  if (old) old.remove();
+  const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
+  svg.classList.add('lines');
+  svg.setAttribute('width', cRect.width); svg.setAttribute('height', cRect.height);
+  svg.style.cssText='position:absolute;top:0;left:0;pointer-events:none;z-index:0;';
+  function rel(el){ const r=el.getBoundingClientRect(); return {cx:r.left-cRect.left+r.width/2, cy:r.top-cRect.top+r.height/2, left:r.left-cRect.left, right:r.right-cRect.left}; }
+  function drawLine(x1,y1,x2,y2,color,width){ const l=document.createElementNS('http://www.w3.org/2000/svg','line');
+    l.setAttribute('x1',Math.round(x1)); l.setAttribute('y1',Math.round(y1)); l.setAttribute('x2',Math.round(x2)); l.setAttribute('y2',Math.round(y2));
+    l.setAttribute('stroke',color); l.setAttribute('stroke-width',width); l.setAttribute('stroke-linecap','round'); svg.appendChild(l); }
+  const styles=[{c:'#4E7180',w:2.5},{c:'#7E99A4',w:2}];
+  function connect(parentEl,childEls,color,width,dir){
+    if(!childEls.length) return;
+    const p=rel(parentEl); const startX = dir==='left'?p.left:p.right; const startY=p.cy;
+    let closestEdge = dir==='left' ? Math.max(...childEls.map(ch=>rel(ch).right)) : Math.min(...childEls.map(ch=>rel(ch).left));
+    const midX = startX + (closestEdge-startX)/2;
+    if (childEls.length===1){ const c=rel(childEls[0]); const endX = dir==='left'?c.right:c.left;
+      drawLine(startX,(startY+c.cy)/2,endX,(startY+c.cy)/2,color,width); return; }
+    drawLine(startX,startY,midX,startY,color,width);
+    const allCYs=childEls.map(ch=>rel(ch).cy);
+    drawLine(midX,Math.min(startY,...allCYs),midX,Math.max(startY,...allCYs),color,width);
+    childEls.forEach(ch=>{ const c=rel(ch); const endX = dir==='left'?c.right:c.left;
+      drawLine(midX,c.cy,endX,c.cy,color,width); });
+  }
+  const root = map.querySelector('.root-node');
+  const branchEls = [...map.querySelectorAll('.branch')];
+  const nodes = branchEls.map(b=>b.querySelector('.branch-node')).filter(Boolean);
+  connect(root, nodes, styles[0].c, styles[0].w, 'right');
+  branchEls.forEach(b=>{
+    const bn=b.querySelector('.branch-node'); const kids=[...b.querySelectorAll(':scope > .children > .leaf')];
+    connect(bn,kids,styles[1].c,styles[1].w,'right');
+  });
+  map.insertBefore(svg, map.firstChild);
+}
+window.addEventListener('load',()=>setTimeout(drawAllLines,250));
+</script>
+</body>
+</html>

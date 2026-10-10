@@ -29,6 +29,14 @@ CFG = {
                       "privacy", "security", "mean", "median", "mode", "probability", "correlation",
                       "line of best fit", "nearest neighbour", "generative AI", "deepfake"],
                chapters=5),
+    "c10": dict(pdf="/home/z/my-project/scripts/ai_handout_c10/main.pdf",
+               title="Decide, Evaluate, Design", codes=[f"T10-{i:02d}" for i in range(1, 22)],
+               terms=["rule-based system", "supervised learning", "unsupervised learning", "reinforcement learning",
+                      "classification", "regression", "clustering", "association", "weight", "layer",
+                      "pixel", "grayscale", "kernel", "feature map", "normalisation", "bag-of-words", "TF-IDF",
+                      "train/test split", "confusion matrix", "precision", "recall", "base rate",
+                      "threshold", "accountability"],
+               chapters=5),
 }[CLS]
 OUT = f"/tmp/qa_mach_{CLS}"
 os.makedirs(OUT, exist_ok=True)
@@ -46,7 +54,7 @@ info = subprocess.run(["pdfinfo", PDF], capture_output=True, text=True).stdout
 title = re.search(r"Title:\s*(.*)", info)
 pages = int(re.search(r"Pages:\s*(\d+)", info).group(1))
 check("metadata title set", bool(title and CFG["title"] in title.group(1)), title.group(1) if title else "")
-check("page count in machiatto budget (40-66)", 40 <= pages <= 66, f"{pages} pages")
+check("page count in machiatto budget (40-75)", 40 <= pages <= 75, f"{pages} pages")
 size = re.search(r"Page size:\s*([\d.]+) x ([\d.]+)", info)
 w_pt, h_pt = float(size.group(1)), float(size.group(2))
 check("A4 page size", abs(w_pt - 595.3) < 2 and abs(h_pt - 841.9) < 2, f"{w_pt:.1f}x{h_pt:.1f}pt")

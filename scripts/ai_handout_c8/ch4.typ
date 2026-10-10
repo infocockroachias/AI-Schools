@@ -17,7 +17,18 @@
 #sec(1, "The next-word machine: how text generators actually work")
 Forget magic. A text generator does one thing, enormously well: it reads the words so far and predicts a *likely next word* — based on patterns in a mountain of human writing. It is autocomplete that grew up. The catch is built into the trick itself: the machine knows which words *usually follow*, not which words are *true*. "The early bird catches the worm" flows because millions of people wrote it; a machine completing "The early crow catches the…" will pick whatever sounds plausible. Usually it sounds right. Sometimes it is completely invented — with perfect confidence either way, because confidence and truth live in different rooms.
 
-#task("T8-11", "Next-Word Game", mode: "class", mins: "15")[
+#figure-visual("visuals/c8_ch4_next-word-machine.png", [The next-word machine at work: one sentence, four candidates, probability bars — fluency without a fact-checker.], width: 98%)
+#v(4pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[THE FLUENCY TRAP — WHICH SENTENCE DID A MACHINE WRITE?]
+  v(3pt)
+  text(size: 10.1pt)[*A.* "The RMSC survey of 2,340 households across four monsoon seasons found a 17% drop in borewell reliance — the report is on the department portal, table 6."]
+  text(size: 10.1pt)[*B.* "Many experts widely believe that water levels are dropping significantly in various regions, which is concerning for the future."]
+  v(3pt)
+  text(size: 10.1pt)[My call, and the ONE feature that decided it (dates? numbers? sources? hedging?):]
+  ruled-lines(2, lead: 8.2mm)
+})
+#task("T8-11", "Next-Word Game", mode: "class", mins: "15", hands: true)[
   You are the machine. Your teacher reads each sentence aloud up to the blank; your class votes on the most likely next word. Then your teacher reveals the counts from a 500-page book of local writing (invented for this game). Fill the table as you play:
   #v(4pt)
   #dtable(("Sentence up to the blank", "Class's first guess", "Runner-up guess", "Revealed: which word won, and by how much"),
@@ -33,7 +44,7 @@ Forget magic. A text generator does one thing, enormously well: it reads the wor
 ]
 #wordpower(13, "text generator", [A machine that writes by predicting the most likely next words.])
 
-#note("Detective's note")[Here is why the machine *sounds* smart: likely words, arranged by likely patterns, produce paragraphs shaped exactly like the ones people write. It is a brilliant imitation of the *shape* of knowledge. But shape is not truth. A hallucinated biography of a fake scientist has perfect grammar, a plausible structure and a confident tone — all borrowed from real writing about real scientists. That is why your eyes and your verification routine are still the most important parts of the system.]
+#note("Builder's note")[Here is why the machine *sounds* smart: likely words, arranged by likely patterns, produce paragraphs shaped exactly like the ones people write. It is a brilliant imitation of the *shape* of knowledge. But shape is not truth. A hallucinated biography of a fake scientist has perfect grammar, a plausible structure and a confident tone — all borrowed from real writing about real scientists. That is why your eyes and your verification routine are still the most important parts of the system.]
 
 // ---------------- 4.2 ----------------
 #sec(2, "Hallucination Hunt: verify before you trust")
@@ -51,6 +62,9 @@ When a text generator states something false as if it were fact, builders call i
   )
   v(3pt)
   text(size: 8.8pt, fill: ink-soft, style: "italic")[Watch the give-away words: *most people agree*, *everyone knows*, *it is said that* — confidence borrowed from a crowd nobody can name.]
+  v(2pt)
+  text(size: 9.8pt, weight: 800, fill: teal-deep)[*One suspicious sentence of my own, to trade with a partner:*]
+  ruled-lines(1, lead: 8mm)
 }))
 
 #task("T8-12", "Hallucination Hunt", mode: "group", mins: "15")[
@@ -90,7 +104,7 @@ When a text generator states something false as if it were fact, builders call i
 #wordpower(15, "misinformation", [False content that spreads — by mistake or on purpose.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · THE THREE-MOVE ROUTINE]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[BUILDER DRILL · THE THREE-MOVE ROUTINE]
   v(3pt)
   text(size: 10.1pt)[Name the move: T (trace the claim), N (test the number) or S (smell the story):]
   v(3pt)
@@ -138,7 +152,7 @@ Court cases end with judgements; builder stories end with promises. A pledge is 
   #v(4pt)
   #block(width: 100%, radius: 5pt, fill: cream, stroke: 1pt + ink, inset: (x: 12pt, y: 9pt), {
     text(size: 10.5pt)[
-      *I, the undersigned investigator, pledge that…*
+      *I, the undersigned builder, pledge that…*
       1. Before I believe or forward any AI-written or AI-edited content, I will #ruled-lines(1, lead: 8.2mm)
       2. When a text generator helps me with schoolwork, I will #ruled-lines(1, lead: 8.2mm)
       3. When I am tempted to feed personal information — mine or anyone's — into an AI tool, I will #ruled-lines(1, lead: 8.2mm)
@@ -160,7 +174,7 @@ Court cases end with judgements; builder stories end with promises. A pledge is 
 
 #homelink[
   #task("AT HOME", "Family Fact Patrol", mode: "home", mins: "15")[
-    With a grown-up, find one forwarded message or AI-looking summary in the family phone (do not open links). Run the routine together: *trace* — where did it really come from? *test* — do two trusted sources agree? *smell* — does it push an emotion before evidence? #v(3pt)
+    With an adult, find one forwarded message or AI-looking summary in the family phone (do not open links). Run the routine together: *trace* — where did it really come from? *test* — do two trusted sources agree? *smell* — does it push an emotion before evidence? #v(3pt)
     *The claim we examined:* #ruled-lines(1, lead: 8.1mm)
     *What the three moves found:* #ruled-lines(2, lead: 8.1mm)
     *What we will do differently before forwarding next time:* #ruled-lines(1, lead: 8.1mm)

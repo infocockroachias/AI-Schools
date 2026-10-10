@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face { font-family:'Baloo 2'; src:url('fonts/Baloo2.ttf'); font-weight:400 800; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito.ttf'); font-weight:200 900; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito-Italic.ttf'); font-style:italic; font-weight:200 900; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; color:#22333B; background:#FDFBF7; -webkit-font-smoothing:antialiased; }
+#mindmap { padding:34px 30px; display:inline-block; position:relative; background:#FDFBF7; }
+#mindmap > svg.lines { position:absolute; top:0; left:0; pointer-events:none; z-index:0; }
+.viz-title { font-family:'Baloo 2',sans-serif; font-size:22px; font-weight:800; color:#0F4C5C; margin-bottom:2px; }
+.viz-sub { font-size:13px; color:#5F6E75; margin-bottom:14px; }
+.tree { display:flex; align-items:center; }
+.root-node { background:linear-gradient(135deg,#0A3A47,#0F4C5C); color:#fff; font-family:'Baloo 2',sans-serif;
+  font-size:20px; font-weight:800; padding:22px 26px; border-radius:12px; text-align:center; line-height:1.25; flex-shrink:0; }
+.root-node .small { display:block; font-family:'Nunito',sans-serif; font-size:11.5px; font-weight:700; color:#D9E8EB; margin-top:4px; }
+.branches { display:flex; flex-direction:column; gap:15px; margin-left:64px; }
+.branch { display:flex; align-items:center; }
+.branch-node { font-family:'Baloo 2',sans-serif; font-size:14.5px; font-weight:800; padding:8px 16px; border-radius:8px; white-space:nowrap; flex-shrink:0; border:2px solid; }
+.children { display:flex; flex-direction:column; gap:5px; margin-left:44px; align-items:flex-start; padding-left:16px; }
+.leaf { font-size:12.5px; font-weight:600; color:#47555C; padding:3px 11px; background:#FFFFFF;
+  border-radius:11px; border:1px solid #C9D8DC; white-space:nowrap; line-height:1.45; }
+.leaf-desc { font-size:11px; color:#8A999F; font-weight:600; margin-left:6px; }
+.leaf-desc::before { content:'— '; color:#9FB3BC; }
+.c-teal  { background:#EFF6F7; border-color:#2E7286; color:#0A3A47; }
+.c-amber { background:#FBE8DB; border-color:#B94F0B; color:#7A3A08; }
+.c-green { background:#EDF5EE; border-color:#3A7D44; color:#2A5A31; }
+.c-cream { background:#F7F1E3; border-color:#8A7B54; color:#4A4433; }
+.c-slate { background:#EEF1F2; border-color:#5F6E75; color:#22333B; }
+.c-red   { background:#F9ECEA; border-color:#B3402E; color:#7A2A1F; }
+</style>
+</head>
+<body>
+<div id="mindmap">
+<div class="viz-title">What fair data needs — the builder's map</div>
+<div class="viz-sub">Chapter 2 at one glance: six questions to ask of any dataset before any machine learns from it.</div>
+<div class="tree">
+  <div class="root-node">FAIR<span style="display:block;font-size:15px;">DATA</span><span class="small">who is inside,<br>who decides?</span></div>
+  <div class="branches">
+
+    <div class="branch">
+      <div class="branch-node c-teal">Who is inside?</div>
+      <div class="children">
+        <div class="leaf">Count every group <span class="leaf-desc">percentages per group</span></div>
+        <div class="leaf">Over-represented groups get heard more</div>
+      </div>
+    </div>
+
+    <div class="branch">
+      <div class="branch-node c-red">Who is missing?</div>
+      <div class="children">
+        <div class="leaf">Quiet groups <span class="leaf-desc">never asked, never counted</span></div>
+        <div class="leaf">The machine will serve them worst</div>
+      </div>
+    </div>
+
+    <div class="branch">
+      <div class="branch-node c-amber">How was it sampled?</div>
+      <div class="children">
+        <div class="leaf">8 friends &ne; the whole class</div>
+        <div class="leaf">Convenience samples carry hidden skew</div>
+      </div>
+    </div>
+
+    <div class="branch">
+      <div class="branch-node c-green">Was consent asked?</div>
+      <div class="children">
+        <div class="leaf">What may be collected, from whom?</div>
+        <div class="leaf">Privacy care is part of collection</div>
+      </div>
+    </div>
+
+    <div class="branch">
+      <div class="branch-node c-cream">How can it be fixed?</div>
+      <div class="children">
+        <div class="leaf">Collect more from missing groups</div>
+        <div class="leaf">Re-weight &nbsp;&middot;&nbsp; restrict &amp; say so honestly</div>
+      </div>
+    </div>
+
+    <div class="branch">
+      <div class="branch-node c-slate">Are limits stated?</div>
+      <div class="children">
+        <div class="leaf">Say who the machine does NOT serve</div>
+        <div class="leaf">"The data said so" is never the end</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<script>
+function drawAllLines() {
+  const map = document.getElementById('mindmap');
+  if (!map) return;
+  const cRect = map.getBoundingClientRect();
+  const old = map.querySelector('svg.lines');
+  if (old) old.remove();
+  const svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
+  svg.classList.add('lines');
+  svg.setAttribute('width', cRect.width); svg.setAttribute('height', cRect.height);
+  svg.style.cssText='position:absolute;top:0;left:0;pointer-events:none;z-index:0;';
+  function rel(el){ const r=el.getBoundingClientRect(); return {cx:r.left-cRect.left+r.width/2, cy:r.top-cRect.top+r.height/2, left:r.left-cRect.left, right:r.right-cRect.left}; }
+  function drawLine(x1,y1,x2,y2,color,width){ const l=document.createElementNS('http://www.w3.org/2000/svg','line');
+    l.setAttribute('x1',Math.round(x1)); l.setAttribute('y1',Math.round(y1)); l.setAttribute('x2',Math.round(x2)); l.setAttribute('y2',Math.round(y2));
+    l.setAttribute('stroke',color); l.setAttribute('stroke-width',width); l.setAttribute('stroke-linecap','round'); svg.appendChild(l); }
+  const styles=[{c:'#4E7180',w:2.5},{c:'#7E99A4',w:2},{c:'#9FB3BC',w:1.5},{c:'#B4C4CB',w:1.2}];
+  function connect(parentEl,childEls,color,width,dir){
+    if(!childEls.length) return;
+    const p=rel(parentEl); const startX = dir==='left'?p.left:p.right; const startY=p.cy;
+    let closestEdge = dir==='left' ? Math.max(...childEls.map(ch=>rel(ch).right)) : Math.min(...childEls.map(ch=>rel(ch).left));
+    const midX = startX + (closestEdge-startX)/2;
+    if (childEls.length===1){ const c=rel(childEls[0]); const endX = dir==='left'?c.right:c.left;
+      drawLine(startX,(startY+c.cy)/2,endX,(startY+c.cy)/2,color,width); return; }
+    drawLine(startX,startY,midX,startY,color,width);
+    const allCYs=childEls.map(ch=>rel(ch).cy);
+    drawLine(midX,Math.min(startY,...allCYs),midX,Math.max(startY,...allCYs),color,width);
+    childEls.forEach(ch=>{ const c=rel(ch); const endX = dir==='left'?c.right:c.left;
+      drawLine(midX,c.cy,endX,c.cy,color,width); });
+  }
+  const root = map.querySelector('.root-node');
+  const branchEls = [...map.querySelectorAll('.branch')];
+  const nodes = branchEls.map(b=>b.querySelector('.branch-node')).filter(Boolean);
+  connect(root, nodes, styles[0].c, styles[0].w, 'right');
+  branchEls.forEach(b=>{
+    const bn=b.querySelector('.branch-node'); const kids=[...b.querySelectorAll(':scope > .children > .leaf')];
+    connect(bn,kids,styles[1].c,styles[1].w,'right');
+  });
+  map.insertBefore(svg, map.firstChild);
+}
+window.addEventListener('load',()=>setTimeout(drawAllLines,250));
+</script>
+</body>
+</html>

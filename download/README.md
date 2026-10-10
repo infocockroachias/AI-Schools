@@ -8,15 +8,20 @@ All files are also available in the web app (`/` route) with online preview and 
 |---|---|---|---|
 | `PRATIMAI_AI_Handout_Class6_AI_Around_Me.pdf` | 6 — "AI Around Me" | Level 1 · NOTICE | 49 |
 | `PRATIMAI_AI_Handout_Class7_How_Machines_Learn.pdf` | 7 — "How Machines Learn" | Level 2 · SORT & PREDICT | 59 |
-| `PRATIMAI_AI_Handout_Class8_Build_the_AI_Cycle.pdf` | 8 — "Build the AI Cycle" | Level 3 · BUILD THE CYCLE | 63 |
-| `PRATIMAI_AI_Handout_Class9_The_Logic_Under_the_Magic.pdf` | 9 — "The Logic Under the Magic" | Level 4 · REASON | 65 |
+| `PRATIMAI_AI_Handout_Class8_Build_the_AI_Cycle.pdf` | 8 — "Build the AI Cycle" | Level 3 · BUILD THE CYCLE | 67 |
+| `PRATIMAI_AI_Handout_Class9_The_Logic_Under_the_Magic.pdf` | 9 — "The Logic Under the Magic" | Level 4 · REASON | 68 |
+| `PRATIMAI_AI_Handout_Class10_Decide_Evaluate_Design.pdf` | 10 — "Decide, Evaluate, Design" | Level 5 · EVALUATE & DESIGN | 59 |
 
 **Machiatto edition** — all four books are typeset with the Machiatto template
 (MoKa Reads publication specification): title page, license, acknowledgements,
 preface, contents, then chapters opening with a summary and a mini table of
 contents, with mirrored running footers. Body text is set 10 % larger than the
-first edition for student readers. The unplugged rule holds everywhere: 20 +
-17 + 17 + 21 paper missions, formative-only assessment, and never any
+first edition for student readers. Books 8–10 now also carry HTML-rendered
+diagrams (flowcharts, mind maps, infographics — every one registered with a
+detailed AI-regeneration prompt in `visualgeneration.md`) and amber
+HANDS-ON LAB markers on the physical missions. The unplugged rule holds
+everywhere: 20 + 17 + 17 + 21 + 21 paper missions, formative-only
+assessment, and never any
 solutions beside a task (short answer hints live only at the very back of
 each book).
 
@@ -34,6 +39,14 @@ labs, a line of best fit drawn by hand, k-nearest-neighbour votes, and
 pattern-to-rule algorithms; a next-word generator built on paper; deepfakes
 and the four-move Verify-It routine — closing on an SDG-linked AI brief with
 an ethics review panel and a flowchart trace.
+
+**Class 10 — "Decide, Evaluate, Design" (Level 5, series finale):** the
+model-family map and a human neural network; convolution and bag-of-words by
+hand; honest evaluation — train/test splits, confusion matrices, precision vs
+recall, the base-rate trap, the threshold slider; the four bioethics
+principles, algorithm audits, privacy rights and GenAI integrity; closing on
+a Responsible AI Design Brief with two ethics gates, a Board of Judges pitch
+and a personal subject-and-career map.
 
 ## Editable Typst sources
 

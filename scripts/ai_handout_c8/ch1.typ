@@ -43,7 +43,7 @@ Last year you trained machines with your own hands, so you already know the secr
 })
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · SORT THE SIX — WHO LEARNS WHAT?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[BUILDER DRILL · SORT THE SIX — WHO LEARNS WHAT?]
   v(3pt)
   text(size: 10.1pt)[Place each product on the map: what did it learn from, and what is its honest cannot-do? Write C (chatbot), I (image classifier) or R (recommender) — then one cannot-do of your own:]
   v(3pt)
@@ -94,21 +94,32 @@ Last year you trained machines with your own hands, so you already know the secr
   text(size: 9.4pt, fill: ink-soft, style: "italic")[By page 20 you will be able to say which of the three learned from examples — and what its data was. Watch your list change.]
 })
 
-#note("Detective's note")[A good problem statement sounds boring — and that is a feature. "Reduce" and "improve" are dreams; "detect", "count", "predict X for group Y in place Z" are plans. In the capstone of this book you will write one of these for a real problem you choose, and your classmates will pressure-test it. Sharpen now; shine later.]
+#note("Builder's note")[A good problem statement sounds boring — and that is a feature. "Reduce" and "improve" are dreams; "detect", "count", "predict X for group Y in place Z" are plans. In the capstone of this book you will write one of these for a real problem you choose, and your classmates will pressure-test it. Sharpen now; shine later.]
 
 // ---------------- 1.2 ----------------
 #sec(2, "The loop every AI project runs")
-Here is the whole subject of this book in four boxes. First, *problem scoping*: turn a vague worry into a sharp statement (you just did this). Second, *data*: find or collect examples the machine can learn from — and check who is inside them. Third, *model building and testing*: train on some examples, test on hidden ones, and measure honestly. Fourth — the step beginners skip — *reflection and improvement*: the first version is always wrong somewhere; the team reads the failures, fixes the data or the design, and loops back. Notice the arrows: this is a *cycle*, not a straight road. Professional teams go around it many times before anything ships.
-
-#align(center, block(width: 92%, cycle-diagram()))
+Here is the whole subject of this book in four boxes. First, *problem scoping*: turn a vague worry into a sharp statement (you just did this). Second, *data*: find or collect examples the machine can learn from — and check who is inside them. Third, *model building and testing*: train on some examples, test on hidden ones, and measure honestly. Fourth — the step beginners skip — *reflection and improvement*: the first version is always wrong somewhere; the team reads the failures, fixes the data or the design, and loops back. Notice the arrows: this is a *cycle*, not a straight road. Professional teams go around it many times before anything ships.Professional teams go around it many times before anything ships.
 #v(4pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[SHARPEN TWO WISHES — SCOPE LIKE A BUILDER BEFORE THE DIAGRAM]
+  v(3pt)
+  text(size: 10.1pt)[*Wish 1:* "The school buses are always late." → Your sharp version (who / what / where / why now):]
+  ruled-lines(2, lead: 8mm)
+  text(size: 10.1pt)[*Wish 2:* "Everyone wastes water." → Your sharp version:]
+  ruled-lines(2, lead: 8mm)
+  text(size: 9.3pt, fill: ink-soft, style: "italic")[Notice what sharpening does: it chooses the DATA you would need. That is why scoping comes first in the cycle below.]
+})
+
+#figure-visual("visuals/c8_ch1_project-cycle-flowchart.png", [The AI project cycle with each stage's output and ending question — the loop that T8-02 sequences and T8-03 walks.], width: 92%)
 
 #block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, inset: (x: 11pt, y: 8pt), {
   text(size: 9.9pt)[#text(font: f-display, size: 8.4pt, fill: teal-deep, weight: 800, tracking: 0.13em)[THE LOOP IN ONE MINUTE] #h(4pt) #text(size: 10.1pt)[Explain the diagram to a Class 6 student in exactly two sentences — one for the boxes, one for the arrows:]]
   ruled-lines(2, lead: 8.2mm)
 })
+#v(4pt)
 
-#task("T8-02", "Cycle Cards", mode: "group", mins: "15")[
+
+#task("T8-02", "Cycle Cards", mode: "group", mins: "15", hands: true)[
   Your teacher has an envelope with five cards: *PROBLEM*, *DATA*, *MODEL*, *TEST*, *IMPROVE*. (No envelope? Copy the five cards onto paper slips.) As a team, lay them out in the order a real project runs, then defend your order — one line per card:
   #v(4pt)
   #dtable(("Card", "Position we chose (1st, 2nd…)", "Why it sits there — one line"),
@@ -127,7 +138,7 @@ Here is the whole subject of this book in four boxes. First, *problem scoping*: 
 #wordpower(3, "dataset", [The collection of examples a machine learns from, or is tested on.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · NAME THE STAGE]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[BUILDER DRILL · NAME THE STAGE]
   v(3pt)
   text(size: 10.1pt)[Each sentence below comes from some AI project. Write which stage it belongs to: P (problem), D (data), M (model), T (test) or I (improve):]
   v(3pt)
@@ -191,7 +202,7 @@ Time to watch the whole cycle run — and fail. Read this true-to-life case from
 #thinkink([A "smart" app or service my family uses was really built for someone else. Its problem statement was probably written for …, because …], lines: 2)
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · SHARPEN OR SPOIL?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[BUILDER DRILL · SHARPEN OR SPOIL?]
   v(3pt)
   text(size: 10.1pt)[Two problem statements enter the workshop. Mark each S (sharp enough to plan with) or V (still vague), then fix the vague one:]
   v(3pt)

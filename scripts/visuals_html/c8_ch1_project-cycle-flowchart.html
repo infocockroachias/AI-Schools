@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face { font-family:'Baloo 2'; src:url('fonts/Baloo2.ttf'); font-weight:400 800; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito.ttf'); font-weight:200 900; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito-Italic.ttf'); font-style:italic; font-weight:200 900; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; color:#22333B; background:#FDFBF7; -webkit-font-smoothing:antialiased; }
+#root { width:1000px; background:#FDFBF7; padding:26px 30px; }
+.disp { font-family:'Baloo 2','Nunito',sans-serif; }
+.viz-title { font-family:'Baloo 2',sans-serif; font-size:23px; font-weight:800; color:#0F4C5C; }
+.viz-sub { font-size:13.5px; color:#5F6E75; margin-top:2px; }
+.phase-group { border-radius:10px; padding:14px 18px 12px; margin-top:14px; }
+.p1 { background:#F1F5F6; border-left:5px solid #6E939F; }
+.p2 { background:#ECF2F4; border-left:5px solid #56808F; }
+.p3 { background:#E6EEF0; border-left:5px solid #3D6D7F; }
+.p4 { background:#E0EAED; border-left:5px solid #0F4C5C; }
+.phase-title { display:flex; align-items:baseline; gap:10px; font-family:'Baloo 2',sans-serif; font-size:16.5px; font-weight:800; color:#0A3A47; }
+.phase-title .tag { font-size:11px; font-weight:800; letter-spacing:.12em; color:#B94F0B; }
+.phase-title .out { margin-left:auto; font-size:11.5px; font-weight:700; color:#5F6E75; font-family:'Nunito',sans-serif; }
+.phase-steps { display:flex; gap:8px; margin-top:9px; }
+.pstep { flex:1; background:#FFFFFF; border:1px solid #C9D8DC; border-radius:6px; padding:7px 10px; font-size:12.5px; line-height:1.4; }
+.pstep b { color:#0F4C5C; }
+.arrow { text-align:center; color:#2E7286; font-size:20px; line-height:1; margin-top:6px; }
+.loop { margin-top:14px; border:1.5px dashed #B94F0B; background:#FBE8DB; border-radius:8px; padding:9px 16px; display:flex; align-items:center; gap:12px; }
+.loop .ico { font-family:'Baloo 2',sans-serif; font-size:22px; font-weight:800; color:#B94F0B; }
+.loop .txt { font-size:13px; color:#7A3A08; line-height:1.45; }
+.loop .txt b { font-family:'Baloo 2',sans-serif; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="viz-title">The AI Project Cycle — four stages, one honest loop</div>
+  <div class="viz-sub">What a working team produces at each stage, and the question that ends each stage. Nobody moves on with an unanswered question.</div>
+
+  <div class="phase-group p1">
+    <div class="phase-title"><span class="tag">STAGE 1</span> PROBLEM SCOPING <span class="out">output: a sharp problem statement</span></div>
+    <div class="phase-steps">
+      <div class="pstep"><b>Who has the problem?</b> Name the people, not "everyone".</div>
+      <div class="pstep"><b>What exactly?</b> An outcome to change — not a solution yet.</div>
+      <div class="pstep"><b>Where &amp; when?</b> Places, times, seasons it appears.</div>
+      <div class="pstep"><b>Why worth solving?</b> The cost of doing nothing.</div>
+    </div>
+  </div>
+  <div class="arrow">&#8595;</div>
+
+  <div class="phase-group p2">
+    <div class="phase-title"><span class="tag">STAGE 2</span> DATA <span class="out">output: a collected, audited dataset</span></div>
+    <div class="phase-steps">
+      <div class="pstep"><b>Collect</b> with consent — and record how you asked.</div>
+      <div class="pstep"><b>Audit the guest list:</b> who is over-represented, who is missing?</div>
+      <div class="pstep"><b>Label carefully</b> — wrong labels teach the machine wrong.</div>
+    </div>
+  </div>
+  <div class="arrow">&#8595;</div>
+
+  <div class="phase-group p3">
+    <div class="phase-title"><span class="tag">STAGE 3</span> BUILD &amp; TEST <span class="out">output: a model + an honest accuracy number</span></div>
+    <div class="phase-steps">
+      <div class="pstep"><b>Train</b> on examples the machine can learn from.</div>
+      <div class="pstep"><b>Test on examples it has never seen</b> — that is the only honest score.</div>
+      <div class="pstep"><b>Record the failures</b>, not only the percentage.</div>
+    </div>
+  </div>
+  <div class="arrow">&#8595;</div>
+
+  <div class="phase-group p4">
+    <div class="phase-title"><span class="tag">STAGE 4</span> REFLECT &amp; IMPROVE <span class="out">output: a decision — ship, fix, or stop</span></div>
+    <div class="phase-steps">
+      <div class="pstep"><b>Where did it fail?</b> For which group, at which moment?</div>
+      <div class="pstep"><b>Improve one thing</b> — data, labels or the goal itself.</div>
+      <div class="pstep"><b>Say the limits out loud</b> before other people find them.</div>
+    </div>
+  </div>
+
+  <div class="loop"><span class="ico">&#8635;</span><span class="txt"><b>THE LOOP RULE:</b> Stage 4 sends you back to Stage 1 with sharper questions — every real AI system cycles these stages many times. A team that skips a stage is not building faster; it is scheduling a surprise.</span></div>
+</div>
+</body>
+</html>

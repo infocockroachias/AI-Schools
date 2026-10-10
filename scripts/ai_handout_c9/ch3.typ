@@ -14,8 +14,23 @@
   ))
 
 // ---------------- 3.1 ----------------
+#figure-visual("visuals/c9_ch3_maths-mindmap.png", [Chapter 3 as one map: six plain ideas, each met through an experience before a definition.], width: 92%)
+
 #sec(1, "Three averages and a liar")
-You met averages long ago; now meet their arguments. The *mean* adds everything and divides — sensitive to every value, especially extremes. The *median* stands in the middle of the sorted list — blind to how extreme the extremes are. The *mode* is the most frequent value — the only average that works on categories. And the *range* (highest minus lowest) is the crudest measure of *spread* — how scattered the data is. A machine summarising "its users" faces exactly these choices, and each choice can be dressed up as THE answer. The analyst's defence is to ask: *which average, and what does it throw away?*
+You met averages long ago; now meet their arguments. The *mean* adds everything and divides — sensitive to every value, especially extremes. The *median* stands in the middle of the sorted list — blind to how extreme the extremes are. The *mode* is the most frequent value — the only average that works on categories. And the *range* (highest minus lowest) is the crudest measure of *spread* — how scattered the data is. A machine summarising "its users" faces exactly these choices, and each choice can be dressed up as THE answer. The analyst's defence is to ask: *which average, and what does it throw away?*The analyst's defence is to ask: *which average, and what does it throw away?*
+#v(4pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[THREE AVERAGES, THREE JOBS — PRE-COMPUTE, THEN ARGUE]
+  v(3pt)
+  dtable(("Average", "Best job", "Its signature failure"),
+    ([Mean], [fair shares and totals — "per person, per week"], [one outlier drags it across the story]),
+    ([Median], [typical case in a skewed crowd — incomes, wait times], [ignores how big the top really is]),
+    ([Mode], [what actually happens most — sizes, routes, defaults], [useless when everything is nearly unique]),
+    widths: (0.5fr, 1.3fr, 1.2fr),
+  )
+  v(2.5pt)
+  text(size: 9.4pt, fill: ink-soft, style: "italic")[Before T9-10's full example: pick which average you would bring to a housing-society rent row, and say why in one line — the table above is the hint.]
+})
 
 #task("T9-10", "Average Lies", mode: "alone", mins: "15", win: true)[
   A startup advertises: “Our employees earn ₹62,000 a month on average!” The nine salaries (in ₹1000s): 22, 24, 25, 26, 28, 30, 32, 35, 268.
@@ -37,7 +52,7 @@ You met averages long ago; now meet their arguments. The *mean* adds everything 
 #wordpower(13, "mode", [The value that appears most often in the data.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH AVERAGE WOULD YOU USE?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST DRILL · WHICH AVERAGE WOULD YOU USE?]
   v(3pt)
   text(size: 10.1pt)[Pick the average that answers the question most honestly — mean, median or mode — and defend it in a line:]
   v(3pt)
@@ -56,7 +71,7 @@ You met averages long ago; now meet their arguments. The *mean* adds everything 
 #sec(2, "Probability: the mathematics of 'how sure'")
 A machine that says "92% confident" is making a *probability* claim — and probability is something you can hold in your hand. The basic deal: probability = *favourable outcomes ÷ all equally likely outcomes*, so a fair die shows a six with probability 1/6. But the deeper idea is *evidence*: if you roll a die 60 times, you EXPECT about 10 sixes — and you will rarely get exactly 10. Probability describes the long run, not the next throw. That gap between "expected" and "observed" is where a healthy analyst lives: too-perfect streaks are suspicious, wild streaks are normal, and *confidence* without a count behind it is decoration.
 
-#task("T9-11", "Likelihood Lab", mode: "pair", mins: "20")[
+#task("T9-11", "Likelihood Lab", mode: "pair", mins: "20", hands: true)[
   Predict first, then test. No calculator — just tallies.
   #v(3pt)
   *Part A — the die.* My prediction for 60 rolls: number of sixes = … , number of odds = …
@@ -74,7 +89,7 @@ A machine that says "92% confident" is making a *probability* claim — and prob
 #wordpower(14, "probability", [Favourable outcomes divided by all equally likely outcomes.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHAT IS THE REAL PROBABILITY?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST DRILL · WHAT IS THE REAL PROBABILITY?]
   v(3pt)
   dtable(("The setup", "Favourable ÷ all", "As a percentage"),
     ([A bag has 3 red, 4 blue, 5 green beads. Red?], [ ], [ ]),
@@ -98,7 +113,7 @@ Here is regression at analyst level. Scatter real data — say, hours of study a
   ruled-lines(2, lead: 8.2mm)
 })
 
-#task("T9-12", "Line of Best Fit by Eye", mode: "group", mins: "20")[
+#task("T9-12", "Line of Best Fit by Eye", mode: "group", mins: "20", hands: true)[
   The scatter shows twelve students: hours of self-study per week (x) against unit-test marks (y). Draw the best-fit line with a ruler, then answer the interrogations.
   #v(6pt)
   #align(center, scatter-example(
@@ -117,7 +132,7 @@ Here is regression at analyst level. Scatter real data — say, hours of study a
 #wordpower(16, "correlation", [Two measures moving together — which does not prove one causes the other.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · CORRELATION OR CAUSATION?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST DRILL · CORRELATION OR CAUSATION?]
   v(3pt)
   text(size: 10.1pt)[Each claim spots a real correlation — then smuggles in causation. Mark C (causation claimed but unproven) or OK, and name the sneaky alternative where you can:]
   v(3pt)
@@ -134,7 +149,7 @@ Here is regression at analyst level. Scatter real data — say, hours of study a
 #sec(4, "Nearest neighbours: classification with a ruler")
 You ran a nearest-example classifier in Class 8; now give it its adult name and its arithmetic. To classify a new point, a *k-nearest-neighbour* system measures the distance from the new point to labelled examples, keeps the *k* closest, and lets them vote. Distance on a grid has an exact recipe — the square root of (x-gap squared + y-gap squared) — but the analyst's ruler version (count the squares, compare) captures every idea except the square root. The two honest weaknesses: *scale* (a feature measured in hundreds bullies a feature measured in ones) and *k* (one neighbour is a gossip; a large k is a crowd — the vote changes with k).
 
-#task("T9-13", "Neighbour Vote", mode: "pair", mins: "25")[
+#task("T9-13", "Neighbour Vote", mode: "pair", mins: "25", hands: true)[
   The plot shows the mango-sorter's training data: teal dots = ripe (sugar reading × firmness), amber = not yet. Three new mangoes arrive. Use a ruler: find each new point's THREE nearest labelled dots (that is k = 3), note their labels, and let the majority vote.
   #v(6pt)
   #align(center, knn-example(
@@ -220,7 +235,7 @@ The final mechanism is the analyst's party trick: turn a data table into an *alg
 
 #homelink[
   #task("AT HOME", "Household Statistics", mode: "home", mins: "15")[
-    With a grown-up, pick one repeated household number — monthly electricity units, travel minutes to work, or weekly vegetable spend (past bills are fine; no need to measure anything new). Find the mean, median and range together, and hunt for the outlier. #v(3pt)
+    With an adult, pick one repeated household number — monthly electricity units, travel minutes to work, or weekly vegetable spend (past bills are fine; no need to measure anything new). Find the mean, median and range together, and hunt for the outlier. #v(3pt)
     *The numbers (at least 6 periods):* #ruled-lines(2, lead: 8.1mm)
     *Mean, median, range (show one division):* #ruled-lines(2, lead: 8.1mm)
     *Which average describes our household best — and which one would an advertiser quote?* #ruled-lines(1, lead: 8.1mm)

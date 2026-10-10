@@ -44,7 +44,7 @@ Here is the simplest honest answer to "how does a machine decide?" — *it compa
   ruled-lines(2, lead: 8.2mm)
 })
 
-#task("T8-08", "Nearest Neighbour by Hand", mode: "pair", mins: "20")[
+#task("T8-08", "Nearest Neighbour by Hand", mode: "pair", mins: "20", hands: true)[
   The plot shows a bird-watching classifier's training examples. *Teal dots* = examples labelled POND bird; *amber dots* = examples labelled FOREST bird. The x-axis is *body length (units)*, the y-axis is *wing beat rate (units)*. Three new birds arrive — the hollow numbered circles. For each, use a ruler: find the nearest teal or amber dot, and assign the label.
   #v(6pt)
   #align(center, knn-example(
@@ -111,6 +111,24 @@ You measured accuracy informally last year; now it gets a formula a builder can 
   text(size: 10.1pt)[*The buyer will ask:* “accuracy on WHICH photos, counted HOW?” — *the builder will answer honestly:* #ruled-lines(2, lead: 8.2mm)]
 })
 
+#figure-visual("visuals/c8_ch3_tool-types.png", [The three no-code tool families with inputs, outputs and honest limits — the map T8-09 matches problems against.], width: 96%)
+#v(4pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[THIRTY-SECOND WARM-UP — NAME THE FAMILY]
+  v(3pt)
+  dtable(("Product", "Family (classifier / chatbot / predictor)", "The one input it must be given"),
+    ([an app grading leaf photos as healthy or blighted], [], []),
+    ([a bot drafting your leave application], [], []),
+    ([a tool estimating Friday's canteen demand in plates], [], []),
+    widths: (1.3fr, 1fr, 1fr),
+  )
+  v(2.5pt)
+  text(size: 9.8pt, weight: 800, fill: teal-deep)[*Your turn — one product from my own week:*]
+  dtable(("Product", "Family", "The one input it must be given"),
+    ([ ], [], []),
+    widths: (1.3fr, 1fr, 1fr),
+  )
+})
 #task("T8-09", "Tool Match", mode: "pair", mins: "10")[
   Match each problem to its no-code tool type — image classifier, chatbot, or data predictor — and write its likely *input*, *output*, and one hard *limit*. The first row is started for you.
   #v(4pt)
@@ -129,7 +147,7 @@ You measured accuracy informally last year; now it gets a formula a builder can 
 #wordpower(11, "no-code tool", [A ready-made AI tool you train or use without writing any program.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH TOOL — AND WHAT COULD GO WRONG?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[BUILDER DRILL · WHICH TOOL — AND WHAT COULD GO WRONG?]
   v(3pt)
   text(size: 10.1pt)[For each promise from a (fictional) vendor, write the tool type and the sharpest thing a *Question-Habit* customer should ask before buying:]
   v(3pt)
@@ -164,7 +182,7 @@ Time for the full experience in miniature. In one mission you will train a class
   text(size: 9.9pt)[#text(font: f-display, size: 8.4pt, fill: teal-deep, weight: 800, tracking: 0.13em)[SAFETY AT THE BENCH:] #h(4pt) #text(size: 9.9pt)[collect only fallen leaves — never strip a living plant · wash hands after the garden · the Judge hides the test set BEFORE training begins, not after.]]
 })
 
-#task("T8-10", "Paper Classifier Lab", mode: "group", mins: "25")[
+#task("T8-10", "Paper Classifier Lab", mode: "group", mins: "25", hands: true)[
   Work as a lab team of four. Roles: *Collector* (gathers leaves), *Scribe* (fills the table), *Ruler* (measures features), *Judge* (hides the test set and keeps score).
   #v(3pt)
   *Step 1 — Collect.* Gather 6 leaves of type A (e.g., neem) and 6 of type B (e.g., hibiscus). The Judge secretly keeps 2 A-leaves and 2 B-leaves aside as the *test set*.
@@ -200,7 +218,7 @@ Time for the full experience in miniature. In one mission you will train a class
 #thinkink([The nearest-example machine is basically "judge by closest match". One situation where that habit would be UNFAIR to a person is …, because …], lines: 2)
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · ACCURACY ARITHMETIC]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[BUILDER DRILL · ACCURACY ARITHMETIC]
   v(3pt)
   text(size: 10.1pt)[Compute each accuracy, then answer the honesty question below:]
   v(3pt)

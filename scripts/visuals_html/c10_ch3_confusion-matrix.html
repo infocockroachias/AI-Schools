@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face { font-family:'Baloo 2'; src:url('fonts/Baloo2.ttf'); font-weight:400 800; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito.ttf'); font-weight:200 900; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito-Italic.ttf'); font-style:italic; font-weight:200 900; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; color:#22333B; background:#FDFBF7; -webkit-font-smoothing:antialiased; }
+#root { width:1030px; background:#FDFBF7; padding:26px 30px; }
+.viz-title { font-family:'Baloo 2',sans-serif; font-size:22px; font-weight:800; color:#0F4C5C; }
+.viz-sub { font-size:13px; color:#5F6E75; margin:2px 0 14px; }
+.wrap { display:flex; gap:18px; }
+.matrix { flex-shrink:0; }
+.matrix h5 { font-family:'Baloo 2',sans-serif; font-size:13.5px; color:#0A3A47; margin-bottom:6px; }
+table.cm { border-collapse:collapse; }
+table.cm td, table.cm th { border:1.5px solid #C9D8DC; text-align:center; }
+table.cm th { background:#EFF6F7; color:#0A3A47; font-family:'Baloo 2',sans-serif; font-size:12px; padding:6px 12px; }
+table.cm td.corner { border:none; background:transparent; }
+td.qq { width:118px; height:76px; padding:6px 8px; }
+td.qq .big { font-family:'Baloo 2',sans-serif; font-size:19px; font-weight:800; }
+td.qq .small { font-size:10.5px; font-weight:700; letter-spacing:.05em; color:#5F6E75; }
+.tp { background:#EDF5EE; color:#2A5A31; } .tn { background:#EFF6F7; color:#0A3A47; }
+.fp { background:#FBE8DB; color:#7A3A08; } .fn { background:#F9ECEA; color:#7A2A1F; }
+td.qq .line { font-size:10.5px; color:#47555C; margin-top:2px; line-height:1.35; }
+.formulas { flex:1; display:flex; flex-direction:column; gap:8px; }
+.f { background:#FFFFFF; border:1px solid #C9D8DC; border-left:4px solid #0F4C5C; border-radius:7px; padding:7px 12px; font-size:12.5px; line-height:1.5; }
+.f b { font-family:'Baloo 2',sans-serif; color:#0A3A47; }
+.f .num { color:#B94F0B; font-weight:800; }
+.f.warn { border-left-color:#B3402E; background:#F9ECEA; color:#7A2A1F; }
+.f.warn b { color:#7A2A1F; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="viz-title">The confusion matrix — where accuracy goes to be judged</div>
+  <div class="viz-sub">A disease-screening model tested on 100 cases. Four fates for every case; five honest numbers out of the same table.</div>
+  <div class="wrap">
+    <div class="matrix">
+      <h5>CONFUSION MATRIX &nbsp;<span style="font-family:'Nunito';font-size:11px;color:#5F6E75;font-weight:700;">100 test cases</span></h5>
+      <table class="cm">
+        <tr><td class="corner"></td><th colspan="2">WHAT THE MODEL SAID</th></tr>
+        <tr><td class="corner"></td><th>Sick</th><th>Healthy</th></tr>
+        <tr><th style="width:92px;">TRUTH: Sick</th>
+          <td class="qq tp"><div class="big">44</div><div class="small">TRUE POSITIVE</div><div class="line">caught — treated in time</div></td>
+          <td class="qq fn"><div class="big">10</div><div class="small">FALSE NEGATIVE</div><div class="line">missed — sent home sick</div></td></tr>
+        <tr><th>TRUTH: Healthy</th>
+          <td class="qq fp"><div class="big">6</div><div class="small">FALSE POSITIVE</div><div class="line">false alarm — extra test</div></td>
+          <td class="qq tn"><div class="big">40</div><div class="small">TRUE NEGATIVE</div><div class="line">correctly cleared</div></td></tr>
+      </table>
+    </div>
+    <div class="formulas">
+      <div class="f"><b>Accuracy</b> = (TP + TN) &frasl; all = (44+40) &frasl; 100 = <span class="num">84%</span> — one number, hides who got hurt.</div>
+      <div class="f"><b>Precision</b> = TP &frasl; (TP + FP) = 44 &frasl; 50 = <span class="num">88%</span> — "when it cries <i>sick</i>, how often is it right?"</div>
+      <div class="f"><b>Recall</b> = TP &frasl; (TP + FN) = 44 &frasl; 54 = <span class="num">81%</span> — "of all truly sick people, how many did it <i>catch</i>?"</div>
+      <div class="f"><b>F1</b> = the balance of the two — one score when both errors matter.</div>
+      <div class="f warn"><b>CHOOSING IS ETHICS, NOT MATHS &nbsp;</b>A missed disease (FN) costs a life; a false alarm (FP) costs one extra test. Screening should chase <b>recall</b>. A spam filter fears blocked real mail — it should chase <b>precision</b>. Same table, different duty.</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

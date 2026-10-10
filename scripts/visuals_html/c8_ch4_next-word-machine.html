@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face { font-family:'Baloo 2'; src:url('fonts/Baloo2.ttf'); font-weight:400 800; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito.ttf'); font-weight:200 900; }
+@font-face { font-family:'Nunito'; src:url('fonts/Nunito-Italic.ttf'); font-style:italic; font-weight:200 900; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Nunito',sans-serif; color:#22333B; background:#FDFBF7; -webkit-font-smoothing:antialiased; }
+#root { width:1020px; background:#FDFBF7; padding:24px 30px; }
+.viz-title { font-family:'Baloo 2',sans-serif; font-size:21px; font-weight:800; color:#0F4C5C; }
+.viz-sub { font-size:12.5px; color:#5F6E75; margin:2px 0 13px; }
+.machine { border:1.5px solid #C9D8DC; border-radius:10px; background:#FFFFFF; padding:14px 18px; }
+.sent { font-size:16px; line-height:1.5; }
+.sent .fixed { color:#22333B; }
+.sent .blank { display:inline-block; min-width:120px; border-bottom:2.5px solid #E36414; color:#B94F0B; font-family:'Baloo 2',sans-serif; font-weight:800; text-align:center; }
+.candidates { display:flex; gap:10px; margin-top:12px; }
+.cand { flex:1; }
+.cand .word { font-family:'Baloo 2',sans-serif; font-size:14.5px; font-weight:800; color:#0A3A47; display:flex; justify-content:space-between; }
+.cand .word .pct { color:#B94F0B; }
+.bar { height:13px; background:#EFF6F7; border:1px solid #C9D8DC; border-radius:6px; margin-top:4px; overflow:hidden; }
+.bar .fill { height:100%; background:linear-gradient(90deg,#2E7286,#0F4C5C); border-radius:5px 0 0 5px; }
+.win .bar .fill { background:linear-gradient(90deg,#E36414,#B94F0B); }
+.cand .note { font-size:10.5px; color:#8A999F; margin-top:3px; }
+.readout { margin-top:12px; display:flex; gap:10px; }
+.readout .cell { flex:1; border-radius:7px; padding:7px 11px; font-size:12px; line-height:1.45; }
+.r1 { background:#EFF6F7; border-left:4px solid #0F4C5C; color:#0A3A47; }
+.r2 { background:#FBE8DB; border-left:4px solid #B94F0B; color:#7A3A08; }
+.r3 { background:#EDF5EE; border-left:4px solid #3A7D44; color:#2A5A31; }
+.readout b { font-family:'Baloo 2',sans-serif; letter-spacing:.05em; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="viz-title">Inside a text generator: the next-word machine</div>
+  <div class="viz-sub">No database of facts — just probabilities, one word at a time. Fluent sentences are built from thousands of small bets like this one.</div>
+  <div class="machine">
+    <div class="sent"><span class="fixed">The monsoon arrived early this</span> <span class="blank">____ ?</span></div>
+    <div class="candidates">
+      <div class="cand win"><div class="word"><span>year</span><span class="pct">41%</span></div><div class="bar"><div class="fill" style="width:82%"></div></div><div class="note">most likely &mdash; the machine picks it</div></div>
+      <div class="cand"><div class="word"><span>morning</span><span class="pct">27%</span></div><div class="bar"><div class="fill" style="width:54%"></div></div><div class="note">also plausible</div></div>
+      <div class="cand"><div class="word"><span>weekend</span><span class="pct">19%</span></div><div class="bar"><div class="fill" style="width:38%"></div></div><div class="note">less common</div></div>
+      <div class="cand"><div class="word"><span>mango</span><span class="pct">9%</span></div><div class="bar"><div class="fill" style="width:18%"></div></div><div class="note">rare &mdash; but not impossible</div></div>
+    </div>
+    <div class="readout">
+      <div class="cell r1"><b>HOW IT CHOOSES &nbsp;</b>Pattern-matching over oceans of text: which word usually follows this phrase?</div>
+      <div class="cell r2"><b>WHY IT INVENTS &nbsp;</b>Fluency is its only goal. A confident, grammatical sentence can still be untrue &mdash; a hallucination.</div>
+      <div class="cell r3"><b>YOUR MOVE &nbsp;</b>Verify every checkable claim before you repeat it. The shape of knowledge is not knowledge.</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

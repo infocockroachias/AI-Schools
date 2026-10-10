@@ -325,7 +325,7 @@
 // ============================================================
 
 // task activity box
-#let task(code, title, mode: "pair", mins: "10", win: false, body) = {
+#let task(code, title, mode: "pair", mins: "10", win: false, hands: false, body) = {
   v(4pt)
   block(width: 100%, breakable: false, radius: 5pt, stroke: 1pt + ink, fill: white, inset: 0pt, {
     box(width: 100%, inset: (x: 11pt, y: 6pt), {
@@ -334,6 +334,7 @@
         text(font: f-display, weight: 800, size: 13.9pt, fill: teal, title),
         {
           if win { box(width: 5pt, height: 5pt, fill: amber, baseline: 28%); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "QUICK WIN"); h(7pt) }
+          if hands { box(width: 5pt, height: 5pt, fill: amber, baseline: 28%); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "HANDS-ON LAB"); h(7pt) }
           text(font: f-display, fill: ink-soft, weight: 800, size: 8.1pt, tracking: 0.12em, upper(mode) + " · " + mins + " MIN")
         },
       )
@@ -678,7 +679,7 @@
   })
   v(6pt)
   block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, inset: (x: 11pt, y: 7.5pt), {
-    text(size: 9.7pt)[#text(font: f-display, size: 8.4pt, fill: teal-deep, weight: 800, tracking: 0.13em)[DETECTIVE'S TOOLKIT — YOU WILL NEED:] #h(4pt) #text(weight: 700, need.join("  ·  "))]
+    text(size: 9.7pt)[#text(font: f-display, size: 8.4pt, fill: teal-deep, weight: 800, tracking: 0.13em)[BUILDER'S TOOLKIT — YOU WILL NEED:] #h(4pt) #text(weight: 700, need.join("  ·  "))]
   })
 }
 
@@ -727,12 +728,12 @@
   v(7pt)
   grid(columns: (1fr, 1fr), column-gutter: 6pt, row-gutter: 5.5pt,
     legend-card("MISSION", white, 1pt + ink, [A paper mission with a code like *T6-01*. The label tells you who you work with and how many minutes you get. Do it — then write. Writing *is* the mission.]),
-    legend-card("WORD POWER", cream, 0.9pt + ink-soft, [A word worth keeping in your detective kit. Say it three times today — words are the tools of thinking.]),
+    legend-card("WORD POWER", cream, 0.9pt + ink-soft, [A word worth keeping in your builder kit. Say it three times today — words are the tools of thinking.]),
     legend-card("SELF-CHECK", teal-faint, 1pt + ink, [Skills to grade yourself on. Shade a confidence circle honestly — honest circles make you learn faster.]),
     legend-card("THINK & INK", amber-soft, 1pt + ink, [A question with lines. There is no single right answer here — your *reasons* are the answer.]),
   )
   v(5pt)
-  text(size: 9.3pt, fill: ink-soft)[Also on patrol: #strong[MYTH BUSTER] busts a wrong idea many people believe · #strong[DETECTIVE'S NOTE] hands you a professional's secret · #strong[HOME LINK] (dashed) is a mission to take home and teach a grown-up.]
+  text(size: 9.3pt, fill: ink-soft)[Also inside: #strong[MYTH BUSTER] busts a wrong idea many people believe · #strong[BUILDER'S NOTE] hands you a professional's secret · #strong[HOME LINK] (dashed) is a mission to take home and teach an adult.]
 }
 
 // ============================================================
@@ -791,3 +792,15 @@
   place(top + left, dx: 86mm, dy: 30.5mm, text(size: 10pt, fill: teal-mid, weight: 800, "↑"))
   place(top + left, dx: 96mm, dy: 21mm, text(size: 8.2pt, fill: ink-soft, weight: 800, tracking: 0.08em, "THE CYCLE NEVER ENDS"))
 })
+
+
+// ---- HTML-rendered visual figure ----
+#let figure-visual(path, caption, width: 100%) = {
+  v(4pt)
+  block(width: width, breakable: false, radius: 5pt, stroke: 0.9pt + ink-soft, fill: white, inset: (x: 9pt, y: 9pt), {
+    box(width: 100%, image(path, width: 100%))
+    v(5.5pt)
+    text(size: 8.6pt, fill: ink-soft, weight: 700)[#text(fill: amber-deep, weight: 800)[FIG] #h(4pt) #caption]
+  })
+  v(2pt)
+}

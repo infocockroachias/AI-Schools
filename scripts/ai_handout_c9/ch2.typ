@@ -109,7 +109,7 @@ Charts feel like evidence, but a chart is an *argument drawn by someone*. Three 
 ]
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · NAME THE TRICK]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST DRILL · NAME THE TRICK]
   v(3pt)
   text(size: 10.1pt)[Each description hides one of the three classic tricks — or none. Write T1 (truncated axis), T2 (cherry-picked window), T3 (broken pie arithmetic) or OK:]
   v(3pt)
@@ -187,7 +187,7 @@ Analysts communicate with *dashboards*: small groups of charts chosen so that to
   text(size: 8.8pt, fill: ink-soft, style: "italic")[Rule of thumb: bar charts start at zero; line charts may zoom — but must SAY so on the axis.]
 }))
 
-#task("T9-09", "Paper Dashboard", mode: "group", mins: "25")[
+#task("T9-09", "Paper Dashboard", mode: "group", mins: "25", hands: true)[
   Your team surveys the class on three questions: *minutes of screen time yesterday*, *marks on the last unit test*, and *mode of travel to school*. Collect quick tallies (your teacher will run the vote), then draw all three charts below — right chart for right job — and finish with the story.
   #v(3pt)
   #barchart-blank(("0–30", "31–60", "61–90", "90+"), ymax: 12, pw: 60mm, ph: 40mm)
@@ -217,7 +217,7 @@ Analysts communicate with *dashboards*: small groups of charts chosen so that to
 
 #homelink[
   #task("AT HOME", "Headline Autopsy", mode: "home", mins: "15")[
-    With a grown-up, take ONE number from this week's news (TV, paper, or a forwarded message — do not open links). Run the source audit: competence, method, motive. Then ask the three chart questions if a picture came with it. #v(3pt)
+    With an adult, take ONE number from this week's news (TV, paper, or a forwarded message — do not open links). Run the source audit: competence, method, motive. Then ask the three chart questions if a picture came with it. #v(3pt)
     *The number and its headline:* #ruled-lines(1, lead: 8.1mm)
     *The three faces checked (C / M / M), with one line each:* #ruled-lines(3, lead: 8.1mm)
     *The one question we would send to whoever published it:* #ruled-lines(1, lead: 8.1mm)

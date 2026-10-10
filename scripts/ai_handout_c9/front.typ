@@ -74,7 +74,7 @@
   dice honest, make the best-fit line earn itself": thank you. You protected the book from fake maths
   and from the greater sin, boring maths. To the reviewers who kept the unplugged promise through a
   chapter that could easily have become a software tutorial — the paper survived, and so did the rigour.
-  And to the grown-ups who will be asked "is the AI's average the same as MY average?" at the dinner
+  And to the adults who will be asked "is the AI's average the same as MY average?" at the dinner
   table: by the last page, your student will answer you with a worked example.
 
   Thanks as well to the open-source community behind Typst and the Machiatto template that gives this
@@ -85,7 +85,7 @@
 ]
 
 // ------------------------------------------------------------
-//  PREFACE — how to use · note to grown-ups · journey map
+//  PREFACE — how to use · note to adults · journey map
 // ------------------------------------------------------------
 #let preface-pages = {
   front-heading[How to Use This Handbook]
@@ -121,7 +121,7 @@
     chip[PAIR],   text(size: 10.3pt)[two analysts — share one book, take turns reading codes aloud],
     chip[GROUP],  text(size: 10.3pt)[three to four analysts — decide roles before you start],
     chip[CLASS],  text(size: 10.3pt)[the whole class plays together, led by your teacher],
-    chip[HOME],   text(size: 10.3pt)[a mission for home — show a grown-up what you discovered],
+    chip[HOME],   text(size: 10.3pt)[a mission for home — show an adult what you discovered],
   )
   v(10pt)
 
@@ -132,7 +132,7 @@
       text(font: f-display, fill: ink-soft, weight: 800, size: 8.1pt, tracking: 0.12em)[ALONE · 15 MIN],
     )
     #v(3.5pt)
-    #box(width: 5pt, height: 5pt, fill: amber, baseline: 28%) #h(4pt) #text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em)[QUICK WIN] sits at the right edge of the easier missions.
+    #box(width: 5pt, height: 5pt, fill: amber, baseline: 28%) #h(4pt) #text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em)[QUICK WIN] marks the easier missions; #box(width: 5pt, height: 5pt, fill: amber, baseline: 28%) #h(3pt) #text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em)[HANDS-ON LAB] marks the working labs — missions where you *build, measure, play or draw*.
     #v(4.5pt)
     Every mission has a code like #text(weight: 800)[T9-10] — *T9* means this Class 9 handout, and *10* is the mission number, so your teacher can say "open Task T9-13". The #text(fill: teal, weight: 800)[ALONE] label tells you who to work with, #text(fill: teal, weight: 800)[15 MIN] is your time limit, and #text(fill: amber-deep, weight: 800)[QUICK WIN] marks an easy first success. This book's missions ask for *working, not just answers* — show the division, draw the line, mark the outlier. In mathematics, the working IS the reasoning.
   ]
@@ -144,8 +144,8 @@
 
   pagebreak()
 
-  // ---------- note for grown-ups ----------
-  front-heading[A Note for Grown-Ups]
+  // ---------- note for adults ----------
+  front-heading[A Note for Adults]
   block(width: 100%, radius: 5pt, stroke: 1pt + ink, fill: cream, inset: (x: 12pt, y: 9pt), {
     text(size: 10.3pt)[
       This handout builds *AI understanding* — how machines learn from data and how humans should judge

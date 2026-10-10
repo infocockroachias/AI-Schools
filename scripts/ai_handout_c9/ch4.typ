@@ -37,7 +37,7 @@
 #sec(2, "Build the next-word machine — then watch it invent")
 Time to be the machine. A next-word table is the smallest honest model of a text generator: for each phrase-ending, count which word followed it in some body of text, and the counts become the probabilities. You will build one from a short corpus, then generate sentences from it. The inventions you will see are not bugs in your table — they are the mechanism working exactly as designed.
 
-#task("T9-16", "How a Text Generator Guesses", mode: "pair", mins: "20")[
+#task("T9-16", "How a Text Generator Guesses", mode: "pair", mins: "20", hands: true)[
   *Step 1 — the corpus.* Here is your training text (a fictional village news column):
   #v(2pt)
   #block(width: 100%, radius: 5pt, fill: teal-faint, stroke: 0.6pt + line-soft, inset: (x: 10pt, y: 8pt), {
@@ -64,7 +64,7 @@ Time to be the machine. A next-word table is the smallest honest model of a text
 #wordpower(18, "generative AI", [Systems that create new text, images, audio or video from patterns.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · THE THREE BUILT-IN LIMITS]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST DRILL · THE THREE BUILT-IN LIMITS]
   v(3pt)
   text(size: 10.1pt)[Match each symptom to its mechanism — H (hallucination: patterns without truth), B (bias: patterns of the past, including unfair ones), or C (copyright: patterns taken from people's work without permission or pay):]
   v(3pt)
@@ -131,6 +131,8 @@ Knowledge is not defence; routine is. Here is the full analyst routine, assemble
   )
 })
 
+#figure-visual("visuals/c9_ch4_verifyit-flowchart.png", [The Verify-It routine as a three-phase flow: meet the claim, run the checks, deliver the verdict — with sources attached.], width: 92%)
+
 #task("T9-18", "Verify-It Routine", mode: "alone", mins: "15")[
   Three items arrive in your feed (invented for this mission — treat each as real). Run all four moves on paper. Commit a verdict for each: SHARE / ASK A QUESTION / DO NOT SHARE.
   #v(4pt)
@@ -159,7 +161,7 @@ Knowledge is not defence; routine is. Here is the full analyst routine, assemble
 
 #homelink[
   #task("AT HOME", "Family Verify-It", mode: "home", mins: "15")[
-    Teach a grown-up the four moves, then run the routine together on one AI-flavoured item in the family phone — a forwarded video, an AI-written summary, a “study hack” post. No links to open; judge from the outside. #v(3pt)
+    Teach an adult the four moves, then run the routine together on one AI-flavoured item in the family phone — a forwarded video, an AI-written summary, a “study hack” post. No links to open; judge from the outside. #v(3pt)
     *The item:* #ruled-lines(1, lead: 8.1mm)
     *The move that settled it:* #ruled-lines(1, lead: 8.1mm)
     *Our family's new rule for anything that arrives hot:* #ruled-lines(2, lead: 8.1mm)

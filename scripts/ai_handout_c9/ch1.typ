@@ -30,6 +30,8 @@ Time to make the vocabulary honest. *Artificial intelligence* is the whole field
   v(3pt)
   text(size: 9.5pt, fill: ink-soft, style: "italic")[The great divide cuts ACROSS the boxes: *rule-based* (a person wrote every step) versus *learning-based* (the system found the pattern in examples). Ask it of every machine you meet this year.]
 }))
+#figure-visual("visuals/c9_ch1_nested-boxes.png", [The nested boxes as a picture, with the great divide beside them — keep this image for the checkpoint.], width: 96%)
+
 
 #task("T9-01", "4Ws Problem Canvas", mode: "group", mins: "20")[Part A of the cycle you will run all year: *scoping*. Problem scoping is the craft of pinning down exactly which problem to solve, for whom and where — before any solution is discussed. The canvas has four quadrants. Fill it for a real problem in your school or neighbourhood.]
 #v(2pt)
@@ -89,7 +91,7 @@ A scoped problem names its *stakeholders* — every person or group who affects 
 #wordpower(2, "stakeholder", [Any person or group affected by a system, helpful or harmful.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHO IS IN WHICH RING?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST DRILL · WHO IS IN WHICH RING?]
   v(3pt)
   text(size: 10.1pt)[Write D (decides), O (operates), S (serves) or B (bears) — some fit more than one ring; write both and say why:]
   v(3pt)
@@ -106,6 +108,20 @@ A scoped problem names its *stakeholders* — every person or group who affects 
 // ---------------- 1.3 ----------------
 #sec(3, "The system map: name every feature the machine sees")
 Between a scoped problem and a working model stands the question builders answer with a diagram: *what will the machine actually look at?* A *system map* lists the inputs — called *features* (you met features in Class 7) — that flow into the machine, the prediction that flows out, and the human decision that closes the loop. The skill is in the *naming*: "student information" is not a feature; "attendance percentage last term", "previous score", "homework submission rate" are. Vague features produce vague machines — and nobody can audit what nobody can name.
+#v(4pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[FEATURE OR NOT? — THE ANALYST'S TWO-SECOND TEST]
+  v(3pt)
+  text(size: 10.1pt)[A feature must be *measurable from records the system will actually see*. Mark each YES or NO, one reason per line:]
+  v(2pt)
+  dtable(("Candidate feature", "Feature? (Y/N)", "Why"),
+    ([number of library books borrowed last term], [], []),
+    ([is generally hardworking], [], []),
+    ([minutes late to school, per month], [], []),
+    ([comes from a good family], [], []),
+    widths: (1.4fr, 0.5fr, 1.1fr),
+  )
+})
 
 #task("T9-03", "System Map of Data Features", mode: "group", mins: "20")[
   Return to the exam-result predictor. Draw its system map as a table: at least *five* features with their units, the prediction it outputs, and the human who must make the final call. Then attack your own map:
@@ -141,8 +157,31 @@ Before the mathematics, settle the deepest question in the field — *when do yo
   text(size: 9.7pt)[*Two machines on my street:* one that should stay rule-based forever, and one that should learn — with one line of defence each:]
   ruled-lines(2, lead: 8.2mm)
 })
+#v(4pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[THE EXCEPTION COUNT — HOW RULES LOSE, MEASURED]
+  v(3pt)
+  grid(columns: (1fr, 1fr), column-gutter: 8pt,
+    box(fill: white, radius: 5pt, stroke: 0.6pt + line-soft, inset: (x: 8pt, y: 6.5pt), stack(spacing: 2pt,
+      text(size: 9.6pt, weight: 800, fill: teal)[Take the school-fee-reminder rule:],
+      text(size: 9.4pt, fill: ink-soft, style: "italic")["If a fee is unpaid after the 10th, send the reminder SMS."],
+      v(1.5pt),
+      text(size: 9.6pt, weight: 800, fill: amber-deep)[*Exceptions it would hit this month* (scholarships, split payments, portal outages…):],
+      ruled-lines(2, lead: 8mm)
+    )),
+    box(fill: white, radius: 5pt, stroke: 0.6pt + line-soft, inset: (x: 8pt, y: 6.5pt), stack(spacing: 2pt,
+      text(size: 9.6pt, weight: 800, fill: amber-deep)[Now the analyst's questions:],
+      text(size: 9.5pt)[Who fixes the rule when an exception hurts someone?],
+      ruled-lines(1, lead: 8mm),
+      text(size: 9.5pt)[At roughly how many exceptions a month would you re-build it from examples?],
+      ruled-lines(1, lead: 8mm)
+    )),
+  )
+  v(2pt)
+  text(size: 9.3pt, fill: ink-soft, style: "italic")[That number — the exception rate you are willing to maintain by hand — is the real border between rule-based and learning-based. Keep it for the showdown.]
+})
 
-#task("T9-04", "Rule vs Learn Showdown", mode: "pair", mins: "15")[
+#task("T9-04", "Rule vs Learn Showdown", mode: "pair", mins: "15", hands: true)[
   The task: *decide whether a message to the class group is "urgent" or "not urgent".* Fight it both ways.
   #v(4pt)
   #grid(columns: (1fr, 1fr), column-gutter: 8pt,

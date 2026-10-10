@@ -71,7 +71,7 @@
   To the curriculum reviewers who tested every mission for the "unplugged" promise: thank you.
   You caught the draft that quietly wanted a laptop for the proposal task, and you were right.
   An AI builder at this level needs paper, pencils, sticky notes, playing cards and teammates —
-  the same tools professional teams use on their first planning day. And to the grown-ups who
+  the same tools professional teams use on their first planning day. And to the adults who
   will be asked "who is responsible when the machine gets it wrong?" over dinner: this book
   trains the child to answer you with reasons, not slogans.
 
@@ -84,12 +84,12 @@
 ]
 
 // ------------------------------------------------------------
-//  PREFACE — how to use · note to grown-ups · journey map
+//  PREFACE — how to use · note to adults · journey map
 // ------------------------------------------------------------
 #let preface-pages = {
   front-heading[How to Use This Handbook]
 
-  text[Welcome back, Detective! Two years of clues sit behind you: in Class 6 you learned to *spot* learning machines, and in Class 7 you operated one — sorting, predicting and watching machines get fooled. This year you take the next step: you *plan and build*. Every serious AI system in the world began as a plan on paper — a sharp problem statement, a list of data, a test, a fair check — exactly the artefacts you will produce in these five chapters. You will still not need a computer, a phone or an app: professional builders plan on whiteboards and paper before they touch a keyboard, and so will you. Every chapter hands you missions (*tasks*), evidence to examine, and empty spaces to fill with your decisions. This book belongs to you: write, draw, cross out, improve.]
+  text[Welcome back, Builder! Two years of clues sit behind you: in Class 6 you learned to *spot* learning machines, and in Class 7 you operated one — sorting, predicting and watching machines get fooled. This year you take the next step: you *plan and build*. Every serious AI system in the world began as a plan on paper — a sharp problem statement, a list of data, a test, a fair check — exactly the artefacts you will produce in these five chapters. You will still not need a computer, a phone or an app: professional builders plan on whiteboards and paper before they touch a keyboard, and so will you. Every chapter hands you missions (*tasks*), evidence to examine, and empty spaces to fill with your decisions. This book belongs to you: write, draw, cross out, improve.]
   v(8pt)
 
   // three steps
@@ -117,10 +117,10 @@
   v(4.5pt)
   grid(columns: (auto, 1fr), column-gutter: 9pt, row-gutter: 4pt, align: (left, left),
     chip[ALONE],  text(size: 10.3pt)[your own case — you investigate by yourself],
-    chip[PAIR],   text(size: 10.3pt)[two detectives — share one book, take turns reading codes aloud],
-    chip[GROUP],  text(size: 10.3pt)[three to four detectives — decide roles before you start],
+    chip[PAIR],   text(size: 10.3pt)[two builders — share one book, take turns reading codes aloud],
+    chip[GROUP],  text(size: 10.3pt)[three to four builders — decide roles before you start],
     chip[CLASS],  text(size: 10.3pt)[the whole class plays together, led by your teacher],
-    chip[HOME],   text(size: 10.3pt)[a mission for home — show a grown-up what you discovered],
+    chip[HOME],   text(size: 10.3pt)[a mission for home — show an adult what you discovered],
   )
   v(10pt)
 
@@ -131,20 +131,20 @@
       text(font: f-display, fill: ink-soft, weight: 800, size: 8.1pt, tracking: 0.12em)[PAIR · 15 MIN],
     )
     #v(3.5pt)
-    #box(width: 5pt, height: 5pt, fill: amber, baseline: 28%) #h(4pt) #text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em)[QUICK WIN] sits at the right edge of the easier missions.
+    #box(width: 5pt, height: 5pt, fill: amber, baseline: 28%) #h(4pt) #text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em)[QUICK WIN] marks the easier missions; #box(width: 5pt, height: 5pt, fill: amber, baseline: 28%) #h(3pt) #text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em)[HANDS-ON LAB] marks the working labs — missions where you *build, measure, play or draw*.
     #v(4.5pt)
     Every mission has a code like #text(weight: 800)[T8-01] — *T8* means this Class 8 handout, and *01* is the mission number, so your teacher can say "open Task T8-09". The #text(fill: teal, weight: 800)[PAIR] label tells you who to work with, #text(fill: teal, weight: 800)[15 MIN] is your time limit, and #text(fill: amber-deep, weight: 800)[QUICK WIN] marks an easy first success. This book's missions ask you to *decide and justify*, not just to sort — so expect to write a reason beside almost every answer. Nobody fails in this book, because every attempt teaches a clue.
   ]
   v(8pt)
 
   note("The Question Habit — your superpower")[
-    Your three detective questions — *"How do I know?"*, *"What is missing?"*, *"Who made this?"* — get two powerful companions this year. For every plan you meet (including your own): *"Who is missing?"* — which group was never asked, never counted, never helped? And for every claim a machine or a company makes: *"What is the trick here?"* Builders who ask these two questions early catch unfair machines *before* people get hurt. Use all five questions in this book, at home, and on every app that promises to be smart.
+    Your three question-habit questions — *"How do I know?"*, *"What is missing?"*, *"Who made this?"* — get two powerful companions this year. For every plan you meet (including your own): *"Who is missing?"* — which group was never asked, never counted, never helped? And for every claim a machine or a company makes: *"What is the trick here?"* Builders who ask these two questions early catch unfair machines *before* people get hurt. Use all five questions in this book, at home, and on every app that promises to be smart.
   ]
 
   pagebreak()
 
-  // ---------- note for grown-ups ----------
-  front-heading[A Note for Grown-Ups]
+  // ---------- note for adults ----------
+  front-heading[A Note for Adults]
   block(width: 100%, radius: 5pt, stroke: 1pt + ink, fill: cream, inset: (x: 12pt, y: 9pt), {
     text(size: 10.3pt)[
       This handout builds *AI understanding* — how machines learn from data and how humans should judge
