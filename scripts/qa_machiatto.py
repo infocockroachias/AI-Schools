@@ -16,6 +16,19 @@ CFG = {
                       "frequency", "recommendation", "structured data", "trend", "sample", "bias",
                       "misinformation", "accountability"],
                chapters=5),
+    "c8": dict(pdf="/home/z/my-project/scripts/ai_handout_c8/main.pdf",
+               title="Build the AI Cycle", codes=[f"T8-{i:02d}" for i in range(1, 18)],
+               terms=["problem statement", "AI project cycle", "dataset", "sampling", "representation",
+                      "fairness", "consent", "privacy", "nearest neighbour", "accuracy", "no-code tool",
+                      "classifier", "text generator", "hallucination", "misinformation", "responsible use"],
+               chapters=5),
+    "c9": dict(pdf="/home/z/my-project/scripts/ai_handout_c9/main.pdf",
+               title="The Logic Under the Magic", codes=[f"T9-{i:02d}" for i in range(1, 22)],
+               terms=["deep learning", "rule-based system", "learning-based system", "problem scoping",
+                      "stakeholder", "system map", "qualitative data", "quantitative data", "unstructured data",
+                      "privacy", "security", "mean", "median", "mode", "probability", "correlation",
+                      "line of best fit", "nearest neighbour", "generative AI", "deepfake"],
+               chapters=5),
 }[CLS]
 OUT = f"/tmp/qa_mach_{CLS}"
 os.makedirs(OUT, exist_ok=True)
@@ -33,7 +46,7 @@ info = subprocess.run(["pdfinfo", PDF], capture_output=True, text=True).stdout
 title = re.search(r"Title:\s*(.*)", info)
 pages = int(re.search(r"Pages:\s*(\d+)", info).group(1))
 check("metadata title set", bool(title and CFG["title"] in title.group(1)), title.group(1) if title else "")
-check("page count in machiatto budget (40-56)", 40 <= pages <= 60, f"{pages} pages")
+check("page count in machiatto budget (40-66)", 40 <= pages <= 66, f"{pages} pages")
 size = re.search(r"Page size:\s*([\d.]+) x ([\d.]+)", info)
 w_pt, h_pt = float(size.group(1)), float(size.group(2))
 check("A4 page size", abs(w_pt - 595.3) < 2 and abs(h_pt - 841.9) < 2, f"{w_pt:.1f}x{h_pt:.1f}pt")

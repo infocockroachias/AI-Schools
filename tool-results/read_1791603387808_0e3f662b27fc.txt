@@ -1,0 +1,737 @@
+     1→// ============================================================
+     2→//  PRATIMAI · AI Handouts — Class 7 · "How Machines Learn"
+     3→//  Template: MACHIATTO EDITION (MoKa Reads publication spec)
+     4→//  Built on @preview/machiatto:0.2.0 · Typst 0.15
+     5→//  Warm rounded sans (Baloo 2 display / Nunito text) · +10% size
+     6→// ============================================================
+     7→
+     8→#import "@preview/machiatto:0.2.0": minitoc, acknowledgement, def
+     9→
+    10→// ---------------- palette ----------------
+    11→#let teal-deep  = rgb("#0A3A47")
+    12→#let teal       = rgb("#0F4C5C")
+    13→#let teal-mid   = rgb("#2E7286")
+    14→#let teal-soft  = rgb("#D9E8EB")
+    15→#let teal-faint = rgb("#EFF6F7")
+    16→#let amber      = rgb("#E36414")
+    17→#let amber-deep = rgb("#B94F0B")
+    18→#let amber-soft = rgb("#FBE8DB")
+    19→#let cream      = rgb("#F7F1E3")
+    20→#let paper      = rgb("#FDFBF7")
+    21→#let ink        = rgb("#22333B")
+    22→#let ink-soft   = rgb("#5F6E75")
+    23→#let line-soft  = rgb("#C9D8DC")
+    24→#let white      = rgb("#FFFFFF")
+    25→#let green      = rgb("#3A7D44")
+    26→#let red        = rgb("#B3402E")
+    27→
+    28→// ---------------- fonts ----------------
+    29→#let f-display = ("Baloo 2", "Nunito", "DejaVu Sans")
+    30→#let f-text    = ("Nunito", "Carlito", "DejaVu Sans")
+    31→
+    32→// ---------------- page geometry ----------------
+    33→#let moka-margins = (top: 20mm, bottom: 22mm, left: 17mm, right: 17mm)
+    34→
+    35→// ============================================================
+    36→//  FRONT-MATTER PARTS
+    37→// ============================================================
+    38→
+    39→// small pixel-heart motif (title page) — a picture really is numbers!
+    40→#let pixel-heart(cell, tone: amber) = {
+    41→  let heart = (
+    42→    (0,1,1,0,0,1,1,0),
+    43→    (1,1,1,1,1,1,1,1),
+    44→    (1,1,1,1,1,1,1,1),
+    45→    (1,1,1,1,1,1,1,1),
+    46→    (0,1,1,1,1,1,1,0),
+    47→    (0,0,1,1,1,1,0,0),
+    48→    (0,0,0,1,1,0,0,0),
+    49→    (0,0,0,0,0,0,0,0),
+    50→  )
+    51→  let cells = {
+    52→    let out = ()
+    53→    for r in range(8) { for c in range(8) {
+    54→      out.push(if heart.at(r).at(c) == 1 { rect(width: cell, height: cell, fill: tone, radius: 0pt, stroke: none) } else { [] })
+    55→    } }
+    56→    out
+    57→  }
+    58→  grid(columns: (cell,) * 8, rows: (cell,) * 8, inset: 0pt, stroke: none, ..cells)
+    59→}
+    60→
+    61→// front-matter section heading (not an outlined heading — stays out of TOC)
+    62→#let front-heading(title, kicker: none) = {
+    63→  if kicker != none {
+    64→    text(font: f-display, size: 9.2pt, weight: 800, tracking: 0.16em, fill: amber-deep, upper(kicker))
+    65→    v(2pt)
+    66→  }
+    67→  text(font: f-display, size: 19pt, weight: 800, fill: teal, title)
+    68→  v(3pt)
+    69→  block(width: 100%, above: 2pt, below: 7pt, line(length: 100%, stroke: 0.6pt + line-soft))
+    70→}
+    71→
+    72→// heading numbering: "1." for chapters, "1.1" for sections (no trailing dots)
+    73→#let moka-nums(..ns) = {
+    74→  let a = ns.pos()
+    75→  if a.len() <= 1 { numbering("1.", ..a) } else { a.map(s => str(s)).join(".") }
+    76→}
+    77→
+    78→// ============================================================
+    79→//  DOCUMENT FLOW — machiatto / MoKa Reads specification:
+    80→//  title page → license → acknowledgements → preface → toc
+    81→//  → chapters (summary + minitoc) → body, mirrored footers
+    82→// ============================================================
+    83→#let moka-footer = context {
+    84→  let i = counter(page).at(here()).first()
+    85→  let is-odd = calc.odd(i)
+    86→  let aln = if is-odd { right } else { left }
+    87→  set text(size: 8.1pt, fill: ink-soft, font: f-text, weight: 600)
+    88→  let folio = text(font: f-display, fill: teal-deep, size: 10.6pt, weight: 800, str(i))
+    89→  let target = heading.where(level: 1)
+    90→  if query(target).any(it => it.location().page() == i) {
+    91→    return align(aln, folio)
+    92→  }
+    93→  let before = query(target.before(here()))
+    94→  if before.len() > 0 {
+    95→    let current = before.last()
+    96→    let chapter = text(font: f-display, weight: 800, size: 8.1pt, tracking: 0.12em, upper(current.body))
+    97→    let gap = 1.75em
+    98→    if is-odd {
+    99→      align(right)[#chapter #h(gap) #folio]
+   100→    } else {
+   101→      align(left)[#folio #h(gap) #chapter]
+   102→    }
+   103→  } else {
+   104→    align(aln, folio)
+   105→  }
+   106→}
+   107→
+   108→#let moka-doc(cover-series: "", cover-title: "", cover-subtitle: "", cover-meta: (), author: "", license: none, ack: none, preface: none, toc: true, toc-extras: none, cover-questions: "", ack-meta: "", body) = {
+   109→  set document(
+   110→    title: cover-title + " — PRATIMAI AI Handouts",
+   111→    author: author,
+   112→    keywords: ("AI literacy", "unplugged", "PRATIMAI", "machiatto"),
+   113→  )
+   114→  set page(paper: "a4", margin: moka-margins, fill: paper, numbering: "1", number-align: center)
+   115→  set text(font: f-text, size: 11.5pt, fill: ink, lang: "en", region: "GB")
+   116→  set par(leading: 0.68em, spacing: 1.1em)
+   117→
+   118→  // ---------- title page (machiatto: bordered block, centered) ----------
+   119→  align(center + horizon, block(width: 86%, inset: (x: 52pt, y: 46pt), radius: 5pt, stroke: 1.1pt + ink, fill: white, {
+   120→    set text(font: f-display)
+   121→    align(center, pixel-heart(3.1mm))
+   122→    v(14pt)
+   123→    align(center, text(size: 10.4pt, weight: 800, tracking: 0.24em, fill: amber-deep, upper(cover-series)))
+   124→    v(10pt)
+   125→    align(center, text(size: 35pt, weight: 800, fill: teal, cover-title))
+   126→    v(7pt)
+   127→    align(center, text(font: f-text, size: 12.6pt, style: "italic", fill: ink-soft, cover-subtitle))
+   128→    v(12pt)
+   129→    align(center, block(width: 58%, above: 4pt, below: 4pt, line(length: 100%, stroke: 0.6pt + line-soft)))
+   130→    v(8pt)
+   131→    align(center, text(size: 11.5pt, weight: 800, tracking: 0.14em, fill: ink, cover-meta.at(0)))
+   132→    v(4pt)
+   133→    align(center, text(size: 10.4pt, weight: 700, tracking: 0.1em, fill: ink-soft, cover-meta.at(1)))
+   134→    v(14pt)
+   135→    align(center, text(size: 12.6pt, weight: 800, fill: ink, author))
+   136→    v(12pt)
+   137→    line(length: 46%, stroke: 0.6pt + line-soft)
+   138→    v(7pt)
+   139→    align(center, text(size: 10.2pt, style: "italic", fill: ink-soft, cover-questions))
+   140→  }))
+   141→  v(20pt)
+   142→  align(center, {
+   143→    text(size: 8.6pt, weight: 800, tracking: 0.2em, fill: ink-soft)[THIS CASE FILE BELONGS TO]
+   144→    v(7pt)
+   145→    box(width: 62%, stroke: (bottom: 0.7pt + ink-soft), inset: (bottom: 3pt))[#h(0pt)]
+   146→    v(2.5pt)
+   147→    text(size: 8.1pt, fill: ink-soft)[name · class · roll number]
+   148→  })
+   149→  v(16pt)
+   150→  align(center, box(radius: 5pt, stroke: 1.1pt + ink, fill: white, inset: (x: 15pt, y: 9pt), {
+   151→    set text(size: 9.6pt)
+   152→    grid(columns: (auto, 32mm, 8mm, auto, 32mm), column-gutter: 5pt, align: (left, bottom, center, left, bottom),
+   153→      text(font: f-display, size: 8.4pt, weight: 800, tracking: 0.14em, fill: ink-soft, "CASE OPENED ON"),
+   154→      box(stroke: (bottom: 0.7pt + ink-soft))[#h(0pt)],
+   155→      text(fill: amber-deep, weight: 800)[★],
+   156→      text(font: f-display, size: 8.4pt, weight: 800, tracking: 0.14em, fill: ink-soft, "CASE CLOSED ON"),
+   157→      box(stroke: (bottom: 0.7pt + ink-soft))[#h(0pt)],
+   158→    )
+   159→  }))
+   160→  pagebreak()
+   161→
+   162→  // ---------- license (machiatto spec page) ----------
+   163→  if license != none { license; pagebreak() }
+   164→
+   165→  // ---------- acknowledgements (machiatto cream box) ----------
+   166→  {
+   167→    align(center, {
+   168→      v(10pt)
+   169→      pixel-heart(2.4mm)
+   170→      v(8pt)
+   171→      text(font: f-display, size: 9pt, weight: 800, tracking: 0.24em, fill: amber-deep, upper(cover-series))
+   172→      v(14pt)
+   173→    })
+   174→    set text(font: f-display)
+   175→    acknowledgement(ack)
+   176→    if ack-meta != "" {
+   177→      v(16pt)
+   178→      align(center, box(radius: 5pt, stroke: 0.9pt + ink-soft, fill: white, inset: (x: 13pt, y: 8pt), {
+   179→        text(font: f-display, size: 8.6pt, weight: 800, tracking: 0.16em, fill: teal-deep, ack-meta)
+   180→      }))
+   181→    }
+   182→  }
+   183→  pagebreak()
+   184→
+   185→  // ---------- preface ----------
+   186→  if preface != none { preface; pagebreak() }
+   187→
+   188→  // ---------- table of contents ----------
+   189→  if toc {
+   190→    outline(title: text(font: f-display, size: 20pt, weight: 800, fill: teal)[Contents], depth: 2)
+   191→    if toc-extras != none { toc-extras }
+   192→    pagebreak()
+   193→  }
+   194→
+   195→  // ---------- main body ----------
+   196→  set par(leading: 0.7em, spacing: 1.3em, justify: false, linebreaks: "simple")
+   197→  set page(footer: moka-footer)
+   198→  set heading(numbering: moka-nums)
+   199→
+   200→  show heading.where(level: 1): it => {
+   201→    pagebreak(weak: true)
+   202→    v(4pt)
+   203→    let nums = counter(heading).at(it.location())
+   204→    align(center, {
+   205→      if it.numbering != none {
+   206→        text(font: f-display, fill: amber-deep, size: 17.6pt, weight: 800, numbering("1.", ..nums))
+   207→        h(9pt)
+   208→      }
+   209→      text(font: f-display, fill: teal, size: 22.6pt, weight: 800, it.body)
+   210→    })
+   211→    v(12pt)
+   212→  }
+   213→  show heading.where(level: 2): it => {
+   214→    v(7pt)
+   215→    let nums = counter(heading).at(it.location())
+   216→    grid(columns: (auto, auto, 1fr), column-gutter: 7pt, align: (left, left, horizon),
+   217→      if it.numbering != none { text(font: f-display, size: 15pt, weight: 800, fill: amber-deep, numbering("1.1", ..nums)) } else { [] },
+   218→      text(font: f-display, size: 15pt, weight: 800, fill: teal, it.body),
+   219→      line(length: 100%, stroke: 0.5pt + line-soft),
+   220→    )
+   221→    v(1pt)
+   222→  }
+   223→
+   224→  {
+   225→    set heading(numbering: moka-nums)
+   226→    body
+   227→  }
+   228→}
+   229→
+   230→// ============================================================
+   231→//  SMALL PARTS
+   232→// ============================================================
+   233→
+   234→// work-mode label — typographic caps, no pill
+   235→#let chip(txt, fill: teal-soft, ink: teal, stroke: none) = text(
+   236→  font: f-display, fill: ink, weight: 800, size: 9.5pt, tracking: 0.1em, upper(txt),
+   237→)
+   238→
+   239→// strand letter badge (U D L W R)
+   240→#let strand-badge(letter, active: false) = box(
+   241→  fill: if active { teal } else { white },
+   242→  stroke: 0.9pt + teal-mid, radius: 3pt, inset: (x: 5pt, y: 2pt),
+   243→  text(fill: if active { white } else { teal-mid }, weight: 800, size: 9.2pt, letter),
+   244→)
+   245→
+   246→// drawn checkbox (empty square)
+   247→#let cbox = box(baseline: 32%, rect(width: 10.5pt, height: 10.5pt, radius: 2pt, stroke: 1pt + teal-mid, fill: white))
+   248→
+   249→// confidence circles: shade one
+   250→#let conf(n: 3) = h(4pt) + box(baseline: 30%, stack(dir: ltr, spacing: 3.9pt,
+   251→  ..range(n).map(i => circle(radius: 4.4pt, stroke: 0.9pt + teal-mid, fill: white))))
+   252→
+   253→// ruled writing lines
+   254→#let ruled-lines(n, lead: 8.4mm) = {
+   255→  for i in range(n) {
+   256→    block(width: 100%, height: lead, place(bottom, line(length: 100%, stroke: 0.55pt + line-soft)))
+   257→  }
+   258→}
+   259→
+   260→// blank write-in box
+   261→#let writebox(h, label: none) = block(width: 100%, height: h, radius: 5pt, fill: teal-faint, stroke: 0.6pt + line-soft, {
+   262→  if label != none { place(top + left, dx: 7pt, dy: 5.5pt, text(size: 8.6pt, fill: ink-soft, weight: 700, tracking: 0.06em, upper(label))) }
+   263→})
+   264→
+   265→// dashed drawing frame
+   266→#let drawbox(h, label: none) = block(width: 100%, height: h, radius: 5pt, fill: white, stroke: (paint: teal-mid, thickness: 0.9pt, dash: "dashed"), {
+   267→  if label != none { place(top + left, dx: 7pt, dy: 5.5pt, text(size: 8.6pt, fill: ink-soft, weight: 700, tracking: 0.06em, upper(label))) }
+   268→})
+   269→
+   270→// star character
+   271→#let star(size, fill: amber) = text(font: "DejaVu Sans", fill: fill, size: size, "★")
+   272→
+   273→#let strand-badges(strands) = {
+   274→  for s in strands { strand-badge(s, active: true); h(2.5pt) }
+   275→}
+   276→
+   277→// ============================================================
+   278→//  CHAPTER OPENING — MoKa spec: heading · summary · minitoc,
+   279→//  first section follows on the next page
+   280→// ============================================================
+   281→#let chapter-opener(num, title, question, summary: none, outcomes: (), strands: (), link: none, missions: none, extras: none) = {
+   282→  heading(level: 1)[#title]
+   283→  // guiding question — machiatto info-box anatomy
+   284→  block(width: 100%, breakable: false, radius: 5pt, stroke: 1pt + ink, fill: teal-faint, inset: (x: 11pt, y: 8pt), {
+   285→    text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.14em, "GUIDING QUESTION")
+   286→    v(2.5pt)
+   287→    text(size: 11.9pt, style: "italic", question)
+   288→  })
+   289→  v(2pt)
+   290→  // chapter summary (MoKa spec: a summary before the mini contents)
+   291→  if summary != none { summary }
+   292→  v(4pt)
+   293→  // mission meta line
+   294→  block(width: 100%, breakable: false, radius: 5pt, stroke: 0.7pt + ink-soft, fill: white, inset: (x: 11pt, y: 7pt), {
+   295→    set text(size: 9.2pt)
+   296→    grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 3.5pt, align: (left, left),
+   297→      text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.13em)[MISSIONS],
+   298→      if missions == none { [] } else { text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, missions) },
+   299→      text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.13em)[OUTCOMES],
+   300→      grid(columns: (auto, auto, 1fr), column-gutter: 8pt, align: (left, horizon, right),
+   301→        text(font: f-display, size: 9.2pt, fill: teal, weight: 800, outcomes.join("  ·  ")),
+   302→        text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.13em)[STRANDS],
+   303→        align(right, strand-badges(strands)),
+   304→      ),
+   305→    )
+   306→    if link != none {
+   307→      v(3.5pt)
+   308→      text(size: 9.4pt, fill: ink-soft, style: "italic", link)
+   309→    }
+   310→  })
+   311→  v(4pt)
+   312→  text(font: f-display, size: 11pt, weight: 800, fill: teal)[In this chapter]
+   313→  v(1pt)
+   314→  minitoc()
+   315→  if extras != none { v(9pt); extras }
+   316→  pagebreak(weak: true)
+   317→}
+   318→
+   319→// section heading — a real level-2 heading (numbered automatically)
+   320→#let sec(n, title) = heading(level: 2)[#title]
+   321→
+   322→// ============================================================
+   323→//  ACTIVITY COMPONENTS — machiatto box anatomy
+   324→//  (1pt ink stroke · radius 5pt · tinted fills)
+   325→// ============================================================
+   326→
+   327→// task activity box
+   328→#let task(code, title, mode: "pair", mins: "10", win: false, body) = {
+   329→  v(4pt)
+   330→  block(width: 100%, breakable: false, radius: 5pt, stroke: 1pt + ink, fill: white, inset: 0pt, {
+   331→    box(width: 100%, inset: (x: 11pt, y: 6pt), {
+   332→      grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, horizon, right),
+   333→        text(font: f-display, weight: 800, size: 12.1pt, fill: amber-deep, code),
+   334→        text(font: f-display, weight: 800, size: 13.9pt, fill: teal, title),
+   335→        {
+   336→          if win { box(width: 5pt, height: 5pt, fill: amber, baseline: 28%); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "QUICK WIN"); h(7pt) }
+   337→          text(font: f-display, fill: ink-soft, weight: 800, size: 8.1pt, tracking: 0.12em, upper(mode) + " · " + mins + " MIN")
+   338→        },
+   339→      )
+   340→    })
+   341→    box(width: 100%, inset: (x: 11pt, y: 8pt, bottom: 10pt), stroke: (top: 0.5pt + line-soft), body)
+   342→  })
+   343→  v(2pt)
+   344→}
+   345→
+   346→// Word Power vocabulary card — machiatto def() with PRATIMAI fills
+   347→#let wordpower(n, term, body) = {
+   348→  v(3pt)
+   349→  text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[WORD POWER · #str(n)]
+   350→  v(2pt)
+   351→  block(width: 100%, breakable: false, def(title: text(font: f-display, size: 14.3pt, weight: 800, fill: teal, term), fill: cream)[
+   352→    #text(size: 11pt, body)
+   353→    #v(2pt)
+   354→    #text(size: 8.4pt, fill: ink-soft, weight: 700, style: "italic")[Say it three times today — it sticks!]
+   355→  ])
+   356→  v(2pt)
+   357→}
+   358→
+   359→// Myth buster box
+   360→#let myth(m, truth) = {
+   361→  v(4pt)
+   362→  block(width: 100%, breakable: false, radius: 5pt, fill: white, stroke: 1pt + ink, inset: (x: 11pt, y: 9pt), {
+   363→    grid(columns: (auto, 1fr), column-gutter: 5pt, align: (left, horizon),
+   364→      box(width: 5.5pt, height: 5.5pt, fill: teal, baseline: 28%),
+   365→      text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em, "MYTH BUSTER"),
+   366→    )
+   367→    v(7pt)
+   368→    grid(columns: (auto, 1fr), column-gutter: 8pt, align: (left, horizon),
+   369→      text(font: f-display, size: 8.4pt, fill: red, weight: 800, tracking: 0.13em, "MYTH"),
+   370→      text(style: "italic", weight: 600, [“#m”]),
+   371→    )
+   372→    v(4pt)
+   373→    grid(columns: (auto, 1fr), column-gutter: 8pt, align: (left, horizon),
+   374→      text(font: f-display, size: 8.4pt, fill: green, weight: 800, tracking: 0.13em, "TRUTH"),
+   375→      text(truth),
+   376→    )
+   377→  })
+   378→  v(2pt)
+   379→}
+   380→
+   381→// self-check box
+   382→#let selfcheck(..items) = {
+   383→  v(4pt)
+   384→  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 1pt + ink, inset: (x: 11pt, y: 9pt), {
+   385→    grid(columns: (auto, 1fr), align: (left, right),
+   386→      text(font: f-display, size: 12.7pt, weight: 800, fill: teal, "Self-check"),
+   387→      text(size: 8.1pt, fill: ink-soft, weight: 700)[shade one: first circle = not yet · middle = almost · last = got it],
+   388→    )
+   389→    v(4.5pt)
+   390→    for it in items.pos() {
+   391→      grid(columns: (auto, 1fr, auto), column-gutter: 6.5pt, align: (top, left, horizon),
+   392→        cbox, text(size: 10.8pt, it), conf(),
+   393→      )
+   394→      v(3.5pt)
+   395→    }
+   396→  })
+   397→  v(2pt)
+   398→}
+   399→
+   400→// reflection box
+   401→#let thinkink(prompt, lines: 2) = {
+   402→  v(4pt)
+   403→  block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, stroke: 1pt + ink, inset: (x: 11pt, y: 9pt), {
+   404→    grid(columns: (auto, 1fr), column-gutter: 5pt, align: (left, horizon),
+   405→      box(width: 5.5pt, height: 5.5pt, fill: amber, baseline: 28%),
+   406→      text(font: f-display, size: 9.2pt, weight: 800, fill: amber-deep, tracking: 0.13em, "THINK & INK"),
+   407→    )
+   408→    v(4pt)
+   409→    text(size: 10.9pt, style: "italic", prompt)
+   410→    v(1pt)
+   411→    ruled-lines(lines, lead: 8.2mm)
+   412→  })
+   413→  v(2pt)
+   414→}
+   415→
+   416→// home-link task box (dashed border)
+   417→#let homelink(body) = {
+   418→  v(4pt)
+   419→  block(width: 100%, breakable: false, radius: 5pt, fill: white,
+   420→    stroke: (paint: teal-mid, thickness: 1pt, dash: "dashed"), inset: (x: 11pt, y: 9pt), {
+   421→      grid(columns: (auto, 1fr), align: (left, horizon), column-gutter: 7pt,
+   422→        text(font: f-display, size: 9.2pt, fill: teal-mid, weight: 800, tracking: 0.13em, "HOME LINK"),
+   423→        text(size: 8.8pt, fill: ink-soft, weight: 600, style: "italic")[take this page home — no screen needed],
+   424→      )
+   425→      v(4.5pt)
+   426→      body
+   427→    })
+   428→  v(2pt)
+   429→}
+   430→
+   431→// detective note (info box)
+   432→#let note(title, body) = {
+   433→  v(3pt)
+   434→  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 1pt + ink, inset: (x: 11pt, y: 8pt), {
+   435→    text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em, upper(title))
+   436→    v(2.5pt)
+   437→    text(size: 10.9pt, body)
+   438→  })
+   439→  v(2pt)
+   440→}
+   441→
+   442→// styled data table: headers array of strings, rows passed as variadic arrays
+   443→#let dtable(headers, widths: (), header-size: 9.7pt, ..rows) = {
+   444→  let cells = (
+   445→    table.header(..headers.map(h => text(fill: teal-deep, weight: 800, size: header-size, tracking: 0.04em, h))),
+   446→    table.hline(y: 1, stroke: 1.1pt + teal),
+   447→    ..rows.pos().map(r => r.map(c => if type(c) == content { c } else { text(size: 10.3pt, c) })).flatten(),
+   448→  )
+   449→  if type(widths) == array and widths.len() > 0 {
+   450→    table(columns: widths, inset: (y: 5.5pt, x: 7pt), stroke: 0.5pt + line-soft, fill: white, ..cells)
+   451→  } else if type(widths) == array {
+   452→    table(inset: (y: 5.5pt, x: 7pt), stroke: 0.5pt + line-soft, fill: white, ..cells)
+   453→  } else {
+   454→    table(columns: (widths,), inset: (y: 5.5pt, x: 7pt), stroke: 0.5pt + line-soft, fill: white, ..cells)
+   455→  }
+   456→}
+   457→
+   458→// pixel grid (blank or with code numbers)
+   459→#let pixel-grid(size: 8, cell: 6.2mm, numbers: none, num-size: 6.9pt) = grid(
+   460→  columns: (cell,) * size, rows: (cell,) * size, inset: 0pt, align: center + horizon, stroke: 0.5pt + line-soft,
+   461→  ..{ let out = (); for r in range(size) { for c in range(size) {
+   462→    out.push(if numbers == none { [] } else { text(size: num-size, fill: ink-soft, weight: 700, str(numbers.at(r).at(c))) })
+   463→  } }; out }
+   464→)
+   465→
+   466→// blank bar chart with axes, gridlines and column labels
+   467→#let barchart-blank(labels, ymax: 10, pw: 148mm, ph: 46mm) = box(width: 100%, {
+   468→  box(width: pw + 13mm, height: ph + 9mm, {
+   469→    for i in range(ymax + 1) {
+   470→      let y = ph - i * ph / ymax
+   471→      place(top + left, dx: 10mm, dy: y, line(length: pw, stroke: if i == 0 { 0.9pt + ink } else { 0.4pt + line-soft }))
+   472→      place(top + left, dx: 1.5mm, dy: y - 3.5pt, text(size: 7.3pt, fill: ink-soft, weight: 700, str(i)))
+   473→    }
+   474→    let n = labels.len()
+   475→    let cw = pw / n
+   476→    for (i, lab) in labels.enumerate() {
+   477→      place(top + left, dx: 10mm + i * cw, dy: ph + 1.8mm, box(width: cw, align(center, text(size: 8.8pt, weight: 800, fill: ink, lab))))
+   478→    }
+   479→    place(top + left, dx: -1.5mm, dy: 5mm, rotate(-90deg, text(size: 7.5pt, fill: ink-soft, weight: 800, tracking: 0.1em, "NUMBER OF VOTES")))
+   480→  })
+   481→})
+   482→
+   483→// example bar chart with filled bars (for chart-reading drills)
+   484→#let barchart-example(labels, values, ymax: 10, ymin: 0, ystep: 1, pw: 120mm, ph: 44mm, barfill: amber, ylabel: "NUMBER OF VOTES", labsize: 8.8pt) = box(width: 100%, {
+   485→  box(width: pw + 13mm, height: ph + 9mm, {
+   486→    for i in range(ymin, ymax + 1, step: ystep) {
+   487→      let y = ph - (i - ymin) * ph / (ymax - ymin)
+   488→      place(top + left, dx: 10mm, dy: y, line(length: pw, stroke: if i == ymin { 0.9pt + ink } else { 0.4pt + line-soft }))
+   489→      place(top + left, dx: 1.5mm, dy: y - 3.5pt, text(size: 7.3pt, fill: ink-soft, weight: 700, str(i)))
+   490→    }
+   491→    let n = labels.len()
+   492→    let cw = pw / n
+   493→    let bw = cw * 0.52
+   494→    for (i, lab) in labels.enumerate() {
+   495→      let v = values.at(i)
+   496→      if v > ymin {
+   497→        let bh = (v - ymin) * ph / (ymax - ymin)
+   498→        place(top + left, dx: 10mm + i * cw + (cw - bw) / 2, dy: ph - bh, rect(width: bw, height: bh, fill: barfill, radius: 0pt))
+   499→      }
+   500→      place(top + left, dx: 10mm + i * cw, dy: ph + 1.8mm, box(width: cw, align(center, text(size: labsize, weight: 800, fill: ink, lab))))
+   501→    }
+   502→    place(top + left, dx: -1.5mm, dy: 5mm, rotate(-90deg, text(size: 7.5pt, fill: ink-soft, weight: 800, tracking: 0.1em, ylabel)))
+   503→  })
+   504→})
+   505→
+   506→// scatter plot with pre-printed dots (regression task: student draws the best line)
+   507→#let scatter-example(points, xmax: 10, xstep: 1, ymax: 180, ystep: 20, xlabel: "", ylabel: "", pw: 118mm, ph: 54mm, dot: teal-mid) = box(width: 100%, {
+   508→  box(width: pw + 13mm, height: ph + 11mm, {
+   509→    for i in range(0, ymax + 1, step: ystep) {
+   510→      let y = ph - i * ph / ymax
+   511→      place(top + left, dx: 11mm, dy: y, line(length: pw, stroke: if i == 0 { 0.9pt + ink } else { 0.4pt + line-soft }))
+   512→      place(top + left, dx: 1.5mm, dy: y - 3.5pt, text(size: 7.3pt, fill: ink-soft, weight: 700, str(i)))
+   513→    }
+   514→    for i in range(0, xmax + 1, step: xstep) {
+   515→      let x = 11mm + i * pw / xmax
+   516→      place(top + left, dx: x, dy: 0pt, line(angle: 90deg, length: ph, stroke: 0.4pt + line-soft))
+   517→      place(top + left, dx: x - 5mm, dy: ph + 1.6mm, box(width: 10mm, align(center, text(size: 7.6pt, fill: ink-soft, weight: 700, str(i)))))
+   518→    }
+   519→    for p in points {
+   520→      let dx = 11mm + p.at(0) * pw / xmax - 1.55mm
+   521→      let dy = ph - p.at(1) * ph / ymax - 1.55mm
+   522→      place(top + left, dx: dx, dy: dy, circle(radius: 1.55mm, fill: dot))
+   523→    }
+   524→    if xlabel != "" { place(top + left, dx: 11mm, dy: ph + 5.6mm, box(width: pw, align(center, text(size: 7.9pt, fill: ink-soft, weight: 800, tracking: 0.08em, xlabel)))) }
+   525→    if ylabel != "" { place(top + left, dx: -2mm, dy: 4mm, rotate(-90deg, text(size: 7.5pt, fill: ink-soft, weight: 800, tracking: 0.1em, ylabel))) }
+   526→  })
+   527→})
+   528→
+   529→// line graph with pre-drawn polyline (for chart-reading drills)
+   530→#let linechart-example(labels, values, ymax: 10, ystep: 1, pw: 122mm, ph: 48mm, linefill: teal, ylabel: "") = box(width: 100%, {
+   531→  box(width: pw + 13mm, height: ph + 10mm, {
+   532→    for i in range(0, ymax + 1, step: ystep) {
+   533→      let y = ph - i * ph / ymax
+   534→      place(top + left, dx: 10mm, dy: y, line(length: pw, stroke: if i == 0 { 0.9pt + ink } else { 0.4pt + line-soft }))
+   535→      place(top + left, dx: 1.5mm, dy: y - 3.5pt, text(size: 7.3pt, fill: ink-soft, weight: 700, str(i)))
+   536→    }
+   537→    let n = labels.len()
+   538→    let cw = pw / (n - 1)
+   539→    let Y(v) = (ph - v * ph / ymax) / 1pt
+   540→    let pts = values.enumerate().map(((i, v)) => (i * cw / 1pt, Y(v)))
+   541→    // curve.line points are absolute (relative to the curve's placed origin)
+   542→    let segs = range(1, n).map(i => curve.line((pts.at(i).at(0) * 1pt, pts.at(i).at(1) * 1pt)))
+   543→    place(top + left, dx: 10mm, dy: 0pt, curve(stroke: 1.5pt + linefill, curve.move((pts.first().at(0) * 1pt, pts.first().at(1) * 1pt)), ..segs))
+   544→    for (i, v) in values.enumerate() {
+   545→      place(top + left, dx: 10mm + i * cw - 1.5mm, dy: Y(v) * 1pt - 1.5mm, circle(radius: 1.5mm, fill: linefill))
+   546→      place(top + left, dx: 10mm + i * cw - 8mm, dy: ph + 1.8mm, box(width: 16mm, align(center, text(size: 8.4pt, weight: 800, fill: ink, labels.at(i)))))
+   547→    }
+   548→    if ylabel != "" { place(top + left, dx: -1.5mm, dy: 13mm, rotate(-90deg, text(size: 7.5pt, fill: ink-soft, weight: 800, tracking: 0.1em, ylabel))) }
+   549→  })
+   550→})
+   551→
+   552→// blank line-graph grid (students draw the polyline themselves)
+   553→#let linechart-blank(labels, ymax: 10, ystep: 1, pw: 122mm, ph: 48mm, ylabel: "") = box(width: 100%, {
+   554→  box(width: pw + 13mm, height: ph + 10mm, {
+   555→    for i in range(0, ymax + 1, step: ystep) {
+   556→      let y = ph - i * ph / ymax
+   557→      place(top + left, dx: 10mm, dy: y, line(length: pw, stroke: if i == 0 { 0.9pt + ink } else { 0.4pt + line-soft }))
+   558→      place(top + left, dx: 1.5mm, dy: y - 3.5pt, text(size: 7.3pt, fill: ink-soft, weight: 700, str(i)))
+   559→    }
+   560→    let n = labels.len()
+   561→    let cw = pw / (n - 1)
+   562→    for (i, lab) in labels.enumerate() {
+   563→      place(top + left, dx: 10mm + i * cw - 1mm, dy: 0pt, line(angle: 90deg, length: ph, stroke: 0.4pt + line-soft))
+   564→      place(top + left, dx: 10mm + i * cw - 8mm, dy: ph + 1.8mm, box(width: 16mm, align(center, text(size: 8.4pt, weight: 800, fill: ink, lab))))
+   565→    }
+   566→    if ylabel != "" { place(top + left, dx: -1.5mm, dy: 13mm, rotate(-90deg, text(size: 7.5pt, fill: ink-soft, weight: 800, tracking: 0.1em, ylabel))) }
+   567→  })
+   568→})
+   569→
+   570→// pie chart built from thin polygon fans (accurate wedges, no external deps)
+   571→#let piechart-example(values, labels, colors, pw: 46mm) = box(width: 100%, {
+   572→  let total = values.sum()
+   573→  let r = 17.5mm
+   574→  let cx = r + 0.5mm
+   575→  let cy = r + 0.5mm
+   576→  let acc = 0
+   577→  box(width: pw, height: 2 * r + 1mm, {
+   578→    for (i, v) in values.enumerate() {
+   579→      let a0 = acc / total * 360deg - 90deg
+   580→      acc = acc + v
+   581→      let a1 = acc / total * 360deg - 90deg
+   582→      let steps = calc.max(2, calc.floor((a1 - a0) / 2.5deg))
+   583→      for s in range(steps) {
+   584→        let b0 = a0 + (a1 - a0) * s / steps
+   585→        let b1 = a0 + (a1 - a0) * (s + 1) / steps
+   586→        // tiny angular overlap hides hairline seams between fan triangles
+   587→        let p0 = (cx + r * calc.cos(b0), cy + r * calc.sin(b0))
+   588→        let p1 = (cx + r * calc.cos(b1 + 0.5deg), cy + r * calc.sin(b1 + 0.5deg))
+   589→        place(top + left, curve(fill: colors.at(i), stroke: none,
+   590→          curve.move((cx, cy)),
+   591→          curve.line((p0.at(0), p0.at(1))),
+   592→          curve.line((p1.at(0), p1.at(1))),
+   593→          curve.close(),
+   594→        ))
+   595→      }
+   596→    }
+   597→    // wedge separators + outer rim, drawn on top of the fan
+   598→    let acc2 = 0
+   599→    for (i, v) in values.enumerate() {
+   600→      let a = acc2 / total * 360deg - 90deg
+   601→      acc2 = acc2 + v
+   602→      place(top + left, dx: cx, dy: cy, line(angle: a, length: r, stroke: 0.8pt + paper))
+   603→    }
+   604→    place(top + left, circle(radius: r, fill: none, stroke: 0.8pt + paper))
+   605→  })
+   606→})
+   607→
+   608→// blank fraction circle with equal wedges (students shade their own pie chart)
+   609→#let pie-blank(divisions: 10, pw: 46mm) = box(width: pw, {
+   610→  let r = 17.5mm
+   611→  let cx = r + 0.5mm
+   612→  let cy = r + 0.5mm
+   613→  box(width: 2 * r + 1mm, height: 2 * r + 1mm, {
+   614→    place(top + left, circle(radius: r, fill: white, stroke: 0.9pt + ink))
+   615→    for i in range(divisions) {
+   616→      let a = i * 360deg / divisions - 90deg
+   617→      place(top + left, dx: cx, dy: cy, line(angle: a, length: r, stroke: 0.55pt + line-soft))
+   618→    }
+   619→  })
+   620→})
+   621→
+   622→// legend for pie charts: colour swatch + label + share (one grid row per entry)
+   623→#let pie-legend(values, labels, colors, total-note: none) = {
+   624→  for (i, val) in values.enumerate() {
+   625→    grid(columns: (auto, 1fr), column-gutter: 6pt, align: (left, left),
+   626→      box(width: 9.4pt, height: 9.4pt, fill: colors.at(i), stroke: 0.5pt + line-soft, baseline: 25%),
+   627→      text(size: 9.5pt)[#labels.at(i) — *#str(val)%*],
+   628→    )
+   629→    v(2.9pt)
+   630→  }
+   631→}
+   632→
+   633→// "I can" checklist (journey map / progress)
+   634→#let ican(items) = {
+   635→  let arr = if type(items) == arguments { items.pos() } else { items }
+   636→  for it in arr {
+   637→    grid(columns: (auto, 1fr), column-gutter: 6.5pt, align: (top, left), cbox, text(size: 10.7pt, it))
+   638→    v(3.5pt)
+   639→  }
+   640→}
+   641→
+   642→// "I can" checklist (journey map / progress)
+   643→#let ican(items) = {
+   644→  let arr = if type(items) == arguments { items.pos() } else { items }
+   645→  for it in arr {
+   646→    grid(columns: (auto, 1fr), column-gutter: 6.5pt, align: (top, left), cbox, text(size: 10.7pt, it))
+   647→    v(3.5pt)
+   648→  }
+   649→}
+   650→
+   651→// ============================================================
+   652→//  PAGE-BALANCE KIT — components that give every page a full,
+   653→//  purposeful look (no half-empty pages): opener extras,
+   654→//  chapter checkpoints, journal strips, box legend.
+   655→// ============================================================
+   656→
+   657→// opener extras: vocabulary chips + warm-up write-in + toolkit strip
+   658→#let opener-extras(words: (), warmup: none, need: ()) = {
+   659→  block(width: 100%, breakable: false, radius: 5pt, stroke: 0.9pt + ink-soft, fill: white, inset: (x: 11pt, y: 8pt), {
+   660→    text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[WORDS YOU'LL MEET HERE]
+   661→    v(5pt)
+   662→    for w in words {
+   663→      box(fill: teal-soft, radius: 4pt, inset: (x: 7.5pt, y: 3.5pt), text(font: f-display, size: 9.8pt, weight: 800, fill: teal-deep, w))
+   664→      h(4.5pt)
+   665→    }
+   666→  })
+   667→  v(6pt)
+   668→  block(width: 100%, breakable: false, radius: 5pt, stroke: 1pt + ink, fill: amber-soft, inset: (x: 11pt, y: 8pt), {
+   669→    grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, horizon, right),
+   670→      text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[WARM-UP · BEFORE YOU READ],
+   671→      [],
+   672→      text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.12em)[ALONE · 2 MIN],
+   673→    )
+   674→    v(3.5pt)
+   675→    text(size: 10.7pt, warmup)
+   676→    v(1pt)
+   677→    ruled-lines(2, lead: 8.2mm)
+   678→  })
+   679→  v(6pt)
+   680→  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, inset: (x: 11pt, y: 7.5pt), {
+   681→    text(size: 9.7pt)[#text(font: f-display, size: 8.4pt, fill: teal-deep, weight: 800, tracking: 0.13em)[DETECTIVE'S TOOLKIT — YOU WILL NEED:] #h(4pt) #text(weight: 700, need.join("  ·  "))]
+   682→  })
+   683→}
+   684→
+   685→// chapter checkpoint: three quick recall questions, write-in
+   686→#let chapter-checkpoint(num, ..qa) = {
+   687→  v(5pt)
+   688→  block(width: 100%, breakable: false, radius: 5pt, stroke: 1pt + ink, fill: white, inset: (x: 11pt, y: 9pt), {
+   689→    grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, horizon, right),
+   690→      text(font: f-display, size: 12.7pt, weight: 800, fill: teal, "Chapter " + str(num) + " Checkpoint"),
+   691→      text(size: 8.3pt, fill: ink-soft, weight: 700)[one line each — no peeking back!],
+   692→      text(font: f-display, size: 8.1pt, fill: amber-deep, weight: 800, tracking: 0.12em, [ALONE · 3 MIN]),
+   693→    )
+   694→    v(6.5pt)
+   695→    for (i, q) in qa.pos().enumerate() {
+   696→      text(size: 10.7pt)[#strong[#str(i + 1).] #q]
+   697→      ruled-lines(1, lead: 8.2mm)
+   698→      v(4.5pt)
+   699→    }
+   700→  })
+   701→  v(2pt)
+   702→}
+   703→
+   704→// journal strip: dashed write-in band for the chapter's last page
+   705→#let case-journal(lines: 2, label: "MY CASE JOURNAL — today's sharpest clue") = {
+   706→  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint,
+   707→    stroke: (paint: teal-mid, thickness: 0.9pt, dash: "dashed"), inset: (x: 11pt, y: 8pt), {
+   708→      text(font: f-display, size: 9.2pt, fill: teal-mid, weight: 800, tracking: 0.13em, upper(label))
+   709→      v(1pt)
+   710→      ruled-lines(lines, lead: 8.2mm)
+   711→  })
+   712→  v(2pt)
+   713→}
+   714→
+   715→// TOC-page legend: what each recurring box wants from the reader
+   716→#let legend-card(name, fill, stroke, body) = block(width: 100%, breakable: false, radius: 5pt, fill: fill, stroke: stroke, inset: (x: 9pt, y: 7pt), {
+   717→  text(font: f-display, size: 9pt, weight: 800, fill: teal-deep, tracking: 0.12em, name)
+   718→  v(2.5pt)
+   719→  text(size: 9.4pt, body)
+   720→})
+   721→
+   722→#let box-legend = {
+   723→  v(11pt)
+   724→  text(font: f-display, size: 15pt, weight: 800, fill: teal)[The boxes in this book]
+   725→  v(1.5pt)
+   726→  text(size: 9.7pt, fill: ink-soft)[You will meet these boxes on every case. Each one wants something different from you — collect them all.]
+   727→  v(7pt)
+   728→  grid(columns: (1fr, 1fr), column-gutter: 6pt, row-gutter: 5.5pt,
+   729→    legend-card("MISSION", white, 1pt + ink, [A paper mission with a code like *T6-01*. The label tells you who you work with and how many minutes you get. Do it — then write. Writing *is* the mission.]),
+   730→    legend-card("WORD POWER", cream, 0.9pt + ink-soft, [A word worth keeping in your detective kit. Say it three times today — words are the tools of thinking.]),
+   731→    legend-card("SELF-CHECK", teal-faint, 1pt + ink, [Skills to grade yourself on. Shade a confidence circle honestly — honest circles make you learn faster.]),
+   732→    legend-card("THINK & INK", amber-soft, 1pt + ink, [A question with lines. There is no single right answer here — your *reasons* are the answer.]),
+   733→  )
+   734→  v(5pt)
+   735→  text(size: 9.3pt, fill: ink-soft)[Also on patrol: #strong[MYTH BUSTER] busts a wrong idea many people believe · #strong[DETECTIVE'S NOTE] hands you a professional's secret · #strong[HOME LINK] (dashed) is a mission to take home and teach a grown-up.]
+   736→}
+   737→

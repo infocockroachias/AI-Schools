@@ -247,5 +247,3 @@
     [compare solving a task with fixed if-then rules vs learning from examples],
   ))
 }
-  ))
-}
