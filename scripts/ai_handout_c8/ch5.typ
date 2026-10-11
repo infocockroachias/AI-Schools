@@ -4,7 +4,7 @@
 // ============================================================
 #chapter-opener(5, "Capstone: The AI Project Proposal", "Can you plan an AI that people can trust — and defend the plan to a live audience?",
   outcomes: ("8.U1", "8.L1", "8.L2", "8.D1", "8.D2", "8.W1", "8.W2", "8.R1", "8.R2", "8.T1"), strands: ("U", "D", "L", "W", "R"),
-  summary: [The final case brings every clue together. Your team will write a complete AI project proposal on paper — sharp problem, audited data plan, chosen tool, honest test, fairness check and known limits — exactly the document a professional team brings to its first review. Then your classmates will pressure-test it in a peer review gallery, and you will sharpen your budget choices with a real optimisation problem. This is not an exam; it is the moment the detective becomes the builder.],
+  summary: [The final case brings every clue together. Your team will write a complete AI project proposal on paper — sharp problem, audited data plan, chosen tool, honest test, fairness check and known limits — exactly the document a professional team brings to its first review. Then your classmates will pressure-test it in a peer review gallery, and you will sharpen your budget choices with a real optimisation problem. This is not an exam; it is the moment the investigator becomes the engineer.],
   missions: "T8-15 – T8-17",
   link: "Links: all five strands · English — persuasive writing · Maths — budgeting & optimisation",
   extras: opener-extras(
@@ -60,10 +60,10 @@ Every serious AI project begins as a document nobody coded: a proposal. Its job 
 
 // ---------------- 5.2 ----------------
 #sec(2, "The Peer Review Gallery")
-Real proposals are never shipped on the builder's word alone — they face review. In professional teams, reviewers hunt for the *weakest box*, not the prettiest sentence, and the proposal gets better because of it. Today your classmates are your reviewers: every plan is pinned up (or read aloud), every team walks the gallery with a clipboard, and every review ends with one strength, one gap, and one question the builders cannot dodge.
+Real proposals are never shipped on the engineer's word alone — they face review. In professional teams, reviewers hunt for the *weakest box*, not the prettiest sentence, and the proposal gets better because of it. Today your classmates are your reviewers: every plan is pinned up (or read aloud), every team walks the gallery with a clipboard, and every review ends with one strength, one gap, and one question the engineers cannot dodge.
 
 #block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, inset: (x: 11pt, y: 8pt), {
-  text(size: 9.9pt)[#text(font: f-display, size: 8.4pt, fill: teal-deep, weight: 800, tracking: 0.13em)[GALLERY MARSHAL — HOUSE RULES:] #h(4pt) #text(weight: 700)[review the PLAN, never the people · one strength before any gap · every gap must come with the question that would close it · builders may only reply with evidence, not feelings.]]
+  text(size: 9.9pt)[#text(font: f-display, size: 8.4pt, fill: teal-deep, weight: 800, tracking: 0.13em)[GALLERY MARSHAL — HOUSE RULES:] #h(4pt) #text(weight: 700)[review the PLAN, never the people · one strength before any gap · every gap must come with the question that would close it · engineers may only reply with evidence, not feelings.]]
 })
 
 #block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, inset: (x: 11pt, y: 8pt), {
@@ -88,7 +88,7 @@ Real proposals are never shipped on the builder's word alone — they face revie
   #v(3pt)
   *The strength I would praise first:* #ruled-lines(1, lead: 8.2mm)
   *The weakest box right now (problem / data / test / fairness):* #ruled-lines(1, lead: 8.2mm)
-  *The one question the builders cannot dodge:* #ruled-lines(2, lead: 8.2mm)
+  *The one question the engineers cannot dodge:* #ruled-lines(2, lead: 8.2mm)
   *Rubric shade for this proposal —* Beginning / Growing / Secure / Shining *(shade one)* #conf(n: 4)
 ]
   #v(5pt)
@@ -100,7 +100,7 @@ Real proposals are never shipped on the builder's word alone — they face revie
     #v(3pt)
     Proposal № #box(width: 12mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) · weakest box: #box(width: 26mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) · rubric shade: #conf(n: 4)
     #v(2pt)
-    *My closing question for the builders:* #ruled-lines(1, lead: 8.2mm)
+    *My closing question for the engineers:* #ruled-lines(1, lead: 8.2mm)
   ]
 ]
 
@@ -115,12 +115,12 @@ Real proposals are never shipped on the builder's word alone — they face revie
     widths: (30mm, 1fr),
   )
   v(3pt)
-  text(size: 9.3pt, fill: ink-soft, style: "italic")[Notice: a flawed answer with honest reasoning can outscore a polished answer with no reasons. This rubric rewards exactly what builders get paid for.]
+  text(size: 9.3pt, fill: ink-soft, style: "italic")[Notice: a flawed answer with honest reasoning can outscore a polished answer with no reasons. This rubric rewards exactly what engineers get paid for.]
 }))
 
 // ---------------- 5.3 ----------------
 #sec(3, "Optimise It: the best you can afford")
-One last thinking-tool before graduation. Real builders never have enough budget for everything — they *optimise*: they break the choice into parts (cost, benefit, fairness) and find the best combination under the limit. This is computational thinking in its purest form: no AI at all, just you, a table and a constraint.
+One last thinking-tool before graduation. Real engineers never have enough budget for everything — they *optimise*: they break the choice into parts (cost, benefit, fairness) and find the best combination under the limit. This is computational thinking in its purest form: no AI at all, just you, a table and a constraint.
 
 #note("The optimiser's habit")[Break the choice into parts (this item costs this, buys that), compute honestly, then defend what you leave out. The defence matters as much as the choice — a budget nobody can argue with is a budget nobody checked.]
 
@@ -158,7 +158,7 @@ One last thinking-tool before graduation. Real builders never have enough budget
   Ask the leaf classifier *why* it called a leaf type B, and it has no answer — only distances. Ask the text generator why it wrote a sentence, and it will *invent* a plausible reason, the same way it writes everything else. The "why" lives in three places, and none of them is the model: in the *data* (what patterns existed), in the *design choices* (which features, which examples), and in the *people* (who decided what it was for). That is why every chapter of this book made you write your reasons beside your answers — the reasoning was never the machine's job. It was, and is, yours.]
 
 #selfcheck(
-  [I can write a proposal that answers all six builder questions with evidence],
+  [I can write a proposal that answers all six engineer questions with evidence],
   [I can review a classmate's plan with one strength, one gap and one unavoidable question],
   [I can grade a proposal — mine or a classmate's — with the four levels and say why],
   [I can choose the best combination under a budget and defend the trade-off I accept],

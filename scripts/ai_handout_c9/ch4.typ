@@ -64,7 +64,7 @@ Time to be the machine. A next-word table is the smallest honest model of a text
 #wordpower(18, "generative AI", [Systems that create new text, images, audio or video from patterns.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST DRILL · THE THREE BUILT-IN LIMITS]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST'S DRILL · THE THREE BUILT-IN LIMITS]
   v(3pt)
   text(size: 10.1pt)[Match each symptom to its mechanism — H (hallucination: patterns without truth), B (bias: patterns of the past, including unfair ones), or C (copyright: patterns taken from people's work without permission or pay):]
   v(3pt)
@@ -131,6 +131,17 @@ Knowledge is not defence; routine is. Here is the full analyst routine, assemble
   )
 })
 
+
+#v(4pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[MY VERIFY-IT RECEIPT — ONE CLAIM FROM MY FAMILY GROUP]
+  v(3pt)
+  grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 4.5pt, align: (left, horizon),
+    text(size: 9.5pt, weight: 800, fill: teal-deep)[claim], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+    text(size: 9.5pt, weight: 800, fill: teal-deep)[check], text(size: 9.7pt)[the one check that decided it: #box(width: 66%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+    text(size: 9.5pt, weight: 800, fill: teal-deep)[verdict], text(size: 9.7pt)[SHARE or DOUBT — and the one line I sent back: #box(width: 57%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+  )
+})
 #figure-visual("visuals/c9_ch4_verifyit-flowchart.png", [The Verify-It routine as a three-phase flow: meet the claim, run the checks, deliver the verdict — with sources attached.], width: 92%)
 
 #task("T9-18", "Verify-It Routine", mode: "alone", mins: "15")[

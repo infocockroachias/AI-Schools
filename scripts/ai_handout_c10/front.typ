@@ -11,12 +11,7 @@
 #let license-page = {
   front-heading[License]
   text(size: 10.9pt)[
-    This handbook is © #datetime.today().display("[year]") the PRATIMAI Curriculum Team. Student-facing
-    content — missions, case material, activities and diagrams — is licensed under the
-    *Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International* licence (CC BY-NC-SA 4.0):
-    you may share and adapt it for classroom use with attribution, for non-commercial purposes, under the
-    same licence. The Typst source files are released under the MIT licence so that any school can rebuild,
-    translate and localise the book for its own learners.
+    This handbook is © #datetime.today().display("[year]") *PRATIMA AI*. All rights reserved. The title, the missions, the activities, the stories, the diagrams and the design of this series are the intellectual property of PRATIMA AI. No part of this book may be copied, reproduced, sold, redistributed or republished in any form without the written permission of PRATIMA AI. Schools and educators who would like to collaborate with the series — through adoption programmes, translations or local editions — are warmly welcome to contact PRATIMA AI and sign a collaboration agreement.
   ]
   v(2pt)
   text(size: 10.9pt)[
@@ -29,10 +24,10 @@
     text(font: f-display, size: 9.2pt, weight: 800, fill: teal-deep, tracking: 0.12em)[THE LICENCE IN PLAIN WORDS]
     v(4pt)
     dtable(("You MAY", "You may NOT"),
-      ([ photocopy pages for your class or study group ], [ sell this book or any copy of it ]),
-      ([ adapt missions for your learners and share them ], [ remove the credit lines or the licence ]),
-      ([ translate the book and keep the same licence ], [ use it to advertise any product or service ]),
-      ([ point other schools to the free source files ], [ claim the activities are your own invention ]),
+      ([ photocopy pages for use in your own registered classroom ], [ sell this book or any copy of it ]),
+      ([ use the missions with your students, on paper ], [ remove the credit lines or the licence ]),
+      ([ recommend the series to other schools and teachers ], [ claim the activities are your own invention ]),
+      ([ contact PRATIMA AI to sign a collaboration agreement ], [ use the series to advertise any product or service ]),
       widths: (1fr, 1fr),
     )
   })
@@ -40,22 +35,15 @@
   table(stroke: none, columns: 2, inset: (y: 3.2pt),
     [*Series:*], [PRATIMAI · AI Handouts],
     [*Title:*], [Decide, Evaluate, Design — Class 10 · Level 5 · EVALUATE & DESIGN],
-    [*Author:*], [PRATIMAI Curriculum Team],
+    [*Author:*], [PRATIMA AI · Research & Curriculum Team],
     [*Publish Date:*], [#datetime.today().display()],
-    [*Published by:*], [PRATIMAI | AI-Schools],
-    [*Edition:*], [Machiatto Edition 1.0],
+    [*Published by:*], [PRATIMA AI],
+    [*Edition:*], [First Edition · 1.0],
   )
   v(10pt)
   block(width: 100%, radius: 5pt, stroke: 0.7pt + ink-soft, fill: white, inset: (x: 11pt, y: 8pt), {
     text(size: 9.4pt, fill: ink-soft)[
-      Set in *Nunito* and *Baloo 2* on warm paper stock, typeset with Typst using the
-      *Machiatto* template — which implements the MoKa Reads publication specification:
-      title page, license, acknowledgements, preface, contents, then chapters opening
-      with a summary and a mini table of contents. Both typefaces are used under the
-      SIL Open Font Licence; the template ships under the MIT licence. The diagrams in
-      this book are rendered from version-controlled HTML sources kept beside the Typst
-      project; every figure's regeneration note lives in the file `visualgeneration.md`,
-      so any school can redraw, translate or AI-replace a figure and rebuild the book.
+      Set in *Nunito* and *Baloo 2* on warm paper stock. Both typefaces are used under the SIL Open Font Licence. The book's diagrams are printed as crisp, high-resolution figures, and every page was reviewed individually before this edition went to press.
     ]
   })
 }
@@ -78,10 +66,11 @@
   to answer with a framework, an evidence table and an honest limit, and to keep their voice calm
   while doing it.
 
-  Thanks as well to the open-source community behind Typst and the Machiatto template that gives
-  this book its typesetting, and to the designers of Nunito and Baloo 2, whose friendly
-  letterforms keep pages of hard argument feeling clear. Finally, to the educator holding this
-  copy: the last book of a series is a promise kept in public. Judge us gently, and send us what
+  This series was built brick by brick by three teams working as one. The *AI research team* checked every explanation against how machines really learn, so nothing in this book is a myth wearing a friendly font. The *academic team* walked every chapter beside the school syllabus, so each game quietly trains a skill that examinations will ask for later. And the *child-psychology team* shaped the pace of every page: short missions for young attention, quick wins that open every chapter, confidence circles that make honesty feel safe, and space to write on every task — because an idea worked by the hand is remembered by the mind. Alongside them, curriculum reviewers guarded the "unplugged" promise: not one mission in this series asks for a phone, an account or a password.
+
+  Thanks go as well to the designers of Nunito and Baloo 2, whose friendly letterforms keep
+  pages of hard argument feeling clear. Finally, to the AI Designer holding this copy: the
+  last book of a series is a promise kept in public. Judge us gently, and send us what
   you find.
 ]
 
@@ -90,11 +79,17 @@
 // ------------------------------------------------------------
 #let preface-pages = {
   front-heading[Before You Begin]
-  text[Welcome back, Analyst. Four years of evidence sit behind you: in Class 6 you *spotted* learning machines, in Class 7 you *operated* them, in Class 8 you *planned and defended* them, in Class 9 you explained *why they work and when they fail*. This year the questions grow up one last time: not just *how does it work* but *how good is it, who decides, and what should we build at all?* You will place every product you know on a model-family map, run a neural network with your own classmates as neurons, judge a medical screening tool with a confusion matrix, argue a triage case through four ethical principles, and design a complete, defensible AI system on paper — with a budget, an ethics review and a pitch. This is the year the analyst becomes the designer.]
+  text[Welcome back, Designer. Four years of evidence sit behind you: in Class 6 you *spotted* learning machines, in Class 7 you *operated* them, in Class 8 you *planned and defended* them, in Class 9 you explained *why they work and when they fail*. This year the questions grow up one last time: not just *how does it work* but *how good is it, who decides, and what should we build at all?* You will place every product you know on a model-family map, run a neural network with your own classmates as neurons, judge a medical screening tool with a confusion matrix, argue a triage case through four ethical principles, and design a complete, defensible AI system on paper — with a budget, an ethics review and a pitch. This is the year you take the AI Designer's seat for good.]
 
   text[One honest sentence before you start. This is a board-exam year, and this book is *not* an exam-cram guide. It is something more useful: the reasoning underneath what exams examine. When you can judge a model with your own confusion matrix, the syllabus questions become arithmetic you have already lived. Keep your Class 9 book nearby — the maths there is the floor this book builds on.]
 
   v(10pt)
+  v(8pt)
+
+  note("Why this book works the way it does")[
+    #text(size: 9.8pt)[This handbook is built around how teenage brains actually learn. Every chapter opens with a quick win — motivation first, theory second. You *do* before you *define*: each idea is met through an experience before it is named, because memory hooks onto action. The confidence circles train metacognition — knowing how sure you are is a skill, and honest rating makes it stronger. Tasks are time-boxed because attention works in sprints; ideas return across chapters on purpose, because a second meeting is what turns exposure into understanding; and every task leaves space to write, because producing your own answer beats re-reading every time. Nothing here can be failed: a wrong answer you go on to check is a clue found early.]
+  ]
+
 
   note("How to read a mission")[
     #grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, horizon, right),
@@ -114,8 +109,24 @@
   note("The Question Habit — the designer's edge")[
     Your five questions — *"How do I know?"*, *"What is missing?"*, *"Who made this?"*, *"Who is missing?"*, *"What is the trick here?"* — now take on the two that professionals are paid to ask. For every system you evaluate: *"Who is accountable when it fails — by name, in writing?"* And for every design of your own: *"What evidence would change my mind?"* A designer who cannot name what would change their mind is not designing; they are defending. Carry all seven questions into every debate, every review, and every rumour you meet this year.
   ]
+  v(9pt)
+  block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, inset: (x: 11pt, y: 8pt), {
+    text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[DRILL THE SEVEN QUESTIONS — ON A SYSTEM IN THE NEWS]
+    v(3pt)
+    text(size: 9.8pt)[Pick one AI system from this week's headlines (a hiring filter, an exam proctor, a crop-advisory bot). Write one evidence-backed line per question — two of the seven are the accountability pair, and those two are the ones professionals are paid to ask:]
+    v(4pt)
+    grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 5pt, align: (left, horizon),
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9.2pt, "1–3")),
+      text(size: 9.7pt)[*How do I know? What is missing? Who made this?* — one line on the system's evidence trail. #ruled-lines(1, lead: 7.6mm)],
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9.2pt, "4–5")),
+      text(size: 9.7pt)[*Who is missing? What is the trick here?* — one line on whose voices the coverage leaves out. #ruled-lines(1, lead: 7.6mm)],
+      box(fill: amber, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9.2pt, "6")),
+      text(size: 9.7pt)[*Who is accountable when it fails — by name, in writing?* #ruled-lines(1, lead: 7.6mm)],
+      box(fill: amber, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9.2pt, "7")),
+      text(size: 9.7pt)[*What evidence would change my mind?* — the line that keeps you a designer, not a defender. #ruled-lines(1, lead: 7.6mm)],
+    )
+  })
 
-  pagebreak()
 
   // ---------- note for adults ----------
   front-heading[A Note for Adults]
@@ -225,6 +236,89 @@
     [run the four ethical principles over a real AI case — and find where each one bites],
     [design a complete AI project on paper: scope, data, model, evaluation, deployment, ethics gate, pitch],
   ))
+
+  v(9pt)
+  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 11pt, y: 8pt), {
+    text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[MY BOARD-YEAR RHYTHM — THREE PERIODS, THREE PROMISES]
+    v(3pt)
+    text(size: 9.8pt)[This is a board year, and the designer's edge is rhythm, not cramming. Write the promise you are making for each stretch of the year — reread these lines at every chapter checkpoint:]
+    v(4pt)
+    grid(columns: (auto, 1fr), column-gutter: 8pt, row-gutter: 5pt, align: (horizon, horizon),
+      box(fill: teal, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8.2pt, weight: 800, "APR–JUL")),
+      text(size: 9.7pt)[foundations I will not fake: #box(width: 74%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      box(fill: teal, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8.2pt, weight: 800, "AUG–NOV")),
+      text(size: 9.7pt)[practice I will do under time, honestly: #box(width: 68%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      box(fill: amber, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8.2pt, weight: 800, "DEC–MAR")),
+      text(size: 9.7pt)[revision I will run from my own notes, not borrowed ones: #box(width: 60%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+    )
+  })
+  v(13pt)
+  block(width: 100%, breakable: false, radius: 5pt, stroke: 1.1pt + ink, fill: white, inset: (x: 12pt, y: 9pt), {
+    grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, horizon, right),
+      box(fill: amber, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8.4pt, weight: 800, tracking: 0.1em, "DAY 1")),
+      text(font: f-display, size: 12.4pt, weight: 800, fill: teal)[My starting line — a pledge to the standard],
+      text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.12em)[2 MIN],
+    )
+    v(4.5pt)
+    text(size: 10.1pt)[Fill this in before Chapter 1. The Designer's Certificate at the back will ask for the evidence beside these lines.]
+    v(5pt)
+    text(size: 10.1pt)[One AI system in my life I intend to be able to *judge* — not just use — by June:]; ruled-lines(1, lead: 8.6mm)
+    v(4pt)
+    text(size: 10.1pt)[The metric-vs-cost question I expect to argue about this year, and with whom:]; ruled-lines(1, lead: 8.6mm)
+    v(4pt)
+    text(size: 10.1pt)[My integrity clause — the line I will not cross with generative tools, in my own words:]; ruled-lines(1, lead: 8.6mm)
+    v(6pt)
+    grid(columns: 2, column-gutter: 16pt,
+      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+    )
+  })
+  v(9pt)
+  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 11pt, y: 8pt), {
+    text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[HOW TO USE THE RATING SCALE — THE DESIGNER'S READING HABIT]
+    v(3pt)
+    text(size: 9.8pt)[Rate with *evidence*, not mood: a level you cannot demonstrate in the back tracker is a level you do not own yet. Designers rate low on purpose and show the fix — that habit, more than any single answer, is what the board year rewards. Re-rate after every chapter checkpoint; keep the first circle visible so the distance stays honest.]
+  })
+  v(9pt)
+  block(width: 100%, breakable: false, radius: 5pt, stroke: 1.1pt + amber, fill: amber-soft, inset: (x: 11pt, y: 9pt), {
+    grid(columns: (auto, 1fr), column-gutter: 8pt, align: (left, horizon),
+      box(fill: amber, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8.4pt, weight: 800, tracking: 0.1em, "CARD")),
+      text(font: f-display, size: 11.6pt, weight: 800, fill: amber-deep)[The designer's seven questions — my pocket copy],
+    )
+    v(5pt)
+    grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 4.5pt, align: (left, horizon),
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9pt, "1–5")),
+      text(size: 9.8pt)[*How do I know? What is missing? Who made this? Who is missing? What is the trick here?*],
+      box(fill: amber, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9pt, "6")),
+      text(size: 9.8pt)[*Who is accountable when it fails — by name, in writing?*],
+      box(fill: amber, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9pt, "7")),
+      text(size: 9.8pt)[*What evidence would change my mind?* — the line between a designer and a defender.],
+    )
+    v(5.5pt)
+    text(size: 9.6pt, style: "italic", fill: ink-soft)[The system I will run all seven on first: #box(width: 58%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)]
+  })
+  v(9pt)
+  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 11pt, y: 8pt), {
+    text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[BEFORE EVERY CHECKPOINT — MY THREE RE-RATING HABITS]
+    v(3pt)
+    text(size: 9.8pt)[*1.* Re-rate with evidence, not mood — show the mission that proves the level. #h(8pt) *2.* Keep the old circle visible; the distance is the point. #h(8pt) *3.* One line on what changed my rating — the failure, the fix or the question.]
+  })
+
+  v(9pt)
+  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 11pt, y: 8pt), {
+    text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[MY MODEL SHELF — THREE PRODUCTS I WILL JUDGE FIRST]
+    v(3pt)
+    text(size: 9.8pt)[For Chapter 1: name three AI products you actually use, and one data question you will ask of each when the family map opens:]
+    v(4pt)
+    grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 5pt, align: (horizon, horizon),
+      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+    )
+  })
   v(9pt)
   block(width: 100%, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
     text(font: f-display, size: 9.2pt, weight: 800, fill: teal-deep, tracking: 0.13em)[YOUR HONEST-RATING SCALE — THIS YEAR AND BEYOND]

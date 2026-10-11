@@ -10,7 +10,7 @@
   cover-title: "Build the AI Cycle",
   cover-subtitle: "My case file for planning, testing and improving an AI people can trust",
   cover-meta: ("CLASS 8 · LEVEL 3 — BUILD THE CYCLE", "17 PAPER MISSIONS · 5 CHAPTERS · NO SCREEN NEEDED"),
-  author: "PRATIMAI Curriculum Team",
+  author: "PRATIMA AI Curriculum Team",
   license: license-page,
   ack: ack-text,
   ack-meta: "17 PAPER MISSIONS · 16 WORDS TO KEEP · 5 CHAPTERS · 1 BADGE EARNED",

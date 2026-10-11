@@ -101,6 +101,22 @@ So is a machine ever really smart? Try a fair contest. Machines are dazzling at 
   #v(5pt)
   *The class's most surprising idea was…* #ruled-lines(1, lead: 8.8mm)
 ]
+#homelink[Ask a grown-up: "Which one job would you NEVER hand to a machine — and why?" Write their reason, then your smartest counter-question:
+#v(3pt)
+#ruled-lines(2, lead: 8.2mm)]
+#homelink[Ask a grown-up: "Which one job would you NEVER hand to a machine — and why?" Write their reason, then your smartest counter-question:
+#v(3pt)
+#ruled-lines(2, lead: 8.2mm)]
+
+
+#huva([One example or a thousand?], [Here is the fair contest's second round — how your brain and a machine learn the very same thing differently.],
+  [You can learn "mango" from ONE mango — and you can still spot a blue-painted mango as a mango. Your brain mixes sense, story and experience together.],
+  [The machine needs MANY labelled examples. Show it only green mangoes and a blue one confuses it — it holds the pattern, not the fruit.],
+  (
+    [One thing I could learn from a single example:], 
+    [One thing a machine can do with thousands of examples that I could never do:],
+    [Ask a grown-up: which one is smarter? Write why the honest answer is "both — in different ways":],
+  ))
 
 // ---------------- 1.5 ----------------
 #sec(5, "Three ways machines learn — three little stories")
@@ -151,6 +167,27 @@ Machines learn in more than one way, and each way has a human story you already 
 #myth("AI is alive — it has feelings.")[
   A learner finds patterns in numbers; it does not *feel* anything. When a chatbot writes “I am happy to help!”, that sentence was predicted from patterns in text people wrote. The *people* who design, choose data and take responsibility have the feelings — and the responsibility.]
 
+#block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[TWO MACHINES, TWO VERDICTS — THE 30-SECOND SORT]
+  v(3pt)
+  grid(columns: (1fr, 1fr), column-gutter: 8pt,
+    block(width: 100%, radius: 4pt, fill: white, stroke: 0.8pt + ink-soft, inset: (x: 8pt, y: 6pt), {
+      text(size: 9.6pt, weight: 800, fill: teal)[A fridge that beeps when the door stays open]
+      v(2pt)
+      text(size: 9.3pt)[rule-follower or learner — and how do you know?]
+      v(2pt)
+      ruled-lines(2, lead: 7.4mm)
+    }),
+    block(width: 100%, radius: 4pt, fill: white, stroke: 0.8pt + ink-soft, inset: (x: 8pt, y: 6pt), {
+      text(size: 9.6pt, weight: 800, fill: teal)[A keyboard that predicts your next word]
+      v(2pt)
+      text(size: 9.3pt)[rule-follower or learner — and how do you know?]
+      v(2pt)
+      ruled-lines(2, lead: 7.4mm)
+    }),
+  )
+})
+
 // ---------------- home link ----------------
 #homelink[
   #task("T6-05", "AI Detective at Home", mode: "home", mins: "15")[
@@ -170,3 +207,6 @@ Machines learn in more than one way, and each way has a human story you already 
   ]
 ]
 
+#note("One for the road — my neighbourhood hunt")[Before Chapter 2, spot ONE machine near home that you now believe is a *learner*, not a rule-follower. What did it do that gave it away — and what data was it learning from?
+#v(3pt)
+#ruled-lines(2, lead: 8.2mm)]

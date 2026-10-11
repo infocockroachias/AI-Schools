@@ -10,7 +10,7 @@
   cover-title: "The Logic Under the Magic",
   cover-subtitle: "My case file for the maths that makes machines learn — and the reasons they fail",
   cover-meta: ("CLASS 9 · LEVEL 4 — REASON", "21 PAPER MISSIONS · 5 CHAPTERS · NO SCREEN NEEDED"),
-  author: "PRATIMAI Curriculum Team",
+  author: "PRATIMA AI Curriculum Team",
   license: license-page,
   ack: ack-text,
   ack-meta: "21 PAPER MISSIONS · 20 WORDS TO KEEP · 5 CHAPTERS · 1 BADGE EARNED",

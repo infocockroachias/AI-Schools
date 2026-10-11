@@ -91,7 +91,7 @@ A scoped problem names its *stakeholders* — every person or group who affects 
 #wordpower(2, "stakeholder", [Any person or group affected by a system, helpful or harmful.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST DRILL · WHO IS IN WHICH RING?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST'S DRILL · WHO IS IN WHICH RING?]
   v(3pt)
   text(size: 10.1pt)[Write D (decides), O (operates), S (serves) or B (bears) — some fit more than one ring; write both and say why:]
   v(3pt)

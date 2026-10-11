@@ -19,7 +19,7 @@ A greyscale image is a rectangle of numbers: 0 for pure black, 255 for pure whit
 
 #figure-visual("visuals/c10_ch2_convolution.png", [The full convolution move you are about to do by hand: kernel in, multiply-and-add, one response number out. Bright cells mean "pattern found here".])
 
-#task("T10-05", "Pixel Edge Hunt", mode: "pair", mins: "25", hands: true)[[
+#task("T10-05", "Pixel Edge Hunt", mode: "pair", mins: "25", hands: true)[
   The input grid below is a 6×6 greyscale patch with a dark-to-light edge running down the middle. Your kernel is the 3×3 edge detector from the figure: −1 on the border, 8 at the centre.
   #v(4pt)
   #grid(columns: (auto, auto, 1fr), column-gutter: 12pt,
@@ -50,7 +50,7 @@ A greyscale image is a rectangle of numbers: 0 for pure black, 255 for pure whit
   )
   #v(4pt)
   *Prediction before you run it:* where will the strongest response appear — and why there, not one column to the left? #ruled-lines(2, lead: 8.2mm)
-]]
+]
 #wordpower(11, "pixel", [One position in an image grid, holding a number for brightness — three numbers for colour.])
 #wordpower(12, "grayscale", [An image where each pixel holds a single brightness number from 0 to 255.])
 
@@ -58,14 +58,14 @@ A greyscale image is a rectangle of numbers: 0 for pure black, 255 for pure whit
 #sec(2, "From edges to objects: the idea of a CNN")
 One kernel finds one kind of pattern. A convolutional network stacks the idea: dozens of kernels find edges and blobs, the next layer combines edges into corners and textures, the next combines those into eye-shapes and wheel-shapes, and deeper layers answer the questions we care about — "is this a plant leaf or a diseased leaf?" Each layer's outputs are called a *feature map*: a new grid of numbers recording how strongly each pattern fired everywhere in the image. Nobody writes the kernels by hand any more; training discovers them. But the arithmetic you did in T10-05 is exactly what every one of those kernels does, billions of times.
 
-#task("T10-06", "Feature-Map Sketch", mode: "alone", mins: "15")[[
+#task("T10-06", "Feature-Map Sketch", mode: "alone", mins: "15")[
   A 5×5 image contains: a vertical dark edge on the left, a bright square top-right, and smooth grey elsewhere.
   #v(3.5pt)
   *a)* Sketch the feature map for a *vertical-edge kernel* — which cells fire strongly, which stay near zero? Mark them. #writebox(19mm)
   *b)* A second kernel hunts *bright corners*. Sketch its feature map — different cells now. #writebox(19mm)
   *c)* The next layer receives BOTH maps. What can it answer that either map alone could not? #ruled-lines(2, lead: 8.2mm)
   *d)* Your T10-05 kernel knew nothing about leaves. What, then, does a "plant disease classifier" actually have to be given — and by whom? #ruled-lines(2, lead: 8.2mm)
-]]
+]
 #wordpower(13, "kernel", [The small grid of weights slid across an image — one learned pattern-detector.])
 #wordpower(14, "feature map", [The grid of responses one kernel produces — where its pattern fired.])
 
@@ -73,7 +73,7 @@ One kernel finds one kind of pattern. A convolutional network stacks the idea: d
 #sec(3, "Teaching machines to read: clean the text first")
 A machine cannot count "The", "the" and "THE" as the same word until someone makes them the same. *Normalisation* is the laundry list: lowercase everything, strip punctuation, split off stop-words (the, is, at — words so common they carry no topic), and chop words to their stems (study, studies, studying → *studi-*). Boring, yes — and decisive: skip it, and half your counts are duplicated noise. Every serious text system, from spam filters to translation engines, begins with this same scrub.
 
-#task("T10-07", "Text Cleaner", mode: "pair", mins: "15", hands: true)[[
+#task("T10-07", "Text Cleaner", mode: "pair", mins: "15", hands: true)[
   Normalise these four messages exactly as a machine would — lowercase, punctuation stripped, stop-words marked out, stems chopped:
   #v(3.5pt)
   #dtable((" ", "Message"),
@@ -94,14 +94,14 @@ A machine cannot count "The", "the" and "THE" as the same word until someone mak
   )
   #v(4pt)
   *The judgement call:* "urgent" appears in M1 and M2, but means something different in each. What information did normalisation *throw away* — and how might that hurt a spam classifier? #ruled-lines(2, lead: 8.2mm)
-]]
+]
 #wordpower(15, "normalisation", [Cleaning text so machines can count it: lowercase, no punctuation, stop-words out, stems chopped.])
 
 // ---------------- 2.4 ----------------
 #sec(4, "Bag-of-words and TF-IDF: counting your way to meaning")
 After cleaning, a message becomes a *bag of words* — order lost, counts kept — placed side by side with every other message in a table: rows are messages, columns are words, cells are counts. From that table, *TF-IDF* asks the sharpening question: which words make THIS message different from the others? Term frequency says how often a word appears here; inverse document frequency discounts words that appear nearly everywhere (like "free" in a folder where every third message shouts it — or is it the reverse?). The arithmetic is one division and one logarithm you need not compute precisely — what matters is the *ratio logic*: common-in-this-message, rare-everywhere-else, means informative; common everywhere means nearly worthless.
 
-#task("T10-08", "Bag-of-Words & TF-IDF by Hand", mode: "pair", mins: "25", hands: true)[[
+#task("T10-08", "Bag-of-Words & TF-IDF by Hand", mode: "pair", mins: "25", hands: true)[
   Use the four *cleaned* messages from T10-07 (or the provided versions if your teacher hands them out).
   #v(3.5pt)
   *a)* Build the bag-of-words table: one row per message, one column per distinct content word, counts in the cells. (Choose your 8–10 columns as a class so all tables match.)
@@ -111,7 +111,7 @@ After cleaning, a message becomes a *bag of words* — order lost, counts kept �
   *c)* Underline the word with the *highest TF-IDF intuition* — frequent in one message, rare elsewhere. Which message does it identify? #ruled-lines(2, lead: 8mm)
   *d)* M2 contains "urgent" sincerely; M1 uses "URGENT!!!" as bait. Both bags contain *urgent* once. What did the bag-of-words model lose — and name one feature a smarter model might add back. #ruled-lines(2, lead: 8mm)
   *e)* A spam filter trained on these four messages gets a new one: "FREE FREE FREE prize claim now!!" Predict its label from your table, and give the table cell(s) that decide it. #ruled-lines(2, lead: 8mm)
-]]
+]
 #wordpower(16, "bag-of-words", [A table of word counts per message — order lost, frequency kept.])
 #wordpower(17, "TF-IDF", [A score that lifts words frequent here but rare elsewhere — the informative ones.])
 
@@ -119,7 +119,7 @@ After cleaning, a message becomes a *bag of words* — order lost, counts kept �
 #sec(5, "Script bots versus smart bots")
 Not every chatbot is an AI system, and the difference is testable. A *script bot* walks a tree a human drew: "press 1 for balance, press 2 for statements" — or its chat-window cousin, matching keywords to canned replies. Ask it something off the tree and it fails the same way every time. A *smart bot* predicts: it scores likely continuations from patterns in text it learned from, which is why it handles novelty — and why it can answer fluently and wrongly at once. The exam-style question is now an engineering one: *which does this task deserve?* Script bots are auditable, predictable and safe where the domain is closed; smart bots flex where language wanders — at the price of inventing, and of needing everything you will build in Chapter 3 to be judged honestly.
 
-#task("T10-09", "Script Bot vs Smart Bot", mode: "group", mins: "20")[[
+#task("T10-09", "Script Bot vs Smart Bot", mode: "group", mins: "20")[
   Draw both flow diagrams for a *school office enquiry bot* (admission dates, bus routes, fee queries, lost property).
   #v(4pt)
   #grid(columns: (1fr, 1fr), column-gutter: 8pt,
@@ -141,7 +141,7 @@ Not every chatbot is an AI system, and the difference is testable. A *script bot
   #v(5pt)
   *The design decision:* for THIS office, which bot would you ship — and name the one question a parent could ask that breaks your choice? #ruled-lines(2, lead: 8.4mm)
   *Group verdict:* one argument for script that your group could not refute, and one for smart. Keep both — they return in the Chapter 5 brief.
-]]
+]
 
 #myth("Bots understand language.")[They *map* language. A script bot matches patterns to canned replies; a smart bot predicts likely word sequences from statistics. Neither has a referent — no world the words point at. The proof is in T10-08: swap two synonyms a child handles effortlessly and watch the counts barely move. Understanding binds words to the world; models bind words to other words.]
 

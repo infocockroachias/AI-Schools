@@ -70,7 +70,7 @@ Here is the simplest honest answer to "how does a machine decide?" — *it compa
 
 // ---------------- 3.2 ----------------
 #sec(2, "The honest score: accuracy on a hidden test")
-You measured accuracy informally last year; now it gets a formula a builder can defend. *Accuracy = correct predictions ÷ total test cases × 100%.* Two rules make the number honest. First, the test set must be *hidden* during training — a machine graded on its own practice questions tells you nothing (you proved this in Class 7's Practice vs Exam). Second, one overall percentage can hide *which* cases fail — so serious builders also count failures *per group*. Accuracy answers "how often is it right?"; it never answers "right for whom?".
+You measured accuracy informally last year; now it gets a formula a engineer can defend. *Accuracy = correct predictions ÷ total test cases × 100%.* Two rules make the number honest. First, the test set must be *hidden* during training — a machine graded on its own practice questions tells you nothing (you proved this in Class 7's Practice vs Exam). Second, one overall percentage can hide *which* cases fail — so serious engineers also count failures *per group*. Accuracy answers "how often is it right?"; it never answers "right for whom?".
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
   text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRUE OR FALSE — ACCURACY EDITION]
@@ -106,9 +106,9 @@ You measured accuracy informally last year; now it gets a formula a builder can 
 }))
 
 #block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, inset: (x: 11pt, y: 8pt), {
-  text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[THE ACCURACY CONTRACT — BUYER AND BUILDER, ONE SENTENCE EACH]
+  text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[THE ACCURACY CONTRACT — BUYER AND ENGINEER, ONE SENTENCE EACH]
   v(2pt)
-  text(size: 10.1pt)[*The buyer will ask:* “accuracy on WHICH photos, counted HOW?” — *the builder will answer honestly:* #ruled-lines(2, lead: 8.2mm)]
+  text(size: 10.1pt)[*The buyer will ask:* “accuracy on WHICH photos, counted HOW?” — *the engineer will answer honestly:* #ruled-lines(2, lead: 8.2mm)]
 })
 
 #figure-visual("visuals/c8_ch3_tool-types.png", [The three no-code tool families with inputs, outputs and honest limits — the map T8-09 matches problems against.], width: 96%)
@@ -129,6 +129,14 @@ You measured accuracy informally last year; now it gets a formula a builder can 
     widths: (1.3fr, 1fr, 1fr),
   )
 })
+#v(5pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[THE MATCHING RULE, IN MY WORDS]
+  v(3pt)
+  text(size: 9.8pt)[Complete it once, from memory — no peeking at the strip above: "Start from the problem, not the tool, because …"]
+  v(3pt)
+  ruled-lines(1, lead: 8.2mm)
+})
 #task("T8-09", "Tool Match", mode: "pair", mins: "10")[
   Match each problem to its no-code tool type — image classifier, chatbot, or data predictor — and write its likely *input*, *output*, and one hard *limit*. The first row is started for you.
   #v(4pt)
@@ -147,7 +155,7 @@ You measured accuracy informally last year; now it gets a formula a builder can 
 #wordpower(11, "no-code tool", [A ready-made AI tool you train or use without writing any program.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[BUILDER DRILL · WHICH TOOL — AND WHAT COULD GO WRONG?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ENGINEER'S DRILL · WHICH TOOL — AND WHAT COULD GO WRONG?]
   v(3pt)
   text(size: 10.1pt)[For each promise from a (fictional) vendor, write the tool type and the sharpest thing a *Question-Habit* customer should ask before buying:]
   v(3pt)
@@ -218,7 +226,7 @@ Time for the full experience in miniature. In one mission you will train a class
 #thinkink([The nearest-example machine is basically "judge by closest match". One situation where that habit would be UNFAIR to a person is …, because …], lines: 2)
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[BUILDER DRILL · ACCURACY ARITHMETIC]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ENGINEER'S DRILL · ACCURACY ARITHMETIC]
   v(3pt)
   text(size: 10.1pt)[Compute each accuracy, then answer the honesty question below:]
   v(3pt)
@@ -258,7 +266,7 @@ Time for the full experience in miniature. In one mission you will train a class
     widths: (52mm, 26mm, 1fr),
   )
   v(3pt)
-  text(size: 9.3pt, fill: ink-soft, style: "italic")[Teams that write the loop down improve faster than teams that merely feel it. Three rows, three honest numbers — that is a builder's diary.]
+  text(size: 9.3pt, fill: ink-soft, style: "italic")[Teams that write the loop down improve faster than teams that merely feel it. Three rows, three honest numbers — that is a engineer's diary.]
 }))
 
 #chapter-checkpoint(3,

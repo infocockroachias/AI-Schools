@@ -10,7 +10,7 @@
   cover-title: "How Machines Learn",
   cover-subtitle: "My case file for training machines — and catching their mistakes",
   cover-meta: ("CLASS 7 · LEVEL 2 — SORT & PREDICT", "17 PAPER MISSIONS · 5 CHAPTERS · NO SCREEN NEEDED"),
-  author: "PRATIMAI Curriculum Team",
+  author: "PRATIMA AI Curriculum Team",
   license: license-page,
   ack: ack-text,
   ack-meta: "17 PAPER MISSIONS · 14 WORDS TO KEEP · 5 CHAPTERS · 1 BADGE EARNED",

@@ -160,3 +160,29 @@ Stage Summary:
 - Language tiers confirmed and enforced: 6-7 detective -> 8 builder -> 9 analyst -> 10 designer.
 - Visual pipeline standing: HTML-first in scripts/visuals_html/, registered in visualgeneration.md with AI regeneration prompts + aspect ratios; AI images can replace any PNG by file name without Typst edits.
 - Standing rules live in INSTRUCTIONS.md (whitespace audit, visual pipeline, language tiers, hands-on, git push).
+
+---
+Task ID: 8
+Agent: Super Z (main agent)
+Task: 9-point refinement round on all five handouts per user feedback (love symbol→AI symbol, no toolchain mentions, VLM check of HTML figures, "Say it"→"Read it", icons for 6/7, per-class roles, vocab heading tiers, Human-vs-AI activities, preface/acknowledgements/licence rewrite) + rebuild, QA, whitespace convergence, sync, commit+push.
+
+Work Log:
+- Environment recovery: reinstalled Typst 0.15.1 CLI; machiatto+suboutline packages re-primed.
+- VLM sweep of all 13 HTML figure pages in the real PDFs: all readable; sweep surfaced real text bugs — c8 p12 duplicated sentence, c9 p31 duplicated clause with stray `**`, and 20 literal `[`/`]` bracket leaks in c10 task bodies (`)[[[`/`)[[` opener pattern) — all fixed programmatically with opener/closer pairing; scan_text_bugs.py now guards this class of bug.
+- pixel-heart → pixel-ai robot (two-tone visor robot, 14×11 grid, `pixel-ai()`) in all five templates (title + acknowledgements); metadata keywords cleaned.
+- Front matter rewritten in all five: licence = © PRATIMA AI all rights + collaboration-agreement paragraph + new MAY/MAY-NOT table; imprint (Author = PRATIMA AI · Research & Curriculum Team, Publisher = PRATIMA AI, First Edition · 1.0); colophon de-toolkitted; acknowledgements = pilot teachers + three-teams paragraph (AI research/academic/child-psychology, brick by brick) + role-fitted closing; preface psychology note ("Why this book works the way it does") + Question-Habit practice strip; preface hard pagebreaks removed so adults note + journey map flow.
+- "Say it three times today" → "Read it three times today" in all Word Power cards (10 spots).
+- Role pass: c7 detective→AI Trainer (incl. ALL-CAPS DETECTIVE DRILL→TRAINER'S DRILL, Chart Detective→Chart Traps, Guest List Detective→Guest List Audit), c8 builder→AI Engineer (ENGINEER'S DRILL, AI Engineer's Certificate, arc "the investigator becomes the engineer"), c9 ANALYST'S DRILL + AI Analyst's Certificate, c10 AI Designer's Certificate + kit fix + two HTML visual labels (fair-data "engineer's map", four-principles "DESIGNER'S HABIT") re-rendered via shot.py; visualgeneration.md registry copies updated.
+- Icons (c6/c7): fontawesome pkg broken on Typst 0.15 → self-contained ico() helper + FA6-Free-Solid font bundled (fonts/fa6-solid.otf, family "Font Awesome 6 Free Solid"); clock on mission timers + warm-up, star QUICK WIN, bulb notes, book Word Power, ban Myth Buster, work-mode chips person/pair/group/board/home.
+- Vocab strip headings aged: TERMS YOU'LL BUILD WITH (c8) / ANALYSE WITH (c9) / DESIGN WITH (c10); 6-7 keep WORDS YOU'LL MEET HERE.
+- huva() component added to all five templates + flagship Human-vs-Machine activity per class: c6 ch1 "One example or a thousand?", c7 ch1 "Two learners side by side", c8 ch4 "The two essays — who wrote which?" (user's essay-forensics example), c9 ch3 "Pattern vs proof", c10 ch4 "Judgement vs optimisation".
+- Whitespace convergence loop (run_audit_c8.py per book): preface orphans filled with practice strips; journey-map tails filled with My Starting Line pledge + pocket question cards + flip-test/model-shelf strips; chapter strands filled with purposeful write-ins (c6 30-second sort + hunt + homelink; c7 predict/toolkit/question/survey-planner/family strips; c8 loop-spotter/match-rule/court-prep; c9 three-faces/verify-receipt/road-strip/flip-test; c10 model-shelf/model-map-recheck/integrity-line). Final worst pages all ≥64.9% (tails in the accepted 65-70 band). One multibyte-corruption lesson: a partial '[m' slice mimicked ANSI escapes in terminal display — fixed by byte-level repair.
+- QA: qa_machiatto.py — c6/c7/c8/c9/c10 all 16/16 PASS. Page counts: c6 52pp, c7 62pp, c8 70pp, c9 71pp, c10 62pp.
+- INSTRUCTIONS.md rulebook: language-tier table rewritten (AI role per class), new §9 production front-matter rule (no toolchain, PRATIMA AI licence, pixel-AI robot), §10 Read-it phrasing + vocab tiers, §11 icon rule, §12 Human-vs-Machine rule, §13 preface anatomy; copies synced to all class typst folders.
+- Sync: live sources → repo class folders (incl. stale c8/c9 typst replaced with visual+register edition), delivery PDFs → repo roots + download/ + public/files + repo webapp mirror; source zips rebuilt (fonts+visuals+registry included, PDFs excluded); stale zip names removed; library.ts page counts + certificate names updated (dev server hot-reloads); READMEs updated.
+- GitHub: committed 9d478e2 and pushed to infocockroachias/AI-Schools main (124 files).
+
+Stage Summary:
+- All five handouts rebuilt on the refinement contract; QA 16/16 × 5; whitespace converged; every user point addressed (symbols, toolchain, figure visibility, Read-it, icons, roles, vocab tiers, Human-vs-AI, preface/ack/licence).
+- Standing rules extended in INSTRUCTIONS.md; webapp serves 52/62/70/71/62-page editions with updated cards.
+- main @ 9d478e2 on GitHub; continuous commit+push rule remains in force.

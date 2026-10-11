@@ -89,10 +89,10 @@
 
 #grid(columns: (auto, 1fr), column-gutter: 9pt, align: (center, left),
   box(fill: amber, radius: 0pt, width: 11mm, height: 11mm, align(center + horizon, text(fill: white, size: 19pt)[?])),
-  { text(font: f-display, size: 21pt, weight: 800, fill: teal)[How to use this handout]; v(0.5pt); text(size: 9.6pt, fill: ink-soft, style: "italic")[Read me first, Detective.] },
+  { text(font: f-display, size: 21pt, weight: 800, fill: teal)[How to use this handout]; v(0.5pt); text(size: 9.6pt, fill: ink-soft, style: "italic")[Read me first, Trainer.] },
 )
 #v(9pt)
-#text[Welcome back, Detective! Last year you learned to *spot* smart machines. This year you go inside their workshop: you will find out how a machine learns *without being told the rules* — and you will train a few learners yourself. You will still not need a computer, a phone or an app. Your tools are the same as ever: paper, pencils, cards, your classmates, and your three questions. Every chapter hands you missions (we call them *tasks*), evidence to examine, and empty spaces to fill with what you discover. Good investigators write everything down, so this book belongs to you: write, draw, tick, cross out and try again.]
+#text[Welcome back, Trainer! Last year you learned to *spot* smart machines. This year you go inside their workshop: you will find out how a machine learns *without being told the rules* — and you will train a few learners yourself. You will still not need a computer, a phone or an app. Your tools are the same as ever: paper, pencils, cards, your classmates, and your three questions. Every chapter hands you missions (we call them *tasks*), evidence to examine, and empty spaces to fill with what you discover. Good investigators write everything down, so this book belongs to you: write, draw, tick, cross out and try again.]
 #v(7pt)
 
 // three steps
@@ -120,8 +120,8 @@
 #v(4pt)
 #grid(columns: (auto, 1fr), column-gutter: 8pt, row-gutter: 3.6pt, align: (left, left),
   chip[ALONE],  text(size: 9.4pt)[your own case — you investigate by yourself],
-  chip[PAIR],   text(size: 9.4pt)[two detectives — share one book, take turns reading codes aloud],
-  chip[GROUP],  text(size: 9.4pt)[three to four detectives — decide roles before you start],
+  chip[PAIR],   text(size: 9.4pt)[two trainers — share one book, take turns reading codes aloud],
+  chip[GROUP],  text(size: 9.4pt)[three to four trainers — decide roles before you start],
   chip[CLASS],  text(size: 9.4pt)[the whole class plays together, led by your teacher],
   chip[HOME],   text(size: 9.4pt)[a mission for home — show a grown-up what you discovered],
 )

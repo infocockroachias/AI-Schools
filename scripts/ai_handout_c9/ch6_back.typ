@@ -199,7 +199,7 @@
     align(center)[
       #text(size: 9pt, weight: 800, fill: amber-deep, tracking: 0.22em)[PRATIMAI · AI HANDOUTS · CLASS 9]
       #v(3pt)
-      #text(font: f-display, size: 20.9pt, weight: 800, fill: teal)[My Analyst's Certificate]
+      #text(font: f-display, size: 20.9pt, weight: 800, fill: teal)[My AI Analyst's Certificate]
       #v(5pt)
       #text(size: 10.3pt, style: "italic")[This certifies that analyst]
       #v(5pt)

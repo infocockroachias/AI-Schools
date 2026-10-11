@@ -39,7 +39,7 @@ The pipeline below is the whole series in one line. Stages 1–4 are the enginee
   )
 })
 
-#task("T10-19", "Responsible AI Design Brief", mode: "group", mins: "3–4 periods", hands: true)[[
+#task("T10-19", "Responsible AI Design Brief", mode: "group", mins: "3–4 periods", hands: true)[
   One problem your team genuinely cares about — school, neighbourhood, town. Build the brief in two parts.
   #v(4pt)
   #grid(columns: (1fr, 1fr), column-gutter: 8pt, row-gutter: 7pt,
@@ -65,13 +65,13 @@ The pipeline below is the whole series in one line. Stages 1–4 are the enginee
   )
   #v(5pt)
   *Budget line (every real brief has one):* what does maintaining this cost — data refreshes, audits, appeals? Name the cheapest thing you would cut FIRST when money runs out, and what that cut does to your metric. #ruled-lines(2, lead: 8.2mm)
-]]
+]
 
 // ---------------- 5.2 ----------------
 #sec(2, "The Board of Judges")
 The pitch is reasoned writing under pressure. Five minutes per team: the claim, the evidence, the limits — and the board's job is not to be nice; it is to find the assumption the team has not tested. Every question lands on one of the seven stages, which is why you drew them.
 
-#task("T10-20", "Board of Judges Pitch", mode: "class", mins: "25")[[
+#task("T10-20", "Board of Judges Pitch", mode: "class", mins: "25")[
   *For the pitching team (5 minutes):* the problem in one sentence · the metric you chose and the error you accept · the gate you almost failed, and what you changed · the limit you discovered yourself.
   #v(3pt)
   #ruled-lines(4, lead: 8.2mm)
@@ -87,18 +87,18 @@ The pitch is reasoned writing under pressure. Five minutes per team: the claim, 
   )
   #v(4pt)
   *The verdict rule:* the board may send a team back through a gate, but every "back" must name the stage and the reason. Write the board's verdict here — including the assumption the team had NOT tested: #ruled-lines(2, lead: 8.2mm)
-]]
+]
 
 // ---------------- 5.3 ----------------
 #sec(3, "Where next: your subject and career map")
 The series ends by turning the map toward you. The AI-literate Class 10 student does not have to become an engineer; they have to become the person in the room who can ask the seven questions and read the four numbers. Every board subject you are choosing feeds that person: mathematics feeds the metrics, biology feeds the screening cases, civics feeds the governance debates, languages feed the text systems, economics feeds the budgets.
 
-#task("T10-21", "Where Next? Subject & Career Map", mode: "alone", mins: "15", win: true)[[
+#task("T10-21", "Where Next? Subject & Career Map", mode: "alone", mins: "15", win: true)[
   *a)* From your 10 "I can" statements (front of this book), star the TWO you are already *Proficient* at. Evidence, not feeling — name the task that proves each. #writebox(20mm)
   *b)* Circle the ONE you most want at *Advanced* by year-end. What would you design or audit to get there? #ruled-lines(2, lead: 8.2mm)
   *c)* Your subject choices for the next two years — and the ONE chapter of this series each subject will inherit from you. #writebox(20mm)
   *d)* One line to the designer you are becoming: what will you refuse to build, whatever the salary? #ruled-lines(2, lead: 8.2mm)
-]]
+]
 
 #selfcheck(
   [I can run the seven-stage brief from scope to pitch without skipping a gate],

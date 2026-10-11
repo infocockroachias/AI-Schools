@@ -10,12 +10,7 @@
 #let license-page = {
   front-heading[License]
   text(size: 10.9pt)[
-    This handbook is © #datetime.today().display("[year]") the PRATIMAI Curriculum Team. Student-facing
-    content — missions, stories, activities and illustrations-as-diagrams — is licensed under the
-    *Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International* licence (CC BY-NC-SA 4.0):
-    you may share and adapt it for classroom use with attribution, for non-commercial purposes, under the
-    same licence. The Typst source files are released under the MIT licence so that any school can rebuild,
-    translate and localise the book for its own learners.
+    This handbook is © #datetime.today().display("[year]") *PRATIMA AI*. All rights reserved. The title, the missions, the activities, the stories, the diagrams and the design of this series are the intellectual property of PRATIMA AI. No part of this book may be copied, reproduced, sold, redistributed or republished in any form without the written permission of PRATIMA AI. Schools and educators who would like to collaborate with the series — through adoption programmes, translations or local editions — are warmly welcome to contact PRATIMA AI and sign a collaboration agreement.
   ]
   v(2pt)
   text(size: 10.9pt)[
@@ -27,10 +22,10 @@
     text(font: f-display, size: 9.2pt, weight: 800, fill: teal-deep, tracking: 0.12em)[THE LICENCE IN PLAIN WORDS]
     v(4pt)
     dtable(("You MAY", "You may NOT"),
-      ([ photocopy pages for your class or study group ], [ sell this book or any copy of it ]),
-      ([ adapt missions for your learners and share them ], [ remove the credit lines or the licence ]),
-      ([ translate the book and keep the same licence ], [ use it to advertise any product or service ]),
-      ([ point other schools to the free source files ], [ claim the activities are your own invention ]),
+      ([ photocopy pages for use in your own registered classroom ], [ sell this book or any copy of it ]),
+      ([ use the missions with your students, on paper ], [ remove the credit lines or the licence ]),
+      ([ recommend the series to other schools and teachers ], [ claim the activities are your own invention ]),
+      ([ contact PRATIMA AI to sign a collaboration agreement ], [ use the series to advertise any product or service ]),
       widths: (1fr, 1fr),
     )
   })
@@ -38,21 +33,15 @@
   table(stroke: none, columns: 2, inset: (y: 3.2pt),
     [*Series:*], [PRATIMAI · AI Handouts],
     [*Title:*], [How Machines Learn — Class 7 · Level 2 · SORT & PREDICT],
-    [*Author:*], [PRATIMAI Curriculum Team],
+    [*Author:*], [PRATIMA AI · Research & Curriculum Team],
     [*Publish Date:*], [#datetime.today().display()],
-    [*Published by:*], [PRATIMAI | AI-Schools],
-    [*Edition:*], [Machiatto Edition 1.0],
+    [*Published by:*], [PRATIMA AI],
+    [*Edition:*], [First Edition · 1.0],
   )
   v(10pt)
   block(width: 100%, radius: 5pt, stroke: 0.7pt + ink-soft, fill: white, inset: (x: 11pt, y: 8pt), {
     text(size: 9.4pt, fill: ink-soft)[
-      Set in *Nunito* and *Baloo 2* on warm paper stock, typeset with Typst using the
-      *Machiatto* template — which implements the MoKa Reads publication specification:
-      title page, license, acknowledgements, preface, contents, then chapters opening
-      with a summary and a mini table of contents. Both typefaces are used under the
-      SIL Open Font Licence; the template ships under the MIT licence. Every chart, grid
-      and pixel drawing in this book is generated in pure Typst code — no images were
-      imported, so every page prints crisply at any size.
+      Set in *Nunito* and *Baloo 2* on warm paper stock. Both typefaces are used under the SIL Open Font Licence. Every chart, grid, diagram and pixel drawing in this book is drawn as crisp vector art, so each page prints cleanly at any size.
     ]
   })
 }
@@ -66,18 +55,12 @@
   the room go quiet with thinking, which ones made it erupt in argument, and where the
   instructions needed one more example. Every one of those notes made a page here better.
 
-  To the curriculum reviewers who guarded the "unplugged" promise on every page, thank you.
-  You caught the three places where a task quietly expected a phone, and you were right:
-  an investigator's tools are paper, pencils, patience and other people. And to the grown-ups at
-  home who will be asked "how does the machine know THAT?" at the dinner table — this book
-  is for those conversations, too. The best missions end with a child teaching an adult.
+  This series was built brick by brick by three teams working as one. The *AI research team* checked every explanation against how machines really learn, so nothing in this book is a myth wearing a friendly font. The *academic team* walked every chapter beside the school syllabus, so each game quietly trains a skill that examinations will ask for later. And the *child-psychology team* shaped the pace of every page: short missions for young attention, quick wins that open every chapter, confidence circles that make honesty feel safe, and space to write on every task — because an idea worked by the hand is remembered by the mind. Alongside them, curriculum reviewers guarded the "unplugged" promise: not one mission in this series asks for a phone, an account or a password.
 
-  Thanks as well to the open-source community behind Typst and the Machiatto template
-  that gives this book its typesetting, and to the type designers of Nunito and Baloo 2,
-  whose friendly letterforms keep pages of hard thinking feeling light. Finally, to
-  the investigator holding this book: the reviewers never got to meet you, but every
-  confidence circle, empty line and blank chart in here was left empty on purpose —
-  because the last author of this case file is you.
+  Thanks go as well to the designers of Nunito and Baloo 2, whose friendly letterforms keep
+  pages of hard thinking feeling light. And finally, to the AI Trainer holding this book:
+  every confidence circle, empty line and blank chart in here was left empty on purpose —
+  because the last author of this training log is you.
 ]
 
 // ------------------------------------------------------------
@@ -86,8 +69,13 @@
 #let preface-pages = {
   front-heading[How to Use This Handbook]
 
-  text[Welcome back, Detective! Last year you learned to *spot* smart machines. This year you go inside their workshop: you will find out how a machine learns *without being told the rules* — and you will train a few learners yourself. You will still not need a computer, a phone or an app. Your tools are the same as ever: paper, pencils, cards, your classmates, and your three questions. Every chapter hands you missions (we call them *tasks*), evidence to examine, and empty spaces to fill with what you discover. Good investigators write everything down, so this book belongs to you: write, draw, tick, cross out and try again.]
+  text[Welcome back, Trainer! Last year you learned to *spot* smart machines. This year you go inside their workshop: you will find out how a machine learns *without being told the rules* — and you will train a few learners yourself. You will still not need a computer, a phone or an app. Your tools are the same as ever: paper, pencils, cards, your classmates, and your three questions. Every chapter hands you missions (we call them *tasks*), evidence to examine, and empty spaces to fill with what you discover. Good investigators write everything down, so this book belongs to you: write, draw, tick, cross out and try again.]
   v(8pt)
+
+  note("Why this book works the way it does")[
+    #text(size: 9.8pt)[Your brain learns by *doing*, not by reading about doing. That is why every chapter opens with a quick win, explains only after you have tried, and asks you to *write* — writing pulls an idea from half-known to known. The confidence circles are not decoration: asking *how sure am I?* is a real thinking skill (psychologists call it metacognition), and it is the same habit scientists use. Missions are short because attention works in sprints. Ideas return in later chapters on purpose — like meeting a stranger twice, until they feel like a friend. And nothing here can be failed: a wrong answer you go on to check is just a clue you found early.]
+  ]
+
 
   // three steps
   grid(columns: (1fr, 1fr, 1fr), column-gutter: 7pt,
@@ -113,11 +101,11 @@
   text(font: f-display, size: 15pt, weight: 800, fill: teal)[The work-mode labels]
   v(4.5pt)
   grid(columns: (auto, 1fr), column-gutter: 9pt, row-gutter: 4pt, align: (left, left),
-    chip[ALONE],  text(size: 10.3pt)[your own case — you investigate by yourself],
-    chip[PAIR],   text(size: 10.3pt)[two detectives — share one book, take turns reading codes aloud],
-    chip[GROUP],  text(size: 10.3pt)[three to four detectives — decide roles before you start],
-    chip[CLASS],  text(size: 10.3pt)[the whole class plays together, led by your teacher],
-    chip[HOME],   text(size: 10.3pt)[a mission for home — show a grown-up what you discovered],
+    { ico("user", size: 9pt, fill: teal); h(4.5pt); chip[ALONE] },  text(size: 10.3pt)[your own case — you investigate by yourself],
+    { ico("pair", size: 9pt, fill: teal); h(4.5pt); chip[PAIR] },   text(size: 10.3pt)[two trainers — share one book, take turns reading codes aloud],
+    { ico("group", size: 9pt, fill: teal); h(4.5pt); chip[GROUP] },  text(size: 10.3pt)[three to four trainers — decide roles before you start],
+    { ico("class", size: 9pt, fill: teal); h(4.5pt); chip[CLASS] },  text(size: 10.3pt)[the whole class plays together, led by your teacher],
+    { ico("home", size: 9pt, fill: teal); h(4.5pt); chip[HOME] },   text(size: 10.3pt)[a mission for home — show a grown-up what you discovered],
   )
   v(10pt)
 
@@ -128,7 +116,7 @@
       text(font: f-display, fill: ink-soft, weight: 800, size: 8.1pt, tracking: 0.12em)[GROUP · 15 MIN],
     )
     #v(3.5pt)
-    #box(width: 5pt, height: 5pt, fill: amber, baseline: 28%) #h(4pt) #text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em)[QUICK WIN] sits at the right edge of the easier missions.
+    #ico("star", size: 8.4pt) #h(4pt) #text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em)[QUICK WIN] sits at the right edge of the easier missions.
     #v(4.5pt)
     Every mission has a code like #text(weight: 800)[T7-01] — *T7* means this Class 7 handout, and *01* is the mission number, so your teacher can say "open Task T7-11". The #text(fill: teal, weight: 800)[GROUP] label tells you who to work with, #text(fill: teal, weight: 800)[15 MIN] is your time limit, and #text(fill: amber-deep, weight: 800)[QUICK WIN] marks an easy first success. Chapters 1 and 2 both open with a Quick Win to warm up your investigator muscles — nobody fails in this book, because every attempt teaches a clue.
   ]
@@ -137,8 +125,24 @@
   note("The Question Habit — your superpower")[
     Three questions make you a sharper investigator than any machine: *"How do I know?"* · *"What is missing?"* · *"Who made this?"* This year they get a fourth companion you will use on every chart and every claim: *"What is the trick here?"* Use all four in this book, on the internet, in the news — and whenever a machine gives you an answer that looks too perfect.
   ]
+  v(9pt)
+  block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, inset: (x: 11pt, y: 8pt), {
+    text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[PRACTISE THE FOUR QUESTIONS — RIGHT NOW]
+    v(3pt)
+    text(size: 9.8pt)[A forward on your family group says: "New AI app predicts exam questions with 95% accuracy!" Test the claim with your four questions:]
+    v(4pt)
+    grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 5.5pt, align: (left, horizon),
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9.3pt, "1")),
+      text(size: 9.7pt)[*How do I know?* — Who measured the 95%, and on what? #ruled-lines(1, lead: 7.8mm)],
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9.3pt, "2")),
+      text(size: 9.7pt)[*What is missing?* — Which exam, which year, how many tries? #ruled-lines(1, lead: 7.8mm)],
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9.3pt, "3")),
+      text(size: 9.7pt)[*Who made this?* — Who profits if you believe it? #ruled-lines(1, lead: 7.8mm)],
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9.3pt, "4")),
+      text(size: 9.7pt)[*What is the trick here?* — Name one way the number could be true AND useless. #ruled-lines(1, lead: 7.8mm)],
+    )
+  })
 
-  pagebreak()
 
   // ---------- note for grown-ups ----------
   front-heading[A Note for Grown-Ups]
@@ -187,7 +191,6 @@
     v(3pt)
     text(size: 9.8pt)[Watch for these quiet changes — they matter more than any correct answer: your child *asks how sure* they are before answering · they *check a second source* without being told · they *change their mind* when the evidence changes — and say why · they name a chart's *trick*, not just its picture · they explain a machine's *benefit AND limit* in one sentence. When you spot one, name it: “That is exactly what investigators do.”]
   })
-  pagebreak()
 
   // ---------- journey map ----------
   front-heading[My AI Journey Map]
@@ -246,4 +249,25 @@
     [apply three checks — *source*, *evidence*, *emotion* — to catch fake or edited content],
     [compare solving a task with fixed if-then rules vs learning from examples],
   ))
+  v(13pt)
+  block(width: 100%, breakable: false, radius: 5pt, stroke: 1.1pt + ink, fill: white, inset: (x: 12pt, y: 9pt), {
+    grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, horizon, right),
+      ico("seed", size: 10.5pt, fill: amber-deep),
+      text(font: f-display, size: 12.4pt, weight: 800, fill: teal)[MY STARTING LINE — a pledge to myself],
+      text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.12em)[2 MIN],
+    )
+    v(4.5pt)
+    text(size: 10.1pt)[Fill this in before Chapter 1 — you will read it again on the last page and check the evidence against the promise.]
+    v(5pt)
+    text(size: 10.1pt)[Two things I can already do with a learning machine:]; ruled-lines(1, lead: 8.6mm)
+    v(4pt)
+    text(size: 10.1pt)[One question about HOW machines learn that I want answered this year:]; ruled-lines(1, lead: 8.6mm)
+    v(4pt)
+    text(size: 10.1pt)[One habit I promise to keep — write everything down, even the wrong guesses:]; ruled-lines(1, lead: 8.6mm)
+    v(6pt)
+    grid(columns: 2, column-gutter: 16pt,
+      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+    )
+  })
 }

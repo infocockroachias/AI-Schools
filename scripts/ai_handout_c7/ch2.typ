@@ -18,7 +18,7 @@
 In Class 6 you proved that a picture is really a grid of numbers. But seeing is more than storing numbers — a useful machine must *decide* from them, and for that it computes *features*: useful clues such as “this edge is here”, “this patch is dark”, “two lines meet at a corner”. A camera does not see a cat. It sees thousands of numbers, then features, then — if enough cat-like features line up — it predicts *cat*. The picture never enters any machine the way it enters your eyes. Today you will be the camera, and you will feel exactly what is missing.
 
 #task("T7-06", "Be the Camera", mode: "pair", mins: "15", win: true)[
-  Detective A looks at the *number grid* below — it is a photo, exactly as a machine stores it. Detective B looks only at the *empty grid*. A must describe the photo using *numbers only* — no shapes, no words like “heart” or “line”. For example: “Row 1: 0 0 0 0 0 1.” B shades the cells that A's numbers say are 1. Then place the grids side by side.
+  Trainer A looks at the *number grid* below — it is a photo, exactly as a machine stores it. Trainer B looks only at the *empty grid*. A must describe the photo using *numbers only* — no shapes, no words like “heart” or “line”. For example: “Row 1: 0 0 0 0 0 1.” B shades the cells that A's numbers say are 1. Then place the grids side by side.
   #v(4pt)
   #grid(columns: (auto, auto, 1fr), column-gutter: 10mm, align: (center, center, top),
     { text(size: 9pt, weight: 800, fill: teal, tracking: 0.1em)[PHOTO AS NUMBERS (A)]; v(2.5pt); pixel-grid(size: 6, cell: 8.2mm, numbers: (
@@ -129,7 +129,7 @@ Translation looks easy: swap each word for its counterpart. But you speak a lang
 #note("Translator's tip")[A good translation machine does not translate *words* — it translates *meaning*. It reads the whole sentence (and often the ones before it) to find the context, then rebuilds the idea in the new language. Word-by-word is how a machine fails; context is how a human wins.]
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · THE IDIOM RESCUE KIT]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · THE IDIOM RESCUE KIT]
   v(2.5pt)
   text(size: 10.1pt)[Idioms are word-tricks: the meaning lives in the *context around* the words, not inside them. A counting machine has no context — you do. Decode these the way a human would, then say what a machine would need to know:]
   v(3pt)
@@ -144,7 +144,7 @@ Translation looks easy: swap each word for its counterpart. But you speak a lang
 }))
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH NUMBERS DID THE MACHINE USE?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · WHICH NUMBERS DID THE MACHINE USE?]
   v(3pt)
   dtable(("The machine is…", "Camera, reader or recommender?"),
     ([counting how often the word FREE appears], [ ]),
@@ -199,7 +199,7 @@ Translation looks easy: swap each word for its counterpart. But you speak a lang
     widths: (22mm, 1fr, 44mm, 1fr),
   )
   v(3pt)
-  text(size: 9.5pt, fill: ink-soft, style: "italic")[Bonus detective move: for any READ machine above, write the one *watch-word* it probably counts — then imagine a message that fools it.]
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[Bonus trainer move: for any READ machine above, write the one *watch-word* it probably counts — then imagine a message that fools it.]
 }))
 
 #homelink[

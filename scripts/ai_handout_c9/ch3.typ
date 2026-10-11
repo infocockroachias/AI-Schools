@@ -17,7 +17,7 @@
 #figure-visual("visuals/c9_ch3_maths-mindmap.png", [Chapter 3 as one map: six plain ideas, each met through an experience before a definition.], width: 92%)
 
 #sec(1, "Three averages and a liar")
-You met averages long ago; now meet their arguments. The *mean* adds everything and divides — sensitive to every value, especially extremes. The *median* stands in the middle of the sorted list — blind to how extreme the extremes are. The *mode* is the most frequent value — the only average that works on categories. And the *range* (highest minus lowest) is the crudest measure of *spread* — how scattered the data is. A machine summarising "its users" faces exactly these choices, and each choice can be dressed up as THE answer. The analyst's defence is to ask: *which average, and what does it throw away?*The analyst's defence is to ask: *which average, and what does it throw away?*
+You met averages long ago; now meet their arguments. The *mean* adds everything and divides — sensitive to every value, especially extremes. The *median* stands in the middle of the sorted list — blind to how extreme the extremes are. The *mode* is the most frequent value — the only average that works on categories. And the *range* (highest minus lowest) is the crudest measure of *spread* — how scattered the data is. A machine summarising "its users" faces exactly these choices, and each choice can be dressed up as THE answer. The analyst's defence is to ask: *which average, and what does it throw away?*
 #v(4pt)
 #block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
   text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[THREE AVERAGES, THREE JOBS — PRE-COMPUTE, THEN ARGUE]
@@ -52,7 +52,7 @@ You met averages long ago; now meet their arguments. The *mean* adds everything 
 #wordpower(13, "mode", [The value that appears most often in the data.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST DRILL · WHICH AVERAGE WOULD YOU USE?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST'S DRILL · WHICH AVERAGE WOULD YOU USE?]
   v(3pt)
   text(size: 10.1pt)[Pick the average that answers the question most honestly — mean, median or mode — and defend it in a line:]
   v(3pt)
@@ -89,7 +89,7 @@ A machine that says "92% confident" is making a *probability* claim — and prob
 #wordpower(14, "probability", [Favourable outcomes divided by all equally likely outcomes.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST DRILL · WHAT IS THE REAL PROBABILITY?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST'S DRILL · WHAT IS THE REAL PROBABILITY?]
   v(3pt)
   dtable(("The setup", "Favourable ÷ all", "As a percentage"),
     ([A bag has 3 red, 4 blue, 5 green beads. Red?], [ ], [ ]),
@@ -132,7 +132,7 @@ Here is regression at analyst level. Scatter real data — say, hours of study a
 #wordpower(16, "correlation", [Two measures moving together — which does not prove one causes the other.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST DRILL · CORRELATION OR CAUSATION?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST'S DRILL · CORRELATION OR CAUSATION?]
   v(3pt)
   text(size: 10.1pt)[Each claim spots a real correlation — then smuggles in causation. Mark C (causation claimed but unproven) or OK, and name the sneaky alternative where you can:]
   v(3pt)
@@ -263,4 +263,14 @@ The final mechanism is the analyst's party trick: turn a data table into an *alg
   [Study hours vs marks: the line predicts 10 hours → 95 marks. Name BOTH traps in that prediction.],
   [In T9-13, mango 3 changed its vote when k changed from 1 to 3. What does that teach about “the machine's answer”?],
 )
+
+#huva([Pattern vs proof], [The nearest-neighbour vote finds an answer; a proof explains why the answer must be true. This chapter you did both by hand — now name the difference.],
+  [Reasoning carries beyond the data: prove the angle sum of a triangle once and it holds for every triangle that ever will exist — even ones nobody will ever measure.],
+  [The k-vote is statistics: only as good as its examples, silent about its "why", and confidently wrong outside its data with no way to notice.],
+  (
+    [One question from this chapter where your REASONING beats the pattern-vote — and why:],
+    [A machine with a million labelled triangles still cannot prove the angle sum. What exactly is missing?],
+    [Where would you still prefer the machine's vote over a human hunch? Defend it with a number:],
+  ))
+
 #case-journal(lines: 3, label: "MY CASE JOURNAL — today's sharpest clue about the mathematics under the machine")

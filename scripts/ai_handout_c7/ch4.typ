@@ -15,7 +15,7 @@
 
 // ---------------- 4.1 ----------------
 #sec(1, "One-sided examples, unfair machines")
-In Class 6 you taught an alien the idea of *mango* using only green mangoes — and the alien concluded that all mangoes are green. Machine A in T7-05 fell for three leaves. Here is the grown-up version of the same trap: when the *examples behind a machine* are one-sided, the machine's predictions treat everyone outside that side unfairly. Nobody *programmed* the unfairness. It walked in quietly, inside the data. This is called *bias*, and a detective who understands it can spot it — and propose a fix.
+In Class 6 you taught an alien the idea of *mango* using only green mangoes — and the alien concluded that all mangoes are green. Machine A in T7-05 fell for three leaves. Here is the grown-up version of the same trap: when the *examples behind a machine* are one-sided, the machine's predictions treat everyone outside that side unfairly. Nobody *programmed* the unfairness. It walked in quietly, inside the data. This is called *bias*, and a trainer who understands it can spot it — and propose a fix.
 
 #task("T7-13", "The Unfair Machine", mode: "group", mins: "20")[
   A company built a *Uniform Suggester*: upload a school photo, and the app confirms your school's uniform. It was trained on 5,000 photos collected from three nearby schools — every one of them wears a *white shirt and grey trousers or skirt*. Then students of Riverdale School, whose uniform is a *blue pinafore*, tried the app.
@@ -49,7 +49,7 @@ In Class 6 you taught an alien the idea of *mango* using only green mangoes — 
 }))
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · SPOT THE MISSING]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · SPOT THE MISSING]
   v(3pt)
   dtable(("The system was trained on…", "Who is missing — and what could go wrong for them?"),
     ([A voice assistant trained only on adult voices], [ ]),
@@ -61,7 +61,7 @@ In Class 6 you taught an alien the idea of *mango* using only green mangoes — 
   )
 }))
 
-#note("Detective's note")[Notice something important: the app was *not told* to prefer white shirts. Bias is not usually a bad decision somebody made — it is a *decision nobody noticed they made*: which schools, which cameras, which streets, which names ended up in the training set. That is why fairness must be *checked*, not assumed.]
+#note("Trainer's note")[Notice something important: the app was *not told* to prefer white shirts. Bias is not usually a bad decision somebody made — it is a *decision nobody noticed they made*: which schools, which cameras, which streets, which names ended up in the training set. That is why fairness must be *checked*, not assumed.]
 
 // ---------------- 4.2 ----------------
 #sec(2, "Fake and edited content: three checks")
@@ -86,7 +86,7 @@ Class 6 gave you two checks for suspicious content: *who made this?* and *what i
   v(3pt)
   text(size: 10.2pt, style: "italic")[“Parents: the district is cancelling next Friday's exam! I know someone in the education office. Share with every class group NOW!”]
   v(3pt)
-  dtable(("Check", "What the detective found"),
+  dtable(("Check", "What the trainer found"),
     ([SOURCE], [No name, no office, no notice number — “I know someone” is not a source.]),
     ([EVIDENCE], [No circular, no website, no letterhead to verify anywhere.]),
     ([EMOTION], [Urgency (NOW!), fear of exams, and flattery of parents — pressure before thought.]),
@@ -96,7 +96,7 @@ Class 6 gave you two checks for suspicious content: *who made this?* and *what i
 }))
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH BUTTON IS IT PUSHING?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · WHICH BUTTON IS IT PUSHING?]
   v(3pt)
   dtable(("The message shouts…", "Fear, greed, anger — or none?"),
     ([“Your account will be CLOSED in 24 hours!”], [ ]),
@@ -111,7 +111,7 @@ Class 6 gave you two checks for suspicious content: *who made this?* and *what i
 
 // ---------------- 4.3 ----------------
 #sec(3, "Who is responsible?")
-A homework-help app gives a wrong answer. A student copies it. A teacher marks it right without checking. A company sells the app “100% correct”. When the mistake is discovered, watch the parcel fly: the company points at the users, the student points at the app, the app's makers point at the training data. Machines cannot hold responsibility — only *people* can. So the detective's question is not “who is guilty?” but “*who controlled what?*” — because responsibility follows control.
+A homework-help app gives a wrong answer. A student copies it. A teacher marks it right without checking. A company sells the app “100% correct”. When the mistake is discovered, watch the parcel fly: the company points at the users, the student points at the app, the app's makers point at the training data. Machines cannot hold responsibility — only *people* can. So the trainer's question is not “who is guilty?” but “*who controlled what?*” — because responsibility follows control.
 
 #task("T7-15", "Who Is Responsible?", mode: "class", mins: "15")[
   The class becomes the review panel. Four roles — *app maker, student, school, app company* — each argue their share of responsibility for the wrong answer that got submitted. Then the class votes.

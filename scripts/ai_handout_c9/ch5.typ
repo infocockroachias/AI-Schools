@@ -191,3 +191,12 @@ An AI system's decisions, its verify-routines, its escalation paths — all of t
   [Divya scores exactly 40 and the rule says “40 or more”. Why is this the flowchart's most dangerous line?],
 )
 #case-journal(lines: 3, label: "MY CASE JOURNAL — the last clue of Case 4, for the road to Class 10")
+
+#v(6pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[ROAD TO CLASS 10 — WHAT I CARRY FORWARD]
+  v(3pt)
+  text(size: 9.8pt)[One tool from this year I will carry into Class 10 — and the one habit that makes it actually work:]
+  v(3pt)
+  ruled-lines(2, lead: 8mm)
+})
