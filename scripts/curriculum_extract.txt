@@ -1,0 +1,185 @@
+
+======================================================================
+Class 6  (ai_handout)
+======================================================================
+THEME: AI Around Me
+SUBTITLE: My detective notebook for spotting smart machines
+LVL: CLASS 6 · LEVEL 1 — NOTICE | 20 PAPER MISSIONS · 5 CHAPTERS · NO SCREEN NEEDED
+
+--- CH 1: Machines That Seem Smart  [ch1.typ]  missions T6-01 – T6-05
+    Q: When is a machine actually learning — and when is it only following steps?
+    LINK: Links: Maths — patterns · English — exact instructions
+    WORDS: algorithm, automation, artificial intelligence, training examples, predict
+    SUMMARY: Every detective starts by learning to tell two suspects apart. In this chapter you will meet *rule-followers* — machines that run exact steps — and *learners* — machines that improve from examples. By the last mission you will have played a human robot, taught an alien using only flashcards, and judged a fair humans-vs-machines contest.
+
+--- CH 2: Data: The Food of AI  [ch2.typ]  missions T6-06 – T6-09
+    Q: What do machines learn from — and what happens when the food is bad?
+    LINK: Links: Maths — tables & bar graphs · Science — observation
+    WORDS: data, pixel, tally, garbage in, garbage out, bar chart
+    SUMMARY: Machines cannot learn on empty stomachs — their food is *data*. You will hunt the four kinds of data around your classroom, tidy them into tables, turn a table into a chart, and then discover what happens when a learner is fed bad examples. Garbage in, garbage out — and only a detective can spot why.
+
+--- CH 3: Patterns & Decisions  [ch3.typ]  missions T6-10 – T6-13
+    Q: How does a machine decide what to do next?
+    LINK: Links: Maths — number patterns · English — clear questions
+    WORDS: pattern, prediction, confidence, if-then, question tree
+    SUMMARY: Patterns are the clues learners chase: find one, predict what comes next, and then say *how sure* you are. You will hunt number and letter patterns, play Guess My Rule with a hidden rule-keeper, trace an if-then decision machine, and debate answers whose confidence is higher than their accuracy.
+
+--- CH 4: Be a Smart Digital Citizen  [ch4.typ]  missions T6-14 – T6-17
+    Q: How do I enjoy the online world — and stay safe, kind and honest?
+    LINK: Links: Social Science — community life · English — checking facts
+    WORDS: privacy, personal information, passphrase, verify, digital footprint
+    SUMMARY: Smart detectives stay safe, kind and honest — online as everywhere. You will sort personal information with a privacy traffic light, cook unguessable practice passphrases, run the three-check Real-or-Fake detector on suspect cards, and follow one drawing's digital footprint as it travels the internet.
+
+--- CH 5: My Neighbourhood AI Investigation  [ch5.typ]  missions T6-18 – T6-20
+    Q: What can I discover about AI near me — using my own data?
+    LINK: Links: Social Science — community survey · Maths — data & charts
+    WORDS: survey, tally, bar chart, limit, evidence
+    SUMMARY: Your biggest case yet: a *real survey* of five grown-ups about the smart machines around them. You will plan and run the survey, organise and chart the data you collect, design a helper machine of your own — and then close the case by answering the big question from page one, with evidence.
+
+======================================================================
+Class 7  (ai_handout_c7)
+======================================================================
+THEME: How Machines Learn
+SUBTITLE: My case file for training machines — and catching their mistakes
+LVL: CLASS 7 · LEVEL 2 — SORT & PREDICT | 17 PAPER MISSIONS · 5 CHAPTERS · NO SCREEN NEEDED
+
+--- CH 1: The Learning Machine  [ch1.typ]  missions T7-01 – T7-05
+    Q: How can a machine learn without being told the rules?
+    LINK: Links: Maths — graphs & averages · English — precise definitions
+    WORDS: classification, regression, clustering, training set, test set
+    SUMMARY: Welcome to the workshop. Last year you learned to *spot* learning machines; this year you operate one. In five missions you will run all three learning jobs with your own hands — sorting objects into named groups (classification), drawing a best-fit line to predict a fare (regression), inventing groups nobody gave you (clustering) — and then sit the same hidden exam a machine sits, to learn how tr
+
+--- CH 2: Machines That See, Read and Recommend  [ch2.typ]  missions T7-06 – T7-09
+    Q: What does a machine actually see when it looks at a picture, a message or you?
+    LINK: Links: Maths — tally & frequency · Languages — idioms and meaning
+    WORDS: feature, frequency, recommendation, context, idiom
+    SUMMARY: Three machines walk into your day. One *sees*: it turns pixels into features and predicts what they show. One *reads*: it counts words and frequencies — fast, powerful, and not the same as understanding. One *recommends*: it finds people whose pattern of likes matches yours and borrows their taste. In four missions you will be all three machines — with your own eyes, your own tallies, your own tab
+
+--- CH 3: AI at Work in India  [ch3.typ]  missions T7-10 – T7-12
+    Q: Where is AI already working — and how do I read its report card?
+    LINK: Links: Maths — data handling & percentages · Social Science — community work
+    WORDS: structured data, trend, sample, benefit, limit
+    SUMMARY: Learning machines are already your neighbours' colleagues. In this chapter you will tour five sectors — healthcare, education, transport, agriculture, communication — and give each helper a report card with a benefit AND a limit. Then you will learn their favourite language: charts. You will collect structured data, draw bar, line and pie charts, and then face the chart pro's hardest truth: some c
+
+--- CH 4: When AI Gets It Wrong  [ch4.typ]  missions T7-13 – T7-15
+    Q: Who taught the machine — and who answers for its mistakes?
+    LINK: Links: Social Science — fairness & rules · English — checking evidence
+    WORDS: bias, misinformation, verify, fairness, accountability
+    SUMMARY: Every machine in this book can fail — and this chapter is about *how* and *who answers*. You will train a deliberately one-sided suggestion machine and watch unfairness walk in with the data. You will run the three checks on content that was faked or edited, and hunt what is missing. Then you will take on the hardest question of all: when a machine causes harm, who is responsible? Spoiler: respons
+
+--- CH 5: Class Survey Machine  [ch5.typ]  missions T7-16 – T7-17
+    Q: Can our class build — and check — its own prediction machine?
+    LINK: Links: Maths — data & trends · Social Science — surveys · English — reporting
+    WORDS: structured data, sample, trend, prediction, report card
+    SUMMARY: The case that clicks the whole book together. Your class becomes the machine: collect structured data with a real survey, chart it, read the pattern, make a prediction — then do what honest machines must do: check your own sample for bias, predict a number from a trend, and grade yourselves against a test set from another section. Three periods, one machine, zero magic — and a badge at the end.
+
+======================================================================
+Class 8  (ai_handout_c8)
+======================================================================
+THEME: Build the AI Cycle
+SUBTITLE: My case file for planning, testing and improving an AI people can trust
+LVL: CLASS 8 · LEVEL 3 — BUILD THE CYCLE | 17 PAPER MISSIONS · 5 CHAPTERS · NO SCREEN NEEDED
+
+--- CH 1: The AI Project Cycle  [ch1.typ]  missions T8-01 – T8-03
+    Q: What does it take to build an AI that people can trust?
+    LINK: Links: Maths — percentages & data · English — precise definitions · Science — plant health case
+    WORDS: machine learning, AI project cycle, problem statement, dataset
+    SUMMARY: You are promoted: from machine-*operator* (Class 7) to machine-*engineer*. But no real AI begins with a machine — it begins with a plan. In this chapter you learn the loop every serious AI team runs: *scope* a sharp problem, *collect* the right data, *build and test* a model, then *reflect and improve*. You will turn vague complaints into precise problem statements, sequence the cycle from cards, 
+
+--- CH 2: Data & Fairness  [ch2.typ]  missions T8-04 – T8-07
+    Q: If the data only knows some of us, who does the machine actually serve?
+    LINK: Links: Maths — percentages, sampling · Social Science — inclusion & community · English — persuasive asking
+    WORDS: sampling, consent, fairness, representation
+    SUMMARY: A machine is a mirror of its dataset — show it only some people and it serves only some people. In this chapter you audit real tables like a data auditor (counting who is over-represented and who is missing), run a sampling game that ends with a surprise, repair an unfair dataset three different ways, and write the consent rules every honest collector must follow. This is the chapter where enginee
+
+--- CH 3: How Models Learn & What No-Code Tools Do  [ch3.typ]  missions T8-08 – T8-10
+    Q: How does a machine decide — and how do we measure whether it decides well?
+    LINK: Links: Maths — distance on a grid, percentages · Science — leaf features · Social Science — honest advertising
+    WORDS: nearest neighbour, accuracy, no-code tool, classifier
+    SUMMARY: Now the workshop floor. You will hand-run the simplest learning machine there is — a nearest-example classifier that judges new cases by their most similar labelled examples — and then grade it with a real accuracy percentage on a hidden test set. After that you step back and survey the no-code tool market: chatbots, image classifiers and data predictors, each with inputs, outputs and hard limits.
+
+--- CH 4: Ethics & Responsible AI  [ch4.typ]  missions T8-11 – T8-14
+    Q: Why does a machine that sounds so right sometimes get it so wrong — and who answers for that?
+    LINK: Links: English — language patterns & argument · Social Science — privacy & public impact · Maths — likelihood
+    WORDS: text generator, hallucination, misinformation, responsible use
+    SUMMARY: Meet the smoothest talker in the AI city: the text generator. You will play its game yourself — predicting next words from patterns — and discover why the very trick that makes it fluent also makes it *invent*. Then you hunt hallucinations in a real-looking AI paragraph, take a scenario to court as judge, lawyer and witness, and write your own AI-use pledge. This chapter has no magic answers; it h
+
+--- CH 5: Capstone: The AI Project Proposal  [ch5.typ]  missions T8-15 – T8-17
+    Q: Can you plan an AI that people can trust — and defend the plan to a live audience?
+    LINK: Links: all five strands · English — persuasive writing · Maths — budgeting & optimisation
+    WORDS: peer review, trade-off, optimise, stakeholder
+    SUMMARY: The final case brings every clue together. Your team will write a complete AI project proposal on paper — sharp problem, audited data plan, chosen tool, honest test, fairness check and known limits — exactly the document a professional team brings to its first review. Then your classmates will pressure-test it in a peer review gallery, and you will sharpen your budget choices with a real optimisat
+
+======================================================================
+Class 9  (ai_handout_c9)
+======================================================================
+THEME: The Logic Under the Magic
+SUBTITLE: My case file for the maths that makes machines learn — and the reasons they fail
+LVL: CLASS 9 · LEVEL 4 — REASON | 21 PAPER MISSIONS · 5 CHAPTERS · NO SCREEN NEEDED
+
+--- CH 1: Reflect, Scope, Plan  [ch1.typ]  missions T9-01 – T9-04
+    Q: Why does AI work — and when does it fail?
+    LINK: Links: Maths — data & coordinates · Social Science — stakeholders · English — precise definitions
+    WORDS: deep learning, rule-based system, learning-based system, problem scoping, system map
+    SUMMARY: The engine room opens. Before any mathematics, you need the map: what kind of system are we even talking about? This chapter separates rule-based machines from learning-based ones, places AI, machine learning and deep learning inside each other like nested boxes, and then rebuilds your planning toolkit at analyst level — the 4Ws canvas, stakeholder maps, and a system map that names every data feat
+
+--- CH 2: Data Literacy  [ch2.typ]  missions T9-05 – T9-09
+    Q: Can I trust this number — and can I trust the picture it comes in?
+    LINK: Links: Maths — statistics & graphs · Social Science — sources & media · English — critical reading
+    WORDS: qualitative data, quantitative data, unstructured data, privacy, security
+    SUMMARY: Learning systems eat data; this chapter teaches you to be the food inspector. You will sort data by type and structure, audit a source for quality and motive, catch the three classic ways graphs lie — truncated axes, cherry-picked windows, and pies that add to more than 100% — and separate privacy from security, two ideas that are constantly confused. The chapter ends with a dashboard you build yo
+
+--- CH 3: The Maths Behind AI (on paper)  [ch3.typ]  missions T9-10 – T9-14
+    Q: What does the machine actually compute — and when does the computation fool it?
+    LINK: Links: Maths — statistics, probability, coordinate geometry · Science — experiment & error · English — precise claims
+    WORDS: mean, median, mode, probability, correlation, line of best fit, nearest neighbour
+    SUMMARY: This is the engine room. Five missions, five mechanisms, all by hand: the three averages and the spread they hide (mean, median, mode, range), probability you can roll on your desk, a line of best fit you draw through real dots and then interrogate, nearest-neighbour classification with distances as evidence, and the pattern-to-rule move that turns a table into an algorithm. Every machine-learning
+
+--- CH 4: Generative AI & Ethics  [ch4.typ]  missions T9-15 – T9-18
+    Q: Machines that write, speak and show faces — how do they work, and what do we owe each other?
+    LINK: Links: English — language patterns & argument · Social Science — access & equity · Art — what is authorship?
+    WORDS: generative AI, deepfake, verification routine, bias
+    SUMMARY: The strangest machines in the AI city make new things: essays, images, voices, faces. This chapter builds a text generator's core trick on your own desk — a next-word table you construct and then "generate" from — so the mystery becomes a mechanism. Then the ethics floor: real-or-AI evidence checks, deepfakes, copyright and academic integrity, the access divide, and a balloon debate where AI's fut
+
+--- CH 5: Capstone: The SDG-linked AI Brief  [ch5.typ]  missions T9-19 – T9-21
+    Q: Can you connect an AI idea to the world's goals — and defend it before a panel?
+    LINK: Links: Social Science — SDGs & development · Maths — your Chapter 3 mechanisms · English — the brief as argument
+    WORDS: SDG, ethics review, flowchart, trace
+    SUMMARY: The final case lifts your eyes from the classroom to the world. The Sustainable Development Goals — the world's shared to-do list, from clean water to quality education — need exactly what you have practised: scoped problems, honest data, verified claims and ethical reasoning. Your team will write one SDG-linked AI brief, face an ethics review panel that argues from every stakeholder's chair, and 
+
+======================================================================
+Class 10  (ai_handout_c10)
+======================================================================
+THEME: Decide, Evaluate, Design
+SUBTITLE: My field book for judging AI systems, designing them responsibly — and defending the call
+LVL: CLASS 10 · LEVEL 5 — EVALUATE & DESIGN | 21 PAPER MISSIONS · 5 CHAPTERS · NO SCREEN NEEDED
+
+--- CH 1: Models Explained  [ch1.typ]  missions T10-01 – T10-04
+    Q: What exactly is the machine doing under there?
+    LINK: Links: Maths — functions & relations · Science — neuron models · Economics — market behaviour
+    WORDS: model family, supervised learning, unsupervised learning, reinforcement learning, weight
+    SUMMARY: Every AI system you have met since Class 6 — spam filters, recommenders, voice assistants, screening tools — lives somewhere on one map. This chapter draws the map. You will sort ten real products into model families, meet the three great learning strategies (supervised, unsupervised, reinforcement), run all four learning jobs (classification, regression, clustering, association) on a kirana-store
+
+--- CH 2: Machines That See and Read  [ch2.typ]  missions T10-05 – T10-09
+    Q: What does a machine actually receive — and what does it do with it?
+    LINK: Links: Maths — matrices & weighted sums · Science — optics & the eye · Languages — morphology, root words
+    WORDS: pixel, grayscale, kernel, feature map, normalisation
+    SUMMARY: Class 7 taught you that a camera sees a grid of numbers. This year you learn what machines *do* to those grids: you will run a real 3×3 kernel across a six-by-six image by hand and watch an edge announce itself, sketch how stacked filters become feature maps, then turn to reading — cleaning text until a machine can count it, building bag-of-words and TF-IDF tables with your own pencil, and drawing
+
+--- CH 3: Judging a Model  [ch3.typ]  missions T10-10 – T10-14
+    Q: Is it any good — good for whom, at what, judged how?
+    LINK: Links: Maths — percentages, ratios, conditional probability · Science — screening tests · Civics — accountability
+    WORDS: train/test split, confusion matrix, precision, recall, base rate
+    SUMMARY: Accuracy is the most quoted number in AI and the least examined. This chapter replaces the single number with a discipline: split the data so the test is honest, count the four fates of every prediction in a confusion matrix, compute precision and recall, and then make the decision that separates professionals from tourists — choosing which metric the *stakes* demand. You will dismantle a "99% acc
+
+--- CH 4: Ethics, Governance & Society  [ch4.typ]  missions T10-15 – T10-18
+    Q: Who decides — and who answers when the decision harms?
+    LINK: Links: Biology — medical ethics · Civics — rights & governance · Economics — labour markets · English — reasoned argument
+    WORDS: accountability, transparency, data minimisation, integrity
+    SUMMARY: Chapters 1–3 gave you the machinery; this chapter gives it a conscience and a courtroom. You will run a medical-triage tool through the four bioethics principles that doctors have argued with for decades, conduct a full algorithm audit — bias, transparency, accountability, each with evidence — map your privacy rights against your responsibilities, and face generative AI as the integrity question i
+
+--- CH 5: Capstone: The Responsible AI Design Brief  [ch5.typ]  missions T10-19 – T10-21
+    Q: Can you design AI that survives its own audit?
+    LINK: Links: all subjects — the brief is interdisciplinary by design · English — the pitch is reasoned writing · Economics — budgets and trade-offs
+    WORDS: design brief, ethics gate, deployment limits, pitch
+    SUMMARY: Four books of tools converge on one document. Your team will design a complete AI system on paper — scoped problem, consented and audited data plan, chosen model family, honest evaluation with a defensible metric, deployment limits, an ethics gate that can stop the project, and a pitch that names its own doubts before the judges do. Then you will defend it to a Board of Judges made of your classma

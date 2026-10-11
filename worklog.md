@@ -206,3 +206,21 @@ Stage Summary:
 - All literal-code leaks eliminated series-wide (51 h + 1 v + 4 bracket lines); production-pitfall rules codified in every INSTRUCTIONS.md.
 - Class 8/9 claim-verification language now builder/analyst register end-to-end; task IDs stable.
 - GitHub main @ ae37b9b: class folders + webapp library files + download mirrors all carry today's builds; layouts converged, future pushes are simple commits.
+
+---
+Task ID: 2
+Agent: Super Z (main agent)
+Task: Design a separate professional document — "The AI Curriculum · Class 6–10" curriculum design brief for school submissions (cover full page, full-page Preface, per-class curriculum pages with chapters, outcomes, subject cross-linkages and AI core topics).
+
+Work Log:
+- Loaded pdf skill (routing compliance); user-mandated Typst toolchain + machiatto series identity retained; skill QA gates (pdf_qa.py) applied.
+- Extracted ground-truth curriculum data from all five published handout sources (chapter titles, essential questions, Word Power vocabulary, subject links, mission codes, ack-meta word counts, role ladder Detective→Investigator→Engineer→Analyst→Designer).
+- Built new Typst project at /home/z/my-project/scripts/ai_curriculum_doc/ (template.typ design system + classes.typ data-driven sections + preface.typ + pathway.typ + main.typ), fonts reused from series (Nunito, Baloo 2, FA6 solid icons).
+- Document structure (13 pages): full-bleed teal-deep cover with node-network motif and five level cards; one full-page Preface (795 words: why we built it, what schools are usually offered, how we are different — paper-first/one role per year/human-vs-machine/ethics woven/India-rooted, activities & tasks, end goal); 2 pages per class (band + overview + facts strip + chapter blocks CH1-2 + signature mission | CH3-5 + by-the-end + cross-curricular footprint); closing "Five-Year Pathway at a Glance" (progression table + spiral/assessment/requirements notes + adoption CTA).
+- Page-fit engineering: measured per-page fill programmatically (pypdfium2 pixel scan), iterated insets/spacing until every page fills 86-100% with zero spill; final pagination exactly 13 pages.
+- QA: pdf_qa.py — 11 checks passed, 1 warning verified as false positive (variable-font metric overflow; pixel-scan confirmed no ink beyond margins). Em-dash line-starts bound with NBSP. Metadata set (title/author/keywords). Full 13-page visual audit; fixed label wrapping (Students will→Outcomes, AI core ideas→Core ideas, Subject links→Subjects), cover footer cleared via footer: none.
+- Content integrity scan: no h(Npt) leaks, no Typst/template mentions, no "Say it" wording, no detective language outside Class 6's role, "trace" appears only as Class 9 flowchart vocabulary.
+- Delivered: download/PRATIMAI_AI_Curriculum_Class6-10_Design_Brief.pdf (13 pp, 268 KB) + PRATIMAI_AI_Curriculum_Class6-10_typst_source.zip.
+
+Stage Summary:
+- New deliverable: school-facing curriculum design brief covering Class 6-10 with chapters, outcomes, subject linkages, AI core topics; brand-consistent with the handout series; ready for commit+push.
