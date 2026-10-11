@@ -52,6 +52,18 @@ A number is only as trustworthy as its *source* — and a source has three faces
   ruled-lines(1, lead: 8.2mm)
 })
 
+#v(5pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[TODAY'S NUMBER, THREE FACES]
+  v(3pt)
+  text(size: 9.8pt)[Copy one number-claim from this week's news and run the three-face check on it — competence, method, motive — then name the face that decided you:]
+  v(4pt)
+  grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 4.5pt, align: (left, horizon),
+    text(size: 9.5pt, weight: 800, fill: teal)[claim], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+    text(size: 9.5pt, weight: 800, fill: teal)[faces], text(size: 9.7pt)[competence #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt) method #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt) motive #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+    text(size: 9.5pt, weight: 800, fill: teal)[decider], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+  )
+})
 #task("T9-06", "Source Quality Audit", mode: "pair", mins: "15")[
   Your school's notice board shows three claims about the same thing — students' travel time to school. Audit each source on the three faces (rate each 1–5, with a one-line reason), then give your verdict:
   #v(4pt)
@@ -109,7 +121,7 @@ Charts feel like evidence, but a chart is an *argument drawn by someone*. Three 
 ]
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · NAME THE TRICK]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ANALYST'S DRILL · NAME THE TRICK]
   v(3pt)
   text(size: 10.1pt)[Each description hides one of the three classic tricks — or none. Write T1 (truncated axis), T2 (cherry-picked window), T3 (broken pie arithmetic) or OK:]
   v(3pt)
@@ -187,7 +199,7 @@ Analysts communicate with *dashboards*: small groups of charts chosen so that to
   text(size: 8.8pt, fill: ink-soft, style: "italic")[Rule of thumb: bar charts start at zero; line charts may zoom — but must SAY so on the axis.]
 }))
 
-#task("T9-09", "Paper Dashboard", mode: "group", mins: "25")[
+#task("T9-09", "Paper Dashboard", mode: "group", mins: "25", hands: true)[
   Your team surveys the class on three questions: *minutes of screen time yesterday*, *marks on the last unit test*, and *mode of travel to school*. Collect quick tallies (your teacher will run the vote), then draw all three charts below — right chart for right job — and finish with the story.
   #v(3pt)
   #barchart-blank(("0–30", "31–60", "61–90", "90+"), ymax: 12, pw: 60mm, ph: 40mm)
@@ -217,7 +229,7 @@ Analysts communicate with *dashboards*: small groups of charts chosen so that to
 
 #homelink[
   #task("AT HOME", "Headline Autopsy", mode: "home", mins: "15")[
-    With a grown-up, take ONE number from this week's news (TV, paper, or a forwarded message — do not open links). Run the source audit: competence, method, motive. Then ask the three chart questions if a picture came with it. #v(3pt)
+    With an adult, take ONE number from this week's news (TV, paper, or a forwarded message — do not open links). Run the source audit: competence, method, motive. Then ask the three chart questions if a picture came with it. #v(3pt)
     *The number and its headline:* #ruled-lines(1, lead: 8.1mm)
     *The three faces checked (C / M / M), with one line each:* #ruled-lines(3, lead: 8.1mm)
     *The one question we would send to whoever published it:* #ruled-lines(1, lead: 8.1mm)

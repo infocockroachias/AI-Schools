@@ -199,13 +199,13 @@
     align(center)[
       #text(size: 9pt, weight: 800, fill: amber-deep, tracking: 0.22em)[PRATIMAI · AI HANDOUTS · CLASS 9]
       #v(3pt)
-      #text(font: f-display, size: 20.9pt, weight: 800, fill: teal)[My Analyst's Certificate]
+      #text(font: f-display, size: 20.9pt, weight: 800, fill: teal)[My AI Analyst's Certificate]
       #v(5pt)
       #text(size: 10.3pt, style: "italic")[This certifies that analyst]
       #v(5pt)
       #line(length: 62%, stroke: 0.8pt + ink-soft)
       #v(2pt)
-      #text(size: 8.6pt, fill: ink-soft, weight: 700, tracking: 0.12em)[INVESTIGATOR NAME]
+      #text(size: 8.6pt, fill: ink-soft, weight: 700, tracking: 0.12em)[ANALYST NAME]
       #v(5pt)
       #text(size: 10.1pt)[has completed the case file *“The Logic Under the Magic”* — Level 4 · REASON —
         computed the mathematics under the machine, briefed the SDGs, and promised to keep asking:
@@ -213,7 +213,7 @@
       #v(6pt)
       #grid(columns: (1fr, 1fr, 1fr), column-gutter: 10pt,
         { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 8.4pt, fill: ink-soft, weight: 700, tracking: 0.1em)[DATE] },
-        { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 8.4pt, fill: ink-soft, weight: 700, tracking: 0.1em)[INVESTIGATOR'S SIGNATURE] },
+        { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 8.4pt, fill: ink-soft, weight: 700, tracking: 0.1em)[ANALYST'S SIGNATURE] },
         { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 8.4pt, fill: ink-soft, weight: 700, tracking: 0.1em)[GUIDE'S SIGNATURE] },
       )
     ]

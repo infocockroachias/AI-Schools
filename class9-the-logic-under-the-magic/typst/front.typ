@@ -11,12 +11,7 @@
 #let license-page = {
   front-heading[License]
   text(size: 10.9pt)[
-    This handbook is © #datetime.today().display("[year]") the PRATIMAI Curriculum Team. Student-facing
-    content — missions, stories, activities and illustrations-as-diagrams — is licensed under the
-    *Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International* licence (CC BY-NC-SA 4.0):
-    you may share and adapt it for classroom use with attribution, for non-commercial purposes, under the
-    same licence. The Typst source files are released under the MIT licence so that any school can rebuild,
-    translate and localise the book for its own learners.
+    This handbook is © #datetime.today().display("[year]") *PRATIMA AI*. All rights reserved. The title, the missions, the activities, the stories, the diagrams and the design of this series are the intellectual property of PRATIMA AI. No part of this book may be copied, reproduced, sold, redistributed or republished in any form without the written permission of PRATIMA AI. Schools and educators who would like to collaborate with the series — through adoption programmes, translations or local editions — are warmly welcome to contact PRATIMA AI and sign a collaboration agreement.
   ]
   v(2pt)
   text(size: 10.9pt)[
@@ -31,10 +26,10 @@
     text(font: f-display, size: 9.2pt, weight: 800, fill: teal-deep, tracking: 0.12em)[THE LICENCE IN PLAIN WORDS]
     v(4pt)
     dtable(("You MAY", "You may NOT"),
-      ([ photocopy pages for your class or study group ], [ sell this book or any copy of it ]),
-      ([ adapt missions for your learners and share them ], [ remove the credit lines or the licence ]),
-      ([ translate the book and keep the same licence ], [ use it to advertise any product or service ]),
-      ([ point other schools to the free source files ], [ claim the activities are your own invention ]),
+      ([ photocopy pages for use in your own registered classroom ], [ sell this book or any copy of it ]),
+      ([ use the missions with your students, on paper ], [ remove the credit lines or the licence ]),
+      ([ recommend the series to other schools and teachers ], [ claim the activities are your own invention ]),
+      ([ contact PRATIMA AI to sign a collaboration agreement ], [ use the series to advertise any product or service ]),
       widths: (1fr, 1fr),
     )
   })
@@ -42,21 +37,15 @@
   table(stroke: none, columns: 2, inset: (y: 3.2pt),
     [*Series:*], [PRATIMAI · AI Handouts],
     [*Title:*], [The Logic Under the Magic — Class 9 · Level 4 · REASON],
-    [*Author:*], [PRATIMAI Curriculum Team],
+    [*Author:*], [PRATIMA AI · Research & Curriculum Team],
     [*Publish Date:*], [#datetime.today().display()],
-    [*Published by:*], [PRATIMAI | AI-Schools],
-    [*Edition:*], [Machiatto Edition 1.0],
+    [*Published by:*], [PRATIMA AI],
+    [*Edition:*], [First Edition · 1.0],
   )
   v(10pt)
   block(width: 100%, radius: 5pt, stroke: 0.7pt + ink-soft, fill: white, inset: (x: 11pt, y: 8pt), {
     text(size: 9.4pt, fill: ink-soft)[
-      Set in *Nunito* and *Baloo 2* on warm paper stock, typeset with Typst using the
-      *Machiatto* template — which implements the MoKa Reads publication specification:
-      title page, license, acknowledgements, preface, contents, then chapters opening
-      with a summary and a mini table of contents. Both typefaces are used under the
-      SIL Open Font Licence; the template ships under the MIT licence. Every chart, grid,
-      and plotted dot in this book is generated in pure Typst code — no images were
-      imported, so every page prints crisply at any size.
+      Set in *Nunito* and *Baloo 2* on warm paper stock. Both typefaces are used under the SIL Open Font Licence. The book's diagrams are printed as crisp, high-resolution figures, and every page was reviewed individually before this edition went to press.
     ]
   })
 }
@@ -72,26 +61,32 @@
 
   To the maths teachers who read every mission and said "yes — but make the outlier crueler, make the
   dice honest, make the best-fit line earn itself": thank you. You protected the book from fake maths
-  and from the greater sin, boring maths. To the reviewers who kept the unplugged promise through a
-  chapter that could easily have become a software tutorial — the paper survived, and so did the rigour.
-  And to the grown-ups who will be asked "is the AI's average the same as MY average?" at the dinner
-  table: by the last page, your student will answer you with a worked example.
+  and from the greater sin, boring maths. And to the adults who will be asked "is the AI's average the
+  same as MY average?" at the dinner table: by the last page, your student will answer you with a
+  worked example.
 
-  Thanks as well to the open-source community behind Typst and the Machiatto template that gives this
-  book its typesetting, and to the designers of Nunito and Baloo 2, whose friendly letterforms keep
-  pages of hard reasoning feeling light. Finally, to the analyst holding this book: every dice roll
-  you have not rolled yet, every line you have not drawn yet and every graph you have not yet caught
-  lying is the real content of this case file. We only set the stage. You bring the evidence.
+  This series was built brick by brick by three teams working as one. The *AI research team* checked every explanation against how machines really learn, so nothing in this book is a myth wearing a friendly font. The *academic team* walked every chapter beside the school syllabus, so each game quietly trains a skill that examinations will ask for later. And the *child-psychology team* shaped the pace of every page: short missions for young attention, quick wins that open every chapter, confidence circles that make honesty feel safe, and space to write on every task — because an idea worked by the hand is remembered by the mind. Alongside them, curriculum reviewers guarded the "unplugged" promise: not one mission in this series asks for a phone, an account or a password.
+
+  Thanks go as well to the designers of Nunito and Baloo 2, whose friendly letterforms keep
+  pages of hard reasoning feeling light. Finally, to the AI Analyst holding this book: every
+  dice roll you have not rolled yet, every line you have not drawn yet and every graph you
+  have not yet caught lying is the real content of this case file. We only set the stage.
+  You bring the evidence.
 ]
 
 // ------------------------------------------------------------
-//  PREFACE — how to use · note to grown-ups · journey map
+//  PREFACE — how to use · note to adults · journey map
 // ------------------------------------------------------------
 #let preface-pages = {
   front-heading[How to Use This Handbook]
 
-  text[Welcome back, Analyst. Three years of evidence sit behind you: in Class 6 you *spotted* learning machines, in Class 7 you *trained and tested* them, in Class 8 you *planned and defended* them. Now comes the question every honest builder eventually faces: *why does any of it work?* This year you go under the hood — and the hood opens with mathematics, not code. Averages that mislead, probability you can roll on a desk, lines you draw through real dots, neighbours you classify with a ruler: every mechanism that makes AI possible, run by hand. And every place the same mathematics lets machines — and their marketing — fail. You will still need no computer. A pencil, a ruler, a pair of dice and a suspicious mind are the complete toolkit.]
+  text[Welcome back, Analyst. Three years of evidence sit behind you: in Class 6 you *spotted* learning machines, in Class 7 you *trained and tested* them, in Class 8 you *planned and defended* them. Now comes the question every honest engineer eventually faces: *why does any of it work?* This year you go under the hood — and the hood opens with mathematics, not code. Averages that mislead, probability you can roll on a desk, lines you draw through real dots, neighbours you classify with a ruler: every mechanism that makes AI possible, run by hand. And every place the same mathematics lets machines — and their marketing — fail. You will still need no computer. A pencil, a ruler, a pair of dice and a suspicious mind are the complete toolkit.]
   v(8pt)
+
+  note("Why this book works the way it does")[
+    #text(size: 9.8pt)[This handbook is built around how teenage brains actually learn. Every chapter opens with a quick win — motivation first, theory second. You *do* before you *define*: each idea is met through an experience before it is named, because memory hooks onto action. The confidence circles train metacognition — knowing how sure you are is a skill, and honest rating makes it stronger. Tasks are time-boxed because attention works in sprints; ideas return across chapters on purpose, because a second meeting is what turns exposure into understanding; and every task leaves space to write, because producing your own answer beats re-reading every time. Nothing here can be failed: a wrong answer you go on to check is a clue found early.]
+  ]
+
 
   // three steps
   grid(columns: (1fr, 1fr, 1fr), column-gutter: 7pt,
@@ -121,7 +116,7 @@
     chip[PAIR],   text(size: 10.3pt)[two analysts — share one book, take turns reading codes aloud],
     chip[GROUP],  text(size: 10.3pt)[three to four analysts — decide roles before you start],
     chip[CLASS],  text(size: 10.3pt)[the whole class plays together, led by your teacher],
-    chip[HOME],   text(size: 10.3pt)[a mission for home — show a grown-up what you discovered],
+    chip[HOME],   text(size: 10.3pt)[a mission for home — show an adult what you discovered],
   )
   v(10pt)
 
@@ -132,7 +127,7 @@
       text(font: f-display, fill: ink-soft, weight: 800, size: 8.1pt, tracking: 0.12em)[ALONE · 15 MIN],
     )
     #v(3.5pt)
-    #box(width: 5pt, height: 5pt, fill: amber, baseline: 28%) #h(4pt) #text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em)[QUICK WIN] sits at the right edge of the easier missions.
+    #box(width: 5pt, height: 5pt, fill: amber, baseline: 28%) #h(4pt) #text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em)[QUICK WIN] marks the easier missions; #box(width: 5pt, height: 5pt, fill: amber, baseline: 28%) #h(3pt) #text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em)[HANDS-ON LAB] marks the working labs — missions where you *build, measure, play or draw*.
     #v(4.5pt)
     Every mission has a code like #text(weight: 800)[T9-10] — *T9* means this Class 9 handout, and *10* is the mission number, so your teacher can say "open Task T9-13". The #text(fill: teal, weight: 800)[ALONE] label tells you who to work with, #text(fill: teal, weight: 800)[15 MIN] is your time limit, and #text(fill: amber-deep, weight: 800)[QUICK WIN] marks an easy first success. This book's missions ask for *working, not just answers* — show the division, draw the line, mark the outlier. In mathematics, the working IS the reasoning.
   ]
@@ -141,11 +136,27 @@
   note("The Question Habit — your superpower")[
     Your five questions — *"How do I know?"*, *"What is missing?"*, *"Who made this?"*, *"Who is missing?"*, *"What is the trick here?"* — meet their sharpest field of play yet: numbers themselves. This year add the analyst's suffix to every statistic you meet: *"compared to WHAT, over WHICH period, leaving out WHOM?"* An average without its context is a magic trick. Your job, from page one, is to be the person who asks how the trick is done.
   ]
+  v(9pt)
+  block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, inset: (x: 11pt, y: 8pt), {
+    text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[DRILL THE QUESTIONS — ON A CLAIM WITH NUMBERS]
+    v(3pt)
+    text(size: 9.8pt)[A news graphic says: "Students who use AI tutors score 20% higher." Run the analyst's questions and write one honest line each:]
+    v(4pt)
+    grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 5.5pt, align: (left, horizon),
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9.3pt, "1")),
+      text(size: 9.7pt)[*How do I know?* — 20% of what, compared with whom, over how long? #ruled-lines(1, lead: 7.6mm)],
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9.3pt, "2")),
+      text(size: 9.7pt)[*What is missing?* — Which average, and what could an outlier be doing here? #ruled-lines(1, lead: 7.6mm)],
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9.3pt, "3")),
+      text(size: 9.7pt)[*Who made this?* — Who sells the tutor? Re-weight the claim. #ruled-lines(1, lead: 7.6mm)],
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9.3pt, "4")),
+      text(size: 9.7pt)[*Correlation or cause?* — Name the hidden factor a careful analyst would check. #ruled-lines(1, lead: 7.6mm)],
+    )
+  })
 
-  pagebreak()
 
-  // ---------- note for grown-ups ----------
-  front-heading[A Note for Grown-Ups]
+  // ---------- note for adults ----------
+  front-heading[A Note for Adults]
   block(width: 100%, radius: 5pt, stroke: 1pt + ink, fill: cream, inset: (x: 12pt, y: 9pt), {
     text(size: 10.3pt)[
       This handout builds *AI understanding* — how machines learn from data and how humans should judge
@@ -194,7 +205,6 @@
     v(3pt)
     text(size: 9.8pt)[Watch for these quiet changes — they matter more than any correct answer: your child *shows the working* without being asked · they say *"one number can't tell the whole story"* and mean it · they *roll the dice twice* when a result surprises them · they ask *"compared to what?"* at advertisements and headlines · they defend a claim with *evidence and its limit* in the same sentence. When you spot one, name it: "That is exactly what analysts do."]
   })
-  pagebreak()
 
   // ---------- journey map ----------
   front-heading[My AI Journey Map]
@@ -254,4 +264,81 @@
     [link an AI idea to an SDG with a data plan and an ethics note],
     [express a decision procedure as a flowchart and trace it by hand, step by step],
   ))
+
+  v(9pt)
+  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 11pt, y: 8pt), {
+    text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[THREE NUMBERS I WILL DISTRUST THIS WEEK]
+    v(3pt)
+    text(size: 9.8pt)[An analyst's year starts with suspicion, not cynicism. List three numbers the world will show you this week — a fee, a claim, a score — and name the question you will ask each:]
+    v(4pt)
+    grid(columns: (auto, 1fr), column-gutter: 8pt, row-gutter: 5pt, align: (horizon, horizon),
+      text(size: 9.5pt, weight: 800, fill: teal)[1.],
+      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 8.8pt, fill: ink-soft)[my question →],
+      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[2.],
+      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 8.8pt, fill: ink-soft)[my question →],
+      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[3.],
+      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 8.8pt, fill: ink-soft)[my question →],
+      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+    )
+  })
+  v(13pt)
+  block(width: 100%, breakable: false, radius: 5pt, stroke: 1.1pt + ink, fill: white, inset: (x: 12pt, y: 9pt), {
+    grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, horizon, right),
+      box(fill: amber, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8.4pt, weight: 800, tracking: 0.1em, "DAY 1")),
+      text(font: f-display, size: 12.4pt, weight: 800, fill: teal)[My starting line — a pledge to the evidence],
+      text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.12em)[2 MIN],
+    )
+    v(4.5pt)
+    text(size: 10.1pt)[Fill this in before Chapter 1. The last page will ask for the year's evidence next to these lines — vague pledges fail audits.]
+    v(5pt)
+    text(size: 10.1pt)[One number in daily life whose average I now intend to distrust on sight:]; ruled-lines(1, lead: 8.6mm)
+    v(4pt)
+    text(size: 10.1pt)[One claim about AI I want to be able to *prove or refute* by June:]; ruled-lines(1, lead: 8.6mm)
+    v(4pt)
+    text(size: 10.1pt)[My honesty clause — how I will record results that contradict what I hoped for:]; ruled-lines(1, lead: 8.6mm)
+    v(6pt)
+    grid(columns: 2, column-gutter: 16pt,
+      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+    )
+  })
+  v(9pt)
+  block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 11pt, y: 8pt), {
+    text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[FIRST IMPRESSIONS — THE ANALYST'S FLIP TEST]
+    v(3pt)
+    text(size: 9.8pt)[Flip through this book for two minutes, like an auditor meeting a new client. Three things I noticed that I intend to question later:]
+    v(4pt)
+    grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 5pt, align: (horizon, horizon),
+      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+    )
+  })
+  v(9pt)
+  block(width: 100%, breakable: false, radius: 5pt, stroke: 1.1pt + amber, fill: amber-soft, inset: (x: 11pt, y: 9pt), {
+    grid(columns: (auto, 1fr), column-gutter: 8pt, align: (left, horizon),
+      box(fill: amber, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8.4pt, weight: 800, tracking: 0.1em, "CARD")),
+      text(font: f-display, size: 11.6pt, weight: 800, fill: amber-deep)[The analyst's five questions — my pocket copy],
+    )
+    v(5pt)
+    grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 4.5pt, align: (left, horizon),
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9pt, "1")),
+      text(size: 9.8pt)[*How do I know?* — what was measured, how, on whom?],
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9pt, "2")),
+      text(size: 9.8pt)[*What is missing?* — which average, and what does it throw away?],
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9pt, "3")),
+      text(size: 9.8pt)[*Who made this?* — who gains if I share it without checking?],
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9pt, "4")),
+      text(size: 9.8pt)[*Who is missing?* — whose outcome was never counted?],
+      box(fill: teal, radius: 3pt, inset: (x: 5.5pt, y: 1.5pt), text(fill: white, weight: 800, size: 9pt, "5")),
+      text(size: 9.8pt)[*Correlation or cause?* — what else could explain the pattern?],
+    )
+    v(5.5pt)
+    text(size: 9.6pt, style: "italic", fill: ink-soft)[The claim I intend to check first — and the question that will crack it: #box(width: 46%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)]
+  })
 }

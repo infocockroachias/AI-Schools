@@ -18,7 +18,7 @@
 Last year you met two kinds of machines: rule-followers, which repeat steps somebody wrote, and learners, which improve from examples. This year we look closer at the learners — because “learning” turns out to mean three different jobs. Some machines *put things into named groups*: spam or not-spam, cat or dog, ripe or unripe. Others *predict a number*: tomorrow's temperature, the price of a trip, the marks a form might score. And some *find groups nobody named* — they look at a pile of examples and invent their own sorting. Almost every learning machine you will ever meet is doing one of these three jobs. Today, you try all three yourself.
 
 #task("T7-01", "Sorting Machine", mode: "group", mins: "15", win: true)[
-  Your teacher (or a detective in your group) gathers *12 small objects* — for example: a leaf, a coin, a pen cap, a chalk stub, a button, a pebble, a rubber band, a safety pin, a sticker, a clip, an eraser, a seed. Spread them out. Now be the machine: invent *labels* and put every object into a group. You may not use words like “junk” — group names must tell what the members share. Then fill the table:
+  Your teacher (or a trainer in your group) gathers *12 small objects* — for example: a leaf, a coin, a pen cap, a chalk stub, a button, a pebble, a rubber band, a safety pin, a sticker, a clip, an eraser, a seed. Spread them out. Now be the machine: invent *labels* and put every object into a group. You may not use words like “junk” — group names must tell what the members share. Then fill the table:
   #v(4pt)
   #dtable(("Group name we invented", "Members of this group", "One more object we could add"),
     ([ ], [ ], [ ]),
@@ -33,7 +33,7 @@ Last year you met two kinds of machines: rule-followers, which repeat steps some
 ]
 #wordpower(1, "classification", [Putting things into groups that already have names, like fruit or vehicles.])
 
-#note("Detective's note")[In T7-01 *you* chose the labels first and sorted second — that is classification. A machine does it backwards: it gets thousands of examples *with* labels attached, finds the pattern, and only then sorts new things. Same job, opposite order. Keep that in mind — it will matter in Task T7-04.]
+#note("Trainer's note")[In T7-01 *you* chose the labels first and sorted second — that is classification. A machine does it backwards: it gets thousands of examples *with* labels attached, finds the pattern, and only then sorts new things. Same job, opposite order. Keep that in mind — it will matter in Task T7-04.]
 
 // ---------------- 1.2 ----------------
 #sec(2, "Guessing the number: the second job")
@@ -77,7 +77,7 @@ The third job is the strangest. In classification, the groups already have names
 #wordpower(3, "clustering", [Finding groups in examples that have no labels — the machine invents the groups.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH JOB IS IT?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · WHICH JOB IS IT?]
   v(3pt)
   dtable(("The learning machine…", "C, N or G?"),
     ([sorts email into “spam” and “not spam”], [ ]),
@@ -97,7 +97,7 @@ The third job is the strangest. In classification, the groups already have names
 How does a machine actually *learn* the pattern? Here is the secret, and you already know it from your own life: it *practises, then it is tested*. First the machine studies a *training set* — examples with the answers attached, like practice questions with the solutions in the back. It adjusts itself until it matches them well. Then comes the moment of truth: the *test set* — new examples it has never seen, with the answers hidden. If it only memorised the practice questions, the exam will expose it. A learner that scores well on practice *and* on the hidden test has truly found the pattern.
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · SPOT THE MEMORISER]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · SPOT THE MEMORISER]
   v(2.5pt)
   text(size: 10.1pt)[Two students prepared for a spelling test. One learned the *rule* for adding -ing; one memorised the exact twenty words on last year's paper. Who passes THIS year's test — with new words? Mark each story M (memoriser) or P (pattern-finder):]
   v(3pt)
@@ -138,7 +138,7 @@ How does a machine actually *learn* the pattern? Here is the secret, and you alr
 #wordpower(5, "test set", [The hidden examples used to check whether the learning really worked.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · TRAIN AND TEST IN MY OWN WEEK]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · TRAIN AND TEST IN MY OWN WEEK]
   v(2.5pt)
   text(size: 10.1pt)[Machines are not the only learners. Name one *training moment* and one *testing moment* from your own week — moments where you practised with answers available, then faced something brand-new:]
   v(3pt)
@@ -163,7 +163,7 @@ How does a machine actually *learn* the pattern? Here is the secret, and you alr
 }))
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · TRAIN OR TEST?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · TRAIN OR TEST?]
   v(3pt)
   dtable(("What is happening…", "Training or testing?"),
     ([A cricket coach feeds 200 labelled photos of bowling actions to a machine.], [ ]),
@@ -178,9 +178,27 @@ How does a machine actually *learn* the pattern? Here is the secret, and you alr
   text(size: 8.8pt, fill: ink-soft, style: "italic")[Why do you think the scientist hides those examples? Discuss with your partner — there is a clue in Task T7-04.]
 }))
 
+
+#huva([Two learners side by side], [You learned to ride a bicycle. A machine learns to spot cats in photos. Both are learning — but not the same way.],
+  [A few tries and a wobble or two. You knew the goal (balance), corrected yourself mid-wobble, and could ride a NEW road on day one.],
+  [Thousands of labelled photos, a goal set by someone else, and a sketch of a cat can still fool it — the sketch was never in its data.],
+  (
+    [How many examples did YOU need to learn what a "holiday" is? How many would the machine need? Write both numbers:],
+    [What does the machine still not have — no matter how many examples we give it?],
+    [Name one job where few-examples human learning is the only way that works:],
+  ))
+
 // ---------------- 1.5 ----------------
 #sec(5, "Too few examples fool everybody")
 Here is the trap that catches learners — machine and human alike. Show a learner only *three* examples, and it will grab the first pattern it sees, even a wrong one. Show it *twelve varied* examples, and the false shortcuts fall apart. The examples are the machine's whole world: a learner cannot ask “are you sure?” — it can only believe its data. That is why the people who build AI spend most of their time not on the machine, but on *choosing the examples*.
+
+#note("Predict before you peek")[T7-05 is next. Before you turn anything, predict in one line: what will the ONE wrong example make the machine do? Then check yourself against the task.]
+#v(2pt)
+#ruled-lines(1, lead: 8.4mm)
+
+#note("Predict before you peek")[T7-05 is next. Before you turn anything, predict in one line: what will the ONE wrong example make the machine do? Then check yourself against the task.]
+#v(2pt)
+#ruled-lines(1, lead: 8.4mm)
 
 #task("T7-05", "Too Few Examples", mode: "pair", mins: "10")[
   Two leaf-spotting machines were trained differently. Read their training cards, then judge them.
@@ -228,9 +246,17 @@ Here is the trap that catches learners — machine and human alike. Show a learn
     widths: (48mm, 34mm, 1fr),
   )
 }))
+#v(6pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[THE QUESTION I WILL ASK EVERY MACHINE NOW]
+  v(3pt)
+  text(size: 9.8pt)[Complete it once in your own words, then keep it for the year: "Before I trust what it told me, I will ask …"]
+  v(3pt)
+  ruled-lines(1, lead: 8.4mm)
+})
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · PATTERN TO RULE]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · PATTERN TO RULE]
   v(3pt)
   text(size: 10.3pt)[A fruit-sorting machine was trained on four labelled cards. You be the rule-writer: study the table, then write the if-then rule *you* would put inside an ordinary rule-following machine.]
   v(4pt)
@@ -247,6 +273,17 @@ Here is the trap that catches learners — machine and human alike. Show a learn
   [*New card arrives: heavy · rough · yellow-green skin.* My rule says: #box(width: 30mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) — *and a learning machine might disagree! Why?* #ruled-lines(1, lead: 8.4mm)]
 }))
 
+#v(6pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 11pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[CHAPTER 1 TOOLKIT — WHAT I EARNED]
+  v(3pt)
+  grid(columns: (1fr, 1fr), column-gutter: 10pt, row-gutter: 4.5pt,
+    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) classification — my example: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) regression — my example: #box(width: 66%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) clustering — my example: #box(width: 65%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) train ≠ test — because: #box(width: 60%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+  )
+})
 #note("Case notes — what changed in my thinking?")[
   Before this chapter I believed machines are told every rule by their makers. Now I know the difference between a rule-follower and a learner is … #ruled-lines(2, lead: 8.4mm)
 ]
@@ -261,3 +298,38 @@ Here is the trap that catches learners — machine and human alike. Show a learn
   #v(2.5pt)
   #text(size: 10.1pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7.7mm)]
 ]
+
+#v(6pt)
+#block(width: 100%, breakable: false, radius: 5pt, stroke: 1.1pt + amber, fill: amber-soft, inset: (x: 11pt, y: 9pt), {
+  grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, horizon, right),
+    box(fill: amber, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8.4pt, weight: 800, tracking: 0.1em, "HEAD START")),
+    text(font: f-display, size: 11.6pt, weight: 800, fill: amber-deep)[Plan my Class Survey Machine before Chapter 5 asks for it],
+    text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.12em)[5 MIN],
+  )
+  v(5pt)
+  grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 5pt, align: (left, horizon),
+    text(size: 9.5pt, weight: 800, fill: teal)[ask], text(size: 9.7pt)[the question my survey will answer: #box(width: 74%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+    text(size: 9.5pt, weight: 800, fill: teal)[data], text(size: 9.7pt)[three things I will record each time: #box(width: 70%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+    text(size: 9.5pt, weight: 800, fill: teal)[say], text(size: 9.7pt)[who I will ask (and who I might be missing): #box(width: 63%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+    text(size: 9.5pt, weight: 800, fill: teal)[guess], text(size: 9.7pt)[my prediction before any data — and how sure: #box(width: 56%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+  )
+})
+
+
+#v(6pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[WHAT WILL MAKE A SURVEY MACHINE GOOD? — PREDICT THE GRADING]
+  v(3pt)
+  text(size: 9.8pt)[Chapter 5 will grade your machine. Predict the two things the grade will reward — and the one shortcut that will backfire:]
+  v(3pt)
+  ruled-lines(3, lead: 7.8mm)
+})
+#v(6pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: white, stroke: 1pt + ink, inset: (x: 11pt, y: 9pt), {
+  grid(columns: (auto, 1fr), column-gutter: 8pt, align: (left, horizon),
+    ico("home", size: 10.5pt, fill: amber-deep),
+    text(size: 9.9pt)[*Tell your family — the one-minute explainer:* a learning machine does three jobs. Point at one app at home and name its job aloud. Their reaction, one line:]
+  )
+  v(3pt)
+  ruled-lines(1, lead: 8mm)
+})

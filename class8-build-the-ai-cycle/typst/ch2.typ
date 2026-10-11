@@ -4,7 +4,7 @@
 // ============================================================
 #chapter-opener(2, "Data & Fairness", "If the data only knows some of us, who does the machine actually serve?",
   outcomes: ("8.D1", "8.D2", "8.R1"), strands: ("D", "R"),
-  summary: [A machine is a mirror of its dataset — show it only some people and it serves only some people. In this chapter you audit real tables like a data detective (counting who is over-represented and who is missing), run a sampling game that ends with a surprise, repair an unfair dataset three different ways, and write the consent rules every honest collector must follow. This is the chapter where builders learn that "the data said so" is never the end of the story.],
+  summary: [A machine is a mirror of its dataset — show it only some people and it serves only some people. In this chapter you audit real tables like a data auditor (counting who is over-represented and who is missing), run a sampling game that ends with a surprise, repair an unfair dataset three different ways, and write the consent rules every honest collector must follow. This is the chapter where engineers learn that "the data said so" is never the end of the story.],
   missions: "T8-04 – T8-07",
   link: "Links: Maths — percentages, sampling · Social Science — inclusion & community · English — persuasive asking",
   extras: opener-extras(
@@ -44,6 +44,19 @@ Every dataset is a guest list. Somebody decided who got invited — which street
   ruled-lines(2, lead: 8.2mm)
 })
 
+#figure-visual("visuals/c8_ch2_fair-data-mindmap.png", [The fair-data map: six questions your audits must answer before any machine learns from a dataset.], width: 88%)
+#v(4pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[WARM-UP AUDIT — THE DATA YOU ALREADY ARE]
+  v(3pt)
+  text(size: 10.1pt)[Your school register is a dataset about you. Answer the map's first two questions about it, honestly, one line each:]
+  v(2pt)
+  text(size: 9.6pt, weight: 800, fill: teal)[Who is inside?]
+  ruled-lines(1, lead: 8.2mm)
+  text(size: 9.6pt, weight: 800, fill: red)[Who is missing — and who decided?]
+  ruled-lines(1, lead: 8.2mm)
+  text(size: 9.3pt, fill: ink-soft, style: "italic")[Hold your answers — T8-04 hands you a harder table in a moment.]
+})
 #task("T8-04", "Data Detective", mode: "group", mins: "20")[
   A city clinic built a "fever triage" helper trained on 200 patient records. Before you audit: *predict first.* Which group do you EXPECT to be overweighted in a clinic's own records — and why? Write one line, then audit for real:
   #ruled-lines(1, lead: 8.4mm)
@@ -121,7 +134,7 @@ Why not just collect *everyone*? Cost, time and energy force every real project 
   text(size: 9.7pt)[*A sample I already trust (and why):* #box(width: 62mm, baseline: 30%, line(length: 100%, stroke: 0.55pt + line-soft)) — *one thing it still misses:* #box(width: 40mm, baseline: 30%, line(length: 100%, stroke: 0.55pt + line-soft))]
 })
 
-#task("T8-05", "Sampling Game", mode: "class", mins: "15")[
+#task("T8-05", "Sampling Game", mode: "class", mins: "15", hands: true)[
   Round 1: your teacher picks the *first 8 students* who raise a hand (or the front row). Each writes one number: *minutes spent on screens yesterday*. Record them, then find the class's average for the *whole class* (your teacher writes it on the board without revealing it until Round 3).
   #v(4pt)
   #dtable(("What we measured", "First-8 sample", "Whole class (revealed last)"),
@@ -137,12 +150,12 @@ Why not just collect *everyone*? Cost, time and energy force every real project 
   )
   #v(5pt)
   *Which sample landed closer to the truth — and why was the hand-raising sample biased before anyone wrote a single number?* #ruled-lines(2, lead: 8.6mm)
-  *A builder collected training photos only from her own school. Which round of this game is she stuck in?* #ruled-lines(1, lead: 8.6mm)
+  *A engineer collected training photos only from her own school. Which round of this game is she stuck in?* #ruled-lines(1, lead: 8.6mm)
 ]
 #wordpower(5, "representation", [How closely a dataset's people match the real people the system will serve.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · SPOT THE SKEWED SAMPLE]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ENGINEER'S DRILL · SPOT THE SKEWED SAMPLE]
   v(3pt)
   text(size: 10.1pt)[Each plan collects data for a school-canteen menu predictor. Mark each sampling plan F (fair) or S (skewed), and name the group it would miss:]
   v(3pt)
@@ -160,7 +173,7 @@ Why not just collect *everyone*? Cost, time and energy force every real project 
 
 // ---------------- 2.3 ----------------
 #sec(3, "Fairness Fix-It: repairing a broken guest list")
-Finding the skew is detective work; *fixing* it is builder work — and there is never one magic fix. Real teams choose among several repairs, each with a price. Collect *more* data from the missing groups (slow but strongest). *Re-weight* what you have (fast, but the thin groups stay thin). *Restrict* the machine to the groups it truly knows, and say so honestly on the label (safest, but less useful). Notice what is *not* on the list: pretending the machine is neutral. A machine trained on a skewed guest list is not neutral — it votes for the majority group every single time.
+Finding the skew is audit work; *fixing* it is engineer work — and there is never one magic fix. Real teams choose among several repairs, each with a price. Collect *more* data from the missing groups (slow but strongest). *Re-weight* what you have (fast, but the thin groups stay thin). *Restrict* the machine to the groups it truly knows, and say so honestly on the label (safest, but less useful). Notice what is *not* on the list: pretending the machine is neutral. A machine trained on a skewed guest list is not neutral — it votes for the majority group every single time.
 
 #block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, inset: (x: 11pt, y: 8pt), {
   text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[SAMPLE-SIZE INTUITION — BEFORE YOU CHOOSE A FIX]
@@ -170,7 +183,7 @@ Finding the skew is detective work; *fixing* it is builder work — and there is
 })
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH FIX WOULD YOU DIAL?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ENGINEER'S DRILL · WHICH FIX WOULD YOU DIAL?]
   v(3pt)
   text(size: 10.1pt)[Each team has found its skew and must dial one fix — C (collect more), R (re-balance what exists) or L (limit the machine and label it honestly). Choose, and write the price:]
   v(3pt)
@@ -182,7 +195,7 @@ Finding the skew is detective work; *fixing* it is builder work — and there is
     widths: (1fr, 22mm, 1fr),
   )
   v(3pt)
-  text(size: 8.8pt, fill: ink-soft, style: "italic")[There is no universally right dial — a fix is right when its price is one the team can honestly pay. That is a builder's judgement, not a maths answer.]
+  text(size: 8.8pt, fill: ink-soft, style: "italic")[There is no universally right dial — a fix is right when its price is one the team can honestly pay. That is a engineer's judgement, not a maths answer.]
 }))
 
 #block(width: 100%, breakable: false, radius: 5pt, fill: white, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
@@ -222,7 +235,7 @@ Finding the skew is detective work; *fixing* it is builder work — and there is
 
 // ---------------- 2.4 ----------------
 #sec(4, "Consent: the door every example walks through")
-Behind every row of a dataset stands a person who breathed, spoke, walked or was photographed — and every honest project asks before it takes. *Consent* means permission given freely, by someone who understands what will be collected, why, and who will see it. Children and other vulnerable groups deserve extra care: often a parent or guardian must say yes alongside them. And consent has a shy cousin called *privacy care*: even data given happily must be stored safely, used only for the promised purpose, and stripped of details that could identify someone — a name, an address, a face. Builders who skip this step do not just break rules; they break the trust their whole project runs on.
+Behind every row of a dataset stands a person who breathed, spoke, walked or was photographed — and every honest project asks before it takes. *Consent* means permission given freely, by someone who understands what will be collected, why, and who will see it. Children and other vulnerable groups deserve extra care: often a parent or guardian must say yes alongside them. And consent has a shy cousin called *privacy care*: even data given happily must be stored safely, used only for the promised purpose, and stripped of details that could identify someone — a name, an address, a face. Engineers who skip this step do not just break rules; they break the trust their whole project runs on.
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
   text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[CONSENT — TRUE OR FALSE?]
@@ -301,8 +314,8 @@ Behind every row of a dataset stands a person who breathed, spoke, walked or was
 })
 
 #homelink[
-  #task("AT HOME", "Guest List Detective", mode: "home", mins: "15")[
-    With a grown-up, pick one app or service your family uses (a video app, a map, a shopping site). Do not open any settings or accounts — just talk. Guess together: whose voices, faces, languages and places were probably in its training data — and who might be missing? #v(3pt)
+  #task("AT HOME", "Guest List Audit", mode: "home", mins: "15")[
+    With an adult, pick one app or service your family uses (a video app, a map, a shopping site). Do not open any settings or accounts — just talk. Guess together: whose voices, faces, languages and places were probably in its training data — and who might be missing? #v(3pt)
     *Our guess at the guest list (who is inside):* #ruled-lines(2, lead: 8.1mm)
     *Who is probably missing — and one way that could go wrong for them:* #ruled-lines(2, lead: 8.1mm)
     *One question we would ask the makers if we met them:* #ruled-lines(1, lead: 8.1mm)
@@ -310,7 +323,7 @@ Behind every row of a dataset stands a person who breathed, spoke, walked or was
 ]
 
 #note("Case notes — what changed in my thinking?")[
-  Before this chapter I believed data was just… data — neutral stuff. Now I know every dataset has a guest list, and the detective's first question is always … #ruled-lines(2, lead: 8.4mm)
+  Before this chapter I believed data was just… data — neutral stuff. Now I know every dataset has a guest list, and the auditor's first question is always … #ruled-lines(2, lead: 8.4mm)
 ]
 
 #note("Chapter 2 clues — pocket these")[

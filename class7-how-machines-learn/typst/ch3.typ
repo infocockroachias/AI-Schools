@@ -4,7 +4,7 @@
 // ============================================================
 #chapter-opener(3, "AI at Work in India", "Where is AI already working — and how do I read its report card?",
   outcomes: ("7.W2", "7.D1"), strands: ("W", "D"),
-  summary: [Learning machines are already your neighbours' colleagues. In this chapter you will tour five sectors — healthcare, education, transport, agriculture, communication — and give each helper a report card with a benefit AND a limit. Then you will learn their favourite language: charts. You will collect structured data, draw bar, line and pie charts, and then face the chart detective's hardest truth: some charts are drawn to mislead you.],
+  summary: [Learning machines are already your neighbours' colleagues. In this chapter you will tour five sectors — healthcare, education, transport, agriculture, communication — and give each helper a report card with a benefit AND a limit. Then you will learn their favourite language: charts. You will collect structured data, draw bar, line and pie charts, and then face the chart pro's hardest truth: some charts are drawn to mislead you.],
   missions: "T7-10 – T7-12",
   link: "Links: Maths — data handling & percentages · Social Science — community work",
   extras: opener-extras(
@@ -33,7 +33,7 @@ Learning machines are already at work across India — not as magic, but as help
 ]
 #wordpower(9, "structured data", [Facts arranged in rows and columns, so patterns can be found.])
 
-#note("A healthy data diet")[You already know the Class 6 rule: *garbage in, garbage out.* Structured data makes patterns findable — but only *honest, varied* data makes them true. Before trusting any table, a data detective asks: Who collected this? Who is missing from it? And would the collector profit from a particular answer?]
+#note("A healthy data diet")[You already know the Class 6 rule: *garbage in, garbage out.* Structured data makes patterns findable — but only *honest, varied* data makes them true. Before trusting any table, a data trainer asks: Who collected this? Who is missing from it? And would the collector profit from a particular answer?]
 
 // ---------------- 3.2 ----------------
 #sec(2, "Every helper has a benefit and a limit")
@@ -56,7 +56,7 @@ No helper is magic, and honest reporting means saying both halves out loud: what
 
 // ---------------- 3.3 ----------------
 #sec(3, "Reading the report card: bar, line, pie")
-How do we know whether an AI helper — or any claim — is doing well? Its *data* is the report card, and the report card speaks through charts. You own the bar chart already: it *compares groups*. The *line graph* adds time: its slope tells the *trend*, the general direction — rising, falling, holding steady. The *pie chart* shows one whole split into parts. Each chart answers a different question, and a chart detective knows which is which: *“How many in each group?”* — bars. *“How is it changing?”* — line. *“What are the parts of one whole?”* — pie.
+How do we know whether an AI helper — or any claim — is doing well? Its *data* is the report card, and the report card speaks through charts. You own the bar chart already: it *compares groups*. The *line graph* adds time: its slope tells the *trend*, the general direction — rising, falling, holding steady. The *pie chart* shows one whole split into parts. Each chart answers a different question, and a chart pro knows which is which: *“How many in each group?”* — bars. *“How is it changing?”* — line. *“What are the parts of one whole?”* — pie.
 
 #grid(columns: (1fr, 1fr), column-gutter: 9pt,
   box(fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 9pt, y: 7pt), {
@@ -81,7 +81,7 @@ How do we know whether an AI helper — or any claim — is doing well? Its *dat
 #wordpower(11, "sample", [The group you actually collected data from — always smaller than everyone.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · DRAW THE TREND YOURSELF]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · DRAW THE TREND YOURSELF]
   v(3pt)
   text(size: 10.3pt)[A weather station logged the maximum temperature (°C) on the first of six months:]
   v(4pt)
@@ -93,7 +93,7 @@ How do we know whether an AI helper — or any claim — is doing well? Its *dat
 }))
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · WHICH CHART WOULD YOU CHOOSE?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · WHICH CHART WOULD YOU CHOOSE?]
   v(3pt)
   dtable(("The question…", "Bar, line or pie?"),
     ([Which of five house teams collected the most bottle caps this month?], [ ]),
@@ -109,7 +109,7 @@ How do we know whether an AI helper — or any claim — is doing well? Its *dat
 }))
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · READ THE PIE YOURSELF]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · READ THE PIE YOURSELF]
   v(4pt)
   grid(columns: (44mm, 1fr), column-gutter: 10pt, align: (center, top),
     piechart-example((50, 25, 15, 10), ("Folk tales", "Adventure", "Poetry", "Science"), (teal, amber, teal-mid, line-soft), pw: 38mm),
@@ -142,10 +142,10 @@ Charts look like evidence — but a chart is a *drawing made by a person*, and a
     widths: (1fr, 30mm),
   )
   v(3pt)
-  text(size: 9.5pt, fill: ink-soft, style: "italic")[Cut this promise out (or copy it) and keep it in your notebook. Any chart that breaks a promise is not lying to your eyes — it is lying to your *reason*. Detectives read numbers first and colours second.]
+  text(size: 9.5pt, fill: ink-soft, style: "italic")[Cut this promise out (or copy it) and keep it in your notebook. Any chart that breaks a promise is not lying to your eyes — it is lying to your *reason*. Trainers read numbers first and colours second.]
 }))
 
-#task("T7-11", "Chart Detective", mode: "alone", mins: "15")[
+#task("T7-11", "Chart Traps", mode: "alone", mins: "15")[
   Three posters went up on the school noticeboard. One is honest. Two are playing tricks.
   #v(4pt)
   #grid(columns: (1fr, 1fr, 1fr), column-gutter: 8pt,
@@ -170,12 +170,12 @@ Charts look like evidence — but a chart is a *drawing made by a person*, and a
   #v(6pt)
   *The honest chart is:* #box(width: 16mm, baseline: 30%, line(length: 100%, stroke: 0.9pt + ink-soft)) — because… #ruled-lines(1, lead: 8.4mm)
   *Chart B's trick:* #ruled-lines(1, lead: 8.4mm)
-  *Chart C's trick (check the numbers like a detective):* #ruled-lines(1, lead: 8.4mm)
+  *Chart C's trick (check the numbers like a trainer):* #ruled-lines(1, lead: 8.4mm)
   *Redraw plan — one change that would make each trickster honest:* #ruled-lines(2, lead: 8.4mm)
 ]
 
 #myth("If the chart is colourful, it is true.")[
-  Colour is a costume, not evidence. A chart can be beautiful and still be built on a chopped axis, a one-sided sample or numbers that never add up — you caught two doing exactly that in T7-11. The detective's move is to read the *numbers first* and the picture second: where does the axis start, what is the sample, and what is missing?]
+  Colour is a costume, not evidence. A chart can be beautiful and still be built on a chopped axis, a one-sided sample or numbers that never add up — you caught two doing exactly that in T7-11. The trainer's move is to read the *numbers first* and the picture second: where does the axis start, what is the sample, and what is missing?]
 
 #homelink[
   #task("AT HOME", "Chart Hunt", mode: "home", mins: "15")[

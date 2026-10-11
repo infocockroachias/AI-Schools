@@ -141,13 +141,14 @@ This is the mission where the whole book clicks together. Your class will build 
 Your survey machine predicted an *answer* — classification work. Real machines also predict *numbers*, and so can yours. Here is a whole week of noon temperatures your class logged on the terrace. Read the trend, then do what a regression machine does: draw the pattern forward and predict — and say how sure you are.
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · REGRESSION NEAR HOME]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · REGRESSION NEAR HOME]
   v(2.5pt)
   text(size: 10.1pt)[You already reason with trends every week. Extend each pattern like a regression machine would — write your number, then shade how sure you are:]
   v(3pt)
   dtable(("The pattern so far", "My prediction", "How sure?"),
     ([An auto charged ₹40 for 1 km, ₹55 for 2 km, ₹70 for 3 km. Fare for 4 km?], [\u2003], conf()),
     ([The water tank had 90 L on Monday, 80 L on Tuesday, 70 L on Wednesday. Litres on Friday?], [\u2003], conf()),
+    ([Our canteen sold 120 plates Monday, 118 Tuesday, 123 Wednesday. Plates on Friday — and how sure?], [\u2003], conf()),
     ([A mango tree gave 12, then 15, then 21, then 26 mangoes each week. Next week?], [\u2003], conf()),
     widths: (1fr, 26mm, 30mm),
   )
@@ -156,7 +157,7 @@ Your survey machine predicted an *answer* — classification work. Real machines
 }))
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · PREDICT TOMORROW]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · PREDICT TOMORROW]
   v(4pt)
   dtable(("Day", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"), (["Noon temperature (°C)"], ["24"], ["26"], ["27"], ["29"], ["30"], ["32"]), widths: (40mm, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr))
   v(5pt)
@@ -176,7 +177,7 @@ Your survey machine predicted an *answer* — classification work. Real machines
 }))
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · TREND OR NO TREND?]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[TRAINER'S DRILL · TREND OR NO TREND?]
   v(2.5pt)
   text(size: 10.1pt)[A trend is only worth predicting from when it holds *long enough and steady enough*. Mark each data story T (trend — safe to extend carefully) or N (no trend — a guess dressed as a pattern):]
   v(3pt)

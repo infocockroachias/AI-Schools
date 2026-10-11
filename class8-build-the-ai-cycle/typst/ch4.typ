@@ -17,7 +17,18 @@
 #sec(1, "The next-word machine: how text generators actually work")
 Forget magic. A text generator does one thing, enormously well: it reads the words so far and predicts a *likely next word* — based on patterns in a mountain of human writing. It is autocomplete that grew up. The catch is built into the trick itself: the machine knows which words *usually follow*, not which words are *true*. "The early bird catches the worm" flows because millions of people wrote it; a machine completing "The early crow catches the…" will pick whatever sounds plausible. Usually it sounds right. Sometimes it is completely invented — with perfect confidence either way, because confidence and truth live in different rooms.
 
-#task("T8-11", "Next-Word Game", mode: "class", mins: "15")[
+#figure-visual("visuals/c8_ch4_next-word-machine.png", [The next-word machine at work: one sentence, four candidates, probability bars — fluency without a fact-checker.], width: 98%)
+#v(4pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[THE FLUENCY TRAP — WHICH SENTENCE DID A MACHINE WRITE?]
+  v(3pt)
+  text(size: 10.1pt)[*A.* "The RMSC survey of 2,340 households across four monsoon seasons found a 17% drop in borewell reliance — the report is on the department portal, table 6."]
+  text(size: 10.1pt)[*B.* "Many experts widely believe that water levels are dropping significantly in various regions, which is concerning for the future."]
+  v(3pt)
+  text(size: 10.1pt)[My call, and the ONE feature that decided it (dates? numbers? sources? hedging?):]
+  ruled-lines(2, lead: 8.2mm)
+})
+#task("T8-11", "Next-Word Game", mode: "class", mins: "15", hands: true)[
   You are the machine. Your teacher reads each sentence aloud up to the blank; your class votes on the most likely next word. Then your teacher reveals the counts from a 500-page book of local writing (invented for this game). Fill the table as you play:
   #v(4pt)
   #dtable(("Sentence up to the blank", "Class's first guess", "Runner-up guess", "Revealed: which word won, and by how much"),
@@ -33,11 +44,11 @@ Forget magic. A text generator does one thing, enormously well: it reads the wor
 ]
 #wordpower(13, "text generator", [A machine that writes by predicting the most likely next words.])
 
-#note("Detective's note")[Here is why the machine *sounds* smart: likely words, arranged by likely patterns, produce paragraphs shaped exactly like the ones people write. It is a brilliant imitation of the *shape* of knowledge. But shape is not truth. A hallucinated biography of a fake scientist has perfect grammar, a plausible structure and a confident tone — all borrowed from real writing about real scientists. That is why your eyes and your verification routine are still the most important parts of the system.]
+#note("Engineer's note")[Here is why the machine *sounds* smart: likely words, arranged by likely patterns, produce paragraphs shaped exactly like the ones people write. It is a brilliant imitation of the *shape* of knowledge. But shape is not truth. A hallucinated biography of a fake scientist has perfect grammar, a plausible structure and a confident tone — all borrowed from real writing about real scientists. That is why your eyes and your verification routine are still the most important parts of the system.]
 
 // ---------------- 4.2 ----------------
 #sec(2, "Hallucination Hunt: verify before you trust")
-When a text generator states something false as if it were fact, builders call it a *hallucination* — and it is not a bug that will be patched away next month; it is the direct result of predicting likely words instead of checking facts. So the responsible user carries a routine, not a hope. The Class 6 habit — *check before believing* — now grows up into three moves: *trace the claim* (is there a real source?), *test the number* (do two sources agree?), and *smell the story* (is it suspiciously exactly what I wanted to hear?).
+When a text generator states something false as if it were fact, engineers call it a *hallucination* — and it is not a bug that will be patched away next month; it is the direct result of predicting likely words instead of checking facts. So the responsible user carries a routine, not a hope. The Class 6 habit — *check before believing* — now grows up into three moves: *trace the claim* (is there a real source?), *test the number* (do two sources agree?), and *smell the story* (is it suspiciously exactly what I wanted to hear?).
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
   text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[SAME SHAPE, DIFFERENT TRUTH — A PRE-HUNT DRILL]
@@ -51,6 +62,9 @@ When a text generator states something false as if it were fact, builders call i
   )
   v(3pt)
   text(size: 8.8pt, fill: ink-soft, style: "italic")[Watch the give-away words: *most people agree*, *everyone knows*, *it is said that* — confidence borrowed from a crowd nobody can name.]
+  v(2pt)
+  text(size: 9.8pt, weight: 800, fill: teal-deep)[*One suspicious sentence of my own, to trade with a partner:*]
+  ruled-lines(1, lead: 8mm)
 }))
 
 #task("T8-12", "Hallucination Hunt", mode: "group", mins: "15")[
@@ -90,7 +104,7 @@ When a text generator states something false as if it were fact, builders call i
 #wordpower(15, "misinformation", [False content that spreads — by mistake or on purpose.])
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
-  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DETECTIVE DRILL · THE THREE-MOVE ROUTINE]
+  text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ENGINEER'S DRILL · THE THREE-MOVE ROUTINE]
   v(3pt)
   text(size: 10.1pt)[Name the move: T (trace the claim), N (test the number) or S (smell the story):]
   v(3pt)
@@ -105,11 +119,30 @@ When a text generator states something false as if it were fact, builders call i
 }))
 
 #myth("If it is trained, it is true.")[
-  Trained means the machine found patterns in its examples — nothing more. The Plant Doctor was trained and still failed river-farm tomatoes; text generators are trained on human writing and still invent facts, because their job was never truth-finding, it was pattern-continuing. Training makes a machine *consistent* with its examples. Only *testing against the world* — hidden test sets for classifiers, source-checking for text — makes it trustworthy. Whenever you hear "our AI is trained on millions of examples", respond like a builder: *trained, yes — but tested how, and on whom?*]
+  Trained means the machine found patterns in its examples — nothing more. The Plant Doctor was trained and still failed river-farm tomatoes; text generators are trained on human writing and still invent facts, because their job was never truth-finding, it was pattern-continuing. Training makes a machine *consistent* with its examples. Only *testing against the world* — hidden test sets for classifiers, source-checking for text — makes it trustworthy. Whenever you hear "our AI is trained on millions of examples", respond like a engineer: *trained, yes — but tested how, and on whom?*]
 
 // ---------------- 4.3 ----------------
+
+#huva([The two essays — who wrote which?], [Two short texts on the same topic: "Why our school library should stay open after class." One was written by a Class 8 student; one was generated by an AI text tool. Read like an auditor — then give your verdict.],
+  [Essay A: "Our library closes at 4:30, but last Tuesday I stayed back for a maths test and saw three juniors asking the guard to let them in to return books. Opening till 6 on two days would fix exactly that. It costs almost nothing — the guard is already there."],
+  [Essay B: "Libraries are the heart of every school. Keeping the library open after class offers numerous benefits: it fosters a love of reading, provides a quiet study environment, and ensures equitable access to resources for all students. In today's fast-paced world, such spaces matter more than ever."],
+  (
+    [My verdict — A or B — and the ONE feature that gave it away (a real event? a vague phrase? whose voice?):],
+    [Swap test: rewrite one sentence of Essay B so a reader can tell a human wrote it. What did you add?],
+    [Two "tell-tale AI phrases" I will watch for in text I read this week:],
+  ))
+
 #sec(3, "The Responsible-Use Court: decisions with consequences")
 Technology choices are people choices. A school, a company or a government decides *what* a machine may do, *to whom*, and *who answers when it fails*. These decisions deserve the same seriousness as any other — evidence, arguments, and a verdict someone signs. So: court is now in session.
+
+#v(4pt)
+#block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, inset: (x: 10pt, y: 8pt), {
+  text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[COURT PREP — MY FIRST CASE NOMINATION]
+  v(3pt)
+  text(size: 9.8pt)[Before the session opens: which real AI decision near you would you bring to this court first, and who should sit in the jury?]
+  v(3pt)
+  ruled-lines(2, lead: 8mm)
+})
 
 #task("T8-13", "Responsible-Use Court", mode: "class", mins: "25")[
   *The case:* Sunapur school installed a "focus camera" in Class 8-B that watches faces and flags students who "look distracted" to the teacher every 10 minutes. The vendor says it raises results. Two students say it feels like being suspected all day. One parent says her son's medication makes him look drowsy — the machine flags him constantly.
@@ -131,14 +164,14 @@ Technology choices are people choices. A school, a company or a government decid
 
 // ---------------- 4.4 ----------------
 #sec(4, "My AI-Use Pledge")
-Court cases end with judgements; builder stories end with promises. A pledge is not decoration — it is the checklist you write *before* the difficult moment arrives, when a chatbot offers to write your essay or a group-chat spreads an exciting rumination. Copy your class's best ideas into the box, sign it, and keep the page where you will meet it again at the end of the book.
+Court cases end with judgements; engineer stories end with promises. A pledge is not decoration — it is the checklist you write *before* the difficult moment arrives, when a chatbot offers to write your essay or a group-chat spreads an exciting rumination. Copy your class's best ideas into the box, sign it, and keep the page where you will meet it again at the end of the book.
 
 #task("T8-14", "My AI-Use Pledge", mode: "alone", mins: "10")[
   Complete each clause honestly — these are YOUR rules, not the teacher's:
   #v(4pt)
   #block(width: 100%, radius: 5pt, fill: cream, stroke: 1pt + ink, inset: (x: 12pt, y: 9pt), {
     text(size: 10.5pt)[
-      *I, the undersigned investigator, pledge that…*
+      *I, the undersigned engineer, pledge that…*
       1. Before I believe or forward any AI-written or AI-edited content, I will #ruled-lines(1, lead: 8.2mm)
       2. When a text generator helps me with schoolwork, I will #ruled-lines(1, lead: 8.2mm)
       3. When I am tempted to feed personal information — mine or anyone's — into an AI tool, I will #ruled-lines(1, lead: 8.2mm)
@@ -160,7 +193,7 @@ Court cases end with judgements; builder stories end with promises. A pledge is 
 
 #homelink[
   #task("AT HOME", "Family Fact Patrol", mode: "home", mins: "15")[
-    With a grown-up, find one forwarded message or AI-looking summary in the family phone (do not open links). Run the routine together: *trace* — where did it really come from? *test* — do two trusted sources agree? *smell* — does it push an emotion before evidence? #v(3pt)
+    With an adult, find one forwarded message or AI-looking summary in the family phone (do not open links). Run the routine together: *trace* — where did it really come from? *test* — do two trusted sources agree? *smell* — does it push an emotion before evidence? #v(3pt)
     *The claim we examined:* #ruled-lines(1, lead: 8.1mm)
     *What the three moves found:* #ruled-lines(2, lead: 8.1mm)
     *What we will do differently before forwarding next time:* #ruled-lines(1, lead: 8.1mm)

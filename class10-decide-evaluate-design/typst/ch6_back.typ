@@ -205,7 +205,7 @@
     align(center)[
       #text(size: 9pt, weight: 800, fill: amber-deep, tracking: 0.22em)[PRATIMAI · AI HANDOUTS · CLASS 10]
       #v(3pt)
-      #text(font: f-display, size: 20.9pt, weight: 800, fill: teal)[My Designer's Certificate]
+      #text(font: f-display, size: 20.9pt, weight: 800, fill: teal)[My AI Designer's Certificate]
       #v(5pt)
       #text(size: 10.3pt, style: "italic")[This certifies that designer]
       #v(5pt)

@@ -36,26 +36,30 @@
 //  FRONT-MATTER PARTS
 // ============================================================
 
-// small pixel-heart motif (title page) — a picture really is numbers!
-#let pixel-heart(cell, tone: amber) = {
-  let heart = (
-    (0,1,1,0,0,1,1,0),
-    (1,1,1,1,1,1,1,1),
-    (1,1,1,1,1,1,1,1),
-    (1,1,1,1,1,1,1,1),
-    (0,1,1,1,1,1,1,0),
-    (0,0,1,1,1,1,0,0),
-    (0,0,0,1,1,0,0,0),
-    (0,0,0,0,0,0,0,0),
+// small pixel-AI motif (title page) — a friendly robot face, a picture really is numbers!
+#let pixel-ai(cell, tone: amber, tone2: teal) = {
+  let bot = (
+    (0,0,0,0,0,0,2,2,0,0,0,0,0,0),
+    (0,0,0,0,0,0,1,1,0,0,0,0,0,0),
+    (0,1,1,1,1,1,1,1,1,1,1,1,1,0),
+    (0,1,1,1,1,1,1,1,1,1,1,1,1,0),
+    (0,1,1,1,1,1,1,1,1,1,1,1,1,0),
+    (1,1,2,2,2,2,2,2,2,2,2,2,1,1),
+    (1,1,2,0,0,2,2,0,0,2,2,2,1,1),
+    (1,1,2,2,2,2,2,2,2,2,2,2,1,1),
+    (0,1,1,1,1,1,1,1,1,1,1,1,1,0),
+    (0,1,1,1,1,1,1,1,1,1,1,1,1,0),
+    (0,0,1,1,1,1,1,1,1,1,1,1,0,0),
   )
   let cells = {
     let out = ()
-    for r in range(8) { for c in range(8) {
-      out.push(if heart.at(r).at(c) == 1 { rect(width: cell, height: cell, fill: tone, radius: 0pt, stroke: none) } else { [] })
+    for r in range(11) { for c in range(14) {
+      let v = bot.at(r).at(c)
+      out.push(if v == 1 { rect(width: cell, height: cell, fill: tone, radius: 0pt, stroke: none) } else if v == 2 { rect(width: cell, height: cell, fill: tone2, radius: 0pt, stroke: none) } else { [] })
     } }
     out
   }
-  grid(columns: (cell,) * 8, rows: (cell,) * 8, inset: 0pt, stroke: none, ..cells)
+  grid(columns: (cell,) * 14, rows: (cell,) * 11, inset: 0pt, stroke: none, ..cells)
 }
 
 // front-matter section heading (not an outlined heading — stays out of TOC)
@@ -109,7 +113,7 @@
   set document(
     title: cover-title + " — PRATIMAI AI Handouts",
     author: author,
-    keywords: ("AI literacy", "unplugged", "PRATIMAI", "machiatto"),
+    keywords: ("AI literacy", "unplugged", "PRATIMAI", "AI literacy"),
   )
   set page(paper: "a4", margin: moka-margins, fill: paper, numbering: "1", number-align: center)
   set text(font: f-text, size: 11.5pt, fill: ink, lang: "en", region: "GB")
@@ -118,7 +122,7 @@
   // ---------- title page (machiatto: bordered block, centered) ----------
   align(center + horizon, block(width: 86%, inset: (x: 52pt, y: 46pt), radius: 5pt, stroke: 1.1pt + ink, fill: white, {
     set text(font: f-display)
-    align(center, pixel-heart(3.1mm))
+    align(center, pixel-ai(2.3mm))
     v(14pt)
     align(center, text(size: 10.4pt, weight: 800, tracking: 0.24em, fill: amber-deep, upper(cover-series)))
     v(10pt)
@@ -166,7 +170,7 @@
   {
     align(center, {
       v(10pt)
-      pixel-heart(2.4mm)
+      pixel-ai(1.8mm)
       v(8pt)
       text(font: f-display, size: 9pt, weight: 800, tracking: 0.24em, fill: amber-deep, upper(cover-series))
       v(14pt)
@@ -324,6 +328,17 @@
 //  (1pt ink stroke · radius 5pt · tinted fills)
 // ============================================================
 
+
+// ico() — tiny icon helper (Font Awesome 6 Free solid, bundled in fonts/)
+#let ico-map = (
+  search: "\u{f002}", user: "\u{f007}", pair: "\u{f500}", group: "\u{f0c0}",
+  class: "\u{f51c}", home: "\u{f015}", star: "\u{f005}", clock: "\u{f017}",
+  book: "\u{f518}", bulb: "\u{f0eb}", ban: "\u{f05e}", shield: "\u{f3ed}",
+  hand: "\u{f256}", robot: "\u{f544}", pencil: "\u{f303}", eye: "\u{f06e}",
+  seed: "\u{f4d8}", gear: "\u{f013}", flask: "\u{f0c3}", scale: "\u{f24e}",
+)
+#let ico(key, size: 8.5pt, fill: amber-deep) = text(font: "Font Awesome 6 Free Solid", weight: 900, size: size, fill: fill, ico-map.at(key))
+
 // task activity box
 #let task(code, title, mode: "pair", mins: "10", win: false, body) = {
   v(4pt)
@@ -333,7 +348,9 @@
         text(font: f-display, weight: 800, size: 12.1pt, fill: amber-deep, code),
         text(font: f-display, weight: 800, size: 13.9pt, fill: teal, title),
         {
-          if win { box(width: 5pt, height: 5pt, fill: amber, baseline: 28%); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "QUICK WIN"); h(7pt) }
+          if win { ico("star", size: 8.4pt); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "QUICK WIN"); h(7pt) }
+          ico("clock", size: 7.8pt, fill: ink-soft)
+          h(3.5pt)
           text(font: f-display, fill: ink-soft, weight: 800, size: 8.1pt, tracking: 0.12em, upper(mode) + " · " + mins + " MIN")
         },
       )
@@ -346,12 +363,12 @@
 // Word Power vocabulary card — machiatto def() with PRATIMAI fills
 #let wordpower(n, term, body) = {
   v(3pt)
-  text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[WORD POWER · #str(n)]
+  { ico("book", size: 8.4pt, fill: amber-deep); h(4pt); text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[WORD POWER · #str(n)] }
   v(2pt)
   block(width: 100%, breakable: false, def(title: text(font: f-display, size: 14.3pt, weight: 800, fill: teal, term), fill: cream)[
     #text(size: 11pt, body)
     #v(2pt)
-    #text(size: 8.4pt, fill: ink-soft, weight: 700, style: "italic")[Say it three times today — it sticks!]
+    #text(size: 8.4pt, fill: ink-soft, weight: 700, style: "italic")[Read it three times today — it sticks!]
   ])
   v(2pt)
 }
@@ -361,7 +378,7 @@
   v(4pt)
   block(width: 100%, breakable: false, radius: 5pt, fill: white, stroke: 1pt + ink, inset: (x: 11pt, y: 9pt), {
     grid(columns: (auto, 1fr), column-gutter: 5pt, align: (left, horizon),
-      box(width: 5.5pt, height: 5.5pt, fill: teal, baseline: 28%),
+      ico("ban", size: 8.8pt, fill: teal-deep),
       text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em, "MYTH BUSTER"),
     )
     v(7pt)
@@ -432,7 +449,7 @@
 #let note(title, body) = {
   v(3pt)
   block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 1pt + ink, inset: (x: 11pt, y: 8pt), {
-    text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em, upper(title))
+    { ico("bulb", size: 8.4pt, fill: amber-deep); h(4.5pt); text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em, upper(title)) }
     v(2.5pt)
     text(size: 10.9pt, body)
   })
@@ -533,7 +550,7 @@
     grid(columns: (auto, 1fr, auto), column-gutter: 8pt, align: (left, horizon, right),
       text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[WARM-UP · BEFORE YOU READ],
       [],
-      text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.12em)[ALONE · 2 MIN],
+      { ico("clock", size: 7.8pt, fill: ink-soft); h(3.5pt); text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.12em)[ALONE · 2 MIN] },
     )
     v(3.5pt)
     text(size: 10.7pt, warmup)
@@ -591,10 +608,45 @@
   v(7pt)
   grid(columns: (1fr, 1fr), column-gutter: 6pt, row-gutter: 5.5pt,
     legend-card("MISSION", white, 1pt + ink, [A paper mission with a code like *T6-01*. The label tells you who you work with and how many minutes you get. Do it — then write. Writing *is* the mission.]),
-    legend-card("WORD POWER", cream, 0.9pt + ink-soft, [A word worth keeping in your detective kit. Say it three times today — words are the tools of thinking.]),
+    legend-card("WORD POWER", cream, 0.9pt + ink-soft, [A word worth keeping in your detective kit. Read it three times today — words are the tools of thinking.]),
     legend-card("SELF-CHECK", teal-faint, 1pt + ink, [Skills to grade yourself on. Shade a confidence circle honestly — honest circles make you learn faster.]),
     legend-card("THINK & INK", amber-soft, 1pt + ink, [A question with lines. There is no single right answer here — your *reasons* are the answer.]),
   )
   v(5pt)
   text(size: 9.3pt, fill: ink-soft)[Also on patrol: #strong[MYTH BUSTER] busts a wrong idea many people believe · #strong[DETECTIVE'S NOTE] hands you a professional's secret · #strong[HOME LINK] (dashed) is a mission to take home and teach a grown-up.]
+}
+
+
+// HUMAN VS MACHINE challenge — how human intelligence differs from artificial intelligence
+#let huva(title, intro, human, ai, prompts) = {
+  v(5pt)
+  block(width: 100%, breakable: false, radius: 5pt, stroke: 1.1pt + teal-deep, fill: white, inset: 0pt, {
+    box(width: 100%, fill: teal-faint, inset: (x: 11pt, y: 7pt), radius: (top-left: 4pt, top-right: 4pt), stroke: (bottom: 0.8pt + teal-deep), {
+      grid(columns: (auto, 1fr, auto, auto), column-gutter: 7pt, align: (left, horizon, right, right),
+        text(font: f-display, size: 10.2pt, fill: teal-deep, weight: 800, tracking: 0.1em, "HUMAN VS MACHINE"),
+        text(font: f-display, size: 10.4pt, fill: ink, weight: 800, title),
+        box(fill: teal, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8pt, weight: 800, tracking: 0.1em, "HUMAN")),
+        box(fill: amber, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8pt, weight: 800, tracking: 0.1em, "AI")),
+      )
+    })
+    box(width: 100%, inset: (x: 11pt, y: 8pt, bottom: 10pt), {
+      text(size: 10.3pt, intro)
+      v(6pt)
+      grid(columns: (1fr, 1fr), column-gutter: 7pt,
+        block(width: 100%, breakable: false, radius: 4pt, fill: teal-faint, inset: (x: 8pt, y: 6pt), {
+          text(font: f-display, size: 8.4pt, fill: teal-deep, weight: 800, tracking: 0.12em)[THE HUMAN WAY]
+          v(2.5pt)
+          text(size: 9.5pt, human)
+        }),
+        block(width: 100%, breakable: false, radius: 4pt, fill: amber-soft, inset: (x: 8pt, y: 6pt), {
+          text(font: f-display, size: 8.4pt, fill: amber-deep, weight: 800, tracking: 0.12em)[THE MACHINE WAY]
+          v(2.5pt)
+          text(size: 9.5pt, ai)
+        }),
+      )
+      v(7pt)
+      stack(spacing: 5.5pt, ..prompts.map(pp => { text(size: 10.1pt, pp); v(1pt); ruled-lines(1, lead: 8.4mm) }))
+    })
+  })
+  v(2pt)
 }

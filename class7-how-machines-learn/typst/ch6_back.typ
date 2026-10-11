@@ -36,7 +36,7 @@
   gloss("accountability", 14, [Being answerable for what a system does — only people can hold it.]),
 )
 #v(7pt)
-#note("Detective's oath")[Machines *sort, count, predict* — people *choose the examples, check the sample and stay answerable*. When a machine speaks, I will ask my four questions: *How do I know? What is missing? Who made this? What is the trick here?*]
+#note("Trainer's oath")[Machines *sort, count, predict* — people *choose the examples, check the sample and stay answerable*. When a machine speaks, I will ask my four questions: *How do I know? What is missing? Who made this? What is the trick here?*]
 #v(6pt)
 
 #note("Answer hints — for checking, never for copying")[

@@ -10,7 +10,7 @@
   cover-title: "Decide, Evaluate, Design",
   cover-subtitle: "My field book for judging AI systems, designing them responsibly — and defending the call",
   cover-meta: ("CLASS 10 · LEVEL 5 — EVALUATE & DESIGN", "21 PAPER MISSIONS · 5 CHAPTERS · NO SCREEN NEEDED"),
-  author: "PRATIMAI Curriculum Team",
+  author: "PRATIMA AI Curriculum Team",
   license: license-page,
   ack: ack-text,
   ack-meta: "21 PAPER MISSIONS · 24 WORDS TO KEEP · 5 CHAPTERS · 1 PORTFOLIO EARNED",

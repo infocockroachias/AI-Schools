@@ -10,7 +10,7 @@
   cover-title: "AI Around Me",
   cover-subtitle: "My detective notebook for spotting smart machines",
   cover-meta: ("CLASS 6 · LEVEL 1 — NOTICE", "20 PAPER MISSIONS · 5 CHAPTERS · NO SCREEN NEEDED"),
-  author: "PRATIMAI Curriculum Team",
+  author: "PRATIMA AI Curriculum Team",
   license: license-page,
   ack: ack-text,
   ack-meta: "20 PAPER MISSIONS · 14 WORDS TO KEEP · 5 CHAPTERS · 1 BADGE EARNED",

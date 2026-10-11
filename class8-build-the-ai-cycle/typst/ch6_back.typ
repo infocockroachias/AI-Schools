@@ -38,7 +38,7 @@
   gloss("responsible use", 16, [Choosing and using AI tools so people are helped, respected and safe.]),
 )
 #v(7pt)
-#note("Builder's oath")[Machines *compare, predict, continue* — people *scope the problem, audit the guest list, run the honest test and sign the verdict*. When a machine speaks, I will ask my five questions: *How do I know? What is missing? Who made this? Who is missing? What is the trick here?*]
+#note("Engineer's oath")[Machines *compare, predict, continue* — people *scope the problem, audit the guest list, run the honest test and sign the verdict*. When a machine speaks, I will ask my five questions: *How do I know? What is missing? Who made this? Who is missing? What is the trick here?*]
 #v(6pt)
 
 #note("Answer hints — for checking, never for copying")[
@@ -65,16 +65,16 @@
 })
 #v(5pt)
 #block(width: 100%, breakable: false, radius: 5pt, fill: white, stroke: 1pt + ink, inset: (x: 11pt, y: 9pt), {
-  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[A POSTCARD TO THE CLASS 9 INVESTIGATOR — WHO WILL BE YOU]
+  text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[A POSTCARD TO THE CLASS 9 ANALYST — WHO WILL BE YOU]
   v(3pt)
-  text(size: 10.1pt)[The next case asks the question every builder must face sooner or later: *“Why does AI work — and when does it fail?”* Class 9 goes under the hood: the maths of averages, probability and best-fit lines that make learning possible, and the graph tricks that make it look easier than it is. Leave three clues for your future self — the trade-off that surprised you most, the plan of yours that failed hardest, and one question you dare Class 9 to answer:]
+  text(size: 10.1pt)[The next case asks the question every engineer must face sooner or later: *“Why does AI work — and when does it fail?”* Class 9 goes under the hood: the maths of averages, probability and best-fit lines that make learning possible, and the graph tricks that make it look easier than it is. Leave three clues for your future self — the trade-off that surprised you most, the plan of yours that failed hardest, and one question you dare Class 9 to answer:]
   v(2pt)
   ruled-lines(3, lead: 8.4mm)
 })
 
 // ---------------- PROGRESS + CERTIFICATE ----------------
 #heading(level: 1, numbering: none)[My progress]
-#align(center, text(size: 10.3pt, fill: ink-soft, style: "italic")[Shade honestly — investigators never fake evidence.])
+#align(center, text(size: 10.3pt, fill: ink-soft, style: "italic")[Shade honestly — engineers never fake evidence.])
 #v(10pt)
 
 #text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[MY OUTCOME TRACKER — TICK WHEN YOU TRULY CAN DO IT]
@@ -113,13 +113,13 @@
     align(center)[
       #text(size: 9pt, weight: 800, fill: amber-deep, tracking: 0.22em)[PRATIMAI · AI HANDOUTS · CLASS 8]
       #v(3pt)
-      #text(font: f-display, size: 20.9pt, weight: 800, fill: teal)[My Builder's Certificate]
+      #text(font: f-display, size: 20.9pt, weight: 800, fill: teal)[My AI Engineer's Certificate]
       #v(5pt)
       #text(size: 10.3pt, style: "italic")[This certifies that project lead]
       #v(5pt)
       #line(length: 62%, stroke: 0.8pt + ink-soft)
       #v(2pt)
-      #text(size: 8.6pt, fill: ink-soft, weight: 700, tracking: 0.12em)[INVESTIGATOR NAME]
+      #text(size: 8.6pt, fill: ink-soft, weight: 700, tracking: 0.12em)[ENGINEER NAME]
       #v(5pt)
       #text(size: 10.1pt)[has completed the case file *“Build the AI Cycle”* — Level 3 · BUILD THE CYCLE —
         planned and peer-reviewed a full AI project proposal, and promised to keep asking:
@@ -127,7 +127,7 @@
       #v(6pt)
       #grid(columns: (1fr, 1fr, 1fr), column-gutter: 10pt,
         { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 8.4pt, fill: ink-soft, weight: 700, tracking: 0.1em)[DATE] },
-        { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 8.4pt, fill: ink-soft, weight: 700, tracking: 0.1em)[INVESTIGATOR'S SIGNATURE] },
+        { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 8.4pt, fill: ink-soft, weight: 700, tracking: 0.1em)[ENGINEER'S SIGNATURE] },
         { line(length: 80%, stroke: 0.8pt + ink-soft); v(1.5pt); text(size: 8.4pt, fill: ink-soft, weight: 700, tracking: 0.1em)[GUIDE'S SIGNATURE] },
       )
     ]
@@ -137,7 +137,7 @@
 
 // closing page: the series so far + the door to Class 9
 #block(width: 100%, breakable: false, radius: 5pt, fill: white, stroke: 0.9pt + ink-soft, inset: (x: 11pt, y: 9pt), {
-  text(font: f-display, size: 12.7pt, weight: 800, fill: teal)[My series so far — three cases, one investigator]
+  text(font: f-display, size: 12.7pt, weight: 800, fill: teal)[My series so far — three cases, one engineer]
   v(4pt)
   grid(columns: (1fr, 1fr, 1fr), column-gutter: 7pt,
     box(fill: teal-faint, radius: 5pt, inset: (x: 8pt, y: 7pt), stack(spacing: 2.5pt,
@@ -175,9 +175,9 @@
 #block(width: 100%, breakable: false, radius: 5pt, fill: white, stroke: 0.9pt + ink-soft, inset: (x: 11pt, y: 9pt), {
   text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[THIS CASE FILE BELONGS TO THE EVIDENCE]
   v(2pt)
-  text(size: 9.9pt)[Investigator: #box(width: 52mm, baseline: 30%, line(length: 100%, stroke: 0.55pt + line-soft)) #h(8pt) Class & division: #box(width: 30mm, baseline: 30%, line(length: 100%, stroke: 0.55pt + line-soft)) #h(8pt) School year: #box(width: 24mm, baseline: 30%, line(length: 100%, stroke: 0.55pt + line-soft))]
+  text(size: 9.9pt)[Engineer: #box(width: 52mm, baseline: 30%, line(length: 100%, stroke: 0.55pt + line-soft)) #h(8pt) Class & division: #box(width: 30mm, baseline: 30%, line(length: 100%, stroke: 0.55pt + line-soft)) #h(8pt) School year: #box(width: 24mm, baseline: 30%, line(length: 100%, stroke: 0.55pt + line-soft))]
   v(3pt)
-  text(size: 9.4pt, fill: ink-soft, style: "italic")[Hand this book to next year's Class 8 detectives with your tallies inside — the best hand-me-down is an honest one.]
+  text(size: 9.4pt, fill: ink-soft, style: "italic")[Hand this book to next year's Class 8 engineers with your tallies inside — the best hand-me-down is an honest one.]
 })
 #v(7pt)
 #block(width: 100%, breakable: false, radius: 5pt, fill: amber-soft, stroke: 1pt + ink, inset: (x: 11pt, y: 9pt), {
