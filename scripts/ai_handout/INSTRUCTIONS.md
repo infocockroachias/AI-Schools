@@ -76,3 +76,27 @@ typst compile --font-path fonts main.typ main.pdf
 - The three Question-Habit questions ("How do I know? · What is missing? ·
   Who made this?" — Class 7 adds "What is the trick here?") must keep
   appearing throughout; they are the spine of the series.
+
+## 6. Production pitfalls (zero-tolerance QA)
+
+- **Bare `h()` leak:** inside a markup block `[...]`, text after a `#code(...)`
+  call closes is MARKUP again — a bare `h(4pt)` there prints the literal string
+  "h(4pt)" on the page (production bug found on the pledge/checklist pages,
+  fixed 2026-10 in all five books; 51 instances). Always write `#h(...)`,
+  `#v(...)` when a call follows another code call inside markup.
+- **Markup-mode brackets are literal:** `[` and `]` are ordinary TEXT in markup
+  mode; they delimit content only in code positions (`#call(...)[body]`, inside
+  `grid(...)`/`dtable(...)` arguments). A "nested" `[*bold*]` line inside a task
+  body prints the brackets and drops the book font (production bug found in
+  Class 7 "Three Checks at the Shop", fixed 2026-10). Write plain markup lines
+  instead — verified rendering equivalent (V2 style).
+
+- **Post-build token scan:** after every build, run `pdftotext main.pdf -` and
+  grep for leaked tokens (`h(`, `v(`, `pt)`, `box(`, `ruled-lines`, `#`).
+  Zero hits is the pass bar before any PDF ships.
+- **Register sweep for the verification routine:** from Class 8 up the moves
+  are *verify → cross-check → question* (+ *seek the original* from Class 9,
+  the "Verify-It Routine"). The Class 6/7 wording "trace / test / smell" must
+  never appear in Class 8-10 body text. Task IDs are never renumbered; display
+  titles may be aligned to the class register (T8-04 "Data Detective" ->
+  "Data Auditor").

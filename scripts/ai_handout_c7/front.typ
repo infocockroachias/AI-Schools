@@ -266,8 +266,8 @@
     text(size: 10.1pt)[One habit I promise to keep — write everything down, even the wrong guesses:]; ruled-lines(1, lead: 8.6mm)
     v(6pt)
     grid(columns: 2, column-gutter: 16pt,
-      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
-      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt)],
+      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt)],
     )
   })
 }

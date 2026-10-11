@@ -179,11 +179,11 @@ You now own three fixes, and they work on any machine, not just the ones in this
 #homelink[
   #task("AT HOME", "Three Checks at the Shop", mode: "home", mins: "10")[
     Find one *claim on a packet, poster or advertisement* at home — something that promises a result (“whiter in 3 days!”, “9 out of 10 doctors…”, “extra power!”). Run the three checks with a grown-up:
-    v(3pt)
-    [*The claim:* #ruled-lines(1, lead: 8.1mm)]
-    [*Source — who says so, and do they profit?* #ruled-lines(1, lead: 8.1mm)]
-    [*Evidence — what proof is printed?* #ruled-lines(1, lead: 8.1mm)]
-    [*Emotion — what is it promising or frightening?* #ruled-lines(1, lead: 8.1mm)]
+    #v(3pt)
+    *The claim:* #ruled-lines(1, lead: 8.1mm)
+    *Source — who says so, and do they profit?* #ruled-lines(1, lead: 8.1mm)
+    *Evidence — what proof is printed?* #ruled-lines(1, lead: 8.1mm)
+    *Emotion — what is it promising or frightening?* #ruled-lines(1, lead: 8.1mm)
   ]
 ]
 

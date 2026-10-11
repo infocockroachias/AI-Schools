@@ -261,13 +261,13 @@
     text(size: 9.8pt)[An engineer plans with data that already exists. Name three places data about YOU is produced this week — and tick whether anyone asked:]
     v(4pt)
     grid(columns: (1fr, auto, auto), column-gutter: 8pt, row-gutter: 5pt, align: (horizon, center, center),
-      text(size: 9.7pt)[1. #box(width: 82%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.7pt)[1. #box(width: 82%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
       text(size: 8.8pt, fill: ink-soft)[asked?],
       text(size: 8.8pt, fill: ink-soft)[aware?],
-      text(size: 9.7pt)[2. #box(width: 82%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.7pt)[2. #box(width: 82%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
       text(size: 8.8pt)[Y / N],
       text(size: 8.8pt)[Y / N],
-      text(size: 9.7pt)[3. #box(width: 82%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.7pt)[3. #box(width: 82%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
       text(size: 8.8pt)[Y / N],
       text(size: 8.8pt)[Y / N],
     )
@@ -289,8 +289,8 @@
     text(size: 10.1pt)[My honesty clause — what I will do when a plan of mine fails its own test:]; ruled-lines(1, lead: 8.6mm)
     v(6pt)
     grid(columns: 2, column-gutter: 16pt,
-      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
-      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt)],
+      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt)],
     )
   })
   v(9pt)
@@ -300,9 +300,9 @@
     text(size: 9.8pt)[Flip through this book for two minutes, the way an engineer first walks a site. Three things I noticed that I intend to question later:]
     v(4pt)
     grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 5pt, align: (horizon, horizon),
-      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
-      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
-      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
     )
   })
   v(9pt)
@@ -325,6 +325,6 @@
       text(size: 9.8pt)[*What is the trick here?* — what would the honest test have been?],
     )
     v(5.5pt)
-    text(size: 9.6pt, style: "italic", fill: ink-soft)[The question I will use most this year, and where I first plan to use it: #box(width: 52%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)]
+    text(size: 9.6pt, style: "italic", fill: ink-soft)[The question I will use most this year, and where I first plan to use it: #box(width: 52%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)]
   })
 }
