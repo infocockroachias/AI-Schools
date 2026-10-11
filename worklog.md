@@ -186,3 +186,23 @@ Stage Summary:
 - All five handouts rebuilt on the refinement contract; QA 16/16 × 5; whitespace converged; every user point addressed (symbols, toolchain, figure visibility, Read-it, icons, roles, vocab tiers, Human-vs-AI, preface/ack/licence).
 - Standing rules extended in INSTRUCTIONS.md; webapp serves 52/62/70/71/62-page editions with updated cards.
 - main @ 9d478e2 on GitHub; continuous commit+push rule remains in force.
+
+---
+Task ID: 9
+Agent: Super Z (main agent)
+Task: User-reported production glitches — (a) internal `h(4pt)` code visibly printing on book pages ("asked? aware? Y/N" checklist area), (b) leftover detective language in Class 8 ("trace — where did it really come from? test — … smell — …"); fix carefully without disturbing structure/design/content.
+
+Work Log:
+- Root-caused TWO Typst markup-leak families (both reproduce bare on typst 0.15.1): (1) after a `#code(...)` call closes inside markup, the next call is MARKUP again — bare `h(4pt)` prints literally; (2) `[`/`]` are literal TEXT in markup mode (delimiters only in code positions) — "nested" `[*bold*]` lines print brackets AND drop the book font.
+- fix_h_markup.py: fixed 51 `) h(Npt)` leaks across all five books (front-matter checklists, pledge Signed/Date, flip-test lines, c9 receipts, c10 seven-question card, c7 ch1 example lines).
+- Found + fixed 1 standalone bare `v(3pt)` inside c7 ch4 task markup (pdftotext-guided; own-line bare calls are legal only inside {..} code blocks).
+- Bracket-leak sweep of all five PDFs: single remaining instance = c7 ch4 "Three Checks at the Shop" homelink (`[*The claim:* …]` ×4 lines) — rewrote to plain markup lines (V2-proven style); c10's 20 brackets were already fixed in Task 8.
+- Detective register sweep (c8 was quoting ch4's routine inherited from Class 6): three moves renamed verify the source / cross-check the number / question the story (drill initials T/N/S→V/C/Q) in ch4 §4.2 intro, Engineer's Drill, self-check, Family Fact Patrol homelink, Chapter 4 clues; c9's Verify-It Routine aligned (VERIFY/CROSS-CHECK/QUESTION/SEEK THE ORIGINAL) since it explicitly inherits "The Class 8 three moves"; flowchart-trace vocabulary in c9 ch5/front deliberately KEPT (algorithm tracing, not detective voice); c10 acknowledgements already role-correct (detectives/builders/analysts) — untouched. T8-04 display title "Data Detective" → "Data Auditor" (ID T8-04 and back-matter answer key untouched).
+- INSTRUCTIONS.md ×5: new "Production pitfalls (zero-tolerance QA)" section — bare-call rule, markup-brackets rule, post-build pdftotext token scan, register sweep for the verification routine; c8/c9 stale "detective's note" component references corrected to engineer's/analyst's note.
+- QA: all five recompiled (52/62/70/71/62 pp — unchanged); pdftotext token+bracket scan zero hits across the series; register greps confirm new wording, zero "smell/trace-the-claim/Data Detective"; page renders visually verified (c8 p7 checklist clean, c8 p56 patrol, c7 p47 shop).
+- Packaging: download/ PDFs + source zips rebuilt (10 files); discovered remote repo uses the clean publication layout (classN-*/typst, webapp/public/files, curriculum) from Task 8 — synced today's sources+builds via worktree branch sync/2026-10-11-production-fixes and pushed (9d478e2..dd44da3); merged origin/main into local main (--allow-unrelated-histories, zero conflicts) so histories are connected; sync_to_remote_layout.sh committed as the standing publish flow (edit scripts/ai_handout* → run sync script → commit+push).
+
+Stage Summary:
+- All literal-code leaks eliminated series-wide (51 h + 1 v + 4 bracket lines); production-pitfall rules codified in every INSTRUCTIONS.md.
+- Class 8/9 claim-verification language now builder/analyst register end-to-end; task IDs stable.
+- GitHub main @ ae37b9b: class folders + webapp library files + download mirrors all carry today's builds; layouts converged, future pushes are simple commits.
