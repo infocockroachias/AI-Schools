@@ -142,18 +142,12 @@ Typst CLI: `~/.local/bin/typst` (0.15.1). Packages `machiatto 0.2.0` and
 > **Do NOT reuse the Class 6/7 voice in the senior books.** Each level owns
 > its register, and the self-identity word is part of the design:
 
-| Class | Register | Self-identity (AI role) | Banned in this book |
+| Class | Register | Self-identity | Banned in this book |
 |---|---|---|---|
-| 6 | playful detective adventure | **AI Detective** | formal jargon without story |
-| 7 | trainer register (kid-friendly, one notch up) | **AI Trainer** | detective persona left over from Class 6 |
-| 8 | engineer register | **AI Engineer** | "grown-ups" (→ adults), `BUILDER DRILL` label |
-| 9 | analyst register | **AI Analyst** | `ANALYST DRILL` label (→ `ANALYST'S DRILL`), no detective voice |
-| 10 | designer/evaluator register (most precise) | **AI Designer** | exam-cram tone; stays reasoning-first |
-
-Role words live in greetings ("Welcome back, Trainer!"), drill labels
-(`TRAINER'S DRILL` / `ENGINEER'S DRILL` / `ANALYST'S DRILL`), toolkits, oath
-and certificate titles ("My AI Engineer's Certificate"). Task names from the
-curriculum spec (e.g. T8-04 "Data Detective") stay verbatim regardless.
+| 6-7 | playful detective adventure | Detective / investigator | formal jargon without story |
+| 8 | builder register (one notch up) | **Builder** | "grown-ups" (→ adults), drill label `BUILDER DRILL` |
+| 9 | analyst register | **Analyst** | `ANALYST DRILL` labels, no detective voice |
+| 10 | designer/evaluator register (most precise) | **Designer** | exam-cram tone; stays reasoning-first |
 
 Series devices that survive everywhere: "mission" for task, case-journal,
 chapter clues, the growing Question-Habit set. Task names from the curriculum
@@ -171,57 +165,26 @@ spec (e.g. T8-04 "Data Detective") are kept verbatim regardless of register.
   with `opener-extras` (words-you'll-meet + warm-up + toolkit) and closes
   with clues note + `chapter-checkpoint` + `case-journal`.
 
+## 9. Production pitfalls (zero-tolerance QA)
 
-## 9. Production front-matter rule (no toolchain leakage)
+- **Bare `h()` leak:** inside a markup block `[...]`, text after a `#code(...)`
+  call closes is MARKUP again — a bare `h(4pt)` there prints the literal string
+  "h(4pt)" on the page (production bug found on the pledge/checklist pages,
+  fixed 2026-10 in all five books; 51 instances). Always write `#h(...)`,
+  `#v(...)` when a call follows another code call inside markup.
+- **Markup-mode brackets are literal:** `[` and `]` are ordinary TEXT in markup
+  mode; they delimit content only in code positions (`#call(...)[body]`, inside
+  `grid(...)`/`dtable(...)` arguments). A "nested" `[*bold*]` line inside a task
+  body prints the brackets and drops the book font (production bug found in
+  Class 7 "Three Checks at the Shop", fixed 2026-10). Write plain markup lines
+  instead — verified rendering equivalent (V2 style).
 
-> **Printed pages never mention the toolchain.** No "Typst", "Machiatto",
-> template names, `visualgeneration.md`, or source-licence text may appear in
-> any rendered page. Front matter is production-ready at all times.
-
-- Licence page: **© PRATIMA AI, all rights reserved** + the
-  collaboration-agreement paragraph (schools contact PRATIMA AI to sign).
-  No Creative-Commons / MIT wording.
-- Imprint: Author = PRATIMA AI · Research & Curriculum Team; Published by =
-  PRATIMA AI; Edition = First Edition · 1.0.
-- Colophon: fonts + paper only ("Set in Nunito and Baloo 2 … SIL Open Font
-  Licence"), no typesetting engine.
-- Title page and acknowledgements carry the **pixel-AI robot motif**
-  (`pixel-ai()`), never the old pixel heart.
-- Acknowledgements name the three teams — AI research team, academic team,
-  child-psychology team — "built brick by brick".
-- Preface carries the **psychology note** ("Why this book works the way it
-  does"), the **Question-Habit practice strip**, and flows continuously —
-  no hard pagebreaks before the adults note or journey map (stranded
-  half-empty preface pages are a defect).
-
-## 10. Word Power phrasing
-
-The vocabulary card footer always reads **"Read it three times today — it
-sticks!"** (never "Say it" — recall, not recitation). Vocab strip heading
-ages with the book: `WORDS YOU'LL MEET HERE` (6-7) → `TERMS YOU'LL BUILD
-WITH` (8) → `TERMS YOU'LL ANALYSE WITH` (9) → `TERMS YOU'LL DESIGN WITH` (10).
-
-## 11. Icon rule (Class 6-7)
-
-Class 6/7 use the self-contained `ico()` helper (Font Awesome 6 Free Solid,
-bundled as `fonts/fa6-solid.otf`): clock on every mission timer, star on
-QUICK WIN, bulb on note titles, book on Word Power, ban on Myth Buster, and
-person/pair/group/board/home icons on the work-mode chips. Class 8-10 stay
-icon-free except where a component predates the rule.
-
-## 12. Human vs Machine rule
-
-> **Every book carries one flagship `huva()` activity** — a HUMAN VS MACHINE
-> comparison box that makes the human-intelligence-vs-AI difference concrete
-> and personal. Current placements: Class 6 ch1 "One example or a thousand?",
-> Class 7 ch1 "Two learners side by side", Class 8 ch4 "The two essays — who
-> wrote which?" (human vs AI text forensics), Class 9 ch3 "Pattern vs proof",
-> Class 10 ch4 "Judgement vs optimisation". New books must add one, fitted to
-> a chapter where the contrast is native.
-
-## 13. Preface anatomy (fixed since the refinement round)
-
-How-to-use (+ psychology note + Question Habit + practice strip) → adults
-note → journey map → ican list → **My Starting Line pledge** → (6/7: pocket
-question card; 8-10: flip-test strip + pocket question card; 10: starting
-levels + re-rating habits + model shelf). All flowing, no orphans.
+- **Post-build token scan:** after every build, run `pdftotext main.pdf -` and
+  grep for leaked tokens (`h(`, `v(`, `pt)`, `box(`, `ruled-lines`, `#`).
+  Zero hits is the pass bar before any PDF ships.
+- **Register sweep for the verification routine:** from Class 8 up the moves
+  are *verify → cross-check → question* (+ *seek the original* from Class 9,
+  the "Verify-It Routine"). The Class 6/7 wording "trace / test / smell" must
+  never appear in Class 8-10 body text. Task IDs are never renumbered; display
+  titles may be aligned to the class register (T8-04 "Data Detective" ->
+  "Data Auditor").

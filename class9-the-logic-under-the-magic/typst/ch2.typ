@@ -59,9 +59,9 @@ A number is only as trustworthy as its *source* — and a source has three faces
   text(size: 9.8pt)[Copy one number-claim from this week's news and run the three-face check on it — competence, method, motive — then name the face that decided you:]
   v(4pt)
   grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 4.5pt, align: (left, horizon),
-    text(size: 9.5pt, weight: 800, fill: teal)[claim], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
-    text(size: 9.5pt, weight: 800, fill: teal)[faces], text(size: 9.7pt)[competence #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt) method #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt) motive #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
-    text(size: 9.5pt, weight: 800, fill: teal)[decider], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+    text(size: 9.5pt, weight: 800, fill: teal)[claim], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
+    text(size: 9.5pt, weight: 800, fill: teal)[faces], text(size: 9.7pt)[competence #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt) method #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt) motive #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(3pt)],
+    text(size: 9.5pt, weight: 800, fill: teal)[decider], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
   )
 })
 #task("T9-06", "Source Quality Audit", mode: "pair", mins: "15")[

@@ -273,17 +273,17 @@
     v(4pt)
     grid(columns: (auto, 1fr), column-gutter: 8pt, row-gutter: 5pt, align: (horizon, horizon),
       text(size: 9.5pt, weight: 800, fill: teal)[1.],
-      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
       text(size: 8.8pt, fill: ink-soft)[my question →],
-      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
       text(size: 9.5pt, weight: 800, fill: teal)[2.],
-      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
       text(size: 8.8pt, fill: ink-soft)[my question →],
-      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
       text(size: 9.5pt, weight: 800, fill: teal)[3.],
-      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
       text(size: 8.8pt, fill: ink-soft)[my question →],
-      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
     )
   })
   v(13pt)
@@ -303,8 +303,8 @@
     text(size: 10.1pt)[My honesty clause — how I will record results that contradict what I hoped for:]; ruled-lines(1, lead: 8.6mm)
     v(6pt)
     grid(columns: 2, column-gutter: 16pt,
-      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
-      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt)],
+      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt)],
     )
   })
   v(9pt)
@@ -314,9 +314,9 @@
     text(size: 9.8pt)[Flip through this book for two minutes, like an auditor meeting a new client. Three things I noticed that I intend to question later:]
     v(4pt)
     grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 5pt, align: (horizon, horizon),
-      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
-      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
-      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
     )
   })
   v(9pt)
@@ -339,6 +339,6 @@
       text(size: 9.8pt)[*Correlation or cause?* — what else could explain the pattern?],
     )
     v(5.5pt)
-    text(size: 9.6pt, style: "italic", fill: ink-soft)[The claim I intend to check first — and the question that will crack it: #box(width: 46%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)]
+    text(size: 9.6pt, style: "italic", fill: ink-soft)[The claim I intend to check first — and the question that will crack it: #box(width: 46%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)]
   })
 }

@@ -82,7 +82,7 @@ Time to be the machine. A next-word table is the smallest honest model of a text
 
 // ---------------- 4.3 ----------------
 #sec(3, "Deepfakes and the verification routine")
-When generation meets a person's face or voice, it becomes a *deepfake* — synthetic media that looks or sounds like a real person saying, doing, or wearing things they never did. The technology is improving faster than most people's defences, which makes your defence a *routine*, not a feeling. The Class 8 three moves — trace, test, smell — grow a fourth here: *seek the original* (can you find the unedited source or the person's own account?). And remember the asymmetry: a deepfake needs only to exist for hours to do harm; your verification needs minutes. Run it anyway — minutes are how trust survives.
+When generation meets a person's face or voice, it becomes a *deepfake* — synthetic media that looks or sounds like a real person saying, doing, or wearing things they never did. The technology is improving faster than most people's defences, which makes your defence a *routine*, not a feeling. The Class 8 three moves — verify, cross-check, question — grow a fourth here: *seek the original* (can you find the unedited source or the person's own account?). And remember the asymmetry: a deepfake needs only to exist for hours to do harm; your verification needs minutes. Run it anyway — minutes are how trust survives.
 
 #block(width: 100%, breakable: false, radius: 5pt, fill: white, stroke: 0.9pt + ink-soft, inset: (x: 10pt, y: 8pt), {
   text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[DEEPFAKE DEFENCE — THE TWO QUESTIONS THAT END MOST OF THEM]
@@ -121,11 +121,11 @@ Knowledge is not defence; routine is. Here is the full analyst routine, assemble
   v(3pt)
   grid(columns: (auto, 1fr), column-gutter: 8pt, row-gutter: 5pt, align: (center, left),
     box(fill: teal, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, weight: 800, size: 10.5pt)[1]),
-    text(size: 10.4pt)[*TRACE* — where did this content come from? Real author, real date, real place — or a chain of reposts?],
+    text(size: 10.4pt)[*VERIFY* — where did this content come from? Real author, real date, real place — or a chain of reposts?],
     box(fill: teal, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, weight: 800, size: 10.5pt)[2]),
-    text(size: 10.4pt)[*TEST* — do TWO independent sources agree? If the claim has numbers, do the pieces add up?],
+    text(size: 10.4pt)[*CROSS-CHECK* — do TWO independent sources agree? If the claim has numbers, do the pieces add up?],
     box(fill: teal, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, weight: 800, size: 10.5pt)[3]),
-    text(size: 10.4pt)[*SMELL* — is it engineered to make you feel first and think later? Outrage is a distribution strategy.],
+    text(size: 10.4pt)[*QUESTION* — is it engineered to make you feel first and think later? Outrage is a distribution strategy.],
     box(fill: amber, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, weight: 800, size: 10.5pt)[4]),
     text(size: 10.4pt)[*SEEK THE ORIGINAL* — the unedited file, the person's own account, the primary document. Deepfakes die at the original.],
   )
@@ -137,9 +137,9 @@ Knowledge is not defence; routine is. Here is the full analyst routine, assemble
   text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[MY VERIFY-IT RECEIPT — ONE CLAIM FROM MY FAMILY GROUP]
   v(3pt)
   grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 4.5pt, align: (left, horizon),
-    text(size: 9.5pt, weight: 800, fill: teal-deep)[claim], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
-    text(size: 9.5pt, weight: 800, fill: teal-deep)[check], text(size: 9.7pt)[the one check that decided it: #box(width: 66%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
-    text(size: 9.5pt, weight: 800, fill: teal-deep)[verdict], text(size: 9.7pt)[SHARE or DOUBT — and the one line I sent back: #box(width: 57%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+    text(size: 9.5pt, weight: 800, fill: teal-deep)[claim], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
+    text(size: 9.5pt, weight: 800, fill: teal-deep)[check], text(size: 9.7pt)[the one check that decided it: #box(width: 66%, stroke: (bottom: 0.7pt + ink-soft)) #h(3pt)],
+    text(size: 9.5pt, weight: 800, fill: teal-deep)[verdict], text(size: 9.7pt)[SHARE or DOUBT — and the one line I sent back: #box(width: 57%, stroke: (bottom: 0.7pt + ink-soft)) #h(3pt)],
   )
 })
 #figure-visual("visuals/c9_ch4_verifyit-flowchart.png", [The Verify-It routine as a three-phase flow: meet the claim, run the checks, deliver the verdict — with sources attached.], width: 92%)
@@ -159,7 +159,7 @@ Knowledge is not defence; routine is. Here is the full analyst routine, assemble
 #wordpower(20, "verification routine", [A fixed set of checks you run on claims before you trust or share them.])
 
 #myth("Generative AI looks things up.")[
-  There is no library inside the machine — there are patterns, learned from text written by people. When the patterns track facts, output reads like an encyclopedia; when they don't, the same mechanism produces fluent, confident fiction, with no flag raised. That is why the machine's tone tells you NOTHING about its truth: confidence and correctness are computed separately, if the second is computed at all. You built a next-word table yourself — you watched it invent. Whatever a generator claims, your routine — trace, test, smell, seek the original — is the only lookup that actually exists.]
+  There is no library inside the machine — there are patterns, learned from text written by people. When the patterns track facts, output reads like an encyclopedia; when they don't, the same mechanism produces fluent, confident fiction, with no flag raised. That is why the machine's tone tells you NOTHING about its truth: confidence and correctness are computed separately, if the second is computed at all. You built a next-word table yourself — you watched it invent. Whatever a generator claims, your routine — verify, cross-check, question, seek the original — is the only lookup that actually exists.]
 
 #selfcheck(
   [I can explain generative AI as pattern-based prediction — not lookup — and prove it with my own next-word table],
@@ -188,7 +188,7 @@ Knowledge is not defence; routine is. Here is the full analyst routine, assemble
     box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[*Generative AI predicts; it never looks up* — you built the mechanism and watched it invent.],
     box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[Its three limits are built in: *hallucination, bias, copyright* — none is a removable bug.],
     box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[*Deepfakes die at the original* — seek the unedited source before the emotion picks a side.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[The Verify-It routine: *trace, test, smell, seek the original* — minutes that protect years of trust.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[The Verify-It routine: *verify, cross-check, question, seek the original* — minutes that protect years of trust.],
   )
   #v(2.5pt)
   #text(size: 10.1pt)[*The clue I would tell my family tonight:* #ruled-lines(1, lead: 7.7mm)]

@@ -48,7 +48,7 @@ Forget magic. A text generator does one thing, enormously well: it reads the wor
 
 // ---------------- 4.2 ----------------
 #sec(2, "Hallucination Hunt: verify before you trust")
-When a text generator states something false as if it were fact, engineers call it a *hallucination* — and it is not a bug that will be patched away next month; it is the direct result of predicting likely words instead of checking facts. So the responsible user carries a routine, not a hope. The Class 6 habit — *check before believing* — now grows up into three moves: *trace the claim* (is there a real source?), *test the number* (do two sources agree?), and *smell the story* (is it suspiciously exactly what I wanted to hear?).
+When a text generator states something false as if it were fact, engineers call it a *hallucination* — and it is not a bug that will be patched away next month; it is the direct result of predicting likely words instead of checking facts. So the responsible user carries a routine, not a hope. The Class 6 habit — *check before believing* — now grows up into three moves: *verify the source* (is there a real source?), *cross-check the number* (do two sources agree?), and *question the story* (is it suspiciously exactly what I wanted to hear?).
 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
   text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[SAME SHAPE, DIFFERENT TRUTH — A PRE-HUNT DRILL]
@@ -106,7 +106,7 @@ When a text generator states something false as if it were fact, engineers call 
 #block(width: 100%, box(width: 100%, fill: white, stroke: 0.9pt + ink-soft, radius: 5pt, inset: (x: 10pt, y: 8pt), {
   text(size: 9.2pt, weight: 800, fill: teal, tracking: 0.1em)[ENGINEER'S DRILL · THE THREE-MOVE ROUTINE]
   v(3pt)
-  text(size: 10.1pt)[Name the move: T (trace the claim), N (test the number) or S (smell the story):]
+  text(size: 10.1pt)[Name the move: V (verify the source), C (cross-check the number) or Q (question the story):]
   v(3pt)
   dtable(("What the responsible user does…", "Which move?"),
     ([Searches for a second, independent source that says the same thing.], [ ]),
@@ -185,7 +185,7 @@ Court cases end with judgements; engineer stories end with promises. A pledge is
 
 #selfcheck(
   [I can explain in two sentences how a text generator writes — and why it can invent],
-  [I can run the three-move routine — trace, test, smell — on a suspicious claim],
+  [I can run the three-move routine — verify, cross-check, question — on a suspicious claim],
   [I can argue both sides of a responsible-use case and sign a reasoned verdict],
   [I can name what my own pledge demands of me before the difficult moment arrives],
 )
@@ -193,7 +193,7 @@ Court cases end with judgements; engineer stories end with promises. A pledge is
 
 #homelink[
   #task("AT HOME", "Family Fact Patrol", mode: "home", mins: "15")[
-    With an adult, find one forwarded message or AI-looking summary in the family phone (do not open links). Run the routine together: *trace* — where did it really come from? *test* — do two trusted sources agree? *smell* — does it push an emotion before evidence? #v(3pt)
+    With an adult, find one forwarded message or AI-looking summary in the family phone (do not open links). Run the routine together: *verify* — where did it really come from? *cross-check* — do two trusted sources agree? *question* — does it push an emotion before evidence? #v(3pt)
     *The claim we examined:* #ruled-lines(1, lead: 8.1mm)
     *What the three moves found:* #ruled-lines(2, lead: 8.1mm)
     *What we will do differently before forwarding next time:* #ruled-lines(1, lead: 8.1mm)
@@ -207,7 +207,7 @@ Court cases end with judgements; engineer stories end with promises. A pledge is
 #note("Chapter 4 clues — pocket these")[
   #grid(columns: (auto, 1fr), column-gutter: 6pt, row-gutter: 3.2pt, align: (left, left),
     box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[A text generator *predicts likely words* — likely is not the same as true.],
-    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[*Hallucinations* are built from the same fluency as facts — verify with trace, test, smell.],
+    box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[*Hallucinations* are built from the same fluency as facts — run verify, cross-check, question before you trust.],
     box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[Responsible use is decided by *people* — in courtrooms, staffrooms and pledges, with reasons.],
     box(width: 4.5pt, height: 4.5pt, fill: teal, baseline: 28%), text(size: 10.1pt)[Responsibility follows *control*: machines control nothing, so people answer — makers, users, deployers.],
   )

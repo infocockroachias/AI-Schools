@@ -245,11 +245,11 @@
     v(4pt)
     grid(columns: (auto, 1fr), column-gutter: 8pt, row-gutter: 5pt, align: (horizon, horizon),
       box(fill: teal, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8.2pt, weight: 800, "APR–JUL")),
-      text(size: 9.7pt)[foundations I will not fake: #box(width: 74%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.7pt)[foundations I will not fake: #box(width: 74%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
       box(fill: teal, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8.2pt, weight: 800, "AUG–NOV")),
-      text(size: 9.7pt)[practice I will do under time, honestly: #box(width: 68%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.7pt)[practice I will do under time, honestly: #box(width: 68%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
       box(fill: amber, radius: 3pt, inset: (x: 6pt, y: 2pt), text(fill: white, font: f-display, size: 8.2pt, weight: 800, "DEC–MAR")),
-      text(size: 9.7pt)[revision I will run from my own notes, not borrowed ones: #box(width: 60%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.7pt)[revision I will run from my own notes, not borrowed ones: #box(width: 60%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
     )
   })
   v(13pt)
@@ -269,8 +269,8 @@
     text(size: 10.1pt)[My integrity clause — the line I will not cross with generative tools, in my own words:]; ruled-lines(1, lead: 8.6mm)
     v(6pt)
     grid(columns: 2, column-gutter: 16pt,
-      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
-      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt)],
+      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt)],
     )
   })
   v(9pt)
@@ -295,7 +295,7 @@
       text(size: 9.8pt)[*What evidence would change my mind?* — the line between a designer and a defender.],
     )
     v(5.5pt)
-    text(size: 9.6pt, style: "italic", fill: ink-soft)[The system I will run all seven on first: #box(width: 58%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)]
+    text(size: 9.6pt, style: "italic", fill: ink-soft)[The system I will run all seven on first: #box(width: 58%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)]
   })
   v(9pt)
   block(width: 100%, breakable: false, radius: 5pt, fill: teal-faint, stroke: 0.9pt + ink-soft, inset: (x: 11pt, y: 8pt), {
@@ -311,12 +311,12 @@
     text(size: 9.8pt)[For Chapter 1: name three AI products you actually use, and one data question you will ask of each when the family map opens:]
     v(4pt)
     grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 5pt, align: (horizon, horizon),
-      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
-      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
-      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
-      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
-      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
-      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
+      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
+      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
+      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
+      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) #h(4pt)],
     )
   })
   v(9pt)

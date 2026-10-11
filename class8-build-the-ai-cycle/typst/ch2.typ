@@ -57,7 +57,7 @@ Every dataset is a guest list. Somebody decided who got invited — which street
   ruled-lines(1, lead: 8.2mm)
   text(size: 9.3pt, fill: ink-soft, style: "italic")[Hold your answers — T8-04 hands you a harder table in a moment.]
 })
-#task("T8-04", "Data Detective", mode: "group", mins: "20")[
+#task("T8-04", "Data Auditor", mode: "group", mins: "20")[
   A city clinic built a "fever triage" helper trained on 200 patient records. Before you audit: *predict first.* Which group do you EXPECT to be overweighted in a clinic's own records — and why? Write one line, then audit for real:
   #ruled-lines(1, lead: 8.4mm)
   #v(2pt)

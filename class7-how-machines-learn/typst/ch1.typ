@@ -278,10 +278,10 @@ Here is the trap that catches learners — machine and human alike. Show a learn
   text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em)[CHAPTER 1 TOOLKIT — WHAT I EARNED]
   v(3pt)
   grid(columns: (1fr, 1fr), column-gutter: 10pt, row-gutter: 4.5pt,
-    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) classification — my example: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
-    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) regression — my example: #box(width: 66%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
-    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) clustering — my example: #box(width: 65%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
-    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) train ≠ test — because: #box(width: 60%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) classification — my example: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) #h(3pt)],
+    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) regression — my example: #box(width: 66%, stroke: (bottom: 0.7pt + ink-soft)) #h(3pt)],
+    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) clustering — my example: #box(width: 65%, stroke: (bottom: 0.7pt + ink-soft)) #h(3pt)],
+    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) train ≠ test — because: #box(width: 60%, stroke: (bottom: 0.7pt + ink-soft)) #h(3pt)],
   )
 })
 #note("Case notes — what changed in my thinking?")[
@@ -308,10 +308,10 @@ Here is the trap that catches learners — machine and human alike. Show a learn
   )
   v(5pt)
   grid(columns: (auto, 1fr), column-gutter: 7pt, row-gutter: 5pt, align: (left, horizon),
-    text(size: 9.5pt, weight: 800, fill: teal)[ask], text(size: 9.7pt)[the question my survey will answer: #box(width: 74%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
-    text(size: 9.5pt, weight: 800, fill: teal)[data], text(size: 9.7pt)[three things I will record each time: #box(width: 70%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
-    text(size: 9.5pt, weight: 800, fill: teal)[say], text(size: 9.7pt)[who I will ask (and who I might be missing): #box(width: 63%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
-    text(size: 9.5pt, weight: 800, fill: teal)[guess], text(size: 9.7pt)[my prediction before any data — and how sure: #box(width: 56%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+    text(size: 9.5pt, weight: 800, fill: teal)[ask], text(size: 9.7pt)[the question my survey will answer: #box(width: 74%, stroke: (bottom: 0.7pt + ink-soft)) #h(3pt)],
+    text(size: 9.5pt, weight: 800, fill: teal)[data], text(size: 9.7pt)[three things I will record each time: #box(width: 70%, stroke: (bottom: 0.7pt + ink-soft)) #h(3pt)],
+    text(size: 9.5pt, weight: 800, fill: teal)[say], text(size: 9.7pt)[who I will ask (and who I might be missing): #box(width: 63%, stroke: (bottom: 0.7pt + ink-soft)) #h(3pt)],
+    text(size: 9.5pt, weight: 800, fill: teal)[guess], text(size: 9.7pt)[my prediction before any data — and how sure: #box(width: 56%, stroke: (bottom: 0.7pt + ink-soft)) #h(3pt)],
   )
 })
 
