@@ -1,0 +1,31 @@
+// ============================================================
+//  PRATIMAI · AI Handouts — Class 7 · "How Machines Learn"  (MAIN)
+//  Machiatto edition — MoKa Reads publication specification
+// ============================================================
+#import "template.typ": *
+#import "front.typ": license-page, ack-text, preface-pages
+
+#show: moka-doc.with(
+  cover-series: "PRATIMAI · AI HANDOUTS",
+  cover-title: "How Machines Learn",
+  cover-subtitle: "My case file for training machines — and catching their mistakes",
+  cover-meta: ("CLASS 7 · LEVEL 2 — SORT & PREDICT", "17 PAPER MISSIONS · 5 CHAPTERS · NO SCREEN NEEDED"),
+  author: "PRATIMA AI Curriculum Team",
+  license: license-page,
+  ack: ack-text,
+  ack-meta: "17 PAPER MISSIONS · 14 WORDS TO KEEP · 5 CHAPTERS · 1 BADGE EARNED",
+  preface: preface-pages,
+  toc: true,
+  toc-extras: box-legend,
+  cover-questions: "How do I know?  ·  What is missing?  ·  What is the trick here?",
+)
+
+// ---------- chapters ----------
+#include "ch1.typ"
+#include "ch2.typ"
+#include "ch3.typ"
+#include "ch4.typ"
+#include "ch5.typ"
+
+// ---------- back matter ----------
+#include "ch6_back.typ"
