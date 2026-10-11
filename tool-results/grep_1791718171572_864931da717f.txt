@@ -1,0 +1,178 @@
+/home/z/my-project/scripts/patch_pledge.py:24:      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/patch_pledge.py:25:      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/patch_pledge.py:46:      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/patch_pledge.py:47:      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/patch_pledge.py:68:      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/patch_pledge.py:69:      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/patch_pledge.py:90:      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/patch_pledge.py:91:      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/patch_pledge.py:112:      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/patch_pledge.py:113:      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/patch_fills3.py:45:    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) classification — my example: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/patch_fills3.py:46:    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) regression — my example: #box(width: 66%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/patch_fills3.py:47:    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) clustering — my example: #box(width: 65%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/patch_fills3.py:48:    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) train ≠ test — because: #box(width: 60%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/patch_fills3.py:115:PLEDGE_END = "stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],\n    )\n  })"
+/home/z/my-project/scripts/patch_fills3.py:126:      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3.py:127:      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3.py:128:      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3.py:150:    text(size: 9.5pt, weight: 800, fill: teal)[claim], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3.py:151:    text(size: 9.5pt, weight: 800, fill: teal)[faces], text(size: 9.7pt)[competence #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt) method #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt) motive #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/patch_fills3.py:152:    text(size: 9.5pt, weight: 800, fill: teal)[decider], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3.py:168:    text(size: 9.5pt, weight: 800, fill: teal-deep)[claim], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3.py:169:    text(size: 9.5pt, weight: 800, fill: teal-deep)[check], text(size: 9.7pt)[the one check that decided it: #box(width: 66%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/patch_fills3.py:170:    text(size: 9.5pt, weight: 800, fill: teal-deep)[verdict], text(size: 9.7pt)[SHARE or DOUBT — and the one line I sent back: #box(width: 57%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/patch_fills3.py:205:      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3.py:206:      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3.py:207:      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3.py:208:      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3.py:209:      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3.py:210:      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:13:      text(size: 9.7pt)[1. #box(width: 82%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:16:      text(size: 9.7pt)[2. #box(width: 82%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:19:      text(size: 9.7pt)[3. #box(width: 82%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:33:      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:35:      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:37:      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:39:      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:41:      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:43:      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:55:      text(size: 9.7pt)[foundations I will not fake: #box(width: 74%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:57:      text(size: 9.7pt)[practice I will do under time, honestly: #box(width: 68%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:59:      text(size: 9.7pt)[revision I will run from my own notes, not borrowed ones: #box(width: 60%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills2.py:98:    text(size: 9.6pt, style: "italic", fill: ink-soft)[The question I will use most this year, and where I first plan to use it: #box(width: 52%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)]
+/home/z/my-project/scripts/patch_fills2.py:121:    text(size: 9.6pt, style: "italic", fill: ink-soft)[The claim I intend to check first — and the question that will crack it: #box(width: 46%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)]
+/home/z/my-project/scripts/patch_fills2.py:142:    text(size: 9.6pt, style: "italic", fill: ink-soft)[The system I will run all seven on first: #box(width: 58%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)]
+/home/z/my-project/scripts/patch_fills2.py:152:PLEDGE_END = "stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],\n    )\n  })"
+/home/z/my-project/scripts/ai_handout_c10/front.typ:248:      text(size: 9.7pt)[foundations I will not fake: #box(width: 74%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c10/front.typ:250:      text(size: 9.7pt)[practice I will do under time, honestly: #box(width: 68%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c10/front.typ:252:      text(size: 9.7pt)[revision I will run from my own notes, not borrowed ones: #box(width: 60%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c10/front.typ:272:      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/ai_handout_c10/front.typ:273:      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/ai_handout_c10/front.typ:298:    text(size: 9.6pt, style: "italic", fill: ink-soft)[The system I will run all seven on first: #box(width: 58%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)]
+/home/z/my-project/scripts/ai_handout_c10/front.typ:314:      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c10/front.typ:315:      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c10/front.typ:316:      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c10/front.typ:317:      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c10/front.typ:318:      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c10/front.typ:319:      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c10/template.typ:211:        h(9pt)
+/home/z/my-project/scripts/ai_handout_c10/template.typ:254:#let conf(n: 3) = h(4pt) + box(baseline: 30%, stack(dir: ltr, spacing: 3.9pt,
+/home/z/my-project/scripts/ai_handout_c10/template.typ:278:  for s in strands { strand-badge(s, active: true); h(2.5pt) }
+/home/z/my-project/scripts/ai_handout_c10/template.typ:340:          if win { box(width: 5pt, height: 5pt, fill: amber, baseline: 28%); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "QUICK WIN"); h(7pt) }
+/home/z/my-project/scripts/ai_handout_c10/template.typ:341:          if hands { box(width: 5pt, height: 5pt, fill: amber, baseline: 28%); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "HANDS-ON LAB"); h(7pt) }
+/home/z/my-project/scripts/ai_handout_c10/template.typ:669:      h(4.5pt)
+/home/z/my-project/scripts/ai_handout_c8/front.typ:264:      text(size: 9.7pt)[1. #box(width: 82%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c8/front.typ:267:      text(size: 9.7pt)[2. #box(width: 82%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c8/front.typ:270:      text(size: 9.7pt)[3. #box(width: 82%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c8/front.typ:292:      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/ai_handout_c8/front.typ:293:      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/ai_handout_c8/front.typ:303:      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c8/front.typ:304:      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c8/front.typ:305:      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c8/front.typ:328:    text(size: 9.6pt, style: "italic", fill: ink-soft)[The question I will use most this year, and where I first plan to use it: #box(width: 52%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)]
+/home/z/my-project/scripts/ai_handout_c8/template.typ:211:        h(9pt)
+/home/z/my-project/scripts/ai_handout_c8/template.typ:254:#let conf(n: 3) = h(4pt) + box(baseline: 30%, stack(dir: ltr, spacing: 3.9pt,
+/home/z/my-project/scripts/ai_handout_c8/template.typ:278:  for s in strands { strand-badge(s, active: true); h(2.5pt) }
+/home/z/my-project/scripts/ai_handout_c8/template.typ:340:          if win { box(width: 5pt, height: 5pt, fill: amber, baseline: 28%); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "QUICK WIN"); h(7pt) }
+/home/z/my-project/scripts/ai_handout_c8/template.typ:341:          if hands { box(width: 5pt, height: 5pt, fill: amber, baseline: 28%); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "HANDS-ON LAB"); h(7pt) }
+/home/z/my-project/scripts/ai_handout_c8/template.typ:669:      h(4.5pt)
+/home/z/my-project/scripts/ai_handout_c9/front.typ:276:      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c9/front.typ:278:      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c9/front.typ:280:      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c9/front.typ:282:      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c9/front.typ:284:      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c9/front.typ:286:      text(size: 9.7pt)[#box(width: 88%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c9/front.typ:306:      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/ai_handout_c9/front.typ:307:      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/ai_handout_c9/front.typ:317:      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c9/front.typ:318:      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c9/front.typ:319:      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c9/front.typ:342:    text(size: 9.6pt, style: "italic", fill: ink-soft)[The claim I intend to check first — and the question that will crack it: #box(width: 46%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)]
+/home/z/my-project/scripts/ai_handout_c9/ch2.typ:62:    text(size: 9.5pt, weight: 800, fill: teal)[claim], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c9/ch2.typ:63:    text(size: 9.5pt, weight: 800, fill: teal)[faces], text(size: 9.7pt)[competence #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt) method #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt) motive #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/ai_handout_c9/ch2.typ:64:    text(size: 9.5pt, weight: 800, fill: teal)[decider], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c9/ch4.typ:140:    text(size: 9.5pt, weight: 800, fill: teal-deep)[claim], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/ai_handout_c9/ch4.typ:141:    text(size: 9.5pt, weight: 800, fill: teal-deep)[check], text(size: 9.7pt)[the one check that decided it: #box(width: 66%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/ai_handout_c9/ch4.typ:142:    text(size: 9.5pt, weight: 800, fill: teal-deep)[verdict], text(size: 9.7pt)[SHARE or DOUBT — and the one line I sent back: #box(width: 57%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/ai_handout_c7/front.typ:104:    { ico("user", size: 9pt, fill: teal); h(4.5pt); chip[ALONE] },  text(size: 10.3pt)[your own case — you investigate by yourself],
+/home/z/my-project/scripts/ai_handout_c7/front.typ:105:    { ico("pair", size: 9pt, fill: teal); h(4.5pt); chip[PAIR] },   text(size: 10.3pt)[two trainers — share one book, take turns reading codes aloud],
+/home/z/my-project/scripts/ai_handout_c7/front.typ:106:    { ico("group", size: 9pt, fill: teal); h(4.5pt); chip[GROUP] },  text(size: 10.3pt)[three to four trainers — decide roles before you start],
+/home/z/my-project/scripts/ai_handout_c7/front.typ:107:    { ico("class", size: 9pt, fill: teal); h(4.5pt); chip[CLASS] },  text(size: 10.3pt)[the whole class plays together, led by your teacher],
+/home/z/my-project/scripts/ai_handout_c7/front.typ:108:    { ico("home", size: 9pt, fill: teal); h(4.5pt); chip[HOME] },   text(size: 10.3pt)[a mission for home — show a grown-up what you discovered],
+/home/z/my-project/scripts/ai_handout_c7/front.typ:269:      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/ai_handout_c7/front.typ:270:      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/ai_handout_c9/template.typ:211:        h(9pt)
+/home/z/my-project/scripts/ai_handout_c9/template.typ:254:#let conf(n: 3) = h(4pt) + box(baseline: 30%, stack(dir: ltr, spacing: 3.9pt,
+/home/z/my-project/scripts/ai_handout_c9/template.typ:278:  for s in strands { strand-badge(s, active: true); h(2.5pt) }
+/home/z/my-project/scripts/ai_handout_c9/template.typ:340:          if win { box(width: 5pt, height: 5pt, fill: amber, baseline: 28%); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "QUICK WIN"); h(7pt) }
+/home/z/my-project/scripts/ai_handout_c9/template.typ:341:          if hands { box(width: 5pt, height: 5pt, fill: amber, baseline: 28%); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "HANDS-ON LAB"); h(7pt) }
+/home/z/my-project/scripts/ai_handout_c9/template.typ:669:      h(4.5pt)
+/home/z/my-project/scripts/ai_handout_c7/ch1.typ:281:    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) classification — my example: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/ai_handout_c7/ch1.typ:282:    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) regression — my example: #box(width: 66%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/ai_handout_c7/ch1.typ:283:    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) clustering — my example: #box(width: 65%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/ai_handout_c7/ch1.typ:284:    text(size: 9.8pt)[#box(width: 4.2mm, height: 4.2mm, stroke: 0.9pt + ink, radius: 1.5pt) #h(4pt) train ≠ test — because: #box(width: 60%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/ai_handout_c7/ch1.typ:311:    text(size: 9.5pt, weight: 800, fill: teal)[ask], text(size: 9.7pt)[the question my survey will answer: #box(width: 74%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/ai_handout_c7/ch1.typ:312:    text(size: 9.5pt, weight: 800, fill: teal)[data], text(size: 9.7pt)[three things I will record each time: #box(width: 70%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/ai_handout_c7/ch1.typ:313:    text(size: 9.5pt, weight: 800, fill: teal)[say], text(size: 9.7pt)[who I will ask (and who I might be missing): #box(width: 63%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/ai_handout_c7/ch1.typ:314:    text(size: 9.5pt, weight: 800, fill: teal)[guess], text(size: 9.7pt)[my prediction before any data — and how sure: #box(width: 56%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/ai_handout_c7/ch0_front.typ:41:    h(7pt)
+/home/z/my-project/scripts/ai_handout_c7/ch0_front.typ:46:    h(6pt)
+/home/z/my-project/scripts/ai_handout_c7/ch0_front.typ:48:    h(6pt)
+/home/z/my-project/scripts/ai_handout_c7/ch0_front.typ:185:  h(6pt)
+/home/z/my-project/scripts/ai_handout_c7/template.typ:211:        h(9pt)
+/home/z/my-project/scripts/ai_handout_c7/template.typ:254:#let conf(n: 3) = h(4pt) + box(baseline: 30%, stack(dir: ltr, spacing: 3.9pt,
+/home/z/my-project/scripts/ai_handout_c7/template.typ:278:  for s in strands { strand-badge(s, active: true); h(2.5pt) }
+/home/z/my-project/scripts/ai_handout_c7/template.typ:351:          if win { ico("star", size: 8.4pt); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "QUICK WIN"); h(7pt) }
+/home/z/my-project/scripts/ai_handout_c7/template.typ:353:          h(3.5pt)
+/home/z/my-project/scripts/ai_handout_c7/template.typ:366:  { ico("book", size: 8.4pt, fill: amber-deep); h(4pt); text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[WORD POWER · #str(n)] }
+/home/z/my-project/scripts/ai_handout_c7/template.typ:452:    { ico("bulb", size: 8.4pt, fill: amber-deep); h(4.5pt); text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em, upper(title)) }
+/home/z/my-project/scripts/ai_handout_c7/template.typ:681:      h(4.5pt)
+/home/z/my-project/scripts/ai_handout_c7/template.typ:689:      { ico("clock", size: 7.8pt, fill: ink-soft); h(3.5pt); text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.12em)[ALONE · 2 MIN] },
+/home/z/my-project/scripts/patch_fills3b.py:68:PLEDGE_END = "stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],\n    )\n  })"
+/home/z/my-project/scripts/patch_fills3b.py:79:      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3b.py:80:      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3b.py:81:      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3b.py:103:    text(size: 9.5pt, weight: 800, fill: teal)[claim], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3b.py:104:    text(size: 9.5pt, weight: 800, fill: teal)[faces], text(size: 9.7pt)[competence #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt) method #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) #h(6pt) motive #box(width: 24%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/patch_fills3b.py:105:    text(size: 9.5pt, weight: 800, fill: teal)[decider], text(size: 9.7pt)[#box(width: 90%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3b.py:121:    text(size: 9.5pt, weight: 800, fill: teal-deep)[claim], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3b.py:122:    text(size: 9.5pt, weight: 800, fill: teal-deep)[check], text(size: 9.7pt)[the one check that decided it: #box(width: 66%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/patch_fills3b.py:123:    text(size: 9.5pt, weight: 800, fill: teal-deep)[verdict], text(size: 9.7pt)[SHARE or DOUBT — and the one line I sent back: #box(width: 57%, stroke: (bottom: 0.7pt + ink-soft)) h(3pt)],
+/home/z/my-project/scripts/patch_fills3b.py:158:      text(size: 9.5pt, weight: 800, fill: teal)[1.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3b.py:159:      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3b.py:160:      text(size: 9.5pt, weight: 800, fill: teal)[2.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3b.py:161:      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3b.py:162:      text(size: 9.5pt, weight: 800, fill: teal)[3.], text(size: 9.7pt)[#box(width: 87%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_fills3b.py:163:      text(size: 8.8pt, fill: ink-soft)[data Q], text(size: 9.7pt)[#box(width: 89%, stroke: (bottom: 0.7pt + ink-soft)) h(4pt)],
+/home/z/my-project/scripts/patch_icons.py:19:          if win { box(width: 5pt, height: 5pt, fill: amber, baseline: 28%); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "QUICK WIN"); h(7pt) }
+/home/z/my-project/scripts/patch_icons.py:23:          if win { ico("star", size: 8.4pt); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "QUICK WIN"); h(7pt) }
+/home/z/my-project/scripts/patch_icons.py:25:          h(3.5pt)
+/home/z/my-project/scripts/patch_icons.py:30:NEW_WP = '''  { ico("book", size: 8.4pt, fill: amber-deep); h(4pt); text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[WORD POWER · #str(n)] }'''
+/home/z/my-project/scripts/patch_icons.py:38:NEW_NOTE = '''    { ico("bulb", size: 8.4pt, fill: amber-deep); h(4.5pt); text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em, upper(title)) }'''
+/home/z/my-project/scripts/patch_icons.py:41:    ("chip[ALONE],", '{ ico("user", size: 9pt, fill: teal); h(4.5pt); chip[ALONE] },'),
+/home/z/my-project/scripts/patch_icons.py:42:    ("chip[PAIR],", '{ ico("pair", size: 9pt, fill: teal); h(4.5pt); chip[PAIR] },'),
+/home/z/my-project/scripts/patch_icons.py:43:    ("chip[GROUP],", '{ ico("group", size: 9pt, fill: teal); h(4.5pt); chip[GROUP] },'),
+/home/z/my-project/scripts/patch_icons.py:44:    ("chip[CLASS],", '{ ico("class", size: 9pt, fill: teal); h(4.5pt); chip[CLASS] },'),
+/home/z/my-project/scripts/patch_icons.py:45:    ("chip[HOME],", '{ ico("home", size: 9pt, fill: teal); h(4.5pt); chip[HOME] },'),
+/home/z/my-project/scripts/ai_handout/front.typ:104:    { ico("user", size: 9pt, fill: teal); h(4.5pt); chip[ALONE] },  text(size: 10.3pt)[your own case — you investigate by yourself],
+/home/z/my-project/scripts/ai_handout/front.typ:105:    { ico("pair", size: 9pt, fill: teal); h(4.5pt); chip[PAIR] },   text(size: 10.3pt)[two detectives — share one book, take turns reading codes aloud],
+/home/z/my-project/scripts/ai_handout/front.typ:106:    { ico("group", size: 9pt, fill: teal); h(4.5pt); chip[GROUP] },  text(size: 10.3pt)[three to four detectives — decide roles before you start],
+/home/z/my-project/scripts/ai_handout/front.typ:107:    { ico("class", size: 9pt, fill: teal); h(4.5pt); chip[CLASS] },  text(size: 10.3pt)[the whole class plays together, led by your teacher],
+/home/z/my-project/scripts/ai_handout/front.typ:108:    { ico("home", size: 9pt, fill: teal); h(4.5pt); chip[HOME] },   text(size: 10.3pt)[a mission for home — show a grown-up what you discovered],
+/home/z/my-project/scripts/ai_handout/front.typ:264:      text(size: 9.6pt)[Signed: #box(width: 62%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/ai_handout/front.typ:265:      text(size: 9.6pt)[Date: #box(width: 55%, stroke: (bottom: 0.7pt + ink-soft)) h(6pt)],
+/home/z/my-project/scripts/ai_handout/ch2.typ:111:    { text(size: 9.2pt, weight: 700)[Our pictures matched?]; h(4pt); box(width: 9.5pt, height: 9.5pt, radius: 5pt, stroke: 1pt + teal-mid, fill: white); text(size: 9.5pt, weight: 800)[ YES]; h(6pt); box(width: 9.5pt, height: 9.5pt, radius: 5pt, stroke: 1pt + teal-mid, fill: white); text(size: 9.5pt, weight: 800)[ NO] },
+/home/z/my-project/scripts/ai_handout/ch0_front.typ:40:    h(7pt)
+/home/z/my-project/scripts/ai_handout/ch0_front.typ:45:    h(6pt)
+/home/z/my-project/scripts/ai_handout/ch0_front.typ:47:    h(6pt)
+/home/z/my-project/scripts/ai_handout/ch0_front.typ:184:  h(6pt)
+/home/z/my-project/scripts/ai_handout/template.typ:211:        h(9pt)
+/home/z/my-project/scripts/ai_handout/template.typ:254:#let conf(n: 3) = h(4pt) + box(baseline: 30%, stack(dir: ltr, spacing: 3.9pt,
+/home/z/my-project/scripts/ai_handout/template.typ:278:  for s in strands { strand-badge(s, active: true); h(2.5pt) }
+/home/z/my-project/scripts/ai_handout/template.typ:351:          if win { ico("star", size: 8.4pt); h(4pt); text(font: f-display, fill: amber-deep, weight: 800, size: 8.1pt, tracking: 0.12em, "QUICK WIN"); h(7pt) }
+/home/z/my-project/scripts/ai_handout/template.typ:353:          h(3.5pt)
+/home/z/my-project/scripts/ai_handout/template.typ:366:  { ico("book", size: 8.4pt, fill: amber-deep); h(4pt); text(font: f-display, size: 9.2pt, fill: amber-deep, weight: 800, tracking: 0.13em)[WORD POWER · #str(n)] }
+/home/z/my-project/scripts/ai_handout/template.typ:452:    { ico("bulb", size: 8.4pt, fill: amber-deep); h(4.5pt); text(font: f-display, size: 9.2pt, fill: teal-deep, weight: 800, tracking: 0.13em, upper(title)) }
+/home/z/my-project/scripts/ai_handout/template.typ:545:      h(4.5pt)
+/home/z/my-project/scripts/ai_handout/template.typ:553:      { ico("clock", size: 7.8pt, fill: ink-soft); h(3.5pt); text(font: f-display, size: 8.1pt, fill: ink-soft, weight: 800, tracking: 0.12em)[ALONE · 2 MIN] },
